@@ -1,4 +1,7 @@
-# - name: Projects
-#   link: #project
-# - name: News
-#   link: #news
+header:
+- name: Projects
+  link: "#project"
+- name: News
+  link: "#news"
+- name: Contact
+  link: contact
