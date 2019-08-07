@@ -22,8 +22,10 @@ header:
         url: "http://genomaustria.at/das-projekt/"
   - title: News
     url: "#news"
+  - title: Blog
+    url: /blog.html
   - title: Contact
-    url: "/contact.html"
+    url: "/contact/"
 
   # - title: Group 2
   #   subfolderitems:
