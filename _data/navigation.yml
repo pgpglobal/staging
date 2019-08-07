@@ -9,6 +9,18 @@ header:
         url: "#overview"
       - page: Guidelines
         url: "#guidelines"
+      - page: Project Websites
+        # url: ""
+        type: seperator
+      - page: Harvard PGP
+        url: "https://pgp.med.harvard.edu/"
+      - page: PGP Canada
+        url: "https://personalgenomes.ca/"
+      - page: PGP UK
+        url: "https://www.personalgenomes.org.uk/"
+      - page: Genom Austria
+        url: "http://genomaustria.at/das-projekt/"
+
   - title: News
     url: "#news"
   - title: Contact
