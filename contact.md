@@ -4,9 +4,10 @@
 
 layout: home
 title: Contact
+permalink: /contact/
 ---
 
-<h2>Contact {{ site.title }}</h2>
+<h2>Contact Us</h2>
 
 <p>For questions or more information about the {{ site.title }}, please use the form below to contact us.</p>
 <form action="" method="post">
