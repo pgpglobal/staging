@@ -20,11 +20,10 @@ header:
         url: "https://www.personalgenomes.org.uk/"
       - page: Genom Austria
         url: "http://genomaustria.at/das-projekt/"
-
   - title: News
     url: "#news"
   - title: Contact
-    url: "/contact"
+    url: "/contact.html"
 
   # - title: Group 2
   #   subfolderitems:
