@@ -1,4 +1,6 @@
-h1, h2, h3, h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 20px 0 10px;
 }
 
@@ -6,6 +8,55 @@ p {
   margin: 0 0 10px;
 }
 
-// .page-title {
-//   margin: 20px 0 10px;
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #eee;
+}
+
+.lead-div {
+  margin-top: 30px;
+}
+
+.local-projects {
+  border-color: $base-border;
+  border-radius: 6px;
+  border-style: solid;
+  padding: 15px;
+}
+
+.local-projects-header {
+  color: $base-border;
+  font-variant: small-caps;
+}
+
+li {
+  margin-bottom: 20px;
+}
+
+// ul li ul li {
+//   margin-bottom: 0;
 // }
+
+a.anchor-offset {
+  display: block;
+  position: relative;
+  top: -50px;
+  visibility: hidden;
+}
+
+img.profile-photo {
+  width: 100%;
+  max-width: 250px;
+}
+
+.thumbnail.profile .caption {
+  overflow: hidden;
+
+  a {
+    color: $grey-dark-1;
+  }
+
+}
+

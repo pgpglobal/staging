@@ -29,8 +29,7 @@ title: The Personal Genome Project
           the pilot PGP site, and is based in George Church's laboratory
           at Harvard Medical School.
         </p>
-        <a class="btn btn-default" href="https://pgp.med.harvard.edu/">
-        Go to the Harvard PGP website</a>
+        <button class="btn btn-default"><a href="https://pgp.med.harvard.edu/">Go to the Harvard PGP website</a></button>
 
       </div>
     </div>
@@ -60,8 +59,7 @@ title: The Personal Genome Project
             the pilot PGP site, and is based in George Church's laboratory
             at Harvard Medical School.
           </p>
-          <a class="btn btn-default" href="https://pgp.med.harvard.edu/">
-          Go to the Harvard PGP website</a>
+          <button class="btn btn-default"><a href="https://pgp.med.harvard.edu/">Go to the Harvard PGP website</a></button>
 
         </li>
 
@@ -72,8 +70,7 @@ title: The Personal Genome Project
             McLaughlin Centre at the University of Toronto, and The Centre
             for Applied Genomics at the Hospital for Sick Children.
           </p>
-          <a class="btn btn-default" href="https://personalgenomes.ca/">
-          Go to PGP Canada website</a>
+          <button class="btn btn-default"><a href="https://personalgenomes.ca/">Go to PGP Canada website</a></button>
 
         </li>
 
@@ -83,9 +80,7 @@ title: The Personal Genome Project
             Founded in November 2013, PGP UK is led by Stephen Beck at
             University College London.
           </p>
-          <a class="btn btn-default" href="https://www.personalgenomes.org.uk/">
-          Go to the PGP UK website</a>
-
+          <button class="btn btn-default"><a href="https://www.personalgenomes.org.uk/">Go to the PGP UK website</a></button>
         </li>
 
         <li>
@@ -95,8 +90,7 @@ title: The Personal Genome Project
             Research Center for Molecular Medicine of the Austrian
             Academy of Sciences.
           </p>
-          <a class="btn btn-default" href="http://genomaustria.at/das-projekt/">
-          Go to Genom Austria website (German language)</a>
+          <button class="btn btn-default"><a href="http://genomaustria.at/das-projekt/">Go to Genom Austria website (German language)</a></button>
 
         </li>
 
@@ -109,8 +103,7 @@ title: The Personal Genome Project
             information from interested participants and potential
             collaborators.
           </p>
-          <a class="btn btn-default" href="http://www.pgpchina.org/">
-          Go to the PGP China website (in Chinese and English)</a>
+          <button class="btn btn-default"><a href="http://www.pgpchina.org/">Go to the PGP China website (in Chinese and English)</a></button>
 
         </li>
 

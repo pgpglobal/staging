@@ -14,12 +14,22 @@ $text-color:       #111 !default;
 $background-color: #fdfdfd !default;
 $brand-color:      #2a7ae2 !default;
 
+$blue:             #0066b3;
+$blue-2:           #0080e0;
+$blue-light:       #e8f5ff;
+$blue-light-2:     #d2ecff;
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
+$grey-dark-1:        #333;
 $orange-color:     #f66a0a !default;
 $table-text-align: left !default;
 
+$base-border:      $blue-2;
+
+$nav--text-color:  $blue;
+$nav--background-color: $blue-light;
+$nav--border-color: $blue-light-2;
 // Width of the content area
 $content-width:    1200px !default;
 
