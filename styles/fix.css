@@ -1,6 +1,6 @@
 body {
   font-size: 16px;
-  padding: 0 0 50px;
+  padding: 0 0 30px;
 }
 
 a:hover {
@@ -24,10 +24,10 @@ a:visited {
 }
 
 .navbar {
-  opacity: 1;
   background-color: #e8f5ff;
   border-bottom: 1px solid #0080e0;
   box-sizing: content-box;
+  opacity: 1;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -47,3 +47,26 @@ a:visited {
   border-radius: 4px;
 }
 
+.container {
+  margin: 0 11px;
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 920px) and (max-width: 991px) {
+  /* This is good - but need to change it for
+  the other text containers, lower on the page */
+  .container {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    margin: 0 11px;
+  }
+}
