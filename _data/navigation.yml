@@ -4,11 +4,11 @@ header:
     type: dropdown
     subfolderitems:
       - page: About
-        url: "#about"
-      - page: Overiew
-        url: "#overview"
+        url: "/#about"
+      - page: Overview
+        url: "/#overview"
       - page: Guidelines
-        url: "#guidelines"
+        url: "/#guidelines"
       - page: Project Websites
         # url: ""
         type: seperator
@@ -21,7 +21,7 @@ header:
       - page: Genom Austria
         url: "http://genomaustria.at/das-projekt/"
   - title: News
-    url: "#news"
+    url: "/news"
   - title: Blog
     url: /blog.html
   - title: Contact
