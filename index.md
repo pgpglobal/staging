@@ -11,7 +11,7 @@ title: The Personal Genome Project
   <div class="row lead-row">
     <div class="col-xs-8 col-md-9 lead-div">
       <a id="about" class="anchor-offset"></a>
-      <h1>{{ page.title }}</h1>
+      <h1 class="page-title">{{ page.title }}</h1>
       <p class="lead">
         The Personal&nbsp;Genome Project, initiated in 2005, is a vision
         and coalition of projects across the world dedicated to creating
