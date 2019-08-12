@@ -4,6 +4,8 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 
 ## Instructions
 
+### Setup
+
 In order to run this site locally, follow the following steps:
 
 1. Download and install [Ruby](https://www.ruby-lang.org/en/downloads/) v. 2.4.0 or higher. See [Ruby Docs - Installation](https://www.ruby-lang.org/en/documentation/installation/) for more info.
@@ -17,6 +19,14 @@ In order to run this site locally, follow the following steps:
 7. Navigate to the directory that was just created (PGPGlobal by default, unless you gave it a custom name)
 8. Terminal: `bundle exec jekyll serve`
     * In the future, you can simply run `jekyll serve`, however you may need to run `bundle exec jekyll serve` when new plugins or other elements are added to the site.
+
+<!-- ### Modifying
+
+Make a bran
+ -->
+### Keeping Up-To-Date
+
+In order to keep the site up-to-date with future changes, you should run `git pull` in your terminal. Note: If you've made local changes, this task me be a bit more complicated.
 
 ## Remaining Tasks:
 
@@ -32,3 +42,9 @@ In order to run this site locally, follow the following steps:
 7. Google Analytics
 8. Create documentation for file structure, update and editing procedures, etc
 9. Setup SSL/HTTPS
+10. Add Email and Site Description to `_config.yml` (Site description is helpful for SEO)_
+11. Contact Page
+  * Choose back-end and implement spam protection (either reCaptcha or other).
+  * Style contact form
+  * Decide on page content
+12. Nav Menu - add logic for the "Project Websites" item to function as a section header, and not a link
