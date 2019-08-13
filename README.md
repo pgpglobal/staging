@@ -67,26 +67,26 @@ I've started writing up some [documentation](docs/documentation.md). Please let 
 #### Styling and Content
 
 1. Pull in blog posts from the former [PGP WordPress blog](https://personalgenomes.wordpress.com/)
-  * Working on a technical glitch with this
+    * Working on a technical glitch with this
 2. Responsive Styling tweaks (mostly done)
 3. Site Footer
     * Licensing, Copyright, and possibly Privacy Policy, if relevant for [EU GDPR](https://eugdpr.org/) compliance.
 4. Contact Page content and styling
-5. Split International Projects section into a jekyll collection of .md files?
-6. Add ARIA Roles into html
+5. Should I split the "International Projects" section into a jekyll collection of markdown files (similar to News files)?
+    * Easier to edit this way
+6. Add ARIA Roles into HTML across site
 
 <a id="plugins-and-configuration"></a>
 #### Plugins and Configuration
 1. Configure SEO Plugin(s) and setup
-  * Need to add email, site description, etc to `_config.yml`_
+    * Need to add email, site description, etc to `_config.yml`
 2. Configure il8n (internationalization)
 3. Contact Page
-  * Choose back-end and implement spam protection (either reCaptcha or other). Possible options:
-    * [Brisk Forms](https://www.briskforms.com/)
-    * [Formspree](https://formspree.io/)
-    * Google Forms
-  * Tweak open/close animation on mobile menu
-14. Swap CDN versions of bootstrap et al. for local versions
+    * Choose back-end and implement spam protection (either reCaptcha or other). Possible options:
+        * [Brisk Forms](https://www.briskforms.com/)
+        * [Formspree](https://formspree.io/)
+        * Google Forms
+    * Tweak open/close animation on mobile menu
 
 <a id="staging"></a>
 ### Staging
@@ -107,14 +107,11 @@ I've started writing up some [documentation](docs/documentation.md). Please let 
   * [Enforce HTTPS](https://help.github.com/en/articles/securing-your-github-pages-site-with-https) (this means everything that loads on the page has to start with https instead of http)
 2. Google Analytics
 
-
 <a id="completed"></a>
 ### Completed
 * Moved News section to its own page
 * Fixed 404 Page header
 * Nav Menu logic for seperator and dropdown-header added in
-
-
 
 <a id="miscellaneous--questions"></a>
 ## Miscellaneous & Questions
