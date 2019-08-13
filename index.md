@@ -7,7 +7,6 @@ title: The Personal Genome Project
 ---
 
 <div class="container">
-
   <div class="row lead-row">
     <div class="col-xs-8 col-md-9 lead-div">
       <a id="about" class="anchor-offset"></a>
@@ -27,20 +26,20 @@ title: The Personal Genome Project
     </div>
   </div>
   <div class="row lead-row">
-      <div class="local-projects-wrap col-xs-12 col-md-9 lead-div">
+    <div class="local-projects-wrap col-xs-12 col-md-9 lead-div">
 
-  <div class="local-projects">
-          <span class="local-projects-header">Local Projects</span>
-          <h3>Harvard PGP (United States)</h3>
-          <p>
-            Founded in August 2005, the Harvard Personal Genome Project is
-            the pilot PGP site, and is based in George Church's laboratory
-            at Harvard Medical School.
-          </p>
-          <button class="btn btn-default"><a href="https://pgp.med.harvard.edu/">Go to the Harvard PGP website</a></button>
+      <div class="local-projects">
+        <span class="local-projects-header">Local Projects</span>
+        <h3>Harvard PGP (United States)</h3>
+        <p>
+          Founded in August 2005, the Harvard Personal Genome Project is
+          the pilot PGP site, and is based in George Church's laboratory
+          at Harvard Medical School.
+        </p>
+        <button class="btn btn-default"><a href="https://pgp.med.harvard.edu/">Go to the Harvard PGP website</a></button>
 
-        </div>
       </div>
+    </div>
   </div>
   <hr>
   <div class="row">
@@ -178,5 +177,5 @@ title: The Personal Genome Project
 
   </div>
 </div> /#contact .row
- -->
-      </div>
+-->
+</div>
