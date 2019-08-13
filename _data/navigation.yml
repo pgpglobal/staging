@@ -10,8 +10,8 @@ header:
       - page: Guidelines
         url: "/#guidelines"
       - page: Project Websites
-        # url: ""
-        type: seperator
+        type: "seperator"
+        url: "sep"
       - page: Harvard PGP
         url: "https://pgp.med.harvard.edu/"
       - page: PGP Canada
