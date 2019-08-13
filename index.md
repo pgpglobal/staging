@@ -42,10 +42,13 @@ title: The Personal Genome Project
     </div>
   </div>
   <hr>
+
   <div class="row">
     <a id="projects" class="anchor-offset"></a>
 
     <div class="col-xs-12">
+
+
       <h2>International Projects</h2>
 
       <p>
@@ -54,61 +57,14 @@ title: The Personal Genome Project
       </p>
 
       <ul>
-        <li>
-          <h3>Harvard PGP (United States)</h3>
-          <p>
-            Founded in August 2005, the Harvard Personal Genome Project is
-            the pilot PGP site, and is based in George Church's laboratory
-            at Harvard Medical School.
-          </p>
-          <button class="btn btn-default"><a href="https://pgp.med.harvard.edu/">Go to the Harvard PGP website</a></button>
-
-        </li>
-
-        <li>
-          <h3>PGP Canada (Canada)</h3>
-          <p>
-            Founded in December 2012, PGP Canada is operated by the
-            McLaughlin Centre at the University of Toronto, and The Centre
-            for Applied Genomics at the Hospital for Sick Children.
-          </p>
-          <button class="btn btn-default"><a href="https://personalgenomes.ca/">Go to PGP Canada website</a></button>
-
-        </li>
-
-        <li>
-          <h3>PGP UK (United Kingdom)</h3>
-          <p>
-            Founded in November 2013, PGP UK is led by Stephen Beck at
-            University College London.
-          </p>
-          <button class="btn btn-default"><a href="https://www.personalgenomes.org.uk/">Go to the PGP UK website</a></button>
-        </li>
-
-        <li>
-          <h3>Genom Austria (Austria)</h3>
-          <p>
-            Founded in November 2014, Genom Austria is based at the CeMM
-            Research Center for Molecular Medicine of the Austrian
-            Academy of Sciences.
-          </p>
-          <button class="btn btn-default"><a href="http://genomaustria.at/das-projekt/">Go to Genom Austria website (German language)</a></button>
-
-        </li>
-
-        <li>
-          <h3>PGP China (People's Republic of China)</h3>
-          <p>
-            Announced in October 2017, The Personal Genome Project in
-            China (PGP China) is led by Professor Li Jin at Fudan
-            University, Shanghai. PGP China is now collecting contact
-            information from interested participants and potential
-            collaborators.
-          </p>
-          <button class="btn btn-default"><a href="http://www.pgpchina.org/">Go to the PGP China website (in Chinese and English)</a></button>
-
-        </li>
-
+        {% assign sorted = site.projects | sort: 'order' %}
+        {% for item in sorted %}
+          <li>
+            <h3>{{ item.title }} ({{ item.locale }})</h3>
+            <p>{{ item.description }}</p>
+            <button class="btn btn-default"><a href="{{ item.link }}">Go to the {{ item.title }} website</a></button>
+          </li>
+        {% endfor %}
       </ul>
 
     </div>

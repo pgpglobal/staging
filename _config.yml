@@ -56,3 +56,5 @@ sass:
 collections:
   news:
     output: false
+  projects:
+    output: false
