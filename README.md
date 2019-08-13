@@ -46,5 +46,7 @@ In order to keep the site up-to-date with future changes, you should run `git pu
 11. Contact Page
   * Choose back-end and implement spam protection (either reCaptcha or other).
   * Style contact form
-  * Decide on page content
 12. Nav Menu - add logic for the "Project Websites" item to function as a section header, and not a link
+  * Fix open/close animation on mobile menu
+13. 404 Page header needs fixing
+14. News Page - should 2018 items have the same line break as all the other years?

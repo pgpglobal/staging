@@ -25,7 +25,7 @@ body {
   flex-direction: column;
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   min-height: 100vh;
-  padding: 0 0 30px;
+  padding: 0 0 20px;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -280,9 +280,9 @@ table {
 }
 
 /**
- * Homepage & Default
+ * Content Area
  */
 
- .home {
+ .content {
    padding: 4px 0 0;
 }

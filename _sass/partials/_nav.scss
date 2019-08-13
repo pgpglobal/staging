@@ -62,3 +62,24 @@ li:last-child {
   }
 }
 
+.site-header {
+  background-color: #e8f5ff;
+}
+
+.navbar-fixed-bottom .navbar-collapse,
+.navbar-fixed-top .navbar-collapse {
+  max-height: initial;
+}
+
+.show {
+  background-color: #e8f5ff;
+}
+
+.navbar-collapse.show {
+  margin: 0 -30px;
+  padding: 0;
+}
+
+.navbar-default .navbar-nav > .show > a:first-of-type {
+  padding: 17.5px 20px 10px 15px;
+}

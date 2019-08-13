@@ -22,47 +22,7 @@
   }
 }
 
-@media screen and (min-width: 600px) {
-  // .site-title {
-  //   position: fixed;
-  //   top: 0;
-  //   z-index: 1031;
-  // }
-
-  // .site-nav {
-  //   background-color: $blue-light;
-  //   border-top: none;
-  //   border-bottom: 1px solid $blue-2;
-  //   height: 50px;
-  //   border: 0;
-  // }
-
-  // .navbar-fixed-top {
-  //   border-width: 0 0 1px;
-  //   // border: 0;
-  //   height: 50px;
-  //   position: fixed;
-  //   text-decoration: none;
-  //   top: 0;
-  // }
-}
-
-// @media (min-width: 768px) {
-//   .navbar-fixed-bottom,
-//   .navbar-fixed-top {
-//     border-radius: 0;
-//   }
-// }
-
-// @media only screen and (min-width: 992px) {
-//   .container {
-//     margin: 0 auto;
-//   }
-// }
-
 @media only screen and (min-width: 920px) and (max-width: 991px) {
-  /* This is good - but need to change it for
-  the other text containers, lower on the page */
   .container {
     width: 95%;
   }
@@ -70,6 +30,77 @@
 
 @media only screen and (max-width: 768px) {
   .container {
-    margin: 0 11px;
+    padding: 0 30px;
+  }
+
+  .site-header {
+    background-color: #e8f5ff;
+  }
+
+  .nav > li > a {
+    padding: 10px 20px 10px 15px;
+  }
+
+  .navbar-default {
+    background-color: #e8f5ff;
+  }
+
+  .navbar-fixed-bottom .navbar-collapse,
+  .navbar-fixed-top .navbar-collapse {
+    max-height: initial;
+  }
+
+  .navbar-nav {
+    margin: 0 0px 7.5px;
+    // min-width: 140px;
+  }
+
+  .navbar-default .navbar-nav > li {
+    > .dropdown-menu {
+      background-color: $nav--background-color;
+      border: 0;
+      box-shadow: none;
+      min-width: 160px;
+      position: static;
+
+      a {
+        color: #777;
+        padding: 5px 15px 5px 25px;
+      }
+    }
+  }
+
+  .show {
+    background-color: #e8f5ff;
+  }
+
+  .navbar-collapse.show {
+    margin: 0 -30px;
+    padding: 0;
+  }
+
+  .site-header {
+    border-top: 5px solid #e8f5ff;
+  }
+
+  .navbar {
+    box-shadow: none;
+  }
+
+  .navbar-collapse.show {
+    // margin: 1px -30px 0;
+  }
+
+  .nav .dropdown-toggle {
+    padding: 17.5px 20px 10px 15px;
+  }
+
+  .caret {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px dashed;
+    margin-left: 6px;
+    margin-top: -1px;
   }
 }
+

@@ -47,5 +47,10 @@ exclude:
   - scratch
   - ["ref", "scratch"]
 
+sass:
+  style: expanded
+
 collections:
-  blog:
+  # blog:
+  news:
+    output: false

@@ -9,6 +9,7 @@ $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.42857143 !default;
 
 $spacing-unit:     15px !default;
+$content-padding:  $spacing-unit + 4;
 
 $text-color:       #111 !default;
 $background-color: #fdfdfd !default;
@@ -41,6 +42,7 @@ $on-large:         $on-laptop !default;
 
 $primary: $grey-color-light;
 $info: #0066b3;
+
 // Use media queries like this:
 // @include media-query($on-palm) {
 //   .wrapper {
