@@ -29,6 +29,7 @@ author: "Personal Genome Project: Global Network"
 markdown: kramdown
 theme: minima
 plugins:
+  - jekyll-autoprefixer
   - jekyll-feed
   - jekyll-seo-tag
 
@@ -43,6 +44,7 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+  - docs
   - ref
   - scratch
   - ["ref", "scratch"]
@@ -51,6 +53,5 @@ sass:
   style: expanded
 
 collections:
-  # blog:
   news:
     output: false
