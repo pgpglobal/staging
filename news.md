@@ -10,7 +10,7 @@ permalink: /news/
 
 <div class="container">
   <div class="row lead-row">
-    <div class="col-xs-8 col-md-9 lead-div">
+    <div class="col-xs-11 col-md-12 col-lg-12 lead-div">
   <h1 class="page-title">{{ page.title }}</h1>
 
     {% assign sorted = site.news | sort: 'date' | reverse %}
