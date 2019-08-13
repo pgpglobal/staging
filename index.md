@@ -162,20 +162,4 @@ title: The Personal Genome Project
 
     </div> <!-- /#projects .row -->
 
-    <hr>
-<!--         <div class="row">
-  <div class="col-xs-12">
-    <a id="contact" class="anchor-offset"></a>
-    <h2>Contact Information</h2>
-    <p>
-      This website listing the Global Network of Personal Genome Projects
-      is maintained by <a href="http://openhumansfoundation.org">Open
-      Humans Foundation</a>, a United States 501(c)(3)
-      nonprofit organization. You may visit the OHF website to contact this
-      organization about issues with this webpage.
-    </p>
-
-  </div>
-</div> /#contact .row
--->
 </div>

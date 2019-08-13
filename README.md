@@ -72,8 +72,8 @@ I've started writing up some [documentation](docs/documentation.md). Please let 
 3. Site Footer
     * Licensing, Copyright, and possibly Privacy Policy, if relevant for [EU GDPR](https://eugdpr.org/) compliance.
 4. Contact Page content and styling
-6. Split International Projects section into a jekyll collection of .md files?
-
+5. Split International Projects section into a jekyll collection of .md files?
+6. Add ARIA Roles into html
 
 <a id="plugins-and-configuration"></a>
 #### Plugins and Configuration
