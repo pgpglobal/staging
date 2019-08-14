@@ -1,0 +1,36 @@
+---
+title: Blog
+permalink: /blog/
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+  {%- include head.html -%}
+
+  <body>
+  <header class="site-header">
+    {%- include nav.html -%}
+  </header>
+    <main class="page-content {{ page.class }}" aria-label="Content">
+      <div class="wrapper">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-md-7">
+              {{ content }}
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <aside class="sidebar">
+      {%- include sidebar.html -%}
+    </aside>
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
