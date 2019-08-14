@@ -22,14 +22,14 @@ title: The Personal Genome Project
       </p>
     </div>
     <div class="col-xs-4 col-md-3 lead-div">
-      <img class="logo" src="assets/images/pgp-logo.png">
+      <img class="logo" src="assets/images/pgp-logo.png" alt="Curii logo - a figure within a circle. A double helix runs through the figure's core. The circle, body, and helix alternate between green and blue on both sides." longdesc="A figure within a circle. A double helix runs from the circle's bottom through the figure's core. The left side of the body is green, while the circle and face are blue. The right side of the body is blue, while the circle and face are green. Each helix maintains its color as it spirals through the figure's body.">
     </div>
   </div>
   <div class="row lead-row">
     <div class="local-projects-wrap col-xs-12 col-md-9 lead-div">
 
       <div class="local-projects">
-        <span class="local-projects-header">Local Projects</span>
+        <h2 class="local-projects-header">Local Projects</h2>
         <h3>Harvard PGP (United States)</h3>
         <p>
           Founded in August 2005, the Harvard Personal Genome Project is
@@ -81,14 +81,14 @@ title: The Personal Genome Project
       <ol>
         <li>
           <p>
-            <b>Public Data.</b> Participants are invited to publicly share
+            <strong>Public Data.</strong> Participants are invited to publicly share
             their genomic and trait data in an integrated, publicly-accessible
             format using a CC0 waiver or equivalent public domain license.
           </p>
         </li>
         <li>
           <p>
-            <b>Non-anonymous.</b> The risks of participant
+            <strong>Non-anonymous.</strong> The risks of participant
             re-identification are addressed up front, as an integral part of
             the consent and enrollment process; neither anonymity nor
             confidentiality of participant identities or their data are
@@ -96,19 +96,19 @@ title: The Personal Genome Project
           </p>
         </li>
         <li>
-          <b>Equal access.</b> Participants are provided access to their
+          <strong>Equal access.</strong> Participants are provided access to their
           individual research data in a timely and complete fashion (i.e.,
           raw data and not just summary results, where feasible).
         </li>
         <li>
-          <b>Oversight.</b> Each member must at all times maintain
+          <strong>Oversight.</strong> Each member must at all times maintain
           current Institutional Review Board (IRB) approval or local
           equivalent, and will work with PersonalGenomes.org to continue to
           implement identified best practices for responsible public
           genomics research.
         </li>
         <li>
-          <b>Not for profit.</b> The research project is managed or
+          <strong>Not for profit.</strong> The research project is managed or
           sponsored by a non-profit organization (or local equivalent). In
           addition, other than purposes of reasonable cost recovery, the
           member shall not sell or license participant data or tissues.

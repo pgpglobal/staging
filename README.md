@@ -13,9 +13,11 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
   * [Development](#development)
     * [Styling and Content](#styling-and-content)
     * [Plugins and Configuration](#plugins-and-configuration)
+    * [Accessibility](#accessibility)
   * [Staging](#staging)
   * [Production](#production)
   * [Completed](#completed)
+    * [Completed - Production](#completed---production)
 * [Miscellaneous & Questions](#miscellaneous--questions)
 
 <!-- /MarkdownTOC -->
@@ -74,7 +76,6 @@ I've started writing up some [documentation](docs/documentation.md). Please let 
 4. Contact Page content and styling
 5. Should I split the "International Projects" section into a jekyll collection of markdown files (similar to News files)?
     * Easier to edit this way
-6. Add ARIA Roles into HTML across site
 
 <a id="plugins-and-configuration"></a>
 #### Plugins and Configuration
@@ -87,6 +88,12 @@ I've started writing up some [documentation](docs/documentation.md). Please let 
         * [Formspree](https://formspree.io/)
         * Google Forms
     * Tweak open/close animation on mobile menu
+
+<a id="accessibility"></a>
+#### Accessibility
+1. Add ARIA Roles into HTML across site
+2. <img class="logo" src="assets/images/pgp-logo.png"> needs alt
+
 
 <a id="staging"></a>
 ### Staging
@@ -105,13 +112,16 @@ I've started writing up some [documentation](docs/documentation.md). Please let 
     * 185.199.111.153
   * Remove and re-add custom domain on GitHub account to trigger the process of enabling HTTPS.
   * [Enforce HTTPS](https://help.github.com/en/articles/securing-your-github-pages-site-with-https) (this means everything that loads on the page has to start with https instead of http)
-2. Google Analytics
 
 <a id="completed"></a>
 ### Completed
 * Moved News section to its own page
 * Fixed 404 Page header
 * Nav Menu logic for seperator and dropdown-header added in
+
+<a id="completed---production"></a>
+#### Completed - Production
+* Google Analytics
 
 <a id="miscellaneous--questions"></a>
 ## Miscellaneous & Questions
