@@ -9,18 +9,18 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
   * [Keeping Up-To-Date](#keeping-up-to-date)
   * [Working on the Site](#working-on-the-site)
 * [Documentation](#documentation)
-* [Remaining Tasks](#remaining-tasks)
-  * [Development](#development)
-    * [Blog Import](#blog-import)
-      * [Styles and Appearance](#styles-and-appearance)
-      * [Sidebar Functionality](#sidebar-functionality)
-    * [Styling and Content](#styling-and-content)
-    * [Plugins and Configuration](#plugins-and-configuration)
-    * [Accessibility](#accessibility)
-  * [Staging](#staging)
-  * [Production](#production)
-  * [Completed](#completed)
-    * [Completed - Production](#completed---production)
+* [Remaining Development Tasks](#remaining-development-tasks)
+  * [Blog Import](#blog-import)
+    * [Missing Images](#missing-images)
+    * [Styles and Appearance](#styles-and-appearance)
+    * [Sidebar Functionality](#sidebar-functionality)
+    * [Archive Pages](#archive-pages)
+  * [Plugins and Configuration](#plugins-and-configuration)
+  * [Accessibility](#accessibility)
+* [Staging](#staging)
+* [Production](#production)
+* [Completed](#completed)
+  * [Completed - Production](#completed---production)
 * [Miscellaneous & Questions](#miscellaneous--questions)
 
 <!-- /MarkdownTOC -->
@@ -62,35 +62,64 @@ See the [Docs](docs/documentation) page.
 I've started writing up some [documentation](docs/documentation.md). Please let me know specific questions or topics, and I'll add those in.
 
 
-<a id="remaining-tasks"></a>
-## Remaining Tasks
-
-<a id="development"></a>
-### Development
+<a id="remaining-development-tasks"></a>
+## Remaining Development Tasks
 
 <a id="blog-import"></a>
-#### Blog Import
+### Blog Import
+
+<a id="missing-images"></a>
+#### Missing Images
+
+List of images that I was unable to import (which need to be found individually from original blog) include:
+* 14008052589_c3c301f8d6_z.jpg
+* porsche_drives.jpg
+* genom-austria-logo.png
+* blut-edta.jpg
+* getlabs2014_booklet.jpg
+* getlabs2014_stamps.jpg
+* knight.png
+* fny_gv_logo_bold_line.png
+* new_personalgenomesorg_website.png
+* get_logo.jpg
+* get2013_groupshot_6858-2.jpg
+* circles_in_human_evolution2.jpg
+* hela_cells_stained_with_hoechst_33258.jpg
+* 20130208_misha_2.jpg
+* help_wanted_gottgraphicsdesign_flickr.jpg
+* headshot.jpeg
+* microbiome_kits_processing_2012-06-11_13-07-20_594.jpg
+* badge_genomicarts.jpg
+* saliva_freezer.jpg
+* lauerman_blood_draw2.jpg
+* 20120120_x_inheritance.png
+* 20120121_x_inheritance_2.png
 
 <a id="styles-and-appearance"></a>
-##### Styles and Appearance
+#### Styles and Appearance
+
+The following need more styling:
 
 1. Main page
 2. Archive pages
-3. Twitter Feed - Are the pictures and spacing ok?
-    * Should I limit it to 3 tweets instead?
 
 <a id="sidebar-functionality"></a>
-##### Sidebar Functionality
+#### Sidebar Functionality
+
 1. List Archive pages
-2. Flickr options
+2. Flickr options (username: personalgenomes)
     * Get URLs of last 3 and then follow the normal embed method
       * Cache these
     * Parsing RSS Feed seems like the best bet: https://api.flickr.com/services/feeds/photos_public.gne?id=78213110@N06&lang=en-us&format=rss_200
-    *
+    * [Jekyll and responsive Flickr photos](https://heipei.io/2016/05/28/jekyll-and-responsive-flickr-photos/)
+    * [Keith Marran - Integrating Flickr and Jekyll](http://www.marran.com/tech/integrating-flickr-and-jekyll) - has useful info on caching
 
+<a id="archive-pages"></a>
+#### Archive Pages
 
-<a id="styling-and-content"></a>
-#### Styling and Content
+1. Need layouts for month, day, year, category, tag
+  * May be able to cover these all with the default layout
+
 
 1. Pull in blog posts from the former [PGP WordPress blog](https://personalgenomes.wordpress.com/)
     * Working on a technical glitch with this
@@ -100,7 +129,7 @@ I've started writing up some [documentation](docs/documentation.md). Please let 
 4. Contact Page content and styling
 
 <a id="plugins-and-configuration"></a>
-#### Plugins and Configuration
+### Plugins and Configuration
 1. Configure SEO Plugin(s) and setup
     * Need to add email, site description, etc to `_config.yml`
 2. Configure il8n (internationalization)
@@ -113,17 +142,17 @@ I've started writing up some [documentation](docs/documentation.md). Please let 
 4. Responsive Images
 
 <a id="accessibility"></a>
-#### Accessibility
-1. Add ARIA Roles into HTML across site
+### Accessibility
 
+1. Add ARIA Roles into HTML where necessary, across site
 
 <a id="staging"></a>
-### Staging
+## Staging
 
 1. Test [Enforce HTTPS](https://help.github.com/en/articles/securing-your-github-pages-site-with-https)
 
 <a id="production"></a>
-### Production
+## Production
 
 1. Setup SSL/HTTPS. Steps:
   * Set custom domain on GitHub repo. See [here](https://help.github.com/en/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site)
@@ -136,7 +165,7 @@ I've started writing up some [documentation](docs/documentation.md). Please let 
   * [Enforce HTTPS](https://help.github.com/en/articles/securing-your-github-pages-site-with-https) (this means everything that loads on the page has to start with https instead of http)
 
 <a id="completed"></a>
-### Completed
+## Completed
 * Moved News section to its own page
 * Fixed 404 Page header
 * Nav Menu logic for seperator and dropdown-header added in
@@ -144,10 +173,10 @@ I've started writing up some [documentation](docs/documentation.md). Please let 
 * Added alt text to pgp-logo.png
 
 <a id="completed---production"></a>
-#### Completed - Production
+### Completed - Production
 * Google Analytics
 
 <a id="miscellaneous--questions"></a>
 ## Miscellaneous & Questions
-
-None at present
+1. Blog Twitter Feed - Are the pictures and spacing ok? (these are twitter defaults)
+    * Should I limit it to 3 tweets instead?

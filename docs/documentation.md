@@ -9,6 +9,8 @@
 * [Files and Directories Guide](#files-and-directories-guide)
   * [Directories](#directories)
   * [Files](#files)
+* [Permalinks](#permalinks)
+  * [Archives](#archives)
 * [Coding in Jekyll](#coding-in-jekyll)
   * [Liquid](#liquid)
 
@@ -141,6 +143,20 @@ The `_includes` directory contains the various building blocks of the site (such
 **Posts**
 
 Posts must be named in `yyyy-mm-dd-postname.md` format (otherwise Jekyll will ignore them). Additionally, there is a variety of metadata that posts can have - which we can make use of via Jekyll's `Liquid` templating language. See the [Liquid](#liquid) section for more info.
+
+<a id="permalinks"></a>
+## Permalinks
+
+<a id="archives"></a>
+### Archives
+
+Archive permalinks work as follows:
+url.com/YYYY
+url.com/YYYY/MM
+url.com/YYYY/MM/DD
+url.com/tag/tag_name
+url.com/category/category_name
+
 
 <a id="coding-in-jekyll"></a>
 ## Coding in Jekyll
