@@ -1,17 +1,26 @@
 ---
-layout: default
+layout: blog
+class: blog
 ---
 
 <h1>Latest Posts</h1>
 
-<ul>
-  {% for post in site.posts %}
-    <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p>{{ post.excerpt }}</p>
-    </li>
-  {% endfor %}
-</ul>
+<div class="container">
+  <div class="row">
+
+    <div class="col-md-7">
+      <ul>
+        {% for post in site.posts %}
+        <li>
+          <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+          <p>{{ post.excerpt }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  </div>
+</div>
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
@@ -23,8 +32,8 @@ layout: default
         {{ page.date | date: date_format }}
       </time>
       {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author | escape }}</span></span>
-      {%- endif -%}</p>
+      • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author | escape }}</span></span>
+    {%- endif -%}</p>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
@@ -32,7 +41,7 @@ layout: default
   </div>
 
   {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
+  {%- include disqus_comments.html -%}
   {%- endif -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>

@@ -23,6 +23,6 @@ header:
   - title: News
     url: "/news"
   - title: Blog
-    url: /blog.html
+    url: /blog
   - title: Contact
     url: "/contact/"

@@ -1,0 +1,69 @@
+.blog .wrapper {
+  width: 920px;
+}
+
+.widget.widget_author_grid ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  width: 300px;
+}
+
+.widget.widget_author_grid ul li {
+  margin: 0 3px 3px 0;
+  height: 48px;
+  width: 48px;
+}
+
+
+h2.widgettitle {
+  padding: 25px 0 3px;
+  font-size: 1.4em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.05pt;
+  font-family: "Trebuchet MS","Lucida Grande","Lucida Sans",Verdana,Arial,sans-serif;
+  border-bottom: 1px solid #eee;
+}
+
+.widget.widget_author_grid ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  width: 300px;
+}
+
+.widget.widget_author_grid ul li {
+  margin: 0 3px 3px 0;
+  height: 48px;
+  width: 48px;
+}
+
+.sidebar li {
+  list-style: none;
+}
+
+h2.widgettitle {
+  padding: 25px 0 3px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.05pt;
+  font-family: "Trebuchet MS","Lucida Grande","Lucida Sans",Verdana,Arial,sans-serif;
+  border-bottom: 1px solid #eee;
+  line-height: 22px;
+}
+
+div#sidebar {}
+
+.sidebar {
+  width: 300px;
+}
+
+main.page-content {
+  width: 600px;
+}
+
+

@@ -24,6 +24,9 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 # github_username:  jekyll
 author: "Personal Genome Project: Global Network"
+google_analytics: UA-145673922-1
+
+# environment: production
 
 # Build settings
 markdown: kramdown
@@ -54,6 +57,8 @@ sass:
   style: expanded
 
 collections:
+  contributors:
+    output: false
   news:
     output: false
   projects:
