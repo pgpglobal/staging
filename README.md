@@ -14,7 +14,9 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
     * [Missing Images](#missing-images)
     * [Styles and Appearance](#styles-and-appearance)
     * [Sidebar Functionality](#sidebar-functionality)
-    * [Archive Pages](#archive-pages)
+    * [Archive and Author Pages](#archive-and-author-pages)
+  * [General](#general)
+    * [Content Needed](#content-needed)
   * [Plugins and Configuration](#plugins-and-configuration)
   * [Accessibility](#accessibility)
 * [Staging](#staging)
@@ -114,19 +116,30 @@ The following need more styling:
     * [Jekyll and responsive Flickr photos](https://heipei.io/2016/05/28/jekyll-and-responsive-flickr-photos/)
     * [Keith Marran - Integrating Flickr and Jekyll](http://www.marran.com/tech/integrating-flickr-and-jekyll) - has useful info on caching
 
-<a id="archive-pages"></a>
-#### Archive Pages
+<a id="archive-and-author-pages"></a>
+#### Archive and Author Pages
 
 1. Need layouts for month, day, year, category, tag
-  * May be able to cover these all with the default layout
+    * May be able to cover these all with the default layout
+2. Individual authors need Author pages. Guides:
+    * [Jekyll Docs - Collections](https://jekyllrb.com/docs/step-by-step/09-collections/)
+    * [CodepediaOrg - How to handle multiple authors in Jekyll](https://www.codepedia.org/ama/how-to-handle-multiple-authors-in-jekyll/)
 
+<a id="general"></a>
+### General
+1. Responsive Styling tweaks (mostly done)
 
-1. Pull in blog posts from the former [PGP WordPress blog](https://personalgenomes.wordpress.com/)
-    * Working on a technical glitch with this
-2. Responsive Styling tweaks (mostly done)
-3. Site Footer
-    * Licensing, Copyright, and possibly Privacy Policy, if relevant for [EU GDPR](https://eugdpr.org/) compliance.
-4. Contact Page content and styling
+<a id="content-needed"></a>
+#### Content Needed
+1. Site Footer - what goes in it?
+    * Possible options: Licensing, Copyright, and possibly Privacy Policy, if relevant for [EU GDPR](https://eugdpr.org/) compliance.
+2. Contact Page
+    * Contact Form vs. Link
+    * If contact form - how will the back-end work?
+3. `_config.yml` - the following fields should be filled in or commented out:
+    * email
+    * description (important for SEO)
+    * any social media we might link to (currently have twitter and flickr)
 
 <a id="plugins-and-configuration"></a>
 ### Plugins and Configuration
