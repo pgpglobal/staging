@@ -1,0 +1,16 @@
+---
+layout: blog
+title: Archive
+class: archive
+---
+
+<h1>Archive for {{ page.type }} {{ page.date | date: "%B %Y" }}'</h1>
+<img class="archive-comment" src="https://s2.wp.com/wp-content/themes/pub/vigilance/images/comments-bubble-archive.gif" width="17" height="14" alt="comment" scale="0">
+<ul class="posts">
+  {% for post in page.posts %}
+    <li>
+      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

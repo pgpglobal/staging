@@ -11,6 +11,9 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 * [Documentation](#documentation)
 * [Remaining Tasks](#remaining-tasks)
   * [Development](#development)
+    * [Blog Import](#blog-import)
+      * [Styles and Appearance](#styles-and-appearance)
+      * [Sidebar Functionality](#sidebar-functionality)
     * [Styling and Content](#styling-and-content)
     * [Plugins and Configuration](#plugins-and-configuration)
     * [Accessibility](#accessibility)
@@ -65,6 +68,27 @@ I've started writing up some [documentation](docs/documentation.md). Please let 
 <a id="development"></a>
 ### Development
 
+<a id="blog-import"></a>
+#### Blog Import
+
+<a id="styles-and-appearance"></a>
+##### Styles and Appearance
+
+1. Main page
+2. Archive pages
+3. Twitter Feed - Are the pictures and spacing ok?
+    * Should I limit it to 3 tweets instead?
+
+<a id="sidebar-functionality"></a>
+##### Sidebar Functionality
+1. List Archive pages
+2. Flickr options
+    * Get URLs of last 3 and then follow the normal embed method
+      * Cache these
+    * Parsing RSS Feed seems like the best bet: https://api.flickr.com/services/feeds/photos_public.gne?id=78213110@N06&lang=en-us&format=rss_200
+    *
+
+
 <a id="styling-and-content"></a>
 #### Styling and Content
 
@@ -86,6 +110,7 @@ I've started writing up some [documentation](docs/documentation.md). Please let 
         * [Formspree](https://formspree.io/)
         * Google Forms
     * Tweak open/close animation on mobile menu
+4. Responsive Images
 
 <a id="accessibility"></a>
 #### Accessibility

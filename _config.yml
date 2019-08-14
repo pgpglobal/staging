@@ -21,7 +21,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-# twitter_username: jekyllrb
+twitter_username: PGorg
+flickr_username: personalgenomes
 # github_username:  jekyll
 author: "Personal Genome Project: Global Network"
 google_analytics: UA-145673922-1
@@ -35,6 +36,8 @@ plugins:
   # - jekyll-autoprefixer
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-archives
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -55,6 +58,23 @@ exclude:
 
 sass:
   style: expanded
+
+jekyll-archives:
+  enabled: all
+  layout: archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
+  layout: archive
+  layouts:
+    year: year-archive
+  #   month: month-archive
+  #   day: day-archive
+  #   category: category-archive
+  #   tag: tag-archive
 
 collections:
   contributors:
