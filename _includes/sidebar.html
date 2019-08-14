@@ -3,9 +3,9 @@
     <li id="author_grid-2" class="widget widget_author_grid">
       <h2 class="widgettitle">Contributors</h2>
       <ul>
-        {% for item in site.contributors %}
+        {% for contributor in site.contributors %}
         <li>
-          {{ item.content }}
+          {{ contributor.content }}
         </li>
         {% endfor%}
 
