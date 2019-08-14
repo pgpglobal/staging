@@ -58,11 +58,11 @@ title: The Personal Genome Project
 
       <ul>
         {% assign sorted = site.projects | sort: 'order' %}
-        {% for item in sorted %}
+        {% for project in sorted %}
           <li>
-            <h3>{{ item.title }} ({{ item.locale }})</h3>
-            <p>{{ item.description }}</p>
-            <button class="btn btn-default"><a href="{{ item.link }}">Go to the {{ item.title }} website</a></button>
+            <h3>{{ project.title }} ({{ project.locale }})</h3>
+            <p>{{ project.description }}</p>
+            <button class="btn btn-default"><a href="{{ project.link }}">Go to the {{ project.title }} website</a></button>
           </li>
         {% endfor %}
       </ul>

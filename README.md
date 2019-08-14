@@ -74,8 +74,6 @@ I've started writing up some [documentation](docs/documentation.md). Please let 
 3. Site Footer
     * Licensing, Copyright, and possibly Privacy Policy, if relevant for [EU GDPR](https://eugdpr.org/) compliance.
 4. Contact Page content and styling
-5. Should I split the "International Projects" section into a jekyll collection of markdown files (similar to News files)?
-    * Easier to edit this way
 
 <a id="plugins-and-configuration"></a>
 #### Plugins and Configuration
@@ -92,7 +90,6 @@ I've started writing up some [documentation](docs/documentation.md). Please let 
 <a id="accessibility"></a>
 #### Accessibility
 1. Add ARIA Roles into HTML across site
-2. <img class="logo" src="assets/images/pgp-logo.png"> needs alt
 
 
 <a id="staging"></a>
@@ -118,6 +115,8 @@ I've started writing up some [documentation](docs/documentation.md). Please let 
 * Moved News section to its own page
 * Fixed 404 Page header
 * Nav Menu logic for seperator and dropdown-header added in
+* Split the "International Projects" section into a jekyll collection of markdown files (similar to News files)?
+* Added alt text to pgp-logo.png
 
 <a id="completed---production"></a>
 #### Completed - Production
@@ -126,4 +125,4 @@ I've started writing up some [documentation](docs/documentation.md). Please let 
 <a id="miscellaneous--questions"></a>
 ## Miscellaneous & Questions
 
-1. News Page - should 2018 items have the same line break as all the other years?
+None at present
