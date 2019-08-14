@@ -1,0 +1,66 @@
+.blog-main {
+  width: 920px;
+}
+
+.blog-content {
+  float: left;
+  padding: 20px 20px 20px 0;
+  width: 600px;
+}
+
+// Sidebar
+.sidebar {
+  float: right;
+  padding: 0 0 20px;
+  width: 300px;
+}
+
+.sidebar li {
+  list-style: none;
+}
+
+h2.widgettitle {
+  padding: 25px 0 3px;
+  font-size: 1.4em;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.05pt;
+  font-family: "Trebuchet MS","Lucida Grande","Lucida Sans",Verdana,Arial,sans-serif;
+  border-bottom: 1px solid #eee;
+  line-height: 22px;
+}
+
+.widget_author_grid ul {
+  overflow: hidden;
+}
+
+.widget_author_grid ul li {
+  background: 0 0 !important;
+  clear: none !important;
+  float: left !important;
+  margin: 0 -5px -3px 0 !important;
+  padding: 0 8px 6px 0 !important;
+  border: none !important;
+  list-style: none !important;
+}
+
+.widget_author_grid ul li a {
+  background: 0 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+}
+
+.widget.widget_author_grid ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  width: 300px;
+}
+
+.widget.widget_author_grid ul li {
+  margin: 0 3px 3px 0;
+  height: 48px;
+  width: 48px;
+}
