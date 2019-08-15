@@ -1,27 +1,3 @@
-@media (max-width: 620px) and (min-width: 450px) {
-  .thumbnail h3 {
-    font-size: 20px;
-  }
-}
-
-@media (max-width: 480px) and (min-width: 400px) {
-  .thumbnail h3 {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 400px) and (min-width: 340px) {
-  .thumbnail h3 {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 350px) {
-  .thumbnail h3 {
-    font-size: 14px;
-  }
-}
-
 @media only screen and (min-width: 920px) and (max-width: 991px) {
   .container {
     width: 95%;

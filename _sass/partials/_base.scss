@@ -53,8 +53,28 @@ main {
  * Images
  */
 img {
+  // height: auto;
   max-width: 100%;
   vertical-align: middle;
+}
+
+.entry img {
+  max-width: 100%;
+  height: auto;
+}
+
+.aligncenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.alignleft {
+  float: left
+}
+
+.alignright {
+  float: right
 }
 
 
