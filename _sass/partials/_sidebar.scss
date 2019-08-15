@@ -1,0 +1,154 @@
+.widget {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.widget ul li {
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+  margin: 0;
+  padding: 6px 0;
+}
+
+h2.widget-title {
+  border-bottom: 1px solid #eee;
+  font-family: "Trebuchet MS","Lucida Grande","Lucida Sans",Verdana,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 1.05pt;
+  line-height: 22px;
+  margin: 0;
+  padding: 25px 0 3px;
+  text-transform: uppercase;
+}
+
+// Sidebar
+.sidebar {
+  float: right;
+  padding: 0 0 20px;
+  width: 300px;
+}
+
+.sidebar li {
+  font-size: 14px;
+  line-height: 22px;
+  list-style: none;
+  margin: 0;
+}
+
+.widget_author_grid ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  overflow: hidden;
+  padding: 0;
+  width: 300px;
+}
+
+.widget.widget_author_grid ul li {
+  background: 0 0;
+  border: 0;
+  box-sizing: content-box;
+  clear: none;
+  float: left;
+  height: 48px;
+  list-style: none;
+  margin: 0 -5px -3px 0;
+  padding: 0 8px 6px 0;
+  // margin: 0 3px 3px 0;
+  width: 48px;
+
+}
+
+.widget_author_grid ul li a {
+  background: 0 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+// Search Bar
+#search_form input {
+  margin: 10px 0 0;
+}
+
+#search_form input {
+  padding: 4px 2px;
+  width: 132px;
+  border: 2px solid #acacac;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  background: #f4f4f4;
+  color: #888;
+  font-size: 13px;
+  line-height: normal;
+}
+
+form#search_form {
+  line-height: 22px;
+  font-size: 10px;
+}
+
+.textwidget {
+  font-size: 13px;
+  padding: 6px 0 0;
+}
+
+.widget_recent_entries ul,
+.widget_archive ul {
+  margin: 0;
+  padding: 0;
+}
+
+.widget_recent_entries ul li a,
+.widget_archive ul li a {
+  background: url(https://s2.wp.com/wp-content/themes/pub/vigilance/images/list-item.gif) no-repeat 0 6px;
+  display: block;
+  padding: 0 0 0 15px;
+}
+
+.entry,
+.widget {
+  word-wrap: break-word;
+}
+
+.spad {
+  padding-right: 20px;
+}
+
+.tpad {
+  padding-top: 20px;
+}
+
+.thin-sidebar {
+  box-sizing: content-box;
+  float: left;
+  width: 140px;
+}
+
+.flickr-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.flickr-images {
+  text-align: center;
+}
+
+.flickr-size-thumbnail .flickr-images {
+  align-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.flickr-images img {
+  margin: 5px;
+  max-width: 100%;
+}
+
+.flickr-more {
+  font-size: 13px;
+  line-height: 22px;
+}

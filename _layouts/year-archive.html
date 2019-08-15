@@ -4,13 +4,23 @@ title: Archive
 class: archive
 ---
 
-<h1>Archive for {{ page.type }} {{ page.date | date: "%B %Y" }}'</h1>
-<img class="archive-comment" src="https://s2.wp.com/wp-content/themes/pub/vigilance/images/comments-bubble-archive.gif" width="17" height="14" alt="comment" scale="0">
-<ul class="posts">
-  {% for post in page.posts %}
+<h1 class="archive-title">Archive for {{ page.date | date: "%Y" }}</h1>
+<img class="archive-comment" src="{{ "/assets/images/comments-bubble-archive.gif" | relative_url }}" width="17" height="14" alt="comment" scale="0">
+<div class="entries">
+  <ul class="entry-list">
+    {% for post in page.posts %}
     <li>
-      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+        <span class="comments_number">0</span>
+        <span class="archdate">{{ post.date | date: "%b %-d, %Y" }}</span>
+        {{ post.title }}
+      </a>
     </li>
-  {% endfor %}
-</ul>
+    {% endfor %}
+  </ul>
+</div><!--end entry-list-->
+
+<div class="navigation">
+  <div class="alignleft"></div>
+  <div class="alignright"></div>
+</div><!--end navigation-->

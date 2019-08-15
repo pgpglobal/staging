@@ -1,5 +1,91 @@
-/* Archive Pages */
+:link,
+:visited {
+  text-decoration: none;
+}
+
+a:link,
+a:visited {
+  color: #772124;
+}
+
+.body-archive .blog-main {
+  margin: 50px -15px 0;
+}
+
 img.archive-comment {
   float: right;
-  margin: 0 .5em .5em 0;
+  margin: 0 .05em .05em 0;
 }
+
+h1.archive-title,
+h2.archive-title {
+  border-bottom: 4px double #eee;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 28.6px;
+  // margin: 0 0 20px;
+  margin: 20px 0;
+  padding: 0 0 7px;
+}
+
+.entries {
+  clear: both;
+  font-size: 13px;
+  line-height: 22px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.entries ul {
+  background: transparent url(https://personalgenomes.wordpress.com/wp-content/themes/pub/vigilance/images/archives-dotted-line.gif) repeat-x top left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 13px;
+  line-height: 22px;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 1px;
+}
+
+.entries ul li {
+  background: transparent url(https://personalgenomes.wordpress.com/wp-content/themes/pub/vigilance/images/archives-dotted-line.gif) repeat-x top left;
+  font-size: 13px;
+  line-height: 22px;
+  margin: 0;
+  padding: 1px 0 0;
+}
+
+
+.entries ul li a {
+  display: block;
+  font-size: 13px;
+  margin: 0;
+  line-height: 22px;
+  padding: 7px 0;
+}
+
+
+.entries span.comments_number {
+  color: #666;
+  float: right;
+  margin-right: 6.5px;
+  width: 130px;
+}
+
+.entries span {
+  display: block;
+  text-align: right;
+}
+
+.entries span.archdate,
+.entries a:hover span.archdate {
+  color: #666;
+  float: left;
+  height: 28px;
+  margin: 0 39px 0 0;
+  padding: 0 0 0 6.5px;
+  text-align: left;
+  width: 130px;
+}
+

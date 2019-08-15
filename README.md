@@ -11,11 +11,12 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 * [Documentation](#documentation)
 * [Remaining Development Tasks](#remaining-development-tasks)
   * [Blog Import](#blog-import)
+      * [General](#general)
     * [Missing Images](#missing-images)
     * [Styles and Appearance](#styles-and-appearance)
     * [Sidebar Functionality](#sidebar-functionality)
     * [Archive and Author Pages](#archive-and-author-pages)
-  * [General](#general)
+  * [General](#general-1)
     * [Content Needed](#content-needed)
   * [Plugins and Configuration](#plugins-and-configuration)
   * [Accessibility](#accessibility)
@@ -70,6 +71,15 @@ I've started writing up some [documentation](docs/documentation.md). Please let 
 <a id="blog-import"></a>
 ### Blog Import
 
+<a id="general"></a>
+##### General
+
+1. Spacing between <main> and sidebar is too wide, relative to previous
+2. Needs Responsive Design
+3. Change <li> elements to <article> elements
+4. Seperate sidebar SCSS into separate file
+5. Need to grab styles for blog posts from old site
+
 <a id="missing-images"></a>
 #### Missing Images
 
@@ -108,7 +118,7 @@ The following need more styling:
 <a id="sidebar-functionality"></a>
 #### Sidebar Functionality
 
-1. List Archive pages
+1. Archive Months List needs to become dynamic
 2. Flickr options (username: personalgenomes)
     * Get URLs of last 3 and then follow the normal embed method
       * Cache these
@@ -124,8 +134,9 @@ The following need more styling:
 2. Individual authors need Author pages. Guides:
     * [Jekyll Docs - Collections](https://jekyllrb.com/docs/step-by-step/09-collections/)
     * [CodepediaOrg - How to handle multiple authors in Jekyll](https://www.codepedia.org/ama/how-to-handle-multiple-authors-in-jekyll/)
+3. Change all absolute links to relative links
 
-<a id="general"></a>
+<a id="general-1"></a>
 ### General
 1. Responsive Styling tweaks (mostly done)
 
@@ -153,6 +164,7 @@ The following need more styling:
         * Google Forms
     * Tweak open/close animation on mobile menu
 4. Responsive Images
+5. Blog comments system
 
 <a id="accessibility"></a>
 ### Accessibility

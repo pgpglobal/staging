@@ -27,7 +27,7 @@ flickr_username: personalgenomes
 author: "Personal Genome Project: Global Network"
 google_analytics: UA-145673922-1
 
-# environment: production
+# environment: development
 
 # Build settings
 markdown: kramdown
@@ -82,4 +82,6 @@ collections:
   news:
     output: false
   projects:
+    output: false
+  social-links:
     output: false
