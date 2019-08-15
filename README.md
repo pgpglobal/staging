@@ -162,9 +162,13 @@ The following need more styling:
         * [Brisk Forms](https://www.briskforms.com/)
         * [Formspree](https://formspree.io/)
         * Google Forms
-    * Tweak open/close animation on mobile menu
+    * Relevant Tutorials and Resources
+        * https://github.com/toperkin/staticformemails
+        * https://blog.webjeda.com/jekyll-contact-form/
+        * https://bbc.github.io/a11y-tutorials/forms/
 4. Responsive Images
 5. Blog comments system
+6. Generate favicon using [Real Favicon Generator](https://realfavicongenerator.net/)
 
 <a id="accessibility"></a>
 ### Accessibility
