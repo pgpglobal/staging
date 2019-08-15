@@ -29,15 +29,37 @@ google_analytics: UA-145673922-1
 
 # environment: development
 
+minima:
+  # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
+  # date_format: "%b %-d, %Y"
+
+  social_links:
+    twitter: pgorg
+    # github:  jekyll
+    rss: rss
+    # dribbble: jekyll
+    facebook: PersonalGenomesOrg
+    # flickr:   jekyll
+    # instagram: jekyll
+    linkedin: personalgenomes-org
+    # pinterest: jekyll
+    youtube: PersonalGenomesOrg
+    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    # youtube_channel_name: CloudCannon
+    # telegram: jekyll
+    # googleplus: +jekyll
+    # microdotblog: jekyll
+
+
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   # - jekyll-autoprefixer
+  - jekyll-archives
   - jekyll-feed
   - jekyll-seo-tag
-  - jekyll-archives
-
+  # - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -75,6 +97,20 @@ jekyll-archives:
   #   day: day-archive
   #   category: category-archive
   #   tag: tag-archive
+
+defaults:
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts
+  -
+    scope:
+      path: ""
+      type: archive
+    values:
+      is_archive: true
 
 collections:
   contributors:
