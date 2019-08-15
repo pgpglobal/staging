@@ -4,9 +4,9 @@ li:last-child {
 }
 
 .navbar{
-  box-shadow: 1px 1px 3px $primary;
   background-color: $blue-light;
   border-bottom: 1px solid $blue-2;
+  box-shadow: 1px 1px 3px $primary;
   box-sizing: content-box;
   opacity: 1;
 
@@ -25,15 +25,15 @@ li:last-child {
 }
 
 .navbar-default {
+  background-color: $nav--background-color;
   background-image: none;
   // border-color: #0080e0;
-  background-color: $nav--background-color;
 
   .navbar-brand {
     color: $nav--text-color;
   }
 
-  .navbar-nav > li  {
+  .navbar-nav > li {
 
     > a {
       color: $nav--text-color;
@@ -56,14 +56,19 @@ li:last-child {
   .navbar-nav > .show > a,
   .navbar-nav > .show > a:focus,
   .navbar-nav > .show > a:hover {
-    background-color: $nav--border-color;
+    background-color: $white;
     background-image: linear-gradient(to bottom, $blue-light-2 0, $blue-light 100%);
     color: $nav--text-color;
   }
+
+  .navbar-nav > .show > a:first-of-type {
+    padding: 17.5px 20px 10px 15px;
+  }
+
 }
 
 .site-header {
-  background-color: #e8f5ff;
+  background-color: $blue-light;
 }
 
 .navbar-fixed-bottom .navbar-collapse,
@@ -72,7 +77,7 @@ li:last-child {
 }
 
 .show {
-  background-color: #e8f5ff;
+  background-color: $blue-light;
 }
 
 .navbar-collapse.show {
@@ -80,6 +85,6 @@ li:last-child {
   padding: 0;
 }
 
-.navbar-default .navbar-nav > .show > a:first-of-type {
-  padding: 17.5px 20px 10px 15px;
-}
+// .navbar-default .navbar-nav > .show > a:first-of-type {
+//   padding: 17.5px 20px 10px 15px;
+// }

@@ -1,24 +1,49 @@
-.body-blog ul {
-  margin: 0;
-  padding: 0;
-}
+/**
+ * _blog.scss
+ */
 
-.body-blog li {
-  margin: 0;
-}
-
-.body-blog main {
-  color: #333;
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.body-blog .page-title {
-  margin: 70px -15px 0;
-}
-
-.blog-main {
+.blog-main-container {
   margin: 0 -15px;
   width: 920px;
+
+  :link,
+  :visited {
+    text-decoration: none;
+  }
+
+  a:link,
+  a:visited {
+    color: $blog--link-color;
+  }
+}
+
+.body-post .blog-main-container,
+.body-archive .blog-main-container {
+  margin: 50px -15px 0;
+}
+
+.body-post .blog-main-container {
+  // padding: 90px 0 0;
+}
+
+.body-blog {
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin: 0;
+  }
+
+  main {
+    color: $grey-dark-1;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+
+  .page-title {
+    margin: 70px -15px 0;
+  }
 }
 
 .blog-content {
@@ -27,38 +52,80 @@
   // padding: 20px 20px 20px 0;
   padding: 0 20px 20px 0;
   width: 600px;
-}
 
-.blog-content a:link,
-.blog-content a:hover,
-.blog-content a:active {
-  color: #772124;
+  a:link,
+  a:hover,
+  a:active {
+    color: $blog--link-color;
+  }
 }
 
 .post-header {
-  border-bottom: 4px double #eee;
+  border-bottom: 4px double $white-1;
   padding: 0 0 7px;
-}
 
-.post-header h2 {
-  margin: 20px 0 0;
-}
+  h1,
+  h2 {
+    margin: 20px 0 0;
 
-.post-header h2 a {
-  color: #333;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 28.6px;
-}
-
-.post-header .date {
-  padding-top: 10px;
-  color: #757575;
-  font-size: 16px;
-  font-weight: 400;
-  font-family: "Trebuchet MS","Lucida Grande","Lucida Sans",Verdana,Arial,sans-serif;
-  line-height: 22px;
-  text-transform: uppercase;
+    a {
+      color: $grey-dark-1;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      font-size: 26px;
+      font-weight: 700;
+      line-height: 28.6px;
+    }
   }
 
+  .date {
+    padding-top: 10px;
+    color: $grey-dark-2;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Trebuchet MS","Lucida Grande","Lucida Sans",Verdana,Arial,sans-serif;
+    line-height: 22px;
+    text-transform: uppercase;
+    }
+}
+
+.body-post .blog-main-container {
+  padding: 100px 0 0;
+}
+
+.body-post .blog-main-container {
+  margin: 0 -15px;
+  width: 920px;
+}
+
+time.dt-published {
+  text-transform: uppercase;
+  font-family: "Trebuchet MS","Lucida Grande","Lucida Sans",Verdana,Arial,sans-serif;
+}
+
+span.p-author.h-card {
+  font-family: "Trebuchet MS","Lucida Grande","Lucida Sans",Verdana,Arial,sans-serif;
+}
+
+.blog-content .post-header .post-meta {
+  font-family: "Trebuchet MS","Lucida Grande","Lucida Sans",Verdana,Arial,sans-serif;
+  font-size: 16px;
+  padding: 10px 0 0;
+  margin: 0;
+  line-height: 22px;
+  text-transform: uppercase;
+}
+
+.body-post .blog-main-container .sidebar {
+  padding: 10px 0 20px;
+}
+
+aside.sidebar {}
+
+.widget_author_grid ul {
+  margin: 0;
+}
+
+.thin-sidebar ul {
+  margin: 0;
+  padding: 0;
+}

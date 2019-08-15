@@ -22,15 +22,32 @@ $blue-light-2:     #d2ecff;
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 25%) !default;
-$grey-dark-1:        #333;
+$grey-dark-1:      #333;
+$grey-dark-2:      #757575;
+$grey-dark-3:      #777;
+$grey-mid:         #f4f4f4;
+$grey-mid-1:       #acacac;
+$grey-mid-2:       #ccc;
+$grey-mid-3:       #888;
+$maroon:           #772124;
 $orange-color:     #f66a0a !default;
+$white:            #fff;
+$white-1:          #eee;
 $table-text-align: left !default;
 
 $base-border:      $blue-2;
 
+$blog--link-color: $maroon;
+
+$header--background-color: $blue-light;
 $nav--text-color:  $blue;
 $nav--background-color: $blue-light;
 $nav--border-color: $blue-light-2;
+
+$widget--border-color: $white-1;
+$input--border-color: $grey-mid-1;
+$input--border-color-2: $grey-mid-2;
+$input--text-color: $grey-mid-3;
 // Width of the content area
 $content-width:    1200px !default;
 

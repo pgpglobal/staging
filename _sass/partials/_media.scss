@@ -10,7 +10,7 @@
   }
 
   .site-header {
-    background-color: #e8f5ff;
+    background-color: $header--background-color;
   }
 
   .nav > li > a {
@@ -18,7 +18,7 @@
   }
 
   .navbar-default {
-    background-color: #e8f5ff;
+    background-color: $header--background-color;
   }
 
   .navbar-fixed-bottom .navbar-collapse,
@@ -40,14 +40,14 @@
       position: static;
 
       a {
-        color: #777;
+        color: $grey-dark-3;
         padding: 5px 15px 5px 25px;
       }
     }
   }
 
   .show {
-    background-color: #e8f5ff;
+    background-color: $header--background-color;
   }
 
   .navbar-collapse.show {
@@ -56,15 +56,11 @@
   }
 
   .site-header {
-    border-top: 5px solid #e8f5ff;
+    border-top: 5px solid $header--background-color;
   }
 
   .navbar {
     box-shadow: none;
-  }
-
-  .navbar-collapse.show {
-    // margin: 1px -30px 0;
   }
 
   .nav .dropdown-toggle {
@@ -79,4 +75,3 @@
     margin-top: -1px;
   }
 }
-

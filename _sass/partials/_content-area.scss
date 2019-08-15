@@ -9,10 +9,10 @@ p {
 }
 
 hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
   border: 0;
-  border-top: 1px solid #eee;
+  border-top: 1px solid $white-1;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .lead-div {
@@ -35,10 +35,6 @@ li {
   margin-bottom: 20px;
 }
 
-// ul li ul li {
-//   margin-bottom: 0;
-// }
-
 a.anchor-offset {
   display: block;
   position: relative;
@@ -47,8 +43,8 @@ a.anchor-offset {
 }
 
 img.profile-photo {
-  width: 100%;
   max-width: 250px;
+  width: 100%;
 }
 
 .thumbnail.profile .caption {
