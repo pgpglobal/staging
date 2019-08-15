@@ -12,7 +12,6 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 * [Remaining Development Tasks](#remaining-development-tasks)
   * [Blog Import](#blog-import)
       * [General](#general)
-    * [Missing Images](#missing-images)
     * [Styles and Appearance](#styles-and-appearance)
     * [Sidebar Functionality](#sidebar-functionality)
     * [Archive and Author Pages](#archive-and-author-pages)
@@ -79,33 +78,6 @@ I've started writing up some [documentation](docs/documentation.md). Please let 
 3. Change <li> elements to <article> elements
 4. Seperate sidebar SCSS into separate file
 5. Need to grab styles for blog posts from old site
-
-<a id="missing-images"></a>
-#### Missing Images
-
-List of images that I was unable to import (which need to be found individually from original blog) include:
-* 14008052589_c3c301f8d6_z.jpg
-* porsche_drives.jpg
-* genom-austria-logo.png
-* blut-edta.jpg
-* getlabs2014_booklet.jpg
-* getlabs2014_stamps.jpg
-* knight.png
-* fny_gv_logo_bold_line.png
-* new_personalgenomesorg_website.png
-* get_logo.jpg
-* get2013_groupshot_6858-2.jpg
-* circles_in_human_evolution2.jpg
-* hela_cells_stained_with_hoechst_33258.jpg
-* 20130208_misha_2.jpg
-* help_wanted_gottgraphicsdesign_flickr.jpg
-* headshot.jpeg
-* microbiome_kits_processing_2012-06-11_13-07-20_594.jpg
-* badge_genomicarts.jpg
-* saliva_freezer.jpg
-* lauerman_blood_draw2.jpg
-* 20120120_x_inheritance.png
-* 20120121_x_inheritance_2.png
 
 <a id="styles-and-appearance"></a>
 #### Styles and Appearance
@@ -200,6 +172,7 @@ The following need more styling:
 * Nav Menu logic for seperator and dropdown-header added in
 * Split the "International Projects" section into a jekyll collection of markdown files (similar to News files)?
 * Added alt text to pgp-logo.png
+* Retrieved missing Blog images
 
 <a id="completed---production"></a>
 ### Completed - Production
