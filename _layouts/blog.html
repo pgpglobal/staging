@@ -5,9 +5,14 @@
 
 {% if page.title == "Blog" or page.title == "blog" %}
   <body class="body-blog">
-{% else %}
+{% elsif page.post or page.id %}
+  <body class="body-post">
+{% elsif page.type == "year" or page.type == "month" or page.type == "day" or page.type == "category" or page.type == "tag" %}
   <body class="body-archive">
+{% else %}
+  <body class="body-blog">
 {% endif %}
+
   <header class="site-header">
     {%- include nav.html -%}
   </header>
