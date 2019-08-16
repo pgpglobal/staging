@@ -57,8 +57,9 @@ theme: minima
 plugins:
   # - jekyll-autoprefixer
   - jekyll-archives
-  - jekyll-feed
-  - jekyll-seo-tag
+  - jekyll-include-cache
+  # - jekyll-feed
+  # - jekyll-seo-tag
   # - jekyll-sitemap
 
 # Exclude from processing.
@@ -80,6 +81,7 @@ exclude:
 
 sass:
   style: expanded
+  sourcemap: true
 
 jekyll-archives:
   enabled: all
