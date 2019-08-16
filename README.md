@@ -71,28 +71,6 @@ A current list of documentation files includes:
 <a id="blog-import"></a>
 ### Blog Import
 
-1. All individual posts have front matter issues. The issue is as follows:
-
-```yaml
-author:
-  login: mpball
-  email: mpball@gmail.com
-  display_name: Mad Price Ball
-  first_name: Mad
-  last_name: Ball
-```
-
-The above needs to be changed to:
-
-```yaml
-author: Mad Ball
-login: mpball
-email: mpball@gmail.com
-display_name: Mad Price Ball
-first_name: Mad
-last_name: Ball
-```
-
 2. Minor typography adjustments remaining
 3. Change all .date to time.dt-published
     * Figure out styles for date + author on blog posts
@@ -107,7 +85,6 @@ last_name: Ball
 2. Replace all fixed line heights w/ standard numbers
 The following need more styling:
 3. Archive pages - Post <li> needs background color change on hover
-4. Archive pages need structural fix for sidebar
 5. Desktop - Fix Nav Menu dropdown color
 6. Minor: `_media.css`: convert max-width: 767 into relevant min-width sections, if time-possible (non-essential).
 
@@ -126,8 +103,8 @@ The following need more styling:
 
 1. Need layouts for month, day, year, category, tag
     * May be able to cover these all with the default layout
-2. Individual authors need Author pages. See [Resources][1] for guides
-3. Change all absolute links to relative links
+2. Change Gravatar images from hardcoded links to dynamic
+    * Not short-term essential, but will be relevant for bloggers in the future
 
 <a id="general"></a>
 ### General
