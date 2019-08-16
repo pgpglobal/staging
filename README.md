@@ -46,7 +46,7 @@ In order to run this site locally, follow the following steps:
 6. Download or clone this repo. In the terminal, this is done by typing `git clone https://github.com/lunacodes/PGPGlobal.git`
 7. Navigate to the directory that was just created (PGPGlobal by default, unless you gave it a custom name)
 8. Terminal: `bundle exec jekyll serve`
-    * In the future, you can simply run `jekyll serve`, however you may need to run `bundle exec jekyll serve` when new plugins or other elements are added to the site.
+    * In the future, you can simply run `jekyll serve`, however you may need to run `bundle exec jekyll serve` and/or `bundle install` when new plugins or other elements are added to the site.
 
 <a id="keeping-up-to-date"></a>
 ### Keeping Up-To-Date
@@ -82,10 +82,17 @@ I've started writing up some [documentation](docs/documentation.md). Please let 
 <a id="styles-and-appearance"></a>
 #### Styles and Appearance
 
+1. Change all .date to time.dt-published
+    * Figure out styles for date + author on blog posts
+    * Make sure single blog displays full month name, not 3 letter abbreviation
+2. Main Page - fix button styles... they're picking up the blog by accident
+3. Replace all fixed line heights w/ standard numbers
 The following need more styling:
-
-1. Main page
-2. Archive pages
+4. Archive pages - Post <li> needs background color change on hover
+5. Fix Nav Menu Colors
+6. Refactor _blog.scss - probably split into_
+7. _media.css convert max-width: 767 into relevant min-width sections, if time-possible
+8. Blog articles check typography
 
 <a id="sidebar-functionality"></a>
 #### Sidebar Functionality
@@ -139,8 +146,11 @@ The following need more styling:
         * https://blog.webjeda.com/jekyll-contact-form/
         * https://bbc.github.io/a11y-tutorials/forms/
 4. Responsive Images
+    * [Responsive Images in Jekyll without a plugin](https://benseymour.com/2017/03/02/Responsive-Images-in-Jekyll-without-a-plugin)
 5. Blog comments system
 6. Generate favicon using [Real Favicon Generator](https://realfavicongenerator.net/)
+    * [How do I get Jekyll to copy favicons from a subdirectory to root when publishing?](https://stackoverflow.com/questions/52223620/how-do-i-get-jekyll-to-copy-favicons-from-a-subdirectory-to-root-when-publishing)
+7.
 
 <a id="accessibility"></a>
 ### Accessibility
@@ -151,6 +161,12 @@ The following need more styling:
 ## Staging
 
 1. Test [Enforce HTTPS](https://help.github.com/en/articles/securing-your-github-pages-site-with-https)
+    * [Enforce HTTPS](https://help.github.com/en/articles/securing-your-github-pages-site-with-https) (this means everything that loads on the page has to start with https instead of http)
+      * Cloudflare may be necessary see:
+      * [Secure and fast GitHub Pages with CloudFlare](https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/)
+      * [How to setup a static website using GitHub Pages and Cloudflare with your own Domain Name](https://www.codementor.io/landonpatmore/how-to-setup-a-static-website-using-github-pages-and-cloudflare-with-your-own-domain-name-jb99nbuoe)
+      * [How to Deploy Websites on Custom Domains using Cloudflare and Github Pages](https://medium.com/crowdbotics/annie-azana-how-to-deploy-websites-using-cloudflare-and-github-pages-c415c55fea36)
+2. [Setting up GitHub Pages locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll#keeping-your-site-up-to-date-with-the-github-pages-gem)
 
 <a id="production"></a>
 ## Production
@@ -163,7 +179,7 @@ The following need more styling:
     * 185.199.110.153
     * 185.199.111.153
   * Remove and re-add custom domain on GitHub account to trigger the process of enabling HTTPS.
-  * [Enforce HTTPS](https://help.github.com/en/articles/securing-your-github-pages-site-with-https) (this means everything that loads on the page has to start with https instead of http)
+
 
 <a id="completed"></a>
 ## Completed
