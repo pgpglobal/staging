@@ -2,9 +2,13 @@
   <div id="author_grid-2" class="widget widget_author_grid">
     <h2 class="widget-title">Contributors</h2>
     <ul>
-      {% for contributor in site.contributors %}
+      {% for author in site.authors %}
       <li>
-        {{ contributor.content | remove: '<p>' | remove: '</p>' }}
+        <a href="{{ author.url }}">
+          <img id="{{ author.name | default: test }}" src="{{ author.image }}" alt="" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="{{ src_original }}">
+        </a>
+        <!-- {{ author.content | remove: '<p>' | remove: '</p>' }} -->
+        <!-- {{ author.content | markdownify }} -->
       </li>
       {% endfor%}
     </ul>

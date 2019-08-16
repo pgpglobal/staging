@@ -6,7 +6,7 @@
 {% if page.title == "Blog" or page.title == "blog" %}
   <body class="body-blog">
 {% elsif page.post or page.id %}
-  <body class="body-post">
+  <body class="body-post body-{{ page.class }}">
 {% elsif page.type == "year" or page.type == "month" or page.type == "day" or page.type == "category" or page.type == "tag" %}
   <body class="body-archive">
 {% else %}

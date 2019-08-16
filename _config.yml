@@ -55,10 +55,11 @@ minima:
 markdown: kramdown
 theme: minima
 plugins:
-  # - jekyll-autoprefixer
   - jekyll-archives
+  # - jekyll-autoprefixer
   - jekyll-include-cache
   # - jekyll-feed
+  # - jekyll-picture-tag
   # - jekyll-seo-tag
   # - jekyll-sitemap
 
@@ -117,9 +118,26 @@ defaults:
     values:
       is_archive: true
 
+  - scope:
+      path: ""
+      type: "authors"
+    values:
+      class: "archive body-author"
+      layout: "author"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+
 collections:
-  contributors:
-    output: false
+  authors:
+    output: true
   news:
     output: false
   projects:
