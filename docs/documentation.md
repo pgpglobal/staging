@@ -6,6 +6,7 @@
 * [Working on the Site Locally with Git](#working-on-the-site-locally-with-git)
   * [Branching](#branching)
   * [Solving Merge Conflicts](#solving-merge-conflicts)
+* [Jekyll Admin Graphical Editor](#jekyll-admin-graphical-editor)
 * [Files and Directories Guide](#files-and-directories-guide)
   * [Directories](#directories)
   * [Files](#files)
@@ -58,6 +59,10 @@ If you run into trouble with push to the remote repo, this may involve some not 
 
 Coming Soon
 
+<a id="jekyll-admin-graphical-editor"></a>
+## Jekyll Admin Graphical Editor
+
+A visual interface powered by [Jekyll Admin](https://github.com/jekyll/jekyll-admin) is available for editing the site. Access it by appending `/admin` to the site url, ex: `localhost:4000/admin`
 
 <a id="files-and-directories-guide"></a>
 ## Files and Directories Guide
