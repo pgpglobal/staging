@@ -3,8 +3,12 @@
  */
 
 .blog-main-container {
-  margin: 0 -15px;
-  width: 920px;
+  // margin: 0 -15px;
+  // width: 920px;
+  margin: 0 auto;
+  display: block;
+  width: auto;
+
 
   :link,
   :visited {
@@ -42,16 +46,23 @@
   }
 
   .page-title {
-    margin: 70px -15px 0;
+    margin: 70px 0 0 40px;
   }
 }
 
 .blog-content {
-  box-sizing: content-box;
-  float: left;
-  // padding: 20px 20px 20px 0;
-  padding: 0 20px 20px 0;
-  width: 600px;
+  // box-sizing: content-box;
+  // float: left;
+  // // padding: 20px 20px 20px 0;
+  // padding: 0 20px 20px 0;
+  // width: 600px;
+
+  // box-sizing: border-box;
+  // display: block;
+  // float:  none;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 90%;
 
   a:link,
   a:hover,

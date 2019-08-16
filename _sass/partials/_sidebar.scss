@@ -1,4 +1,15 @@
 .sidebar {
+  display: block;
+  padding: 0 0 20px;
+  width: 300px;
+
+  li {
+    font-size: 14px;
+    line-height: 22px;
+    list-style: none;
+    margin: 0;
+  }
+
   :link,
   :visited {
     text-decoration: none;
@@ -31,20 +42,6 @@ h2.widget-title {
   margin: 0;
   padding: 25px 0 3px;
   text-transform: uppercase;
-}
-
-// Sidebar
-.sidebar {
-  float: right;
-  padding: 0 0 20px;
-  width: 300px;
-
-  li {
-    font-size: 14px;
-    line-height: 22px;
-    list-style: none;
-    margin: 0;
-  }
 }
 
 .widget_author_grid ul {
@@ -121,7 +118,7 @@ form#search_form {
 }
 
 .spad {
-  padding-right: 20px;
+  // padding-right: 20px;
 }
 
 .tpad {
@@ -132,6 +129,15 @@ form#search_form {
   box-sizing: content-box;
   float: left;
   width: 140px;
+}
+
+.sidebar-left {
+  float: left;
+  padding: 0;
+}
+
+.sidebar-right {
+  float: right;
 }
 
 .flickr-wrapper {
