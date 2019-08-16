@@ -11,20 +11,20 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 * [Documentation](#documentation)
 * [Remaining Development Tasks](#remaining-development-tasks)
   * [Blog Import](#blog-import)
-  * [Styles and Appearance](#styles-and-appearance)
+    * [Share Buttons](#share-buttons)
+    * [Comments System](#comments-system)
     * [Sidebar Functionality](#sidebar-functionality)
     * [Archive and Author Pages](#archive-and-author-pages)
   * [General](#general)
+    * [Styling and Markup adjustments](#styling-and-markup-adjustments)
     * [Content Needed](#content-needed)
   * [Plugins and Configuration](#plugins-and-configuration)
   * [Accessibility](#accessibility)
 * [Staging and Production](#staging-and-production)
 * [Completed](#completed)
-  * [Completed - Production](#completed---production)
-* [Miscellaneous & Questions](#miscellaneous--questions)
+* [Questions](#questions)
 
 <!-- /MarkdownTOC -->
-
 
 <a id="instructions"></a>
 ## Instructions
@@ -71,22 +71,15 @@ A current list of documentation files includes:
 <a id="blog-import"></a>
 ### Blog Import
 
-2. Minor typography adjustments remaining
-3. Change all .date to time.dt-published
-    * Figure out styles for date + author on blog posts
-    * Make sure single blog displays full month name, not 3 letter abbreviation
-4. Blog articles check typography
-5. Blog - Social Icons sidebar gets pushed to new line btwn 768-830px
+<a id="share-buttons"></a>
+#### Share Buttons
 
-<a id="styles-and-appearance"></a>
-### Styles and Appearance
+1. Replicate share buttons from old blog
 
-1. Main Page - change `<button> a:hover` color to match original
-2. Replace all fixed line heights w/ standard numbers
-The following need more styling:
-3. Archive pages - Post <li> needs background color change on hover
-5. Desktop - Fix Nav Menu dropdown color
-6. Minor: `_media.css`: convert max-width: 767 into relevant min-width sections, if time-possible (non-essential).
+<a id="comments-system"></a>
+#### Comments System
+
+1. Either needs plugin(s) or embedding of Disqus or some other similar thing
 
 <a id="sidebar-functionality"></a>
 #### Sidebar Functionality
@@ -101,14 +94,23 @@ The following need more styling:
 <a id="archive-and-author-pages"></a>
 #### Archive and Author Pages
 
-1. Need layouts for month, day, year, category, tag
+1. Need layouts for: default, month, day, category, tag
     * May be able to cover these all with the default layout
-2. Change Gravatar images from hardcoded links to dynamic
-    * Not short-term essential, but will be relevant for bloggers in the future
 
 <a id="general"></a>
 ### General
-1. Responsive Styling tweaks (90% done)
+
+<a id="styling-and-markup-adjustments"></a>
+#### Styling and Markup adjustments
+1. Change all .date to time.dt-published
+    * Figure out styles for date + author on blog posts
+2. Blog articles check typography
+3. Blog - Social Icons sidebar gets pushed to new line btwn 768-830px
+4. Main Page - change `<button> a:hover` color to match original
+5. Replace all fixed line heights w/ standard numbers
+6. Archive pages - Post `<li>` needs background color change on hover
+7. Desktop - Fix Nav Menu dropdown color
+8. Minor: `_media.css`: convert max-width: 767 into relevant min-width sections, if time-possible (non-essential).
 
 <a id="content-needed"></a>
 #### Content Needed
@@ -124,7 +126,7 @@ The following need more styling:
 
 <a id="plugins-and-configuration"></a>
 ### Plugins and Configuration
-1. Configure SEO Plugin(s) and setup
+1. SEO setup
     * Need to add email, site description, etc to `_config.yml`
 2. Configure il8n (internationalization)
 3. Contact Page
@@ -154,14 +156,16 @@ The following need more styling:
 * Added alt text to pgp-logo.png
 * Retrieved missing Blog images
 * Refactored SCSS code
-
-<a id="completed---production"></a>
-### Completed - Production
+* Created auto-generated Author pages
+* Fixed private Author Metadata displaying in post header
+* Sidebar and Main layouts on blog, archive, and author pages
 * Google Analytics
+* Gravatar links dynamic
 
-<a id="miscellaneous--questions"></a>
-## Miscellaneous & Questions
+<a id="questions"></a>
+## Questions
 
-None at present.
+1. Cloudflare - is the current site hooked up with Cloudflare? the new site will have to be, due to the fact that it's a custom domain. So being setup with Cloudflare already might save some headache.
+
 
 [1]: docs/resources.md

@@ -3,13 +3,16 @@
     <h2 class="widget-title">Contributors</h2>
     <ul>
       {% for author in site.authors %}
-      <li>
-        <a href="{{ author.url }}">
-          <img id="{{ author.name | default: test }}" src="{{ author.image }}" alt="" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="{{ src_original }}">
-        </a>
-        <!-- {{ author.content | remove: '<p>' | remove: '</p>' }} -->
-        <!-- {{ author.content | markdownify }} -->
-      </li>
+      {% if author.email %}
+        <li>
+          <a href="{{ author.url }}">
+            <img id="{{ author.display_name }}" src="{{ author.email | gravatar }}" alt="Author thumbnail for {{ author.name }}" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="{{ src_original }}">
+          </a>
+          <!-- {{ author.content | remove: '<p>' | remove: '</p>' }} -->
+          <!-- {{ author.content | markdownify }} -->
+        </li>
+      {% endif %}
+
       {% endfor%}
     </ul>
   </div>
