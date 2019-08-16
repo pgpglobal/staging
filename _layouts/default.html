@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {%- include head.html -%}
+  {%- include_cached head.html -%}
 
   <body>
   <header class="site-header">
-    {%- include nav.html -%}
+    {%- include_cached nav.html -%}
   </header>
     <main class="page-content {{ page.class }}" aria-label="Content">
       <div class="wrapper">
@@ -13,7 +13,7 @@
       </div>
     </main>
 
-    {%- include footer.html -%}
+    {%- include_cached footer.html -%}
 
   </body>
 

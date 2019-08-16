@@ -73,8 +73,9 @@ exclude:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-  # - docs
-  # - README.md
+  - accessibility
+  - docs
+  - README.md
   - ref
   - scratch
   - ["docs", "ref", "scratch"]
@@ -100,6 +101,8 @@ jekyll-archives:
   #   category: category-archive
   #   tag: tag-archive
 
+# Post Variables to enable conditional checks such as {% if page.id %} or
+# {% if page.title == "title" %}, etc
 defaults:
   -
     scope:

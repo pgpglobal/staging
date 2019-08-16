@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-{%- include head.html -%}
+{%- include_cached head.html -%}
 
 {% if page.title == "Blog" or page.title == "blog" %}
   <body class="body-blog">
@@ -14,7 +14,7 @@
 {% endif %}
 
   <header class="site-header">
-    {%- include nav.html -%}
+    {%- include_cached nav.html -%}
   </header>
   <div class="blog-wrapper wrapper">
 
@@ -29,13 +29,13 @@
           </main>
 
           <aside class="sidebar">
-            {%- include sidebar.html -%}
+            {%- include_cached sidebar.html -%}
           </aside>
         </div>
 
       </div>
 
-  {%- include footer.html -%}
+  {%- include_cached footer.html -%}
 
 </body>
 

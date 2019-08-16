@@ -11,11 +11,10 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 * [Documentation](#documentation)
 * [Remaining Development Tasks](#remaining-development-tasks)
   * [Blog Import](#blog-import)
-      * [General](#general)
-    * [Styles and Appearance](#styles-and-appearance)
+  * [Styles and Appearance](#styles-and-appearance)
     * [Sidebar Functionality](#sidebar-functionality)
     * [Archive and Author Pages](#archive-and-author-pages)
-  * [General](#general-1)
+  * [General](#general)
     * [Content Needed](#content-needed)
   * [Plugins and Configuration](#plugins-and-configuration)
   * [Accessibility](#accessibility)
@@ -70,35 +69,51 @@ I've started writing up some [documentation](docs/documentation.md). Please let 
 <a id="blog-import"></a>
 ### Blog Import
 
-<a id="general"></a>
-##### General
+1. All individual posts have front matter issues. The issue is as follows:
 
-1. Spacing between <main> and sidebar is too wide, relative to previous
-2. Needs Responsive Design
-3. Change <li> elements to <article> elements
-4. Seperate sidebar SCSS into separate file
-5. Need to grab styles for blog posts from old site
+```yaml
+author:
+  login: mpball
+  email: mpball@gmail.com
+  display_name: Mad Price Ball
+  first_name: Mad
+  last_name: Ball
+```
 
-<a id="styles-and-appearance"></a>
-#### Styles and Appearance
+The above needs to be changed to:
 
-1. Change all .date to time.dt-published
+```yaml
+author: Mad Ball
+login: mpball
+email: mpball@gmail.com
+display_name: Mad Price Ball
+first_name: Mad
+last_name: Ball
+```
+
+2. Minor typography adjustments remaining
+3. Change all .date to time.dt-published
     * Figure out styles for date + author on blog posts
     * Make sure single blog displays full month name, not 3 letter abbreviation
-2. Main Page - fix button styles... they're picking up the blog by accident
-3. Replace all fixed line heights w/ standard numbers
+4. Blog articles check typography
+5. Blog - Social Icons sidebar gets pushed to new line btwn 768-830px
+
+<a id="styles-and-appearance"></a>
+### Styles and Appearance
+
+1. Main Page - change `<button> a:hover` color to match original
+2. Replace all fixed line heights w/ standard numbers
 The following need more styling:
-4. Archive pages - Post <li> needs background color change on hover
-5. Fix Nav Menu Colors
-6. Refactor _blog.scss - probably split into_
-7. _media.css convert max-width: 767 into relevant min-width sections, if time-possible
-8. Blog articles check typography
+3. Archive pages - Post <li> needs background color change on hover
+4. Archive pages need structural fix for sidebar
+5. Desktop - Fix Nav Menu dropdown color
+6. Minor: `_media.css`: convert max-width: 767 into relevant min-width sections, if time-possible (non-essential).
 
 <a id="sidebar-functionality"></a>
 #### Sidebar Functionality
 
 1. Archive Months List needs to become dynamic
-2. Flickr options (username: personalgenomes)
+2. Flickr needs to be dynamic. Options
     * Get URLs of last 3 and then follow the normal embed method
       * Cache these
     * Parsing RSS Feed seems like the best bet: https://api.flickr.com/services/feeds/photos_public.gne?id=78213110@N06&lang=en-us&format=rss_200
@@ -115,9 +130,9 @@ The following need more styling:
     * [CodepediaOrg - How to handle multiple authors in Jekyll](https://www.codepedia.org/ama/how-to-handle-multiple-authors-in-jekyll/)
 3. Change all absolute links to relative links
 
-<a id="general-1"></a>
+<a id="general"></a>
 ### General
-1. Responsive Styling tweaks (mostly done)
+1. Responsive Styling tweaks (90% done)
 
 <a id="content-needed"></a>
 #### Content Needed
@@ -150,7 +165,6 @@ The following need more styling:
 5. Blog comments system
 6. Generate favicon using [Real Favicon Generator](https://realfavicongenerator.net/)
     * [How do I get Jekyll to copy favicons from a subdirectory to root when publishing?](https://stackoverflow.com/questions/52223620/how-do-i-get-jekyll-to-copy-favicons-from-a-subdirectory-to-root-when-publishing)
-7.
 
 <a id="accessibility"></a>
 ### Accessibility
@@ -189,6 +203,7 @@ The following need more styling:
 * Split the "International Projects" section into a jekyll collection of markdown files (similar to News files)?
 * Added alt text to pgp-logo.png
 * Retrieved missing Blog images
+* Refactored SCSS code
 
 <a id="completed---production"></a>
 ### Completed - Production
@@ -196,5 +211,5 @@ The following need more styling:
 
 <a id="miscellaneous--questions"></a>
 ## Miscellaneous & Questions
-1. Blog Twitter Feed - Are the pictures and spacing ok? (these are twitter defaults)
-    * Should I limit it to 3 tweets instead?
+
+None at present.

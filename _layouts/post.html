@@ -21,9 +21,9 @@ class: blog
     {{ content }}
   </div>
 
-  {%- include social.html -%}
+  {%- include_cached social.html -%}
   {%- if site.disqus.shortname -%}
-  {%- include disqus_comments.html -%}
+  {%- include_cached disqus_comments.html -%}
   {%- endif -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
