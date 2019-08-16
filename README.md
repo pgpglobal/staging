@@ -18,8 +18,7 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
     * [Content Needed](#content-needed)
   * [Plugins and Configuration](#plugins-and-configuration)
   * [Accessibility](#accessibility)
-* [Staging](#staging)
-* [Production](#production)
+* [Staging and Production](#staging-and-production)
 * [Completed](#completed)
   * [Completed - Production](#completed---production)
 * [Miscellaneous & Questions](#miscellaneous--questions)
@@ -62,6 +61,9 @@ See the [Docs](docs/documentation) page.
 
 I've started writing up some [documentation](docs/documentation.md). Please let me know specific questions or topics, and I'll add those in.
 
+A current list of documentation files includes:
+* [Documentation](docs/documentation.md) - general documentation
+* [Resources](docs/resources.md) - a list of various resources related to in-progress tasks
 
 <a id="remaining-development-tasks"></a>
 ## Remaining Development Tasks
@@ -117,17 +119,14 @@ The following need more styling:
     * Get URLs of last 3 and then follow the normal embed method
       * Cache these
     * Parsing RSS Feed seems like the best bet: https://api.flickr.com/services/feeds/photos_public.gne?id=78213110@N06&lang=en-us&format=rss_200
-    * [Jekyll and responsive Flickr photos](https://heipei.io/2016/05/28/jekyll-and-responsive-flickr-photos/)
-    * [Keith Marran - Integrating Flickr and Jekyll](http://www.marran.com/tech/integrating-flickr-and-jekyll) - has useful info on caching
+    * See [resources][1]
 
 <a id="archive-and-author-pages"></a>
 #### Archive and Author Pages
 
 1. Need layouts for month, day, year, category, tag
     * May be able to cover these all with the default layout
-2. Individual authors need Author pages. Guides:
-    * [Jekyll Docs - Collections](https://jekyllrb.com/docs/step-by-step/09-collections/)
-    * [CodepediaOrg - How to handle multiple authors in Jekyll](https://www.codepedia.org/ama/how-to-handle-multiple-authors-in-jekyll/)
+2. Individual authors need Author pages. See [Resources][1] for guides
 3. Change all absolute links to relative links
 
 <a id="general"></a>
@@ -153,47 +152,21 @@ The following need more styling:
 2. Configure il8n (internationalization)
 3. Contact Page
     * Choose back-end and implement spam protection (either reCaptcha or other). Possible options:
-        * [Brisk Forms](https://www.briskforms.com/)
-        * [Formspree](https://formspree.io/)
-        * Google Forms
-    * Relevant Tutorials and Resources
-        * https://github.com/toperkin/staticformemails
-        * https://blog.webjeda.com/jekyll-contact-form/
-        * https://bbc.github.io/a11y-tutorials/forms/
-4. Responsive Images
-    * [Responsive Images in Jekyll without a plugin](https://benseymour.com/2017/03/02/Responsive-Images-in-Jekyll-without-a-plugin)
+4. Responsive Images. See [Resources][1] file. Currently attempting to get the [jekyll-picture-tag](https://github.com/robwierzbowski/jekyll-picture-tag) plugin working.
 5. Blog comments system
-6. Generate favicon using [Real Favicon Generator](https://realfavicongenerator.net/)
-    * [How do I get Jekyll to copy favicons from a subdirectory to root when publishing?](https://stackoverflow.com/questions/52223620/how-do-i-get-jekyll-to-copy-favicons-from-a-subdirectory-to-root-when-publishing)
+6. Generate favicon files using [Real Favicon Generator](https://realfavicongenerator.net/)
 
 <a id="accessibility"></a>
 ### Accessibility
 
 1. Add ARIA Roles into HTML where necessary, across site
 
-<a id="staging"></a>
-## Staging
+<a id="staging-and-production"></a>
+## Staging and Production
 
-1. Test [Enforce HTTPS](https://help.github.com/en/articles/securing-your-github-pages-site-with-https)
-    * [Enforce HTTPS](https://help.github.com/en/articles/securing-your-github-pages-site-with-https) (this means everything that loads on the page has to start with https instead of http)
-      * Cloudflare may be necessary see:
-      * [Secure and fast GitHub Pages with CloudFlare](https://blog.cloudflare.com/secure-and-fast-github-pages-with-cloudflare/)
-      * [How to setup a static website using GitHub Pages and Cloudflare with your own Domain Name](https://www.codementor.io/landonpatmore/how-to-setup-a-static-website-using-github-pages-and-cloudflare-with-your-own-domain-name-jb99nbuoe)
-      * [How to Deploy Websites on Custom Domains using Cloudflare and Github Pages](https://medium.com/crowdbotics/annie-azana-how-to-deploy-websites-using-cloudflare-and-github-pages-c415c55fea36)
+1. Setup SSL and Test [Enforce HTTPS](https://help.github.com/en/articles/securing-your-github-pages-site-with-https) (this means everything that loads on the page has to start with `https://` instead of `http://`)
+      * Cloudflare is probably the most optimal route here. See [Resources][1] file.
 2. [Setting up GitHub Pages locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll#keeping-your-site-up-to-date-with-the-github-pages-gem)
-
-<a id="production"></a>
-## Production
-
-1. Setup SSL/HTTPS. Steps:
-  * Set custom domain on GitHub repo. See [here](https://help.github.com/en/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site)
-  * Create A records pointing to [GitHub's servers](https://help.github.com/en/articles/setting-up-an-apex-domain#configuring-a-records-with-your-dns-provider)
-    * 185.199.108.153
-    * 185.199.109.153
-    * 185.199.110.153
-    * 185.199.111.153
-  * Remove and re-add custom domain on GitHub account to trigger the process of enabling HTTPS.
-
 
 <a id="completed"></a>
 ## Completed
@@ -213,3 +186,5 @@ The following need more styling:
 ## Miscellaneous & Questions
 
 None at present.
+
+[1]: docs/resources.md
