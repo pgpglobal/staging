@@ -102,6 +102,11 @@
 
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
+  .body-blog .page-title {
+    margin: 70px 0 0;
+    padding: 0 30px;
+  }
+
   .body-archive .blog-main-container,
   .blog-main-container {
     display: flex;
@@ -156,6 +161,11 @@
   .blog-title-wrap {
     border-bottom: 5px solid #333;
   }
+
+  .body-blog .page-title {
+    padding: 0 2px;
+  }
+
   .blog-main-container {
     width: 920px;
   }
@@ -181,7 +191,7 @@
 
   .body-archive .blog-main-container .sidebar,
   .body-post.body-author .blog-main-container .sidebar {
-    padding: 0 20px 20px 20px
+    padding: 0 20px 20px;
   }
 }
 
