@@ -2,7 +2,15 @@
 
 This is primarily a list of resources for Luna, related to various remaining or in-progress tasks.
 
+## Jekyll & Liquid
+
+* [Shopify - Liquid Docs](https://shopify.github.io/liquid/filters/date/)
+  * [Array Filters](https://help.shopify.com/en/themes/liquid/filters/array-filters)
+* [Jekyll Cheatsheet](https://learn.cloudcannon.com/jekyll-cheat-sheet/)
+* [Jekyll Documentation Theme - YAML tutorial in the context of Jekyll](https://idratherbewriting.com/documentation-theme-jekyll/mydoc_yaml_tutorial)
+
 ## Author Collections
+
 * [Jekyll Docs - Collections](https://jekyllrb.com/docs/step-by-step/09-collections/)
 * [CodepediaOrg - How to handle multiple authors in Jekyll](https://www.codepedia.org/ama/how-to-handle-multiple-authors-in-jekyll/)
 
@@ -56,3 +64,7 @@ Relevant Tutorials and Resources:
 ## Staging - Simulating GitHub Pages
 
 * [Setting up GitHub Pages locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll#keeping-your-site-up-to-date-with-the-github-pages-gem)
+
+## Other Tools
+
+* [HTML to Markdown Converter](https://www.browserling.com/tools/html-to-markdown)

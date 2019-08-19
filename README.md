@@ -12,7 +12,6 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 * [Remaining Development Tasks](#remaining-development-tasks)
   * [Blog Import](#blog-import)
     * [Share Buttons](#share-buttons)
-    * [Comments System](#comments-system)
     * [Sidebar Functionality](#sidebar-functionality)
     * [Archive and Author Pages](#archive-and-author-pages)
   * [General](#general)
@@ -23,6 +22,7 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 * [Staging and Production](#staging-and-production)
 * [Completed](#completed)
 * [Questions](#questions)
+* [Deprecated](#deprecated)
 
 <!-- /MarkdownTOC -->
 
@@ -74,12 +74,7 @@ A current list of documentation files includes:
 <a id="share-buttons"></a>
 #### Share Buttons
 
-1. Replicate share buttons from old blog
-
-<a id="comments-system"></a>
-#### Comments System
-
-1. Either needs plugin(s) or embedding of Disqus or some other similar thing
+1. Replicate social share buttons from old blog
 
 <a id="sidebar-functionality"></a>
 #### Sidebar Functionality
@@ -94,8 +89,7 @@ A current list of documentation files includes:
 <a id="archive-and-author-pages"></a>
 #### Archive and Author Pages
 
-1. Need layouts for: default, month, day, category, tag
-    * May be able to cover these all with the default layout
+1. Category pages aren't working. Unsure why - tags work fine.
 
 <a id="general"></a>
 ### General
@@ -161,11 +155,19 @@ A current list of documentation files includes:
 * Sidebar and Main layouts on blog, archive, and author pages
 * Google Analytics
 * Gravatar links dynamic
+* Author/Archive layouts default, month, day, category, tag
 
 <a id="questions"></a>
 ## Questions
 
 1. Cloudflare - is the current site hooked up with Cloudflare? the new site will have to be, due to the fact that it's a custom domain. So being setup with Cloudflare already might save some headache.
+2. I noticed that comments were turned off on the old blog anyway. Can I assume that this means we won't be needing comments on here either?
+
+<a id="deprecated"></a>
+## Deprecated
+
+Comments System (see question above)
+~1. Either needs plugin(s) or embedding of Disqus or some other similar thing~
 
 
 [1]: docs/resources.md
