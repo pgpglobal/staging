@@ -62,6 +62,7 @@ plugins:
   # - jekyll-picture-tag
   # - jekyll-seo-tag
   # - jekyll-sitemap
+  - jekyll-titles-from-headings
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -96,7 +97,7 @@ jekyll-archives:
     category: '/category/:name/'
   layout: archive
   layouts:
-    year: year-archive
+    # year: year-archive
   #   month: month-archive
   #   day: day-archive
   #   category: category-archive
