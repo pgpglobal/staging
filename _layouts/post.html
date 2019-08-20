@@ -21,17 +21,15 @@ class: blog
     {{ content }}
   </div>
 
+  {% comment %}
   {%- include_cached social.html -%}
-  {%- include_cached share-buttons.html -%}
+  {% endcomment %}
   {%- if site.disqus.shortname -%}
   {%- include_cached disqus_comments.html -%}
   {%- endif -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
-
-<i class="fab fa-facebook-square"></i>
-<i class="fad fa-envelope"></i>
 
 {% include related-posts.html %}
 {% include_cached share-buttons-jp.html %}

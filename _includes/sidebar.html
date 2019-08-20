@@ -79,7 +79,7 @@
 
         {% if next_year contains this_year and this_year contains next_year %}
           <!-- <p>This Year: {{this_year}} Next year: {{next_year }}</p> -->
-          <li><a href="/{{ this_year_num }}/{{ this_month_num }}">{{ this_month }} {{ this_year}}</a></li>
+          <li><a href="/{{ this_year }}/{{ this_month_num }}">{{ this_month }} {{ this_year}}</a></li>
         {% else %}
           <!-- <p>Next Year: {{next_year}} This year: {{this_year }}</p> -->
         {% endif %}
