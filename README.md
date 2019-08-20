@@ -14,6 +14,7 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
     * [Sidebar Functionality](#sidebar-functionality)
     * [Archive and Author Pages](#archive-and-author-pages)
     * [Captions and Shortcodes](#captions-and-shortcodes)
+    * [Post Footer](#post-footer)
   * [General](#general)
     * [Styling and Markup adjustments](#styling-and-markup-adjustments)
     * [Content Needed](#content-needed)
@@ -91,7 +92,14 @@ A current list of documentation files includes:
 #### Captions and Shortcodes
 
 1. Shortcodes need to be replaced with actual code wherever possible. See [here](http://localhost:4000/2012/11/27/wildlife-of-our-homes-q-a-with-rob-dunn/) for an example.
-    * For `[caption]` this covers 21 posts. I can't say for other shortcodes without manually looking through posts.
+    * `[caption]` covers 21 posts. I can't say for other shortcodes without manually looking through posts.
+    * `[youtube]` covers 8 posts
+    * `[polldaddy]`covers 1 posts
+
+<a id="post-footer"></a>
+#### Post Footer
+
+1. Nav links need to become dynamic
 
 <a id="general"></a>
 ### General
@@ -107,6 +115,7 @@ A current list of documentation files includes:
 6. Archive pages - Post `<li>` needs background color change on hover
 7. Desktop - Fix Nav Menu dropdown color
 8. Minor: `_media.css`: convert max-width: 767 into relevant min-width sections, if time-possible (non-essential).
+9. Blog entry `h2` tags aren't applying font size properly
 
 <a id="content-needed"></a>
 #### Content Needed

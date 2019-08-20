@@ -11,7 +11,7 @@ layout: blog
     {% for post in author_posts %}
     <li>
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-        <span class="comments_number">0</span>
+        <!-- <span class="comments_number">0</span> -->
         <span class="archdate">{{ post.date | date: "%b %-d, %Y" }}</span>
         {{ post.title }}
       </a>

@@ -2,14 +2,21 @@
   padding: 10px 0 20px;
 }
 
+.body-archive a:link,
+.body-archive a:hover,
+.body-archive a:active {
+  font-weight: 400;
+}
+
 img.archive-comment {
+  display: none;
   float: right;
   margin: 0 0.05em 0.05em 0;
 }
 
 h1.archive-title,
 h2.archive-title {
-  border-bottom: 4px double $white-1;
+  // border-bottom: 4px double $white-1;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 28px;
   font-weight: 700;
@@ -58,6 +65,7 @@ h2.archive-title {
     text-align: right;
 
     &.comments_number {
+      display: none;
       color: #666;
       float: right;
       margin-right: 6.5px;
