@@ -14,6 +14,7 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
     * [Share Buttons](#share-buttons)
     * [Sidebar Functionality](#sidebar-functionality)
     * [Archive and Author Pages](#archive-and-author-pages)
+    * [Captions and Shortcodes](#captions-and-shortcodes)
   * [General](#general)
     * [Styling and Markup adjustments](#styling-and-markup-adjustments)
     * [Content Needed](#content-needed)
@@ -91,6 +92,12 @@ A current list of documentation files includes:
 
 1. Category pages aren't working. Unsure why - tags work fine.
 
+<a id="captions-and-shortcodes"></a>
+#### Captions and Shortcodes
+
+1. Shortcodes need to be replaced with actual code wherever possible. See [here](http://localhost:4000/2012/11/27/wildlife-of-our-homes-q-a-with-rob-dunn/) for an example.
+    * For `[caption]` this covers 21 posts. I can't say for other shortcodes without manually looking through posts.
+
 <a id="general"></a>
 ### General
 
@@ -156,6 +163,7 @@ A current list of documentation files includes:
 * Google Analytics
 * Gravatar links dynamic
 * Author/Archive layouts default, month, day, category, tag
+* Related Posts
 
 <a id="questions"></a>
 ## Questions
