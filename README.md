@@ -86,6 +86,7 @@ A current list of documentation files includes:
       * Cache these
     * Parsing RSS Feed seems like the best bet: https://api.flickr.com/services/feeds/photos_public.gne?id=78213110@N06&lang=en-us&format=rss_200
     * See [resources][1]
+3. Search form
 
 <a id="archive-and-author-pages"></a>
 #### Archive and Author Pages

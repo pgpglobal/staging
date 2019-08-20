@@ -8,8 +8,10 @@
           <a href="{{ author.url }}">
             <img id="{{ author.display_name }}" src="{{ author.email | gravatar }}" alt="Author thumbnail for {{ author.name }}" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="{{ src_original }}">
           </a>
-          <!-- {{ author.content | remove: '<p>' | remove: '</p>' }} -->
-          <!-- {{ author.content | markdownify }} -->
+          {% comment %}
+          {{ author.content | remove: '<p>' | remove: '</p>' }}
+          {{ author.content | markdownify }}
+          {% endcomment %}
         </li>
       {% endif %}
 
@@ -64,7 +66,34 @@
   <div class="thin-sidebar sidebar-left spad">
     <div id="archives-3" class="widget widget_archive">
       <h2 class="widget-title">Archives</h2>
+
       <ul>
+      {% for post in site.posts  %}
+        {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+        {% capture this_year_num %}{{ post.date | date: "%m" }}{% endcapture %}
+        {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
+        {% capture this_month_num %}{{ post.date | date: "%m" }}{% endcapture %}
+        {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
+        {% comment %}
+        {% endcomment %}
+        {% comment %}
+        {% capture next_year_num %}{{ post.date | date: "%m" }}{% endcapture %}
+        {% capture next_month_num %}{{ post.previous.date | date: "%m" }}{% endcapture %}
+        {% endcomment %}
+        {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
+
+        {% if next_year contains this_year and this_year contains next_year %}
+          <!-- <p>This Year: {{this_year}} Next year: {{next_year }}</p> -->
+          <li><a href="/{{ this_year_num }}/{{ this_month_num }}">{{ this_month }} {{ this_year}}</a></li>
+        {% else %}
+          <!-- <p>Next Year: {{next_year}} This year: {{this_year }}</p> -->
+        {% endif %}
+          <!-- <li><a href="{{ post.url }}">{{ post.title }}</a></li> -->
+        {% endfor %}
+        </ul>
+
+
+<!--       <ul>
         <li><a href="https://personalgenomes.wordpress.com/2016/09/">September 2016</a></li>
         <li><a href="https://personalgenomes.wordpress.com/2016/06/">June 2016</a></li>
         <li><a href="https://personalgenomes.wordpress.com/2015/11/">November 2015</a></li>
@@ -103,7 +132,7 @@
         <li><a href="https://personalgenomes.wordpress.com/2012/04/">April 2012</a></li>
         <li><a href="https://personalgenomes.wordpress.com/2012/03/">March 2012</a></li>
         <li><a href="https://personalgenomes.wordpress.com/2012/02/">February 2012</a></li>
-      </ul>
+      </ul>-->
     </div>
     <div id="flickr-2" class="widget widget_flickr">
       <h2 class="widget-title">Flickr Photos</h2><!-- Start of Flickr Widget -->
