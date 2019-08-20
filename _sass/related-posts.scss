@@ -1,0 +1,8 @@
+// See _post-footer.scss instead
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post span.related-category:nth-of-type(1) {
+  display: inline !important;
+}
+
+#jp-relatedposts .jp-relatedposts-items .jp-relatedposts-post span.related-category:nth-of-type(n+1) {
+  display: none;
+}

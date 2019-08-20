@@ -71,6 +71,11 @@
   a:active {
     color: $blog--link-color;
   }
+
+  .alignleft,
+  .alignleft .highlight-box {
+    margin: 0 15px 10px 0;
+  }
 }
 
 .post-header {
