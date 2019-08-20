@@ -11,7 +11,6 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 * [Documentation](#documentation)
 * [Remaining Development Tasks](#remaining-development-tasks)
   * [Blog Import](#blog-import)
-    * [Share Buttons](#share-buttons)
     * [Sidebar Functionality](#sidebar-functionality)
     * [Archive and Author Pages](#archive-and-author-pages)
     * [Captions and Shortcodes](#captions-and-shortcodes)
@@ -72,11 +71,6 @@ A current list of documentation files includes:
 <a id="blog-import"></a>
 ### Blog Import
 
-<a id="share-buttons"></a>
-#### Share Buttons
-
-1. Replicate social share buttons from old blog
-
 <a id="sidebar-functionality"></a>
 #### Sidebar Functionality
 
@@ -86,7 +80,7 @@ A current list of documentation files includes:
       * Cache these
     * Parsing RSS Feed seems like the best bet: https://api.flickr.com/services/feeds/photos_public.gne?id=78213110@N06&lang=en-us&format=rss_200
     * See [resources][1]
-3. Search form
+3. Search form needs to be functional
 
 <a id="archive-and-author-pages"></a>
 #### Archive and Author Pages
@@ -165,6 +159,7 @@ A current list of documentation files includes:
 * Gravatar links dynamic
 * Author/Archive layouts default, month, day, category, tag
 * Related Posts
+* Blog Share buttons
 
 <a id="questions"></a>
 ## Questions
