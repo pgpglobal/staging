@@ -1,8 +1,8 @@
 <div class="post-footer">
-  <div class="categories">from → <a href="https://personalgenomes.wordpress.com/category/uncategorized/" rel="category tag">Uncategorized</a></div>
+  <div class="categories">from → <a href="https://personalgenomes.wordpress.com/category/uncategorized/" rel="category tag">{{ category}} {{ page.categories }} {{ post.categories }} {{ post.category }}</a></div>
 </div>
 
-<div class=".post-navigation post single clear">
-  <div class="alignleft"><a href="https://personalgenomes.wordpress.com/2016/06/06/job-opening-at-pgp-uk-london/" rel="prev">← Job opening at PGP-UK&nbsp;(London)</a></div>
-  <div class="alignright"><a href="https://personalgenomes.wordpress.com/2016/09/23/survey-about-sharing-health-data-online/" rel="next">Survey about sharing health data&nbsp;online →</a></div>
+<div class="post-navigation post single clear">
+    <a href="{{ page.previous.url }}" rel="prev">← {{ page.previous.title }}</a>
+    <a href="{{ page.next.url }}" rel="next">{{ page.next.title }} →</a>
 </div>
