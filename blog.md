@@ -9,7 +9,7 @@ permalink: /blog/
 <article>
   <div class="post-header">
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <div class="date">September 23, 2016</div>
+    <div class="date">{{ post.date | date: "%B %-d, %Y" }}</div>
   </div>
   <p>{{ post.excerpt }}</p>
 </article>

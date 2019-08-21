@@ -12,7 +12,6 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 * [Remaining Development Tasks](#remaining-development-tasks)
   * [Blog Import](#blog-import)
     * [Sidebar Functionality](#sidebar-functionality)
-    * [Archive and Author Pages](#archive-and-author-pages)
     * [Captions and Shortcodes](#captions-and-shortcodes)
     * [Post Footer](#post-footer)
   * [General](#general)
@@ -75,7 +74,7 @@ A current list of documentation files includes:
 <a id="sidebar-functionality"></a>
 #### Sidebar Functionality
 
-1. Archive Months List needs to become dynamic
+1. Archive Months list showing duplicates
 2. Flickr needs to be dynamic. Options
     * Get URLs of last 3 and then follow the normal embed method
       * Cache these
@@ -84,9 +83,6 @@ A current list of documentation files includes:
 3. Search form needs to be functional
 
 <a id="archive-and-author-pages"></a>
-#### Archive and Author Pages
-
-1. Category pages aren't working. Unsure why - tags work fine.
 
 <a id="captions-and-shortcodes"></a>
 #### Captions and Shortcodes
@@ -106,16 +102,16 @@ A current list of documentation files includes:
 
 <a id="styling-and-markup-adjustments"></a>
 #### Styling and Markup adjustments
-1. Change all .date to time.dt-published
-    * Figure out styles for date + author on blog posts
 2. Blog articles check typography
 3. Blog - Social Icons sidebar gets pushed to new line btwn 768-830px
 4. Main Page - change `<button> a:hover` color to match original
-5. Replace all fixed line heights w/ standard numbers
+5. Replace all fixed line heights w/ relative numbers
+  * Using a single variable wherever possible
 6. Archive pages - Post `<li>` needs background color change on hover
 7. Desktop - Fix Nav Menu dropdown color
 8. Minor: `_media.css`: convert max-width: 767 into relevant min-width sections, if time-possible (non-essential).
-9. Blog entry `h2` tags aren't applying font size properly
+9. Blog/Archive: `.entries span`  needs more specificity (due to text-align)
+10. Mobile Sidebar - Social Icons should be less to the right
 
 <a id="content-needed"></a>
 #### Content Needed
@@ -154,6 +150,7 @@ A current list of documentation files includes:
 
 <a id="completed"></a>
 ## Completed
+
 * Moved News section to its own page
 * Fixed 404 Page header
 * Nav Menu logic for seperator and dropdown-header added in
@@ -169,6 +166,9 @@ A current list of documentation files includes:
 * Author/Archive layouts default, month, day, category, tag
 * Related Posts
 * Blog Share buttons
+* Category and Tag pages
+* Added <time> tags
+* Blog Dates are dynamic
 
 <a id="questions"></a>
 ## Questions
