@@ -62,7 +62,7 @@ title: The Personal Genome Project
           <li>
             <h3>{{ project.title }} ({{ project.locale }})</h3>
             <p>{{ project.description }}</p>
-            <button class="btn btn-default"><a href="{{ project.link }}">Go to the {{ project.title }} website</a></button>
+            <button class="btn btn-default"><a href="{{ project.link }}">Go to the {{ project.title }} website {{ project.language }}</a></button>
           </li>
         {% endfor %}
       </ul>
