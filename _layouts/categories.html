@@ -1,24 +1,37 @@
 ---
-layout: page
+layout: blog
 permalink: /categories/
 title: Categories
+class: archive
 ---
 
+<h1 class="categories-title">Categories</h1>
+<img class="archive-comment" src="{{ "/assets/images/comments-bubble-archive.gif" | relative_url }}" width="17" height="14" alt="comment" scale="0">
 
-<div id="archives">
-{% for category in site.categories %}
-  <div class="archive-group">
-    {% capture category_name %}{{ category | first }}{% endcapture %}
-    <div id="#{{ category_name | slugize }}"></div>
-    <p></p>
+<div class="entries">
+  <ul class="entry-list">
+    {% assign categories_list = site.categories %}
+      {% if categories_list.first[0] == null %}
+        {% for category in categories_list %}
+          {% unless category contains "admin" or category[0] contains "admin" %}
+          <li><a class="category-link" href="{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})
+            <!-- <span class="comments_number">0</span> -->
+          </a></li>
+          {% endunless %}
+        {% endfor %}
+      {% else %}
+        {% for category in categories_list %}
+          {% unless category contains "admin" or category[0] contains "admin" %}
+          <li><a class="category-link" href="{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})
+            <!-- <span class="comments_number">0</span> -->
+          </a></li>
+          {% endunless %}
+        {% endfor %}
+      {% endif %}
+    {% assign categories_list = nil %}  </ul>
+</div><!--end entry-list-->
 
-    <h3 class="category-head">{{ category_name }}</h3>
-    <a name="{{ category_name | slugize }}"></a>
-    {% for post in site.categories[category_name] %}
-    <article class="archive-item">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-    </article>
-    {% endfor %}
-  </div>
-{% endfor %}
-</div>
+<div class="navigation">
+  <div class="alignleft"></div>
+  <div class="alignright"></div>
+</div><!--end navigation-->

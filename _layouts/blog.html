@@ -9,6 +9,9 @@
   <body class="body-post body-{{ page.class }}">
 {% elsif page.type == "year" or page.type == "month" or page.type == "day" or page.type == "category" or page.type == "tag" %}
   <body class="body-archive">
+{% elsif page.title == "Categories" or page.title == "Tags" %}
+  <body class="body-category">
+
 {% else %}
   <body class="body-blog">
 {% endif %}

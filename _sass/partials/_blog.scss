@@ -2,6 +2,10 @@
  * _blog.scss
  */
 
+.blog-wrapper {
+  font-family: $blog-font-family;
+}
+
 .body-archive .blog-main-container,
 .body-post .blog-main-container,
 .blog-main-container {
@@ -59,6 +63,7 @@
 
   p {
     color: $black;
+    font-size: $blog--base-font-size;
     line-height: 1.7;
     margin-bottom: 10px;
   }
