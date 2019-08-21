@@ -110,10 +110,23 @@ li {
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
-}
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+   font-weight: 400;
+ }
 
+ .blog-wrapper h1,
+ .blog-wrapper h2,
+ .blog-wrapper h3,
+ .blog-wrapper h4,
+ .blog-wrapper h5,
+ .blog-wrapper h6 {
+   font-weight: 700;
+ }
 
 /**
  * Links

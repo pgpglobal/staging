@@ -73,6 +73,7 @@ li:last-child {
 
 .navbar-fixed-bottom .navbar-collapse,
 .navbar-fixed-top .navbar-collapse {
+  font-size: $nav-font-size;
   max-height: initial;
 }
 
