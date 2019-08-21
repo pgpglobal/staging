@@ -12,7 +12,7 @@ layout: blog
     <li>
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
         <!-- <span class="comments_number">0</span> -->
-        <span class="archdate">{{ post.date | date: "%b %-d, %Y" }}</span>
+        <time datetime="{{ post.date | date: '%b %-d, %Y' }}" class="archdate">{{ post.date | date: "%b %-d, %Y" }}</time>
         {{ post.title }}
       </a>
     {% endfor %}
