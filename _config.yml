@@ -55,10 +55,12 @@ minima:
 markdown: kramdown
 theme: minima
 plugins:
+  - jekyll-admin
   - jekyll-archives
   # - jekyll-autoprefixer
   - jekyll-include-cache
   # - jekyll-feed
+  - github-pages
   # - jekyll-picture-tag
   # - jekyll-seo-tag
   # - jekyll-sitemap
