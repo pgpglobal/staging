@@ -20,7 +20,7 @@ $('#gform').on('submit', function(e) {
 <h2>Contact Us</h2>
 
 <p>For questions or more information about the {{ site.title }}, please use the form below to contact us.</p>
-<form name="gform" id="gform" enctype="text/plain" method="post" action="http://docs.google.com/forms/d/e/1FAIpQLSeAV6TIsbXg3dDpcEKiRfQH6eqqFRoFQl2ulQeerrppCRldRw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+<form name="gform" id="gform" enctype="text/plain" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSeAV6TIsbXg3dDpcEKiRfQH6eqqFRoFQl2ulQeerrppCRldRw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
   <p>Your name:<br>
     <input class="span4" type="text" name="entry.1444497041" id="entry.1444497041"></p>
 

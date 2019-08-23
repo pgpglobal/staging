@@ -35,21 +35,21 @@
                   <ul class="dropdown-menu">
                     
                       
-                        <li><a href="/#about">About</a>
+                        <li><a href="/PGPGlobal/#about">About</a>
                       
 
                           
                         </li>
                     
                       
-                        <li><a href="/#overview">Overview</a>
+                        <li><a href="/PGPGlobal/#overview">Overview</a>
                       
 
                           
                         </li>
                     
                       
-                        <li><a href="/#guidelines">Guidelines</a>
+                        <li><a href="/PGPGlobal/#guidelines">Guidelines</a>
                       
 
                           
@@ -64,28 +64,28 @@
                         </li>
                     
                       
-                        <li><a href="https://pgp.med.harvard.edu/">Harvard PGP</a>
+                        <li><a href="/PGPGlobalhttps://pgp.med.harvard.edu/">Harvard PGP</a>
                       
 
                           
                         </li>
                     
                       
-                        <li><a href="https://personalgenomes.ca/">PGP Canada</a>
+                        <li><a href="/PGPGlobalhttps://personalgenomes.ca/">PGP Canada</a>
                       
 
                           
                         </li>
                     
                       
-                        <li><a href="https://www.personalgenomes.org.uk/">PGP UK</a>
+                        <li><a href="/PGPGlobalhttps://www.personalgenomes.org.uk/">PGP UK</a>
                       
 
                           
                         </li>
                     
                       
-                        <li><a href="http://genomaustria.at/das-projekt/">Genom Austria</a>
+                        <li><a href="/PGPGlobalhttp://genomaustria.at/das-projekt/">Genom Austria</a>
                       
 
                           
@@ -97,15 +97,15 @@
                 
           
             
-              <li><a href="/news">News</a>
+              <li><a href="/PGPGlobal/news">News</a>
             
           
             
-              <li><a href="/blog">Blog</a>
+              <li><a href="/PGPGlobal/blog">Blog</a>
             
           
             
-              <li><a href="/contact/">Contact</a>
+              <li><a href="/PGPGlobal/contact/">Contact</a>
             
           
         
@@ -136,7 +136,7 @@
 <p><strong>What is exome data?</strong></p>
 <p>In my earlier post "<a href="http://blog.personalgenomes.org/2012/03/21/the-whole-two-yards/">The Whole Two Yards</a>" I explained that the PGP is interested in whole genomes rather than genotyping. Exome sequencing is a third category of DNA analysis. So what is an <a href="http://en.wikipedia.org/wiki/Exome">exome</a>?</p>
 <p>"Exome sequencing" refers to something much like genome sequencing, but limited to the regions in the genome that code for <a href="http://en.wikipedia.org/wiki/Protein">proteins</a> (the "<a href="http://en.wikipedia.org/wiki/Exon">exons</a>" of genes). Proteins perform most of the functions in the cell: from <a href="http://en.wikipedia.org/wiki/Collagen">structures</a> to <a href="http://en.wikipedia.org/wiki/Enzyme">enzymes</a> to <a href="http://en.wikipedia.org/wiki/Notch_signaling">relaying signals</a>, proteins are the workhorses of biology. Thus, most known genetic variations that have significant effects are the result of changes within exons -- changes that disrupt the resulting protein coded by a gene. Surprisingly, these regions only account for 1% of the genome! Because of this, there has been some focus on targeted sequencing of only exons -- hopefully getting almost as much useful sequence for a fraction of the cost.</p>
-<p>[caption id="attachment_433" align="aligncenter" width="480"]<a href="http://en.wikipedia.org/wiki/File:Gene_structure.svg"><img class="size-full wp-image-433" title="exon_intron" src="/PGPGlobal//assets/images/exon_intron.png" alt="" width="480" height="75" /></a> Genes contain protein coding regions ("exons") interspersed with large non-coding gaps ("introns"). To save money, exome sequencing targets and sequences only the exons in the genome -- thereby focusing on the regions most likely to have variations that affect traits. [Image by User:Daycd on en.wikipedia.org, shared as CC-BY-SA][/caption]In the end, isolating exons is difficult, so "exomes" aren't that much cheaper than whole genomes (maybe 2-3x cheaper, not 100x)... but it's still useful to have the cheaper option.<sup>1</sup> <a href="https://www.23andme.com/">23andme</a> recently started a <a href="https://www.23andme.com/exome/">pilot exome sequencing service</a> (notably, they provide no interpretation of the data), and some PGP participants have signed up for it.</p>
+<p>[caption id="attachment_433" align="aligncenter" width="480"]<a href="http://en.wikipedia.org/wiki/File:Gene_structure.svg"><img class="size-full wp-image-433" title="exon_intron" src="/PGPGlobal/assets/images/exon_intron.png" alt="" width="480" height="75" /></a> Genes contain protein coding regions ("exons") interspersed with large non-coding gaps ("introns"). To save money, exome sequencing targets and sequences only the exons in the genome -- thereby focusing on the regions most likely to have variations that affect traits. [Image by User:Daycd on en.wikipedia.org, shared as CC-BY-SA][/caption]In the end, isolating exons is difficult, so "exomes" aren't that much cheaper than whole genomes (maybe 2-3x cheaper, not 100x)... but it's still useful to have the cheaper option.<sup>1</sup> <a href="https://www.23andme.com/">23andme</a> recently started a <a href="https://www.23andme.com/exome/">pilot exome sequencing service</a> (notably, they provide no interpretation of the data), and some PGP participants have signed up for it.</p>
 <p><strong>Addition of VCF interpretation in GET-Evidence</strong></p>
 <p>23andme provided the participant with both a <a href="http://en.wikipedia.org/wiki/Variant_Call_Format">VCF</a> file and individual read data (in the form of a "BAM" file). Personally I'm not a fan of the VCF format for personal genomes, mainly because it fails to report which regions are confidently called as "matching reference". (What this means is that, if a variant <strong>isn't</strong> listed in the file, you can't tell whether <strong>(a)</strong> you don't have it, or <strong>(b)</strong> that region simply wasn't well covered.)</p>
 <p>That said, VCF is a very common format, and so I've finally <a href="https://github.com/madprime/get-evidence/commit/d444ace777d8cacbc6ff6ef21f8844496d8f46ac">added the ability to interpret VCF</a> to <a href="http://evidence.personalgenomes.org/about">GET-Evidence</a>. I ran the exome data through GET-Evidence and did a little bit of additional interpretation (as with other whole genome reports, these interpretation is far from complete). You can <a href="http://evidence.personalgenomes.org/genomes?display_genome_id=9b06f9c6c008e0a91d50b6e3b468d57c8f7a8fcb">visit the report</a> on GET-Evidence -- and if you'd like a copy of the VCF file itself, it is linked at the top of the report as "source data". We're hoping to reprocess the BAM files to produce higher quality reports and publicly host these larger files as well. For now, though, we're able to immediately accept and interpret VCF files.</p>
@@ -225,9 +225,9 @@
       <div class="sd-content">
         <ul>
           <li class="share-email share-service-visible"><a rel="nofollow noopener noreferrer" data-shared="" class="share-email sd-button share-icon" href="/2012/02/07/this-blog-needs-a-name//?share=email&amp;nb=1" target="_blank" title="Click to email this to a friend"><span><i class="fad fa-envelope"></i>Email</span></a></li>
-          <li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-1698" class="share-facebook sd-button share-icon" href="http://www.facebook.com/share.php?u=/PGPGlobal//2012/02/07/this-blog-needs-a-name/" target="_blank" title="Click to share on Facebook"><i class="fab fa-facebook-square"></i><span>Facebook</span></a></li>
-          <li class="share-reddit"><a rel="nofollow noopener noreferrer" data-shared="" class="share-reddit sd-button share-icon" href="http://www.reddit.com/submit?url=/PGPGlobal//2012/02/07/this-blog-needs-a-name/" target="_blank" title="Click to share on Reddit"><i class="fab fa-reddit-alien"></i><span>Reddit</span></a></li>
-          <li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-1698" class="share-twitter sd-button share-icon" href="http://twitter.com/home?status=/PGPGlobal/" target="_blank" title="Click to share on Twitter"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
+          <li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-1698" class="share-facebook sd-button share-icon" href="http://www.facebook.com/share.php?u=/PGPGlobal/2012/02/07/this-blog-needs-a-name/" target="_blank" title="Click to share on Facebook"><i class="fab fa-facebook-square"></i><span>Facebook</span></a></li>
+          <li class="share-reddit"><a rel="nofollow noopener noreferrer" data-shared="" class="share-reddit sd-button share-icon" href="http://www.reddit.com/submit?url=/PGPGlobal/2012/02/07/this-blog-needs-a-name/" target="_blank" title="Click to share on Reddit"><i class="fab fa-reddit-alien"></i><span>Reddit</span></a></li>
+          <li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-1698" class="share-twitter sd-button share-icon" href="http://twitter.com/home?status=/PGPGlobal" target="_blank" title="Click to share on Twitter"><i class="fab fa-twitter"></i><span>Twitter</span></a></li>
           <li class="share-pinterest"><a rel="nofollow noopener noreferrer" data-shared="sharing-pinterest-1698" class="share-pinterest sd-button share-icon" href="https://pinterest.com/pin/create/button/?url=&media=&description=" target="_blank" title="Click to share on Pinterest"><i class="fab fa-pinterest-p"></i><span>Pinterest</span></a></li>
           <li class="share-end"></li>
         </ul>

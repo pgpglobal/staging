@@ -27,7 +27,7 @@
                         <li role="separator" class="divider"></li>
                         <li class="dropdown-header">{{ entry.page }}</li>
                       {% else %}
-                        <li><a href="{{ entry.url }}">{{ entry.page }}</a>
+                        <li><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.page }}</a>
                       {% endif %}
 
                           {% if entry.subsubfolderitems[0] %}
@@ -43,7 +43,7 @@
               </li>
                 {% endif %}
                 {% else %}
-              <li><a href="{{ item.url }}">{{ item.title }}</a>
+              <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
             {% endif %}
           {% endfor %}
         {% endif %}

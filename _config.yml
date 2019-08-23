@@ -19,7 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
-baseurl: "/PGPGlobal/" # the subpath of your site, e.g. /blog
+baseurl: "/PGPGlobal" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: PGorg
 flickr_username: personalgenomes
@@ -82,7 +82,7 @@ exclude:
   - README.md
   - ref
   - scratch
-  - ["docs", "ref", "scratch"]
+  - ["docs", "ref", "scratch", "*TASKS", "*.bak"]
 
 sass:
   style: expanded
@@ -112,6 +112,10 @@ defaults:
     scope:
       path: ""      # empty string for all files
       type: posts   # limit to posts
+      type: tags
+      type: categories
+      type: tag
+      type: category
     values:
       is_post: true # automatically set is_post=true for all posts
   -
