@@ -277,6 +277,7 @@ DEPENDENCIES
   jekyll (= 3.8.5)
   jekyll-admin
   jekyll-archives
+  jekyll-feed (~> 0.6)
   jekyll-include-cache
   jekyll-titles-from-headings
   minima (~> 2.0)

@@ -59,9 +59,9 @@ plugins:
   - jekyll-archives
   # - jekyll-autoprefixer
   - jekyll-include-cache
-  # - jekyll-feed
+  - jekyll-feed
   - github-pages
-  # - jekyll-picture-tag
+  - jekyll-picture-tag
   # - jekyll-seo-tag
   # - jekyll-sitemap
   - jekyll-titles-from-headings

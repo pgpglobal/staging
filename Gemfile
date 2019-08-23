@@ -23,7 +23,7 @@ group :jekyll_plugins do
   gem 'jekyll-archives'
   # gem 'jekyll-autoprefixer'
   gem 'jekyll-include-cache'
-  # gem "jekyll-feed", "~> 0.6"
+  gem "jekyll-feed", "~> 0.6"
   # gem 'jekyll-picture-tag'
   # gem 'jekyll-seo-tag'
   # gem 'jekyll-sitemap'
