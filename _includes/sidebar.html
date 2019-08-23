@@ -5,7 +5,7 @@
       {% for author in site.authors %}
       {% if author.email %}
         <li>
-          <a href="{{ author.url }}">
+          <a href="{{ site.baseurl }}{{ author.url }}">
             <img id="{{ author.display_name }}" src="{{ author.email | gravatar }}" alt="Author thumbnail for {{ author.name }}" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="{{ src_original }}">
           </a>
         </li>
@@ -37,7 +37,7 @@
       {% assign counter = 0 %}
       {% for post in site.posts | sort:"date" | reverse %}
       <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
       </li>
       {% assign counter = counter | plus: 1 %}
       {% if counter == maxPost %}
