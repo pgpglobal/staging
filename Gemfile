@@ -28,7 +28,6 @@ group :jekyll_plugins do
   # gem 'jekyll-seo-tag'
   # gem 'jekyll-sitemap'
   gem 'jekyll-titles-from-headings'
-  # gem "github-pages"
 end
 
 gem 'github-pages', group: :jekyll_plugins

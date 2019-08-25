@@ -4,18 +4,14 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 
 <!-- MarkdownTOC -->
 
-* [Instructions](#instructions)
-  * [Setup](#setup)
-  * [Keeping Up-To-Date](#keeping-up-to-date)
-  * [Working on the Site](#working-on-the-site)
-* [Documentation](#documentation)
-* [Remaining Development Tasks](#remaining-development-tasks)
-  * [Blog Import](#blog-import)
-    * [Sidebar Functionality](#sidebar-functionality)
-    * [Captions and Shortcodes](#captions-and-shortcodes)
-    * [Post Footer](#post-footer)
-  * [General](#general)
-    * [Styling and Markup adjustments](#styling-and-markup-adjustments)
+* [Instructions and Documentation](#instructions-and-documentation)
+* [Blog Import](#blog-import)
+  * [Sidebar Functionality](#sidebar-functionality)
+  * [Captions and Shortcodes](#captions-and-shortcodes)
+  * [Post Footer](#post-footer)
+* [Styling and Markup adjustments](#styling-and-markup-adjustments)
+  * [Medium-Large Tasks](#medium-large-tasks)
+  * [Small Tasks](#small-tasks)
     * [Content Needed](#content-needed)
   * [Plugins and Configuration](#plugins-and-configuration)
   * [Accessibility](#accessibility)
@@ -25,66 +21,28 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 
 <!-- /MarkdownTOC -->
 
-<a id="instructions"></a>
-## Instructions
+<a id="instructions-and-documentation"></a>
+## Instructions and Documentation
 
-<a id="setup"></a>
-### Setup
-
-In order to run this site locally, follow the following steps:
-
-1. Download and install [Ruby](https://www.ruby-lang.org/en/downloads/) v. 2.4.0 or higher. See [Ruby Docs - Installation](https://www.ruby-lang.org/en/documentation/installation/) for more info.
-    * If there's an option to install with developer kit, I recommend doing so.
-2. Install [RubyGems](https://rubygems.org/pages/download)
-3. Install [GCC](https://gcc.gnu.org/install/) and [Make](https://www.gnu.org/software/make/)
-4. Download and install [Jekyll](https://jekyllrb.com/). In terminal: `gem install bundler jekyll`
-    * See [Jekyll Docs - Installation](https://jekyllrb.com/docs/installation/#requirements) for more detailed, OS-specific instructions, as well as system requirements.
-5. Download and install [Git](https://git-scm.com/downloads)
-6. Download or clone this repo. In the terminal, this is done by typing `git clone https://github.com/lunacodes/PGPGlobal.git`
-7. Navigate to the directory that was just created (PGPGlobal by default, unless you gave it a custom name)
-8. Terminal: `bundle exec jekyll serve`
-    * In the future, you can simply run `jekyll serve`, however you may need to run `bundle exec jekyll serve` and/or `bundle install` when new plugins or other elements are added to the site.
-
-<a id="keeping-up-to-date"></a>
-### Keeping Up-To-Date
-
-In order to keep the site up-to-date with future changes, you should run `git pull` in your terminal.
-
-<a id="working-on-the-site"></a>
-### Working on the Site
-
-See the [Docs](docs/documentation) page.
-
-<a id="documentation"></a>
-## Documentation
-
-I've started writing up some [documentation](docs/documentation.md). Please let me know specific questions or topics, and I'll add those in.
-
-A current list of documentation files includes:
+See A current list of documentation files includes:
 * [Documentation](docs/documentation.md) - general documentation
 * [Resources](docs/resources.md) - a list of various resources related to in-progress tasks
 
-<a id="remaining-development-tasks"></a>
-## Remaining Development Tasks
-
 <a id="blog-import"></a>
-### Blog Import
+## Blog Import
 
 <a id="sidebar-functionality"></a>
-#### Sidebar Functionality
+### Sidebar Functionality
 
-1. Archive Months list showing duplicates
-2. Flickr needs to be dynamic. Options
+1. Flickr needs to be dynamic. Options
     * Get URLs of last 3 and then follow the normal embed method
       * Cache these
     * Parsing RSS Feed seems like the best bet: https://api.flickr.com/services/feeds/photos_public.gne?id=78213110@N06&lang=en-us&format=rss_200
     * See [resources][1]
-3. Search form needs to be functional
-
-<a id="archive-and-author-pages"></a>
+2. Search form needs to be functional
 
 <a id="captions-and-shortcodes"></a>
-#### Captions and Shortcodes
+### Captions and Shortcodes
 
 1. Shortcodes need to be replaced with actual code wherever possible. See [here](http://localhost:4000/2012/11/27/wildlife-of-our-homes-q-a-with-rob-dunn/) for an example.
     * `[caption]` covers 21 posts. I can't say for other shortcodes without manually looking through posts.
@@ -92,25 +50,30 @@ A current list of documentation files includes:
     * `[polldaddy]`covers 1 posts
 
 <a id="post-footer"></a>
-#### Post Footer
+### Post Footer
 
 1. Nav links need to become dynamic
 
-<a id="general"></a>
-### General
-
 <a id="styling-and-markup-adjustments"></a>
-#### Styling and Markup adjustments
-2. Blog articles check typography
-3. Blog - Social Icons sidebar gets pushed to new line btwn 768-830px
-4. Main Page - change `<button> a:hover` color to match original
-5. Replace all fixed line heights w/ relative numbers
+## Styling and Markup adjustments
+
+<a id="medium-large-tasks"></a>
+### Medium-Large Tasks
+
+1. Blog articles check typography
+2. Mobile Sidebar - Social Icons should be less to the right
+3. Preference: `_media.css`: convert max-width: 767 into relevant min-width sections, if time-possible (non-essential).
+
+<a id="small-tasks"></a>
+### Small Tasks
+
+1. Blog - Social Icons sidebar gets pushed to new line btwn 768-830px
+2. Main Page - change `<button> a:hover` color to match original
+3. Replace all fixed line heights w/ relative numbers
   * Using a single variable wherever possible
-6. Archive pages - Post `<li>` needs background color change on hover
-7. Desktop - Fix Nav Menu dropdown color
-8. Minor: `_media.css`: convert max-width: 767 into relevant min-width sections, if time-possible (non-essential).
-9. Blog/Archive: `.entries span`  needs more specificity (due to text-align)
-10. Mobile Sidebar - Social Icons should be less to the right
+4. Archive pages - Post `<li>` needs background color change on hover
+5. Desktop - Fix Nav Menu dropdown color
+6. Blog/Archive: `.entries span`  needs more specificity (due to text-align)
 
 <a id="content-needed"></a>
 #### Content Needed

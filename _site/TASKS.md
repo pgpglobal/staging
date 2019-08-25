@@ -32,6 +32,7 @@
   * [Testing - GitHub Pages - Local](#testing---github-pages---local)
 * [Production](#production)
   * [Custom Domain](#custom-domain)
+* [Completed](#completed)
 * [Deprecated](#deprecated)
   * [Comments System](#comments-system)
 
@@ -206,6 +207,27 @@
     * [How to setup a static website using GitHub Pages and Cloudflare with your own Domain Name](https://www.codementor.io/landonpatmore/how-to-setup-a-static-website-using-github-pages-and-cloudflare-with-your-own-domain-name-jb99nbuoe)
     * [How to Deploy Websites on Custom Domains using Cloudflare and Github Pages](https://medium.com/crowdbotics/annie-azana-how-to-deploy-websites-using-cloudflare-and-github-pages-c415c55fea36)
 
+<a id="completed"></a>
+## Completed
+
+* Moved News section to its own page
+* Fixed 404 Page header
+* Nav Menu logic for seperator and dropdown-header added in
+* Split the "International Projects" section into a jekyll collection of markdown files (similar to News files)?
+* Added alt text to pgp-logo.png
+* Retrieved missing Blog images
+* Refactored SCSS code
+* Created auto-generated Author pages
+* Fixed private Author Metadata displaying in post header
+* Sidebar and Main layouts on blog, archive, and author pages
+* Google Analytics
+* Gravatar links dynamic
+* Author/Archive layouts default, month, day, category, tag
+* Related Posts
+* Blog Share buttons
+* Category and Tag pages
+* Added <time> tags
+* Blog Dates are dynamic
 <a id="deprecated"></a>
 ## Deprecated
 

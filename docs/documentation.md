@@ -3,10 +3,12 @@
 <!-- MarkdownTOC -->
 
 * [Last Updated](#last-updated)
+* [Setup](#setup)
+* [Jekyll Admin Graphical Editor](#jekyll-admin-graphical-editor)
 * [Working on the Site Locally with Git](#working-on-the-site-locally-with-git)
+  * [Keeping Up-To-Date](#keeping-up-to-date)
   * [Branching](#branching)
   * [Solving Merge Conflicts](#solving-merge-conflicts)
-* [Jekyll Admin Graphical Editor](#jekyll-admin-graphical-editor)
 * [Files and Directories Guide](#files-and-directories-guide)
   * [Directories](#directories)
   * [Files](#files)
@@ -19,13 +21,39 @@
 
 <a id="last-updated"></a>
 ## Last Updated
+This Documentation was last updated on 8/25/2019.
 
-This Documentation was last updated on 8/13/2019.
+<a id="setup"></a>
+## Setup
+
+In order to run this site locally, follow the following steps:
+
+1. Download and install [Ruby](https://www.ruby-lang.org/en/downloads/) v. 2.4.0 or higher. See [Ruby Docs - Installation](https://www.ruby-lang.org/en/documentation/installation/) for more info.
+    * If there's an option to install with developer kit, I recommend doing so.
+2. Install [RubyGems](https://rubygems.org/pages/download)
+3. Install [GCC](https://gcc.gnu.org/install/) and [Make](https://www.gnu.org/software/make/)
+4. Download and install [Jekyll](https://jekyllrb.com/). In terminal: `gem install bundler jekyll`
+    * See [Jekyll Docs - Installation](https://jekyllrb.com/docs/installation/#requirements) for more detailed, OS-specific instructions, as well as system requirements.
+5. Download and install [Git](https://git-scm.com/downloads)
+6. Download or clone this repo. In the terminal, this is done by typing `git clone https://github.com/lunacodes/PGPGlobal.git`
+7. Navigate to the directory that was just created (PGPGlobal by default, unless you gave it a custom name)
+8. Terminal: `bundle exec jekyll serve`
+    * In the future, you can simply run `jekyll serve`, however you may need to run `bundle exec jekyll serve` and/or `bundle install` when new plugins or other elements are added to the site.
+
+<a id="jekyll-admin-graphical-editor"></a>
+## Jekyll Admin Graphical Editor
+
+A visual interface powered by [Jekyll Admin](https://github.com/jekyll/jekyll-admin) is available for editing the site. Access it by appending `/admin` to the site url, ex: `localhost:4000/admin`
 
 <a id="working-on-the-site-locally-with-git"></a>
 ## Working on the Site Locally with Git
 
 1. Always run `git pull origin master` before doing any local work. This pulls any changes other people made from the online repo, and then updates your local files. If you forget to do this, you will get merge conflicts. Merge conflicts are a headache. See [Solving Merge Conflicts](#merge-conflicts) section below.
+
+<a id="keeping-up-to-date"></a>
+### Keeping Up-To-Date
+
+In order to keep the site up-to-date with future changes, you should run `git pull` in your terminal.
 
 <a id="branching"></a>
 ### Branching
@@ -58,11 +86,6 @@ If you run into trouble with push to the remote repo, this may involve some not 
 ### Solving Merge Conflicts
 
 Coming Soon
-
-<a id="jekyll-admin-graphical-editor"></a>
-## Jekyll Admin Graphical Editor
-
-A visual interface powered by [Jekyll Admin](https://github.com/jekyll/jekyll-admin) is available for editing the site. Access it by appending `/admin` to the site url, ex: `localhost:4000/admin`
 
 <a id="files-and-directories-guide"></a>
 ## Files and Directories Guide

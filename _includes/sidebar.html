@@ -64,72 +64,10 @@
     <div id="archives-3" class="widget widget_archive">
       <h2 class="widget-title">Archives</h2>
 
-      <ul>
-      {% for post in site.posts  %}
-        {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-        {% capture this_year_num %}{{ post.date | date: "%m" }}{% endcapture %}
-        {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
-        {% capture this_month_num %}{{ post.date | date: "%m" }}{% endcapture %}
-        {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
-        {% comment %}
-        {% endcomment %}
-        {% comment %}
-        {% capture next_year_num %}{{ post.date | date: "%m" }}{% endcapture %}
-        {% capture next_month_num %}{{ post.previous.date | date: "%m" }}{% endcapture %}
-        {% endcomment %}
-        {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
-
-        {% if next_year contains this_year and this_year contains next_year %}
-          <!-- <p>This Year: {{this_year}} Next year: {{next_year }}</p> -->
-          <li><a href="/{{ this_year }}/{{ this_month_num }}">{{ this_month }} {{ this_year}}</a></li>
-        {% else %}
-          <!-- <p>Next Year: {{next_year}} This year: {{this_year }}</p> -->
-        {% endif %}
-          <!-- <li><a href="{{ post.url }}">{{ post.title }}</a></li> -->
-        {% endfor %}
+        <ul>
+          {% include_cached sidebar-archives.html %}
         </ul>
-
-
-<!--       <ul>
-        <li><a href="https://personalgenomes.wordpress.com/2016/09/">September 2016</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2016/06/">June 2016</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2015/11/">November 2015</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2015/09/">September 2015</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2015/08/">August 2015</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2015/05/">May 2015</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2015/04/">April 2015</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2015/03/">March 2015</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2015/02/">February 2015</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2014/12/">December 2014</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2014/11/">November 2014</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2014/08/">August 2014</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2014/06/">June 2014</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2014/05/">May 2014</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2014/04/">April 2014</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2014/03/">March 2014</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2014/02/">February 2014</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2014/01/">January 2014</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2013/12/">December 2013</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2013/11/">November 2013</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2013/09/">September 2013</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2013/08/">August 2013</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2013/05/">May 2013</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2013/04/">April 2013</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2013/03/">March 2013</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2013/02/">February 2013</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2013/01/">January 2013</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2012/12/">December 2012</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2012/11/">November 2012</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2012/10/">October 2012</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2012/09/">September 2012</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2012/08/">August 2012</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2012/07/">July 2012</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2012/06/">June 2012</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2012/05/">May 2012</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2012/04/">April 2012</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2012/03/">March 2012</a></li>
-        <li><a href="https://personalgenomes.wordpress.com/2012/02/">February 2012</a></li>
-      </ul>-->
+      </div>
     </div>
     <div id="flickr-2" class="widget widget_flickr">
       <h2 class="widget-title">Flickr Photos</h2><!-- Start of Flickr Widget -->
