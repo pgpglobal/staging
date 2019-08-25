@@ -82,7 +82,7 @@ exclude:
   - README.md
   - ref
   - scratch
-  - ["docs", "ref", "scratch", "*TASKS", "*.bak"]
+  - ["docs", "ref", "scratch", "*TASKS", "*.bak", "keys"]
 
 sass:
   style: expanded

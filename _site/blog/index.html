@@ -6,11 +6,10 @@
   
   <link rel="stylesheet" href="/PGPGlobal/styles/bootstrap.min.css">
   <link rel="stylesheet" href="/PGPGlobal/assets/main.css">
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> -->
-  <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-y++enYq9sdV7msNmXr08kJdkX4zEI1gMjjkw0l9ttOepH7fMdhb7CePwuRQCfwCr" crossorigin="anonymous"> --><link rel="shortcut icon" type="image/png" href="/PGPGlobal/favicon-local-dev.jpg"><!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><link type="application/atom+xml" rel="alternate" href="/PGPGlobal/feed.xml" title="Personal Genome Project: Global Network" /></head>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script></head>
+  <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-y++enYq9sdV7msNmXr08kJdkX4zEI1gMjjkw0l9ttOepH7fMdhb7CePwuRQCfwCr" crossorigin="anonymous"> --><link rel="shortcut icon" type="image/png" href="/PGPGlobal/favicon-local-dev.jpg"><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/PGPGlobal/feed.xml" title="Personal Genome Project: Global Network" /></head>
 
   <body class="body-blog">
 
@@ -2202,58 +2201,19 @@ for rare and unexpected variations</td>
 
           </main>
 
-          <aside class="sidebar"><div id="sidebar">
+          <aside class="sidebar"><script src="/PGPGlobal/scripts/gravatar.js" type="text/javascript" charset="utf-8"></script>
+
+<div id="sidebar">
   <div id="author_grid-2" class="widget widget_author_grid">
     <h2 class="widget-title">Contributors</h2>
     <ul>
       
       
-        <li>
-          <a href="/PGPGlobal/authors/abram_connely.html">
-            <img id="abram_connelly" src="https://www.gravatar.com/205e460b479e2e5b48aec07710c08d50" alt="Author thumbnail for Abram Connely" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="">
-            <script
-            src="https://code.jquery.com/jquery-2.2.3.min.js"
-            integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
-            crossorigin="anonymous"></script>
+        <script>
+          document.write('<li><a id="abram_connelly" href="/PGPGlobal/authors/abram_connely.html">')
+          document.write('<img src="' + get_gravatar('abram.connelly@gmail.com', 48) + '" alt="Author thumbnail for Abram Connely" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="" /><a></li>');
+        </script>
 
-            Gravatar Demo
-            <br>
-            <input type="text">
-            <br>
-            <h3>
-            Avatar
-            </h3>
-            <img class="test"/>
-            <h3>
-            Profile
-            </h3>
-            <div id="content" style="word-wrap: break-all;">
-            </div>
-
-            <script type="text/javascript">
-            //Define a function to create a md5-hash of a string
-            var md5 = function(value) {
-                return CryptoJS.MD5(value).toString();
-            }
-            /*Event listener for every key up event in the input form element*/
-            $("input").keyup(function () {
-                 /*Create the hash of the email address*/
-                 var value = $(this).val();
-                 var hash = md5(value);
-                 /*Change the resource url of the image element*/
-                 $(".test").attr("src","https://www.gravatar.com/avatar/"+hash+".jpg");
-
-                 /*Send a GET request for the email and require the response to be in the JSON format*/
-                 $.get("https://de.gravatar.com/"+hash+".json").done(function(data){
-
-                      /*If the request was successfull, print out the whole JSON on the HTML document*/
-                    $("#content").text(JSON.stringify(data.entry[0]));
-                 }).fail(function(error){
-                console.log("Error: "+error);
-               });
-             });
-            </script>          </a>
-        </li>
       
 
       
@@ -2261,102 +2221,20 @@ for rare and unexpected variations</td>
 
       
       
-        <li>
-          <a href="/PGPGlobal/authors/bioneering.html">
-            <img id="alex_gmu" src="https://www.gravatar.com/205e460b479e2e5b48aec07710c08d50" alt="Author thumbnail for Alex Hoekstra" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="">
-            <script
-            src="https://code.jquery.com/jquery-2.2.3.min.js"
-            integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
-            crossorigin="anonymous"></script>
+        <script>
+          document.write('<li><a id="alex_gmu" href="/PGPGlobal/authors/bioneering.html">')
+          document.write('<img src="' + get_gravatar('alex.gmu@gmail.com', 48) + '" alt="Author thumbnail for Alex Hoekstra" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="" /><a></li>');
+        </script>
 
-            Gravatar Demo
-            <br>
-            <input type="text">
-            <br>
-            <h3>
-            Avatar
-            </h3>
-            <img class="test"/>
-            <h3>
-            Profile
-            </h3>
-            <div id="content" style="word-wrap: break-all;">
-            </div>
-
-            <script type="text/javascript">
-            //Define a function to create a md5-hash of a string
-            var md5 = function(value) {
-                return CryptoJS.MD5(value).toString();
-            }
-            /*Event listener for every key up event in the input form element*/
-            $("input").keyup(function () {
-                 /*Create the hash of the email address*/
-                 var value = $(this).val();
-                 var hash = md5(value);
-                 /*Change the resource url of the image element*/
-                 $(".test").attr("src","https://www.gravatar.com/avatar/"+hash+".jpg");
-
-                 /*Send a GET request for the email and require the response to be in the JSON format*/
-                 $.get("https://de.gravatar.com/"+hash+".json").done(function(data){
-
-                      /*If the request was successfull, print out the whole JSON on the HTML document*/
-                    $("#content").text(JSON.stringify(data.entry[0]));
-                 }).fail(function(error){
-                console.log("Error: "+error);
-               });
-             });
-            </script>          </a>
-        </li>
       
 
       
       
-        <li>
-          <a href="/PGPGlobal/authors/dvorhaus.html">
-            <img id="dvorhaus" src="https://www.gravatar.com/205e460b479e2e5b48aec07710c08d50" alt="Author thumbnail for Daniel Vorhaus" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="">
-            <script
-            src="https://code.jquery.com/jquery-2.2.3.min.js"
-            integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
-            crossorigin="anonymous"></script>
+        <script>
+          document.write('<li><a id="dvorhaus" href="/PGPGlobal/authors/dvorhaus.html">')
+          document.write('<img src="' + get_gravatar('dvorhaus@rbh.com', 48) + '" alt="Author thumbnail for Daniel Vorhaus" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="" /><a></li>');
+        </script>
 
-            Gravatar Demo
-            <br>
-            <input type="text">
-            <br>
-            <h3>
-            Avatar
-            </h3>
-            <img class="test"/>
-            <h3>
-            Profile
-            </h3>
-            <div id="content" style="word-wrap: break-all;">
-            </div>
-
-            <script type="text/javascript">
-            //Define a function to create a md5-hash of a string
-            var md5 = function(value) {
-                return CryptoJS.MD5(value).toString();
-            }
-            /*Event listener for every key up event in the input form element*/
-            $("input").keyup(function () {
-                 /*Create the hash of the email address*/
-                 var value = $(this).val();
-                 var hash = md5(value);
-                 /*Change the resource url of the image element*/
-                 $(".test").attr("src","https://www.gravatar.com/avatar/"+hash+".jpg");
-
-                 /*Send a GET request for the email and require the response to be in the JSON format*/
-                 $.get("https://de.gravatar.com/"+hash+".json").done(function(data){
-
-                      /*If the request was successfull, print out the whole JSON on the HTML document*/
-                    $("#content").text(JSON.stringify(data.entry[0]));
-                 }).fail(function(error){
-                console.log("Error: "+error);
-               });
-             });
-            </script>          </a>
-        </li>
       
 
       
@@ -2364,202 +2242,38 @@ for rare and unexpected variations</td>
 
       
       
-        <li>
-          <a href="/PGPGlobal/authors/mpball.html">
-            <img id="mpball" src="https://www.gravatar.com/205e460b479e2e5b48aec07710c08d50" alt="Author thumbnail for Mad Price Ball" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="">
-            <script
-            src="https://code.jquery.com/jquery-2.2.3.min.js"
-            integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
-            crossorigin="anonymous"></script>
+        <script>
+          document.write('<li><a id="mpball" href="/PGPGlobal/authors/mpball.html">')
+          document.write('<img src="' + get_gravatar('mpball@gmail.com', 48) + '" alt="Author thumbnail for Mad Price Ball" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="" /><a></li>');
+        </script>
 
-            Gravatar Demo
-            <br>
-            <input type="text">
-            <br>
-            <h3>
-            Avatar
-            </h3>
-            <img class="test"/>
-            <h3>
-            Profile
-            </h3>
-            <div id="content" style="word-wrap: break-all;">
-            </div>
-
-            <script type="text/javascript">
-            //Define a function to create a md5-hash of a string
-            var md5 = function(value) {
-                return CryptoJS.MD5(value).toString();
-            }
-            /*Event listener for every key up event in the input form element*/
-            $("input").keyup(function () {
-                 /*Create the hash of the email address*/
-                 var value = $(this).val();
-                 var hash = md5(value);
-                 /*Change the resource url of the image element*/
-                 $(".test").attr("src","https://www.gravatar.com/avatar/"+hash+".jpg");
-
-                 /*Send a GET request for the email and require the response to be in the JSON format*/
-                 $.get("https://de.gravatar.com/"+hash+".json").done(function(data){
-
-                      /*If the request was successfull, print out the whole JSON on the HTML document*/
-                    $("#content").text(JSON.stringify(data.entry[0]));
-                 }).fail(function(error){
-                console.log("Error: "+error);
-               });
-             });
-            </script>          </a>
-        </li>
       
 
       
       
-        <li>
-          <a href="/PGPGlobal/authors/nouyangcuroverse.html">
-            <img id="nouyangcuroverse" src="https://www.gravatar.com/205e460b479e2e5b48aec07710c08d50" alt="Author thumbnail for nouyangcuroverse" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="">
-            <script
-            src="https://code.jquery.com/jquery-2.2.3.min.js"
-            integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
-            crossorigin="anonymous"></script>
+        <script>
+          document.write('<li><a id="nouyangcuroverse" href="/PGPGlobal/authors/nouyangcuroverse.html">')
+          document.write('<img src="' + get_gravatar('nancy@curoverse.com', 48) + '" alt="Author thumbnail for nouyangcuroverse" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="" /><a></li>');
+        </script>
 
-            Gravatar Demo
-            <br>
-            <input type="text">
-            <br>
-            <h3>
-            Avatar
-            </h3>
-            <img class="test"/>
-            <h3>
-            Profile
-            </h3>
-            <div id="content" style="word-wrap: break-all;">
-            </div>
-
-            <script type="text/javascript">
-            //Define a function to create a md5-hash of a string
-            var md5 = function(value) {
-                return CryptoJS.MD5(value).toString();
-            }
-            /*Event listener for every key up event in the input form element*/
-            $("input").keyup(function () {
-                 /*Create the hash of the email address*/
-                 var value = $(this).val();
-                 var hash = md5(value);
-                 /*Change the resource url of the image element*/
-                 $(".test").attr("src","https://www.gravatar.com/avatar/"+hash+".jpg");
-
-                 /*Send a GET request for the email and require the response to be in the JSON format*/
-                 $.get("https://de.gravatar.com/"+hash+".json").done(function(data){
-
-                      /*If the request was successfull, print out the whole JSON on the HTML document*/
-                    $("#content").text(JSON.stringify(data.entry[0]));
-                 }).fail(function(error){
-                console.log("Error: "+error);
-               });
-             });
-            </script>          </a>
-        </li>
       
 
       
       
-        <li>
-          <a href="/PGPGlobal/authors/openhumansfoundation.html">
-            <img id="hope" src="https://www.gravatar.com/205e460b479e2e5b48aec07710c08d50" alt="Author thumbnail for openhumansfoundation" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="">
-            <script
-            src="https://code.jquery.com/jquery-2.2.3.min.js"
-            integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
-            crossorigin="anonymous"></script>
+        <script>
+          document.write('<li><a id="hope" href="/PGPGlobal/authors/openhumansfoundation.html">')
+          document.write('<img src="' + get_gravatar('hope@openhumans.org', 48) + '" alt="Author thumbnail for openhumansfoundation" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="" /><a></li>');
+        </script>
 
-            Gravatar Demo
-            <br>
-            <input type="text">
-            <br>
-            <h3>
-            Avatar
-            </h3>
-            <img class="test"/>
-            <h3>
-            Profile
-            </h3>
-            <div id="content" style="word-wrap: break-all;">
-            </div>
-
-            <script type="text/javascript">
-            //Define a function to create a md5-hash of a string
-            var md5 = function(value) {
-                return CryptoJS.MD5(value).toString();
-            }
-            /*Event listener for every key up event in the input form element*/
-            $("input").keyup(function () {
-                 /*Create the hash of the email address*/
-                 var value = $(this).val();
-                 var hash = md5(value);
-                 /*Change the resource url of the image element*/
-                 $(".test").attr("src","https://www.gravatar.com/avatar/"+hash+".jpg");
-
-                 /*Send a GET request for the email and require the response to be in the JSON format*/
-                 $.get("https://de.gravatar.com/"+hash+".json").done(function(data){
-
-                      /*If the request was successfull, print out the whole JSON on the HTML document*/
-                    $("#content").text(JSON.stringify(data.entry[0]));
-                 }).fail(function(error){
-                console.log("Error: "+error);
-               });
-             });
-            </script>          </a>
-        </li>
       
 
       
       
-        <li>
-          <a href="/PGPGlobal/authors/pwestep.html">
-            <img id="pwestep" src="https://www.gravatar.com/205e460b479e2e5b48aec07710c08d50" alt="Author thumbnail for Preston Estep" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="">
-            <script
-            src="https://code.jquery.com/jquery-2.2.3.min.js"
-            integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
-            crossorigin="anonymous"></script>
+        <script>
+          document.write('<li><a id="pwestep" href="/PGPGlobal/authors/pwestep.html">')
+          document.write('<img src="' + get_gravatar('pwestep@gmail.com', 48) + '" alt="Author thumbnail for Preston Estep" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="" /><a></li>');
+        </script>
 
-            Gravatar Demo
-            <br>
-            <input type="text">
-            <br>
-            <h3>
-            Avatar
-            </h3>
-            <img class="test"/>
-            <h3>
-            Profile
-            </h3>
-            <div id="content" style="word-wrap: break-all;">
-            </div>
-
-            <script type="text/javascript">
-            //Define a function to create a md5-hash of a string
-            var md5 = function(value) {
-                return CryptoJS.MD5(value).toString();
-            }
-            /*Event listener for every key up event in the input form element*/
-            $("input").keyup(function () {
-                 /*Create the hash of the email address*/
-                 var value = $(this).val();
-                 var hash = md5(value);
-                 /*Change the resource url of the image element*/
-                 $(".test").attr("src","https://www.gravatar.com/avatar/"+hash+".jpg");
-
-                 /*Send a GET request for the email and require the response to be in the JSON format*/
-                 $.get("https://de.gravatar.com/"+hash+".json").done(function(data){
-
-                      /*If the request was successfull, print out the whole JSON on the HTML document*/
-                    $("#content").text(JSON.stringify(data.entry[0]));
-                 }).fail(function(error){
-                console.log("Error: "+error);
-               });
-             });
-            </script>          </a>
-        </li>
       
 
       
@@ -2567,52 +2281,11 @@ for rare and unexpected variations</td>
 
       
       
-        <li>
-          <a href="/PGPGlobal/authors/tomclegg.html">
-            <img id="tomclegg" src="https://www.gravatar.com/205e460b479e2e5b48aec07710c08d50" alt="Author thumbnail for Tom Clegg" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="">
-            <script
-            src="https://code.jquery.com/jquery-2.2.3.min.js"
-            integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
-            crossorigin="anonymous"></script>
+        <script>
+          document.write('<li><a id="tomclegg" href="/PGPGlobal/authors/tomclegg.html">')
+          document.write('<img src="' + get_gravatar('tom@tomclegg.ca', 48) + '" alt="Author thumbnail for Tom Clegg" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="" /><a></li>');
+        </script>
 
-            Gravatar Demo
-            <br>
-            <input type="text">
-            <br>
-            <h3>
-            Avatar
-            </h3>
-            <img class="test"/>
-            <h3>
-            Profile
-            </h3>
-            <div id="content" style="word-wrap: break-all;">
-            </div>
-
-            <script type="text/javascript">
-            //Define a function to create a md5-hash of a string
-            var md5 = function(value) {
-                return CryptoJS.MD5(value).toString();
-            }
-            /*Event listener for every key up event in the input form element*/
-            $("input").keyup(function () {
-                 /*Create the hash of the email address*/
-                 var value = $(this).val();
-                 var hash = md5(value);
-                 /*Change the resource url of the image element*/
-                 $(".test").attr("src","https://www.gravatar.com/avatar/"+hash+".jpg");
-
-                 /*Send a GET request for the email and require the response to be in the JSON format*/
-                 $.get("https://de.gravatar.com/"+hash+".json").done(function(data){
-
-                      /*If the request was successfull, print out the whole JSON on the HTML document*/
-                    $("#content").text(JSON.stringify(data.entry[0]));
-                 }).fail(function(error){
-                console.log("Error: "+error);
-               });
-             });
-            </script>          </a>
-        </li>
       
 
       
@@ -4057,6 +3730,12 @@ for rare and unexpected variations</td>
     </ul>
   </div>
 </div>
+
+<script>
+  // jQuery(document).ready(function($) {
+    // pull_gravatar();
+  // });
+</script>
 </aside>
         </div>
 
@@ -4064,7 +3743,7 @@ for rare and unexpected variations</td>
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      Copyright © 2019 <a href="">Personal Genome Project: Global Network</a>
+      Copyright © 2019 <a href="http://localhost:4000">Personal Genome Project: Global Network</a>
 
 <!--       <h2>Contact Us</h2>
       <p>Contact the Personal Genome Project: Global Network at <a href="your-email@example.com">your-email@example.com</a></p> -->

@@ -1,55 +1,16 @@
+<script src="{{ "/scripts/gravatar.js" | relative_url }}" type="text/javascript" charset="utf-8"></script>
+
 <div id="sidebar">
   <div id="author_grid-2" class="widget widget_author_grid">
     <h2 class="widget-title">Contributors</h2>
     <ul>
       {% for author in site.authors %}
       {% if author.email %}
-        <li>
-          <a href="{{ site.baseurl }}{{ author.url }}">
-            <img id="{{ author.display_name }}" src="https://www.gravatar.com/205e460b479e2e5b48aec07710c08d50" alt="Author thumbnail for {{ author.name }}" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="{{ src_original }}">
-            <script
-            src="https://code.jquery.com/jquery-2.2.3.min.js"
-            integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="
-            crossorigin="anonymous"></script>
+        <script>
+          document.write('<li><a id="{{ author.display_name }}" href="{{ site.baseurl }}{{ author.url }}">')
+          document.write('<img src="' + get_gravatar('{{ author.email }}', 48) + '" alt="Author thumbnail for {{ author.name }}" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="{{ src_original }}" /><a></li>');
+        </script>
 
-            Gravatar Demo
-            <br>
-            <input type="text">
-            <br>
-            <h3>
-            Avatar
-            </h3>
-            <img class="test"/>
-            <h3>
-            Profile
-            </h3>
-            <div id="content" style="word-wrap: break-all;">
-            </div>
-
-            <script type="text/javascript">
-            //Define a function to create a md5-hash of a string
-            var md5 = function(value) {
-                return CryptoJS.MD5(value).toString();
-            }
-            /*Event listener for every key up event in the input form element*/
-            $("input").keyup(function () {
-                 /*Create the hash of the email address*/
-                 var value = $(this).val();
-                 var hash = md5(value);
-                 /*Change the resource url of the image element*/
-                 $(".test").attr("src","https://www.gravatar.com/avatar/"+hash+".jpg");
-
-                 /*Send a GET request for the email and require the response to be in the JSON format*/
-                 $.get("https://de.gravatar.com/"+hash+".json").done(function(data){
-
-                      /*If the request was successfull, print out the whole JSON on the HTML document*/
-                    $("#content").text(JSON.stringify(data.entry[0]));
-                 }).fail(function(error){
-                console.log("Error: "+error);
-               });
-             });
-            </script>          </a>
-        </li>
       {% endif %}
 
       {% endfor%}
@@ -193,3 +154,9 @@
     </ul>
   </div>
 </div>
+
+<script>
+  // jQuery(document).ready(function($) {
+    // pull_gravatar();
+  // });
+</script>

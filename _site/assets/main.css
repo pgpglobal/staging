@@ -138,7 +138,7 @@ a:hover {
  * Blockquotes
  */
 blockquote {
-  background: #e7e6e2 url(/assets/images/blockquote.gif) no-repeat top left;
+  background: #e7e6e2 url("images/blockquote.gif") no-repeat top left;
   border-left: 4px solid #e8e8e8;
   color: #141310;
   font-size: 14px;
@@ -1195,7 +1195,7 @@ form#search_form {
 }
 .widget_recent_entries ul li a,
 .widget_archive ul li a {
-  background: url("/assets/images/list-item.gif") no-repeat 0 6px;
+  background: url("images/list-item.gif") no-repeat 0 6px;
   display: block;
   padding: 0 0 0 15px;
 }
