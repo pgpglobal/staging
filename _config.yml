@@ -60,7 +60,7 @@ plugins:
   # - jekyll-autoprefixer
   - jekyll-include-cache
   - jekyll-feed
-  - github-pages
+  # - github-pages
   - jekyll-picture-tag
   # - jekyll-seo-tag
   # - jekyll-sitemap
@@ -82,6 +82,9 @@ exclude:
   - README.md
   - ref
   - scratch
+  - keys
+  - "*.bak"
+  - TASKS.md
   - ["docs", "ref", "scratch", "*TASKS", "*.bak", "*keys*"]
 
 sass:
