@@ -20,7 +20,6 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
   * [Plugins and Configuration](#plugins-and-configuration)
   * [Accessibility](#accessibility)
 * [Staging and Production](#staging-and-production)
-* [Completed](#completed)
 * [Questions](#questions)
 * [Deprecated](#deprecated)
 
@@ -147,28 +146,6 @@ A current list of documentation files includes:
 1. Setup SSL and Test [Enforce HTTPS](https://help.github.com/en/articles/securing-your-github-pages-site-with-https) (this means everything that loads on the page has to start with `https://` instead of `http://`)
       * Cloudflare is probably the most optimal route here. See [Resources][1] file.
 2. [Setting up GitHub Pages locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll#keeping-your-site-up-to-date-with-the-github-pages-gem)
-
-<a id="completed"></a>
-## Completed
-
-* Moved News section to its own page
-* Fixed 404 Page header
-* Nav Menu logic for seperator and dropdown-header added in
-* Split the "International Projects" section into a jekyll collection of markdown files (similar to News files)?
-* Added alt text to pgp-logo.png
-* Retrieved missing Blog images
-* Refactored SCSS code
-* Created auto-generated Author pages
-* Fixed private Author Metadata displaying in post header
-* Sidebar and Main layouts on blog, archive, and author pages
-* Google Analytics
-* Gravatar links dynamic
-* Author/Archive layouts default, month, day, category, tag
-* Related Posts
-* Blog Share buttons
-* Category and Tag pages
-* Added <time> tags
-* Blog Dates are dynamic
 
 <a id="questions"></a>
 ## Questions
