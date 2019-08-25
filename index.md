@@ -44,7 +44,7 @@ title: The Personal Genome Project
   <hr>
 
   <div class="row">
-    <a id="projects" class="anchor-offset"></a>
+    <a id="overview" class="anchor-offset"></a>
 
     <div class="col-xs-12">
 
@@ -69,7 +69,7 @@ title: The Personal Genome Project
 
     </div>
     <div class="col-xs-12">
-      <a id="project-guidelines" class="anchor-offset"></a>
+      <a id="guidelines" class="anchor-offset"></a>
 
       <h3>Global Network Guidelines</h3>
 
