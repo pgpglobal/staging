@@ -56,10 +56,10 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-admin
-  # - jekyll-archives
+  - jekyll-archives
   # - jekyll-autoprefixer
   - jekyll-include-cache
-  - jekyll-feed
+  # - jekyll-feed
   # - github-pages
   - jekyll-picture-tag
   # - jekyll-seo-tag
@@ -91,16 +91,16 @@ sass:
   style: expanded
   sourcemap: true
 
-# jekyll-archives:
-#   enabled: all
-#   layout: archive
-#   permalinks:
-#     year: '/:year/'
-#     month: '/:year/:month/'
-#     day: '/:year/:month/:day/'
-#     tag: '/tag/:name/'
-#     category: '/category/:name/'
-#   layout: archive
+jekyll-archives:
+  enabled: all
+  layout: archive
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'
+  layout: archive
   # layouts:
     # year: year-archive
   #   month: month-archive
