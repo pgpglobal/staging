@@ -19,7 +19,7 @@
             </ul>
         {% endif %}
 
-        <h2 class="year-month"><a href="{{ post.date | date: '/%Y/%m/' | prepend: site.baseurl }}">{{ post.date | date: '%b %Y' }}</a></h2>
+        <h2 class="year-month"><a href="{{ post.date | date: '/%Y/%m' | | append: "/index.html | prepend: site.baseurl }}">{{ post.date | date: '%b %Y' }}</a></h2>
         <ul>
     {% endif %}
 
