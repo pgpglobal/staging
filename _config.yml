@@ -20,6 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "/PGPGlobal" # the subpath of your site, e.g. /blog
+archive_path: PGPGlobal/archives
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: PGorg
 flickr_username: personalgenomes
@@ -91,18 +92,18 @@ sass:
   style: expanded
   sourcemap: true
 
-jekyll-archives:
-  enabled: all
-  layout: archive
-  permalinks:
-    year: '/:year/'
-    month: '/:year/:month/'
-    day: '/:year/:month/:day/'
-    tag: '/tag/:name/'
-    category: '/category/:name/'
-  layout: archive
-  # layouts:
-    # year: year-archive
+# jekyll-archives:
+#   enabled: all
+#   layout: archive
+#   permalinks:
+#     year: '/:year/'
+#     month: '/:year/:month/'
+#     day: '/:year/:month/:day/'
+#     tag: '/tag/:name/'
+#     category: '/category/:name/'
+#   layout: archive
+#   layouts:
+#     year: year-archive
   #   month: month-archive
   #   day: day-archive
   #   category: category-archive
