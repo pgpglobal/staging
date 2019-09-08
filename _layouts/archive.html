@@ -1,39 +1,43 @@
 ---
-layout: blog
-title: Archive
-class: archive
+type: archive
+layout: default
 ---
 
-{% if page.type == "year" %}
-  <h1 class="archive-title">Archive for {{ page.date | date: "%Y" }}</h1>
-{% elsif page.type == "month" %}
-  <h1 class="archive-title">Archive for {{ page.date | date: "%B %Y" }}</h1>
-{% elsif page.type == "day" %}
-  <h1 class="archive-title">Archive for {{ page.date | date: '%B %d, %Y' }}</h1>
-{% elsif page.type == "tag" %}
-  <h1 class="archive-title">Posts tagged '{{ page.title }}'</h1>
-{% elsif page.type == "category" %}
-  <h1 class="archive-title">Posts from the '{{ page.categories }} Category'</h1>
-{% else %}
-  <h1 class="archive-title">Archive for {{ page.date }}</h1>
-{% endif %}
+<header class="archive">
+    {% include nav.html %}
+</header>
 
-<!-- <img class="archive-comment" src="{{ "/assets/images/comments-bubble-archive.gif" | relative_url }}" width="17" height="14" alt="comment" scale="0"> -->
-<div class="entries">
-  <ul class="entry-list">
-    {% for post in page.posts %}
-    <li>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
-        <!-- <span class="comments_number">0</span> -->
-        <time class="archdate">{{ post.date | date: "%b %-d, %Y" }}</time>
-        {{ post.title | escape}}
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
-</div><!--end entry-list-->
+<section class="archive">
+    {% if page.title == 'Archive' %}
+        <h1>{{ page.title }}</h1>
+        {% include archive_index.html %}
+    {% else %}
+        <h1>Archive: {{ page.title }}</h1>
+    {% endif %}
+    {% if page.tag and content != '' %}
+    <article title="{{ page.title }}">
+        <div class="content" style="position: relative; left: 0px;">
+            {{ content }}
 
-<div class="navigation">
-  <div class="alignleft"></div>
-  <div class="alignright"></div>
-</div><!--end navigation-->
+            <h2>Blogposts about {{ page.title }}:</h2>
+        </div>
+    </article>
+    {% endif %}
+    {% unless page.title == 'Archive' %}
+        <ul>
+            {% if page.month %}
+                {% include archive_month.html %}
+            {% elsif page.year %}
+                {% include archive_year.html %}
+            {% elsif page.tag %}
+                {% include archive_tag.html %}
+            {% endif %}
+        </ul>
+    {% endunless %}
+</section>
+
+<footer>
+    {% include footer.html %}
+</footer>
+
+{% include site_scripts.html %}
