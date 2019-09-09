@@ -6,6 +6,7 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 
 * [Instructions and Documentation](#instructions-and-documentation)
 * [Blog Import](#blog-import)
+  * [Archive Pages](#archive-pages)
   * [Sidebar Functionality](#sidebar-functionality)
   * [Captions and Shortcodes](#captions-and-shortcodes)
   * [Post Footer](#post-footer)
@@ -30,6 +31,13 @@ See A current list of documentation files includes:
 
 <a id="blog-import"></a>
 ## Blog Import
+
+<a id="archive-pages"></a>
+### Archive Pages
+
+1. Not currently working, due to GitHub Pages restrictions.
+    * Working on a Python or possibly ruby script to address this
+    * Do this in Ruby instead though
 
 <a id="sidebar-functionality"></a>
 ### Sidebar Functionality
@@ -79,9 +87,16 @@ See A current list of documentation files includes:
 #### Content Needed
 1. Site Footer - what goes in it?
     * Possible options: Licensing, Copyright, and possibly Privacy Policy, if relevant for [EU GDPR](https://eugdpr.org/) compliance.
+
+```
+or us, -- @Sasha, @Edrie @Jeremy @Ward we should make sure we do the correct CCbySA or whatever we want to do to do a correct open copyright for the copyright since it says Copyright © 2019 Personal Genome Project: Global Network
+```
+
 2. Contact Page
     * Contact Form vs. Link
     * If contact form - how will the back-end work?
+    * I noticed the PGP Conference site just had a normal Google form, instead of the way I'm trying to embed it
+        * May be a more straightforward approach, if it turns out that the issue isn't SSL/staging related
 3. `_config.yml` - the following fields should be filled in or commented out:
     * email
     * description (important for SEO)
@@ -91,12 +106,11 @@ See A current list of documentation files includes:
 ### Plugins and Configuration
 1. SEO setup
     * Need to add email, site description, etc to `_config.yml`
-2. Configure il8n (internationalization)
-3. Contact Page
+2. Contact Page
     * Choose back-end and implement spam protection (either reCaptcha or other). Possible options:
-4. Responsive Images. See [Resources][1] file. Currently attempting to get the [jekyll-picture-tag](https://github.com/robwierzbowski/jekyll-picture-tag) plugin working.
-5. Blog comments system
-6. Generate favicon files using [Real Favicon Generator](https://realfavicongenerator.net/)
+3. Responsive Images. See [Resources][1] file. Currently attempting to get the [jekyll-picture-tag](https://github.com/robwierzbowski/jekyll-picture-tag) plugin working.
+4. Blog comments system
+5. Generate favicon files using [Real Favicon Generator](https://realfavicongenerator.net/)
 
 <a id="accessibility"></a>
 ### Accessibility
@@ -124,3 +138,6 @@ Comments System (see question above)
 
 
 [1]: docs/resources.md
+
+
+-------------
