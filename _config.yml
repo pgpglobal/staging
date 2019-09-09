@@ -55,13 +55,13 @@ minima:
 markdown: kramdown
 theme: minima
 plugins:
-  - jekyll-admin
+  # - jekyll-admin
   # - jekyll-archives
   # - jekyll-autoprefixer
   - jekyll-include-cache
   # - jekyll-feed
-  # - github-pages
-  - jekyll-picture-tag
+  - github-pages
+  # - jekyll-picture-tag
   # - jekyll-seo-tag
   # - jekyll-sitemap
   - jekyll-titles-from-headings
@@ -86,6 +86,8 @@ exclude:
   - "*.bak"
   - TASKS.md
   - ["docs", "ref", "scratch", "*TASKS", "*.bak", "*keys*"]
+  - test.py
+  - "*.py"
 
 sass:
   style: expanded

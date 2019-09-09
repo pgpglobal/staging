@@ -15,6 +15,8 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
   * [Small Tasks](#small-tasks)
     * [Content Needed](#content-needed)
   * [Plugins and Configuration](#plugins-and-configuration)
+    * [Plugins Staging](#plugins-staging)
+    * [Plugins - Local Dev](#plugins---local-dev)
   * [Accessibility](#accessibility)
 * [Staging and Production](#staging-and-production)
 * [Questions](#questions)
@@ -47,7 +49,7 @@ See A current list of documentation files includes:
       * Cache these
     * Parsing RSS Feed seems like the best bet: https://api.flickr.com/services/feeds/photos_public.gne?id=78213110@N06&lang=en-us&format=rss_200
     * See [resources][1]
-2. Search form needs to be functional
+2. Search Form should have a
 
 <a id="captions-and-shortcodes"></a>
 ### Captions and Shortcodes
@@ -111,6 +113,23 @@ or us, -- @Sasha, @Edrie @Jeremy @Ward we should make sure we do the correct CCb
 3. Responsive Images. See [Resources][1] file. Currently attempting to get the [jekyll-picture-tag](https://github.com/robwierzbowski/jekyll-picture-tag) plugin working.
 4. Blog comments system
 5. Generate favicon files using [Real Favicon Generator](https://realfavicongenerator.net/)
+
+<a id="plugins-staging"></a>
+#### Plugins Staging
+
+* "jekyll-feed", "~> 0.6" (why is this versioned?)
+* jekyll-seo-tag
+* jekyll-sitemap
+* jekyll-titles-from-headings
+
+
+<a id="plugins---local-dev"></a>
+#### Plugins - Local Dev
+
+* jekyll-admin
+* jekyll-autoprefixer
+*
+
 
 <a id="accessibility"></a>
 ### Accessibility
