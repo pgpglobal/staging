@@ -62,25 +62,18 @@ for file in mylist:
     print(day_file)
 
     yaml_open = "---"
-    layout = "layout: archive"
+    layout = "layout: year-archive"
     permalink = 'permalink: "' + years + '"'
     # permalink = "permalink: " + years
     redirect = "redirect_from: archive/" + years
     title = 'title: ' + years
     year = "year: " + years
-    archive_type = 'year: true'
     yaml_close = "---"
     content = "This is a test"
-    lines = '{}\n{}\n{}\n{}\n{}\n{}\n\n{}\n'.format(yaml_open, layout, permalink, redirect, title, year, archive_type, yaml_close, content)
+    lines = '{}\n{}\n{}\n{}\n{}\n{}\n{}\n\n{}\n'.format(yaml_open, layout, permalink, redirect, title, year, yaml_close, content)
 
     yf = open(year_file, 'w+')
     yf.write(lines)
-    # yf.write(line1 + "\n")
-    # yf.write(line2 + "\n")
-    # yf.write(line3 + "\n")
-    # yf.write(line4 + "\n")
-    # yf.write(line5 + "\n")
-    # yf.write(line6 + "\n")
     yf.close()
 
 #     x = months
