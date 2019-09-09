@@ -19,18 +19,18 @@ gem "minima", "~> 2.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem 'jekyll-admin'
-  gem 'jekyll-archives'
+  # gem 'jekyll-admin'
+  # gem 'jekyll-archives'
   # gem 'jekyll-autoprefixer'
   gem 'jekyll-include-cache'
   # gem "jekyll-feed", "~> 0.6"
-  gem 'jekyll-picture-tag'
+  # gem 'jekyll-picture-tag'
   # gem 'jekyll-seo-tag'
   # gem 'jekyll-sitemap'
   gem 'jekyll-titles-from-headings'
 end
 
-# gem 'github-pages', group: :jekyll_plugins
+gem 'github-pages', group: :jekyll_plugins
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.

@@ -1,7 +1,7 @@
+.gitignore
+_plugins/generator.rb
 _site
 .sass-cache
 .jekyll-metadata
 scratch/
-ref
-archive/archive-attempt.rb
-jekyll-archive-page
+ref/

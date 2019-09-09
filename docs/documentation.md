@@ -43,6 +43,8 @@ In order to run this site locally, follow the following steps:
 <a id="jekyll-admin-graphical-editor"></a>
 ## Jekyll Admin Graphical Editor
 
+Only works locally
+
 A visual interface powered by [Jekyll Admin](https://github.com/jekyll/jekyll-admin) is available for editing the site. Access it by appending `/admin` to the site url, ex: `localhost:4000/admin`
 
 <a id="working-on-the-site-locally-with-git"></a>
