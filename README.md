@@ -18,6 +18,7 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
     * [Plugins Staging](#plugins-staging)
     * [Plugins - Local Dev](#plugins---local-dev)
 * [Accessibility](#accessibility)
+* [Cleanup](#cleanup)
 * [Staging and Production](#staging-and-production)
   * [SSL and CDN](#ssl-and-cdn)
   * [SCSS](#scss)
@@ -139,6 +140,18 @@ or us, -- @Sasha, @Edrie @Jeremy @Ward we should make sure we do the correct CCb
 ## Accessibility
 
 1. Add ARIA Roles into HTML where necessary, across site
+
+<a id="cleanup"></a>
+## Cleanup
+
+List of files:
+
+* `scripts/gravatar.js` seems to be generating the gravatars.
+    * If so, then delete `_plugins/to_gravatar.rb`
+* Plugins - are these necessary??
+    * archive_month_list.rb
+    * archive_page.rb
+    * to_gravatar.rb
 
 <a id="staging-and-production"></a>
 ## Staging and Production
