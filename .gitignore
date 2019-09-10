@@ -1,7 +1,8 @@
 .gitignore
 _plugins/generator.rb
-_site
+# _site
 .sass-cache
 .jekyll-metadata
 scratch/
 ref/
+*.bak

@@ -11,10 +11,20 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script></head>
   <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-y++enYq9sdV7msNmXr08kJdkX4zEI1gMjjkw0l9ttOepH7fMdhb7CePwuRQCfwCr" crossorigin="anonymous"> -->
   {%- if jekyll.environment == 'production' -%}
-    <link rel="shortcut icon" type="image/png" href="{{ "/favicon.png" | relative_url}}">
+    <!-- <link rel="shortcut icon" type="image/png" href="{{ "/favicon.png" | relative_url }}"> -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "favicon/apple-touch-icon.png" | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon/favicon-32x32.png" | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon/favicon-16x16.png" | relative_url }}">
+    <link rel="manifest" href="{{ "favicon/site.webmanifest" | relative_url }}">
+    <link rel="mask-icon" href="{{ "favicon/safari-pinned-tab.svg" | relative_url }}" color="#5bbad5">
+    <link rel="shortcut icon" href="{{ "favicon.ico" | relative_url }}">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
   {%- elsif jekyll.environment == 'development' -%}
-    <link rel="shortcut icon" type="image/png" href="{{ "/favicon-local-dev.jpg" | relative_url}}">
+    <link rel="shortcut icon" type="image/png" href="{{ "/favicon-local-dev.jpg" | relative_url }}">
   {%- endif -%}
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   {%- feed_meta -%}

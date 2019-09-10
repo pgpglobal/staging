@@ -55,14 +55,14 @@ for file in mylist:
         pass
 
     year_file = years + "/index.html"
-    print(year_file)
+    # print(year_file)
     month_file = months + "/index.html"
     print(month_file)
     day_file = days + "/index.html"
     print(day_file)
 
     yaml_open = "---"
-    layout = "layout: year-archive"
+    layout = "layout: year"
     permalink = 'permalink: "' + years + '"'
     # permalink = "permalink: " + years
     redirect = "redirect_from: archive/" + years
@@ -75,6 +75,21 @@ for file in mylist:
     yf = open(year_file, 'w+')
     yf.write(lines)
     yf.close()
+
+    yaml_open = "---"
+    layout = "layout: month"
+    permalink = 'permalink: ' + months
+    redirect = "redirect_from: archive/" + months
+    title = "title: Archive for " + months
+    year = "year: " + years
+    month = "month: " + '"' + m2 + '"'
+    yaml_close = "---"
+    content = "This is a test"
+    lines = '{}\n{}\n{}\n{}\n{}\n{}\n{}\n\n{}\n'.format(yaml_open, layout, permalink, redirect, title, year, month, yaml_close, content)
+
+    mf = open(month_file, 'w+')
+    mf.write(lines)
+    mf.close()
 
 #     x = months
 #     line1 = "---"

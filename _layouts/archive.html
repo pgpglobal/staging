@@ -8,14 +8,20 @@ layout: default
 </header>
 
 <section class="archive">
+    <div>_layouts/archive.html</div>
+
+    {%- comment -%} If main Archive page {% endcomment %}
     {% if page.title == 'Archive' %}
         <h1>{{ page.title }}</h1>
+        <div>Page Title == Archive</div>
         {% comment %}
         {% include archive_index.html %}
         {% endcomment %}
     {% else %}
         <h1>Archive: {{ page.title }}</h1>
     {% endif %}
+
+    {%- comment -%} If have tags {% endcomment %}
     {% if page.tag and content != '' %}
     <article title="{{ page.title }}">
         <div class="content" style="position: relative; left: 0px;">
@@ -25,17 +31,16 @@ layout: default
         </div>
     </article>
     {% endif %}
+
     {% unless page.title == 'Archive' %}
         <ul>
             {% if page.month %}
-                <div>"Luna Archive Month"</div>
-                {% include archive_month.html %}
+                <div>Luna Archive Month</div>
+                {% include_cached archive_month.html type="month" %}
             {% elsif page.year %}
                 <div>"Luna Archive Year"</div>
-                {% include archive_year.html %}
             {% elsif page.tag %}
                 <div>"Luna Archive Taco"</div>
-                {% include archive_tag.html %}
             {% endif %}
         </ul>
     {% endunless %}

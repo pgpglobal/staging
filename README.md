@@ -40,6 +40,9 @@ See A current list of documentation files includes:
 1. Not currently working, due to GitHub Pages restrictions.
     * Working on a Python or possibly ruby script to address this
     * Do this in Ruby instead though
+2. Author Archives not currently working
+    * Blog Post links need to be generated
+    * Maybe this is related to include_cached??
 
 <a id="sidebar-functionality"></a>
 ### Sidebar Functionality
