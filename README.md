@@ -41,10 +41,7 @@ See A current list of documentation files includes:
 <a id="archive-pages"></a>
 ### Archive Pages
 
-1. Not currently working, due to GitHub Pages restrictions.
-    * Working on a Python or possibly ruby script to address this
-    * Do this in Ruby instead though
-2. Author Archives not currently working
+2. Author Archives and Categories/Tags need to be set up again
     * Blog Post links need to be generated
     * Maybe this is related to include_cached??
 
@@ -56,7 +53,8 @@ See A current list of documentation files includes:
       * Cache these
     * Parsing RSS Feed seems like the best bet: https://api.flickr.com/services/feeds/photos_public.gne?id=78213110@N06&lang=en-us&format=rss_200
     * See [resources][1]
-2. Search Form needs to point to this site - not the old WP blog
+2. Search form - expand JSON parameters so that searching isn't just limited to title and such
+  * Would really love to add in "excerpt" or something here
 
 <a id="captions-and-shortcodes"></a>
 ### Captions and Shortcodes
@@ -80,6 +78,8 @@ See A current list of documentation files includes:
 1. Blog articles check typography
 2. Mobile Sidebar - Social Icons should be less to the right
 3. Preference: `_media.css`: convert max-width: 767 into relevant min-width sections, if time-possible (non-essential).
+4. Twitter feed distorts the rest of the sidebar on local dev.
+    * May be a result of the new search bar?
 
 <a id="small-tasks"></a>
 ### Small Tasks

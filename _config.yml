@@ -87,6 +87,7 @@ exclude:
   - TASKS.md
   - ["docs", "ref", "scratch", "*TASKS", "*.bak", "*keys*"]
   - test.py
+  - archives.py
   - "*.py"
 
 sass:

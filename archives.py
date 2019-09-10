@@ -65,7 +65,7 @@ for file in mylist:
     layout = "layout: year"
     permalink = 'permalink: "' + years + '"'
     # permalink = "permalink: " + years
-    redirect = "redirect_from: archive/" + years
+    redirect = "redirect_from: " + years
     title = 'title: ' + years
     year = "year: " + years
     yaml_close = "---"
@@ -79,7 +79,7 @@ for file in mylist:
     yaml_open = "---"
     layout = "layout: month"
     permalink = 'permalink: ' + months
-    redirect = "redirect_from: archive/" + months
+    redirect = "redirect_from: " + months
     title = "title: Archive for " + months
     year = "year: " + years
     month = "month: " + '"' + m2 + '"'
