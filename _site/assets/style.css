@@ -1165,7 +1165,8 @@ h2.widget-title {
   padding: 0;
 }
 
-#search_form input {
+.search_form input,
+.search-form input {
   background: #f4f4f4;
   border: 2px solid #acacac;
   border-bottom: 1px solid #ccc;
@@ -1178,7 +1179,8 @@ h2.widget-title {
   width: 132px;
 }
 
-form#search_form {
+form.search_form,
+form.search-form {
   line-height: 22px;
   font-size: 10px;
 }

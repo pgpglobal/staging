@@ -78,7 +78,8 @@ h2.widget-title {
 }
 
 // Search Bar
-#search_form input {
+.search_form input,
+.search-form input {
   background: $grey-mid;
   border: 2px solid $input--border-color;
   border-bottom: 1px solid $input--border-color-2;
@@ -91,7 +92,8 @@ h2.widget-title {
   width: 132px;
 }
 
-form#search_form {
+form.search_form,
+form.search-form {
   line-height: 22px;
   font-size: 10px;
 }

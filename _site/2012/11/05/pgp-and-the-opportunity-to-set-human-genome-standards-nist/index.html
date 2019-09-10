@@ -383,14 +383,23 @@
   </div>
 
   <div id="search-3" class="widget widget_search">
+    <!-- HTML elements for search -->
     <h2 class="widget-title">Search</h2>
-    <form method="get" id="search-google" action="https://www.google.com/search" target="_blank"><input type="hidden" name="sitesearch" value="https://pgpglobal.github.io/PGPGlobal/blog" /><input type="text" name="q" maxlength="255" value="" placeholder="Search via Google" class="form-control" /></form>
-<!--     <form method="get" id="search_form" action="https://personalgenomes.wordpress.com/">
-      <div>
-        <input type="text" value="type and press enter" name="s" id="s" onfocus="if (this.value == 'type and press enter') {this.value = '';}" onblur="if (this.value == '') {this.value = 'type and press enter';}">
-        <input type="hidden" value="Search">
-      </div>
-    </form> -->
+
+    <form class="search-form"><input type="text" id="search-input" placeholder="Search blog posts.."></form>
+    <ul id="results-container"></ul>
+
+    <!-- script pointing to jekyll-search.js -->
+    <script src="/PGPGlobal/scripts/search-script.min.js"></script>
+
+    <!-- Configuration -->
+    <script>
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '/PGPGlobal/search.json'
+    })
+    </script>
   </div>
 
   <div id="text-2" class="widget widget_text">
@@ -437,14 +446,11 @@
     </ul>
   </div>
 
-  
-
   <div class="thin-sidebar sidebar-left spad">
     <div id="archives-3" class="widget widget_archive">
       <h2 class="widget-title">Archives</h2>
-
-        <ul>
-          
+      <ul>
+        
 
 
 
@@ -1551,9 +1557,9 @@
 
 
 
-        </ul>
-      </div>
+      </ul>
     </div>
+
     <div id="flickr-2" class="widget widget_flickr">
       <h2 class="widget-title">Flickr Photos</h2><!-- Start of Flickr Widget -->
       <div class="flickr-wrapper flickr-size-thumbnail">
@@ -1562,8 +1568,7 @@
           <a class="flickr-more" href="https://www.flickr.com/photos/personalgenomes/">
           More Photos </a>
         </div>
-        <!-- End of Flickr Widget -->
-      </div>
+      </div> <!-- End of Flickr Widget -->
     </div>
 
   <div class="thin-sidebar sidebar-right">
@@ -1597,13 +1602,7 @@
       </li>
     </ul>
   </div>
-</div>
-
-<script>
-  // jQuery(document).ready(function($) {
-    // pull_gravatar();
-  // });
-</script>
+</div> <!-- End Sidebar -->
 </aside>
         </div>
 
