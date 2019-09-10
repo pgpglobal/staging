@@ -9,5 +9,5 @@ function get_gravatar(email, size, default_image) {
   var default_image = "mp";
 
 
-  return 'http://www.gravatar.com/avatar/' + MD5(email) + '.jpg?s=' + size + '&d=' + default_image;
+  return 'https://www.gravatar.com/avatar/' + MD5(email) + '.jpg?s=' + size + '&d=' + default_image;
 }
