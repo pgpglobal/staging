@@ -32,7 +32,7 @@
       padding: 0 0 0 20px;
 
       li {
-        background: transparent url('/assets/images/archives-dotted-line.gif') repeat-x bottom left;
+        background: transparent url('#{$baseurl}/assets/images/archives-dotted-line.gif') repeat-x bottom left;
         width: 40%;
         margin: 0;
         background: none;
@@ -98,7 +98,7 @@
         padding: 0;
 
         li {
-          background: transparent url('/assets/images/archives-dotted-line.gif') repeat-x bottom left;
+          background: transparent url('#{$baseurl}/assets/images/archives-dotted-line.gif') repeat-x bottom left;
           margin: 0 0 0;
           width: 100%;
 
