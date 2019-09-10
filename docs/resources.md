@@ -125,3 +125,4 @@ Relevant Tutorials and Resources:
 * [HTML to Markdown Converter](https://www.browserling.com/tools/html-to-markdown)
 * [Creating An Asset Pipeline In Python With-paver](https://www.codementor.io/jstacoder/creating-an-asset-pipeline-in-python-with-paver-du107wjs3)
 * [How To Run Bash Commands In-gulp](https://stackoverflow.com/questions/21128812/how-to-run-bash-commands-in-gulp)
+* [jekyl-tidy](https://github.com/apsislabs/jekyll-tidy) - HTMLTidy

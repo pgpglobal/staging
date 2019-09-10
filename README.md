@@ -14,11 +14,14 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
   * [Medium-Large Tasks](#medium-large-tasks)
   * [Small Tasks](#small-tasks)
     * [Content Needed](#content-needed)
-  * [Plugins and Configuration](#plugins-and-configuration)
+* [Plugins and Configuration](#plugins-and-configuration)
     * [Plugins Staging](#plugins-staging)
     * [Plugins - Local Dev](#plugins---local-dev)
-  * [Accessibility](#accessibility)
+* [Accessibility](#accessibility)
 * [Staging and Production](#staging-and-production)
+  * [SSL and CDN](#ssl-and-cdn)
+  * [SCSS](#scss)
+  * [Favicon](#favicon)
 * [Questions](#questions)
 * [Deprecated](#deprecated)
 
@@ -52,7 +55,7 @@ See A current list of documentation files includes:
       * Cache these
     * Parsing RSS Feed seems like the best bet: https://api.flickr.com/services/feeds/photos_public.gne?id=78213110@N06&lang=en-us&format=rss_200
     * See [resources][1]
-2. Search Form should have a
+2. Search Form needs to point to this site - not the old WP blog
 
 <a id="captions-and-shortcodes"></a>
 ### Captions and Shortcodes
@@ -108,7 +111,7 @@ or us, -- @Sasha, @Edrie @Jeremy @Ward we should make sure we do the correct CCb
     * any social media we might link to (currently have twitter and flickr)
 
 <a id="plugins-and-configuration"></a>
-### Plugins and Configuration
+## Plugins and Configuration
 1. SEO setup
     * Need to add email, site description, etc to `_config.yml`
 2. Contact Page
@@ -131,26 +134,40 @@ or us, -- @Sasha, @Edrie @Jeremy @Ward we should make sure we do the correct CCb
 
 * jekyll-admin
 * jekyll-autoprefixer
-*
-
 
 <a id="accessibility"></a>
-### Accessibility
+## Accessibility
 
 1. Add ARIA Roles into HTML where necessary, across site
 
 <a id="staging-and-production"></a>
 ## Staging and Production
 
+<a id="ssl-and-cdn"></a>
+### SSL and CDN
+
 1. Setup SSL and Test [Enforce HTTPS](https://help.github.com/en/articles/securing-your-github-pages-site-with-https) (this means everything that loads on the page has to start with `https://` instead of `http://`)
       * Cloudflare is probably the most optimal route here. See [Resources][1] file.
 2. [Setting up GitHub Pages locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll#keeping-your-site-up-to-date-with-the-github-pages-gem)
+
+<a id="scss"></a>
+### SCSS
+
+1. Make sure to change `$baseurl` in SCSS for production
+    * There should be a way to do this dynamically
+
+<a id="favicon"></a>
+### Favicon
+
+1. Run [Favicon Checker](https://realfavicongenerator.net/) once the subdomain is set up
 
 <a id="questions"></a>
 ## Questions
 
 1. Cloudflare - is the current site hooked up with Cloudflare? the new site will have to be, due to the fact that it's a custom domain. So being setup with Cloudflare already might save some headache.
-2. I noticed that comments were turned off on the old blog anyway. Can I assume that this means we won't be needing comments on here either?
+2. What's the story with comments?
+3. Search Form?
+4. Contact Form?
 
 <a id="deprecated"></a>
 ## Deprecated
