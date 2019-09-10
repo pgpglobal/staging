@@ -14,9 +14,7 @@ layout: default
     {% if page.title == 'Archive' %}
         <h1>{{ page.title }}</h1>
         <div>Page Title == Archive</div>
-        {% comment %}
         {% include archive_index.html %}
-        {% endcomment %}
     {% else %}
         <h1>Archive: {{ page.title }}</h1>
     {% endif %}

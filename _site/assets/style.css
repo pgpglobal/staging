@@ -1020,7 +1020,7 @@ h2.archive-title {
     padding: 0 0 0 20px;
   }
   .body-category .blog-content .entries ul li {
-    background: transparent url("/assets/images/archives-dotted-line.gif") repeat-x bottom left;
+    background: transparent url("/PGPGlobal/assets/images/archives-dotted-line.gif") repeat-x bottom left;
     width: 40%;
     margin: 0;
     background: none;
@@ -1071,7 +1071,7 @@ h2.archive-title {
     padding: 0;
   }
   .body-category .blog-content .entries ul li {
-    background: transparent url("/assets/images/archives-dotted-line.gif") repeat-x bottom left;
+    background: transparent url("/PGPGlobal/assets/images/archives-dotted-line.gif") repeat-x bottom left;
     margin: 0 0 0;
     width: 100%;
   }
