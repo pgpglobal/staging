@@ -2,7 +2,7 @@
   padding: 10px 0 20px;
 }
 
-.body-archive a:link,
+// .body-archive a:link,
 .body-archive a:hover,
 .body-archive a:active {
   font-weight: 400;
@@ -56,6 +56,15 @@ h2.archive-title {
         margin: 0;
         line-height: 22px;
         padding: 7px 0;
+      }
+
+      a.post-link {
+        font-weight: 400;
+
+        &:hover {
+          background-color: #f8f8f7;
+          text-decoration: none;
+        }
       }
     }
   }

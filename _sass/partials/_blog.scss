@@ -6,6 +6,16 @@
   font-family: $blog-font-family;
 }
 
+.body-blog-feed {
+  .post-header {
+    h1 a:hover,
+    h2 a:hover {
+      color: #772124;
+      text-decoration: underline;
+    }
+  }
+}
+
 .body-archive .blog-main-container,
 .body-post .blog-main-container,
 .blog-main-container {
@@ -16,12 +26,14 @@
   width: auto;
 
 
-  :link,
-  :visited {
+  a,
+  // :link,
+  a:visited {
     text-decoration: none;
   }
 
-  a:link,
+  a,
+  // a:link,
   a:visited {
     color: $blog--link-color;
   }
@@ -68,7 +80,8 @@
     margin-bottom: 10px;
   }
 
-  a:link,
+  // a:link,
+  a,
   a:hover,
   a:active {
     color: $blog--link-color;
@@ -126,6 +139,10 @@
     font-size: 26px;
     font-weight: 700;
     line-height: 28.6px;
+  }
+
+  .post-title.p-name a {
+    color: $grey-dark-1;
   }
 
   .p-author a,

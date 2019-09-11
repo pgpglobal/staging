@@ -8,7 +8,7 @@ title: "Personal Genome Project: Global Network | Blog"
 {%- include_cached head.html -%}
 
 {% if page.title == "Blog" or page.title == "blog" %}
-  <body class="body-blog">
+  <body class="body-blog body-{{ page.class }}">
 {% elsif page.post or page.id %}
   <body class="body-post body-{{ page.class }}">
 {% elsif page.type == "year" or page.type == "month" or page.type == "day" or page.type == "category" or page.type == "tag" %}
@@ -36,13 +36,17 @@ title: "Personal Genome Project: Global Network | Blog"
           </main>
 
           <aside class="sidebar">
+            {%- comment -%}
             {%- include_cached sidebar.html -%}
+            {%- endcomment -%}
 
           </aside>
         </div>
 
       </div>
+  {%- comment -%}
   {%- include_cached footer.html -%}
+  {%- endcomment -%}
 
 </body>
 

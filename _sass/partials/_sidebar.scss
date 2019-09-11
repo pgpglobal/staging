@@ -13,12 +13,14 @@
     margin: 0;
   }
 
-  :link,
+  a,
+  // :link,
   :visited {
     text-decoration: none;
   }
 
-  a:link,
+  a,
+  // a:link,
   a:visited {
     color: $blog--link-color;
   }

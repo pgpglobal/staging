@@ -13,7 +13,7 @@ class: blog
         {{ page.date | date: date_format }}
       </time>
       {%- if page.author -%}
-      • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><a href="{{ author.url }}">{{ page.author | escape }}</a></span></span>
+      • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><a href="{{ page.author.url }}">{{ page.author | escape }}</a></span></span>
     {%- endif -%}</p>
   </header>
 
@@ -31,8 +31,8 @@ class: blog
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
 
-{% include related-posts.html %}
+{% include_cached related-posts.html %}
 {% include_cached share-buttons-jp.html %}
-{% include post-footer.html %}
+{% include_cached post-footer.html %}
 
 

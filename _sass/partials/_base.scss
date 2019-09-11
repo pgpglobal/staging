@@ -314,7 +314,8 @@ table {
   border-color: $blue-2;
   color: $blue-2;
 
-  &:hover {
+  &:hover,
+  a:hover {
     background-color: $blue-light;
     border-color: $blue;
     color: $blue;
