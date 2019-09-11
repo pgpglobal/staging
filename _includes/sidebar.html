@@ -8,7 +8,7 @@
       {% if author.email %}
         <script>
           document.write('<li><a id="{{ author.display_name }}" href="{{ site.baseurl }}{{ author.url }}">')
-          document.write('<img src="' + get_gravatar('{{ author.email }}', 48) + '" alt="Author thumbnail for {{ author.name }}" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="{{ src_original }}" /><a></li>');
+          document.write('<img src="' + get_gravatar('{{ author.email }}', 48) + '" alt="Author thumbnail for {{ author.name }}" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="{{ src_original }}" /></a></li>');
         </script>
 
       {% endif %}

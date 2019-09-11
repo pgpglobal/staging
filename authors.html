@@ -1,0 +1,26 @@
+---
+layout: blog
+title: Contributors
+---
+
+<h1 class="archive-title">Contributors</h1>
+<img class="archive-comment" src="{{ "/assets/images/comments-bubble-archive.gif" | relative_url }}" width="17" height="14" alt="comment" scale="0">
+
+<div class="entries">
+  <ul class="entry-list">
+    {%- for author in site.authors -%}
+    <li><a href="{{ author.url | relative_url }}">{{ author.name }}</a></li>
+    {%- endfor -%}
+  </ul>
+</div>
+
+
+{%- comment -%}
+<br>
+<ul>
+{%- assign filtered_posts = site.posts | where: 'author', page.short_name -%}
+  {%- for post in filtered_posts -%}
+    <li><a href="{{ post.url }}">{{ post.title }}</a> by {{ post.author }}</li>
+  {%- endfor -%}
+</ul>
+{%- endcomment -%}

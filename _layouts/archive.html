@@ -4,23 +4,22 @@ layout: default
 ---
 
 <header class="archive">
-    {% include_cached nav.html %}
+    {%- include_cached nav.html -%}
 </header>
 
 <section class="archive">
-    <div>_layouts/archive.html</div>
 
-    {%- comment -%} If main Archive page {% endcomment %}
-    {% if page.title == 'Archive' %}
+    {%- comment -%} If main Archive page {%- endcomment -%}
+    {%- if page.title == 'Archive' -%}
         <h1>{{ page.title }}</h1>
         <div>Page Title == Archive</div>
-        {% include archive_index.html %}
-    {% else %}
+        {%- include archive_index.html -%}
+    {%- else -%}
         <h1>Archive: {{ page.title }}</h1>
-    {% endif %}
+    {%- endif -%}
 
-    {%- comment -%} If have tags {% endcomment %}
-    {% if page.tag and content != '' %}
+    {%- comment -%} If have tags {%- endcomment -%}
+    {%- if page.tag and content != '' -%}
     <article title="{{ page.title }}">
         <div class="content" style="position: relative; left: 0px;">
             {{ content }}
@@ -28,23 +27,20 @@ layout: default
             <h2>Blogposts about {{ page.title }}:</h2>
         </div>
     </article>
-    {% endif %}
+    {%- endif -%}
 
-    {% unless page.title == 'Archive' %}
-        <ul>
-            {% if page.month %}
-                <div>Luna Archive Month</div>
-                {% include_cached archive_month.html type="month" %}
-            {% elsif page.year %}
-                <div>"Luna Archive Year"</div>
-            {% elsif page.tag %}
-                <div>"Luna Archive Taco"</div>
-            {% endif %}
-        </ul>
-    {% endunless %}
+    {%- comment -%}
+    Note: All the routing for Year/Month/Day archives is
+    currently handled via code injection by archives.py
+    Otherwise, the relevant layouts would be:
+        year: _layouts/year.html
+        month: _layouts/month.html
+        day: _layouts/day.html
+    {%- endcomment -%}
+
 </section>
 
 <footer>
-    {% include_cached footer.html %}
+    {%- include_cached footer.html -%}
 </footer>
 

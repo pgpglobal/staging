@@ -4,17 +4,14 @@ title: Archive
 class: archive
 ---
 
-<h1 class="archive-title">Archive for {{ page.date | date: "%Y" }}</h1>
+<h1 class="archive-title">Archive for {{ page.year }}</h1>
 <img class="archive-comment" src="{{ "/assets/images/comments-bubble-archive.gif" | relative_url }}" width="17" height="14" alt="comment" scale="0">
 <div class="entries">
   <ul class="entry-list">
     {%- for post in site.posts -%}
       {%- capture postyear -%} {{ post.date | date: '%Y' }} {%- endcapture -%}
       {%- capture pageyear -%} {{ page.year }} {%- endcapture -%}
-      {%- comment -%}
-      <p>"Page Year: "{{ pageyear }}</p>
-      <p>"Post Year: "{{ postyear }}</p>
-      {%- endcomment -%}
+
       {%- if postyear == pageyear -%}
     <li>
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
@@ -27,8 +24,3 @@ class: archive
     {%- endfor -%}
   </ul>
 </div><!--end entry-list-->
-
-<div class="navigation">
-  <div class="alignleft"></div>
-  <div class="alignright"></div>
-</div><!--end navigation-->

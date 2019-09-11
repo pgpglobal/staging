@@ -1,6 +1,6 @@
 ---
 layout: blog
-class: blog
+class: blog-feed
 title: Blog
 permalink: /blog/
 ---
