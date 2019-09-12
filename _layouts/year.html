@@ -5,7 +5,6 @@ class: archive
 ---
 
 <h1 class="archive-title">Archive for {{ page.year }}</h1>
-<img class="archive-comment" src="{{ "/assets/images/comments-bubble-archive.gif" | relative_url }}" width="17" height="14" alt="comment" scale="0">
 <div class="entries">
   <ul class="entry-list">
     {%- for post in site.posts -%}
@@ -22,5 +21,5 @@ class: archive
     </li>
     {%- endif -%}
     {%- endfor -%}
-  </ul>
-</div><!--end entry-list-->
+  </ul> <!--end entry-list-->
+</div>

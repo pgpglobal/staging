@@ -64,7 +64,7 @@ plugins:
   # - jekyll-feed
   - github-pages
   # - jekyll-picture-tag
-  - jekyll-seo-tag
+  # - jekyll-seo-tag
   # - jekyll-sitemap
   - jekyll-titles-from-headings
 
@@ -115,6 +115,13 @@ defaults:
       type: archive
     values:
       is_archive: true
+  -
+    scope:
+      path: ""
+      type: category
+    values:
+      layout: category
+      class: category body-archive
 
   - scope:
       path: ""
@@ -135,6 +142,8 @@ defaults:
 
 collections:
   authors:
+    output: true
+  category:
     output: true
   news:
     output: false

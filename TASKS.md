@@ -174,6 +174,7 @@
 
 <a id="custom-domain"></a>
 ### Custom Domain
+
 1. Custom Domains - Create A records pointing to [GitHub's servers](https://help.github.com/en/articles/setting-up-an-apex-domain#configuring-a-records-with-your-dns-provider)
   * 185.199.108.153
   * 185.199.109.153

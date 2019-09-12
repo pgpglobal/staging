@@ -4,8 +4,7 @@ title: Archive
 class: archive
 ---
 
-<h1 class="archive-title">Archive for {{ page.date | date: "%Y" }}</h1>
-<img class="archive-comment" src="{{ "/assets/images/comments-bubble-archive.gif" | relative_url }}" width="17" height="14" alt="comment" scale="0">
+<h1 class="archive-title">Archive for {{ page.date | date: "%B %Y%" }}</h1>
 <div class="entries">
   <ul class="entry-list">
     {%- for post in site.posts -%}
@@ -35,8 +34,3 @@ class: archive
     </li>
   </ul>
 </div><!--end entry-list-->
-
-<div class="navigation">
-  <div class="alignleft"></div>
-  <div class="alignright"></div>
-</div><!--end navigation-->

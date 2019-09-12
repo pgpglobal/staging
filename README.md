@@ -5,25 +5,37 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 <!-- MarkdownTOC -->
 
 * [Instructions and Documentation](#instructions-and-documentation)
+* [Contact Form](#contact-form)
 * [Blog Import](#blog-import)
-  * [Archive Pages](#archive-pages)
+  * [Categories](#categories)
+  * [Related Posts](#related-posts)
+  * [Top Graphic](#top-graphic)
   * [Sidebar Functionality](#sidebar-functionality)
-  * [Captions and Shortcodes](#captions-and-shortcodes)
-  * [Post Footer](#post-footer)
 * [Styling and Markup adjustments](#styling-and-markup-adjustments)
+* [Responsive](#responsive)
   * [Medium-Large Tasks](#medium-large-tasks)
   * [Small Tasks](#small-tasks)
-    * [Content Needed](#content-needed)
+* [Content Needed](#content-needed)
+  * [Site Footer - Copyright and Privacy Info](#site-footer---copyright-and-privacy-info)
 * [Plugins and Configuration](#plugins-and-configuration)
+  * [Archive Generator and Plugin](#archive-generator-and-plugin)
     * [Plugins Staging](#plugins-staging)
     * [Plugins - Local Dev](#plugins---local-dev)
 * [Accessibility](#accessibility)
 * [Cleanup](#cleanup)
+  * [Scheduled for deletion](#scheduled-for-deletion)
+    * [Files](#files)
+    * [Authors](#authors)
+    * [Git Branches](#git-branches)
 * [Staging and Production](#staging-and-production)
+  * [Archives Generation](#archives-generation)
   * [SSL and CDN](#ssl-and-cdn)
   * [SCSS](#scss)
   * [Favicon](#favicon)
 * [Questions](#questions)
+* [Notes](#notes)
+  * [Captions and Shortcodes](#captions-and-shortcodes)
+  * [Category and Tag Pages](#category-and-tag-pages)
 * [Deprecated](#deprecated)
 
 <!-- /MarkdownTOC -->
@@ -35,15 +47,32 @@ See A current list of documentation files includes:
 * [Documentation](docs/documentation.md) - general documentation
 * [Resources](docs/resources.md) - a list of various resources related to in-progress tasks
 
+<a id="contact-form"></a>
+## Contact Form
+
+Ok -- I made a tester form -- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddwiYlyM1Z0mQ/viewform?embedded=true" width="640" height="941" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddwiYlyM1Z0mQ/viewform?usp=sf_link
+
+
 <a id="blog-import"></a>
 ## Blog Import
 
-<a id="archive-pages"></a>
-### Archive Pages
+<a id="categories"></a>
+### Categories
 
-2. Author Archives and Categories/Tags need to be set up again
-    * Blog Post links need to be generated
-    * Maybe this is related to include_cached??
+1. Assign posts without categories to Uncategorized category
+
+<a id="related-posts"></a>
+### Related Posts
+
+1. Randomize posts displayed from each tag, if possible
+    * See the `sample filter`
+
+<a id="top-graphic"></a>
+### Top Graphic
+
+1. Add graphic from original back on top
 
 <a id="sidebar-functionality"></a>
 ### Sidebar Functionality
@@ -55,57 +84,48 @@ See A current list of documentation files includes:
     * See [resources][1]
 2. Search form - expand JSON parameters so that searching isn't just limited to title and such
   * Would really love to add in "excerpt" or something here
-
-<a id="captions-and-shortcodes"></a>
-### Captions and Shortcodes
-
-1. Shortcodes need to be replaced with actual code wherever possible. See [here](http://localhost:4000/2012/11/27/wildlife-of-our-homes-q-a-with-rob-dunn/) for an example.
-    * `[caption]` covers 21 posts. I can't say for other shortcodes without manually looking through posts.
-    * `[youtube]` covers 8 posts
-    * `[polldaddy]`covers 1 posts
-
-<a id="post-footer"></a>
-### Post Footer
-
-1. Nav links need to become dynamic
+  * Search form was implemented with this: https://github.com/christian-fei/Simple-Jekyll-Search
 
 <a id="styling-and-markup-adjustments"></a>
 ## Styling and Markup adjustments
+
+<a id="responsive"></a>
+## Responsive
+
+A bit of a width issue
 
 <a id="medium-large-tasks"></a>
 ### Medium-Large Tasks
 
 1. Blog articles check typography
-2. Mobile Sidebar - Social Icons should be less to the right
+2. Mobile Sidebar
+  * Social Icons should be less to the right
+  * Needs styling altogether - check if this just got lost somewhere...
 3. Preference: `_media.css`: convert max-width: 767 into relevant min-width sections, if time-possible (non-essential).
-4. Twitter feed distorts the rest of the sidebar on local dev.
-    * May be a result of the new search bar?
 
 <a id="small-tasks"></a>
 ### Small Tasks
 
-1. Blog - Social Icons sidebar gets pushed to new line btwn 768-830px
-2. Main Page - change `<button> a:hover` color to match original
-3. Replace all fixed line heights w/ relative numbers
-  * Using a single variable wherever possible
-4. Archive pages - Post `<li>` needs background color change on hover
-5. Desktop - Fix Nav Menu dropdown color
-6. Blog/Archive: `.entries span`  needs more specificity (due to text-align)
+1. Reinstate the /updates.html et al links that go to [sign-up form](https://personalgenomes.us3.list-manage.com/subscribe?u=3980aaa2746fd428de44b2ab4&id=34d31b2d4b) and similar
+  * Setup JS redirect via layout or include or something
+2. Replace all fixed line heights w/ relative numbers
+* Using a base SCSS variable wherever possible
+3. Blog/Archive: Increase `min-width: 992px` `.blog-main-container` width to around 960px. Otherwise not enough room between post listing and sidebar2
+  * Actually just add `body-archive` and it should be fine
 
 <a id="content-needed"></a>
-#### Content Needed
+## Content Needed
+
+<a id="site-footer---copyright-and-privacy-info"></a>
+### Site Footer - Copyright and Privacy Info
 1. Site Footer - what goes in it?
     * Possible options: Licensing, Copyright, and possibly Privacy Policy, if relevant for [EU GDPR](https://eugdpr.org/) compliance.
 
-```
-or us, -- @Sasha, @Edrie @Jeremy @Ward we should make sure we do the correct CCbySA or whatever we want to do to do a correct open copyright for the copyright since it says Copyright © 2019 Personal Genome Project: Global Network
-```
-
 2. Contact Page
     * Contact Form vs. Link
-    * If contact form - how will the back-end work?
-    * I noticed the PGP Conference site just had a normal Google form, instead of the way I'm trying to embed it
-        * May be a more straightforward approach, if it turns out that the issue isn't SSL/staging related
+    * They're going to set up a Google Form - which I can skin/file from there
+    * What if any Spam Protection would this need?
+        * reCaptcha would be a sensible option at that point
 3. `_config.yml` - the following fields should be filled in or commented out:
     * email
     * description (important for SEO)
@@ -120,6 +140,11 @@ or us, -- @Sasha, @Edrie @Jeremy @Ward we should make sure we do the correct CCb
 3. Responsive Images. See [Resources][1] file. Currently attempting to get the [jekyll-picture-tag](https://github.com/robwierzbowski/jekyll-picture-tag) plugin working.
 4. Blog comments system
 5. Generate favicon files using [Real Favicon Generator](https://realfavicongenerator.net/)
+
+<a id="archive-generator-and-plugin"></a>
+### Archive Generator and Plugin
+
+1. Either convert the `archives.py` file to a Ruby file, or find a way to make a Ruby or gulp file that runs it locally.
 
 <a id="plugins-staging"></a>
 #### Plugins Staging
@@ -152,16 +177,50 @@ List of files:
     * archive_month_list.rb
     * archive_page.rb
     * to_gravatar.rb
+* Media Queries - chance `@media only screen` to `@media screen`??
+  * See how this will affect Print styles
+* Replace SCSS Media Queries with name variables
+
+<a id="scheduled-for-deletion"></a>
+### Scheduled for deletion
+
+<a id="files"></a>
+#### Files
+
+* _layouts/archive_month.html
+* _layouts/archive.html ???
+  * Jekyll didn't throw a fit when I accidentally moved it :o
+
+<a id="authors"></a>
+#### Authors
+
+No posts and not displayed on Sidebar:
+
+* gedankenstuecke
+* szaranek
+* wardv
+
+The `display_name` attribute in the Author files doesn't match anything in the actual posts... either replace with display name from posts, or just delete in all files
+
+<a id="git-branches"></a>
+#### Git Branches
+
+* Delete extra Git Branches
 
 <a id="staging-and-production"></a>
 ## Staging and Production
 
+<a id="archives-generation"></a>
+### Archives Generation
+
+Make sure Archive generation doesn't mess with staging setup
+
 <a id="ssl-and-cdn"></a>
 ### SSL and CDN
 
-1. Setup SSL and Test [Enforce HTTPS](https://help.github.com/en/articles/securing-your-github-pages-site-with-https) (this means everything that loads on the page has to start with `https://` instead of `http://`)
-      * Cloudflare is probably the most optimal route here. See [Resources][1] file.
-2. [Setting up GitHub Pages locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll#keeping-your-site-up-to-date-with-the-github-pages-gem)
+1. Setup Enforce HTTPS [Enforce HTTPS](https://help.github.com/en/articles/securing-your-github-pages-site-with-https) (this means everything that loads on the page has to start with `https://` instead of `http://`)
+    * This is already enforced - so won't be a problem upon switching over
+2. Note that current website seems to prefer `www` over Apex domain. See if there's Jekyll settings
 
 <a id="scss"></a>
 ### SCSS
@@ -181,6 +240,22 @@ List of files:
 2. What's the story with comments?
 3. Search Form?
 4. Contact Form?
+
+<a id="notes"></a>
+## Notes
+
+<a id="captions-and-shortcodes"></a>
+### Captions and Shortcodes
+
+1. Shortcodes need to be replaced with actual code wherever possible. See [here](http://localhost:4000/2012/11/27/wildlife-of-our-homes-q-a-with-rob-dunn/) for an example.
+    * `[caption]` covers 21 posts. I can't say for other shortcodes without manually looking through posts.
+    * `[youtube]` covers 8 posts
+    * `[polldaddy]`covers 1 posts
+
+<a id="category-and-tag-pages"></a>
+### Category and Tag Pages
+
+1. I only set up Category archives, since none of the posts have Tag info and Jekyll mostly treats them the same
 
 <a id="deprecated"></a>
 ## Deprecated

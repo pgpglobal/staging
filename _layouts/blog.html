@@ -5,7 +5,7 @@ title: "Personal Genome Project: Global Network | Blog"
 <!DOCTYPE html>
 <html lang="en">
 
-{%- include_cached head.html -%}
+{%- include_cached head.html title=page.title -%}
 
 {% if page.title == "Blog" or page.title == "blog" %}
   <body class="body-blog body-{{ page.class }}">
@@ -25,27 +25,41 @@ title: "Personal Genome Project: Global Network | Blog"
   </header>
   <div class="blog-wrapper wrapper">
 
-      {% if page.title == "Blog" or page.title == "blog" %}
-        <div class="blog-title-wrap"><h1 class="page-title">{{ page.title }}</h1></div>
-      {% endif %}
+    {%- comment -%}
+    {% if page.title == "Blog" or page.title == "blog" %}
+      <div class="blog-title-wrap"><h1 class="page-title">{{ page.title }}</h1></div>
+    {% endif %}
+    {%- endcomment -%}
 
-      <div class="blog-main-container row">
-
-        <main class="blog-content" aria-label="Content">
-          {{ content }}
-        </main>
-
-          <aside class="sidebar">
-            {%- include_cached sidebar.html -%}
-            {%- comment -%}
-            {%- endcomment -%}
-
-          </aside>
-        </div>
-
+    <div class="blog-main-container row">
+      <h1 id="title"><a href="https://personalgenomes.wordpress.com"><span>Personal Genome Project Blog</span></a></h1><img src="/PGPGlobal/assets/images/pgp_header_980x120.png" alt="Personal Genome Project Logo" style="width: 980px;display: none;">
+      <div id="description">
+        <h2>News and updates about the Personal Genome Project</h2>
       </div>
-  {%- include_cached footer.html -%}
+      <div id="" style="" class="nav2">
+          <ul id="menu-menu-2" class="menu"><li id="menu-item-1622" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1622"><a href="http://www.personalgenomes.org">Back to Main Website</a></li>
+        </ul>
+      </div>
+      <div class="seperator-black"></div>
+      <main class="blog-content" aria-label="Content">
+        {{ page | inspect }}
+        {{ post | inspect }}
+
+        {{ content }}
+      </main>
+
+        <aside class="sidebar">
+          {%- include_cached sidebar.html -%}
+          {%- comment -%}
+          {%- endcomment -%}
+
+        </aside>
+      </div> <!-- /blog-main-container -->
+
+    </div>
+
   {%- comment -%}
+  {%- include_cached footer.html -%}
   {%- endcomment -%}
 
 </body>

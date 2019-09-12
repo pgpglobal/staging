@@ -1,0 +1,35 @@
+---
+layout: blog
+title: Archive
+class: archive
+---
+
+{% comment %}
+<h1 class="archive-title">Archive for {{ page.date | date: "%Y" }}</h1>
+<div class="entries">
+  <ul class="entry-list">
+    {%- for post in site.posts -%}
+      {%- capture postmonth -%} {{ post.date | date: '%m%Y' }} {%- endcapture -%}
+      {%- capture pagemonth -%} {{ page.month }}{{ page.year }} {%- endcapture -%}
+      {%- if postmonth contains pagemonth -%}
+    <li>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+        <span class="comments_number">0</span>
+        <span class="archdate">{{ post.date | date: "%b %-d, %Y" }}</span>
+        {{ post.title | escape}}
+      </a>
+    </li>
+    {%- endif -%}
+    {%- endfor -%}
+    <li class="post">
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p class="tags">
+            {%- for tag in post.tags -%}
+            <a href="{{ tag | downcase | replace: ' ', '-' | prepend:'/tags/' | prepend: site.baseurl }}">{{ tag }}</a>
+            {%- endfor -%}
+        </p>
+    </li>
+  </ul>
+</div><!--end entry-list-->
+
+{% endcomment %}

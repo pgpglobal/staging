@@ -1,6 +1,7 @@
 ---
 layout: blog
 title: Contributors
+class: archive
 ---
 
 <h1 class="archive-title">Contributors</h1>
@@ -9,7 +10,7 @@ title: Contributors
 <div class="entries">
   <ul class="entry-list">
     {%- for author in site.authors -%}
-    <li><a href="{{ author.url | relative_url }}">{{ author.name }}</a></li>
+    <li><a class="post-link" href="{{ author.url | relative_url }}">{{ author.name }}</a></li>
     {%- endfor -%}
   </ul>
 </div>

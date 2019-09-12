@@ -6,6 +6,7 @@
 * [Author Collections](#author-collections)
 * [Flickr Integration](#flickr-integration)
 * [Plugins](#plugins)
+  * [Jekyll Without Plugins](#jekyll-without-plugins)
 * [Contact Form](#contact-form)
 * [Responsive Images](#responsive-images)
 * [Favicon](#favicon)
@@ -13,6 +14,7 @@
   * [Cloudflare](#cloudflare)
   * [GitHub Pages](#github-pages)
 * [Staging - Simulating GitHub Pages](#staging---simulating-github-pages)
+    * [Source Map](#source-map)
 * [Other Tools](#other-tools)
 
 <!-- /MarkdownTOC -->
@@ -65,6 +67,11 @@ GitHub Pages Optional Plugins:
 * jemoji
 * jekyll-mentions
 * jekyll-include-cache
+
+<a id="jekyll-without-plugins"></a>
+### Jekyll Without Plugins
+
+* Search bar was solved using this: https://github.com/christian-fei/Simple-Jekyll-Search
 
 <a id="contact-form"></a>
 ## Contact Form
@@ -119,6 +126,25 @@ Relevant Tutorials and Resources:
 
 * [Setting up GitHub Pages locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll#keeping-your-site-up-to-date-with-the-github-pages-gem)
 
+<a id="source-map"></a>
+#### Source Map
+
+** Getting a sassmap to show up in code inspector **
+
+```
+For development, do the following in your site files
+
+at assets/css/styles.scss comment out the front matter so it isn’t tracked by jekyll
+at assets/css/styles.scss comment out //@import "main"; and replace with @import "../../_sass/main";
+in config.yml exclude _sass
+in config.yml exclude assets/css/styles.scss
+if it’s running, stop jekyll serve
+start jekyll serve
+You can now use whatever compiler you like and it will generate a sass map that can be used in the inspector.
+
+This should work fine, but if you want to do things the jekyll way, reverse these steps for production.
+```
+
 <a id="other-tools"></a>
 ## Other Tools
 
@@ -126,3 +152,4 @@ Relevant Tutorials and Resources:
 * [Creating An Asset Pipeline In Python With-paver](https://www.codementor.io/jstacoder/creating-an-asset-pipeline-in-python-with-paver-du107wjs3)
 * [How To Run Bash Commands In-gulp](https://stackoverflow.com/questions/21128812/how-to-run-bash-commands-in-gulp)
 * [jekyl-tidy](https://github.com/apsislabs/jekyll-tidy) - HTMLTidy
+* [Time String Formatter](http://strftime.net/)

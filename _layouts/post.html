@@ -15,24 +15,47 @@ class: blog
       {%- if page.author -%}
       • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><a href="{{ page.author.url }}">{{ page.author | escape }}</a></span></span>
     {%- endif -%}</p>
+
+    <h2><a href="{{ page.url }}">{{ page.title | escape }}</a></h2>
+    <div class="date"><time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+    {{ page.date | date: date_format }}
+    </time></div>
   </header>
+
+  <div class="meta clear">
+    {%- if page.author -%}
+    <div class="author">
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><a href="{{ page.author.url }}">{{ page.author | escape }}</a></span></span>
+    </div>
+    {%- endif-%}
+  </div>
+
+  <div class="meta clear">
+    {%- if post.author -%}
+    <div class="author">
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name"><a href="{{ post.author.url }}">{{ post.author | escape }}</a></span></span>
+    </div>
+    {%- endif-%}
+  </div>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
 
   {% comment %}
-  {%- include_cached social.html -%}
-  {% endcomment %}
   {%- if site.disqus.shortname -%}
   {%- include_cached disqus_comments.html -%}
   {%- endif -%}
+  {% endcomment %}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
 
-{% include_cached related-posts.html %}
+{% include related-posts.html %}
 {% include_cached share-buttons-jp.html %}
-{% include_cached post-footer.html %}
+{% comment %}
+{% endcomment %}
+{% include post-footer.html %}
 
 

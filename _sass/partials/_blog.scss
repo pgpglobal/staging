@@ -201,3 +201,141 @@ span.p-author.h-card {
   margin: 0;
   padding: 0;
 }
+
+
+
+
+/* This is redoing the Main Blog page w/ the new bg image and stuff */
+
+a,
+a:visited {
+  color: #772124;
+}
+
+#title {
+  /* height: 165px; */
+  background: url(https://personalgenomes.files.wordpress.com/2012/01/pgp_header_980x120.png) no-repeat;
+  font-size: 46px;
+  font-weight: 700;
+  height: 180px;
+  line-height: 1.3;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+  text-indent: -999em !important;
+  vertical-align: middle;
+  width: 920px;
+  margin: 21px 0 0;
+}
+
+#title a {
+  height: 180px;
+}
+
+#title a,
+#title a:visited {
+  display: block;
+  font-size: 48px;
+  height: 100%;
+  overflow: auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#title span {
+  position: relative;
+  top: 25%;
+}
+
+#description {
+  /* margin-top: 15px; */
+  /* border-bottom: 5px solid #333; */
+  float: left;
+  padding-bottom: 4.5px;
+  /* width: 100%; */
+}
+
+#description h2 {
+  color: #666;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.nav2 {
+  float: right;
+  font-size: 15px;
+  font-family: "Trebuchet MS","Lucida Grande","Lucida Sans",Verdana,Arial,sans-serif;
+  margin: 17px 0 10px;
+}
+
+.nav2 ul {
+  padding: 0 0 0 20px;
+  position: relative;
+  list-style: none;
+}
+
+.nav2 ul li {
+  position: relative;
+  float: left;
+  margin: 0 0 0 15px;
+}
+
+.nav2 li a {
+  padding-top: .1em;
+  color: #333;
+  text-decoration: none;
+}
+
+.blog-content .post-header {
+  margin: 0 0 13px;
+}
+.blog-content:first-of-type article:first-of-type h2 {
+  padding: 0 0 5px;
+}
+
+.blog-content:first-of-type article h2 {
+  padding: 15px 0 5px;
+}
+
+.post-header .date {
+  padding-top: 5px;
+}
+
+
+.meta {
+  margin: 10px 0 22.5px;
+  font-size: 12px;
+  color: #666;
+}
+
+.blog-content .meta a,
+.blog-content .meta a:active
+.blog-content .meta a:hover
+.blog-content .meta a:visited {
+  font-weight:  400;
+}
+
+.meta a,
+.meta a:visited {
+  color: #666;
+  font-style: normal;
+  /* font-weight: 400; */
+}
+
+.meta a:hover {
+  color: #772124;
+}
+
+.blog-main-container .nav2 a {
+  color: #000;
+}
+
+.seperator-black {
+  width: 100%;
+  height: 5px;
+  border-bottom: 5px solid #333;
+}
+
+.blog-main-container .nav2 a:hover {
+  color: #772124;
+}
