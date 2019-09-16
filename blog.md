@@ -23,7 +23,18 @@ permalink: /blog/
   {%- endif-%}
 </div>
 
-  <p>{{ post.excerpt }}</p>
+<p>{{ post.excerpt }}</p>
 </article>
+
+<div class="post-footer">
+  {% assign categories = post.categories %}
+  <div class="categories">from → &nbsp;
+    {%- for category in categories -%}
+    <a href="{{ site.baseurl }}/category/{{ category | slugize }}">{{category}}</a>
+    {% unless forloop.last %}, {% endunless %}
+    {%- endfor -%}
+  </div>
+</div>
+
 {% endfor %}
 
