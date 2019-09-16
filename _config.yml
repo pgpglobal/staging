@@ -135,7 +135,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      strip_title: true
+      # strip_title: true
   - scope:
       path: ""
     values:
