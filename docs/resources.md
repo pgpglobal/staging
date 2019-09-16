@@ -153,3 +153,5 @@ This should work fine, but if you want to do things the jekyll way, reverse thes
 * [How To Run Bash Commands In-gulp](https://stackoverflow.com/questions/21128812/how-to-run-bash-commands-in-gulp)
 * [jekyl-tidy](https://github.com/apsislabs/jekyll-tidy) - HTMLTidy
 * [Time String Formatter](http://strftime.net/)
+* [Google Forms Restyler](http://googleformrestyler.apixml.net/)
+
