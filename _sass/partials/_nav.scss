@@ -23,10 +23,6 @@
   box-sizing: content-box;
   opacity: 1;
 
-  // .navbar-header * {
-  //   max-width: 320px
-  // }
-
   .nav-item {
     font-size: 1.4rem;
     padding-right: 20px;
@@ -52,22 +48,15 @@
 .navbar-default {
   background-color: $nav--background-color;
   background-image: none;
-  // border-color: #0080e0;
-  // height: 50px;
   height: 65px;
-  // max-width: 300px;
   max-width: none;
 
   .navbar-brand {
-    /*   text-align: center; */
-    // font-size: 16px;
     color: #0066b3;
     color: $nav--text-color;
     font-size: 16px;
     height: 65px;
-    // max-width: 82%;
     padding: 15px;
-    // width: 70%;
     width: 80%;
   }
 
@@ -172,19 +161,19 @@
 
   .navbar-default .navbar-nav > li > .dropdown-menu {
     -webkit-background-clip: padding-box;
-    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    background: $white;
     background-clip: padding-box;
-    background: #fff;
-    background-color: #fff;
-    border-radius: 4px;
+    background-color: $white;
     border: 1px solid #ccc;
-    border: 1px solid rgba(0,0,0,.15);
-    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
     margin: 2px 0 0;
     position: absolute;
 
     a {
-      color: #333;
+      color: $grey-dark-1;
     }
   }
 
