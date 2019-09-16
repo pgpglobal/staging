@@ -278,12 +278,15 @@ div.sharedaddy h3.sd-title {
 
 .categories {
   color: $grey-dark-6;
-  float: right;
+  // float: right;
+  float: none;
   font-size: 12px;
   font-style: italic;
   line-height: 22px;
-  text-align: right;
-  width: 400px;
+  // text-align: right;
+  text-align: left;
+  // width: 400px;
+  width: auto;
 }
 
 
@@ -322,3 +325,10 @@ div.sharedaddy h3.sd-title {
   }
 }
 
+@media only screen and (min-width: 576px) {
+  .categories {
+    float: right;
+    text-align: right;
+    width: 400px;
+  }
+}
