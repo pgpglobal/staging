@@ -226,6 +226,16 @@ Make sure Archive generation doesn't mess with staging setup
 
 1. Run [Favicon Checker](https://realfavicongenerator.net/) once the subdomain is set up
 
+<<<<<<< HEAD
+=======
+<a id="questions"></a>
+## Questions
+
+1. Cloudflare - is the current site hooked up with Cloudflare? the new site will have to be, due to the fact that it's a custom domain. So being setup with Cloudflare already might save some headache.
+2. What's the story with comments?
+3. Search Form?
+
+>>>>>>> 09cdbdca... Fix Post Footer category links structure
 <a id="notes"></a>
 ## Notes
 
