@@ -2,8 +2,10 @@
 //   padding: 10px 0 20px;
 // }
 
-.sidebar,
-.body-archive .sidebar {
+// .sidebar,
+// .body-archive .sidebar {
+.sidebar {
+  clear: both;
   display: block;
   justify-content: flex-start;
   margin: 0 auto;
@@ -208,4 +210,41 @@ form.search-form {
   line-height: 1.625;
   text-align: center;
   width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .sidebar-left {
+    float: left;
+  }
+
+  .sidebar-right {
+    float: right;
+    padding: 0 10px 0 0;
+  }
+
+  .sidebar .sidebar-left,
+  .sidebar .sidebar-right,
+  .sidebar-left div,
+  .sidebar-right div {
+    width: 140px;
+  }
+
+  .flickr-size-thumbnail .flickr-images {
+    align-content: center;
+    flex-direction: column;
+  }
+
+  .flickr-wrapper {
+    width: 140px;
+  }
+
+  .flickr-images a {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .sidebar-right {
+    padding: 0;
+  }
 }
