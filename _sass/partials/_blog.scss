@@ -4,49 +4,108 @@
 
 .blog-wrapper {
   font-family: $blog-font-family;
+  max-width: 100%;
 }
 
 .body-blog-feed {
+
+  article img {
+    height: auto;
+  }
+
   .post-header {
     h1 a:hover,
     h2 a:hover {
-      color: #772124;
+      color: $maroon;
       text-decoration: underline;
     }
   }
 }
 
+.blog-header-title {
+  background: url(https://personalgenomes.files.wordpress.com/2012/01/pgp_header_980x120.png) no-repeat;
+  // background-position: 0 center;
+  background-position: left -5% center;
+  // background-size: 220%;
+  background-size: 200%;
+  font-size: 46px;
+  font-weight: 700;
+  height: 180px;
+  line-height: 1.3;
+  // margin: 21px 0 0;
+  margin: 0 auto;
+  max-width: 100%;
+  overflow: hidden;
+  text-align: center;
+  text-indent: -999em !important;
+  vertical-align: middle;
+  // width: 920px;
+  // width: 420px;
+  width: 300px;
+
+  a {
+    height: 180px;
+    max-width: 100%;
+  }
+
+  a,
+  a:visited {
+    display: block;
+    font-size: 48px;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+    vertical-align: middle;
+  }
+
+  span {
+    position: relative;
+    top: 25%;
+  }
+}
+
+.blog-header-title-img  {
+  display: none;
+  width: 980px;
+}
+
+.blog-subheader {
+  .blog-subheader {
+    display: flex;
+    flex-flow: column wrap;
+    float: none;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+.description h2 {
+  margin: 0 0 10px;
+}
+
+.nav2 {
+  display: none;
+}
+
 .body-archive .blog-main-container,
 .body-post .blog-main-container,
 .blog-main-container {
-  // margin: 0 -15px;
-  // width: 920px;
-  margin: 0 auto;
-  display: block;
-  width: auto;
-
 
   a,
-  // :link,
-  a:visited {
-    text-decoration: none;
-  }
-
-  a,
-  // a:link,
   a:visited {
     color: $blog--link-color;
+    text-decoration: none;
   }
 }
 
-.body-post .blog-main-container,
-.body-archive .blog-main-container {
-  margin: 50px -15px 0;
-}
+// .body-post .blog-main-container,
+// .body-archive .blog-main-container {
+//   margin: 50px -15px 0;
+// }
 
-.body-post .blog-main-container {
-  // padding: 90px 0 0;
-}
+// .body-post .blog-main-container {
+//   // padding: 90px 0 0;
+// }
 
 .body-blog {
   ul {
@@ -60,7 +119,7 @@
 
   main {
     color: $grey-dark-1;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
 
   .page-title {
@@ -110,7 +169,8 @@
     // font-size: 18px;
     font-size: 16.9px;
     line-height: 22px;
-    margin: 0;
+    // margin: 0;
+    margin: 20px 0 0;
     padding: 15px 0 5px;
   }
 
@@ -135,7 +195,7 @@
   a:visited {
     color: $grey-dark-1;
     // color: $black;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 26px;
     font-weight: 700;
     line-height: 28.6px;
@@ -152,36 +212,36 @@
   }
 
   .date {
-    padding-top: 10px;
     color: $grey-dark-2;
+    font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans',Verdana,Arial,sans-serif;
     font-size: 16px;
     font-weight: 400;
-    font-family: "Trebuchet MS","Lucida Grande","Lucida Sans",Verdana,Arial,sans-serif;
     line-height: 22px;
+    padding-top: 10px;
     text-transform: uppercase;
     }
 }
 
-.body-post .blog-main-container {
-  padding: 100px 0 0;
-}
+// .body-post .blog-main-container {
+//   padding: 100px 0 0;
+// }
 
-.body-post .blog-main-container {
-  margin: 0 -15px;
-  width: 920px;
-}
+// .body-post .blog-main-container {
+//   margin: 0 -15px;
+//   width: 920px;
+// }
 
 time.dt-published {
   text-transform: uppercase;
-  font-family: "Trebuchet MS","Lucida Grande","Lucida Sans",Verdana,Arial,sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans',Verdana,Arial,sans-serif;
 }
 
 span.p-author.h-card {
-  font-family: "Trebuchet MS","Lucida Grande","Lucida Sans",Verdana,Arial,sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans',Verdana,Arial,sans-serif;
 }
 
 .blog-content .post-header .post-meta {
-  font-family: "Trebuchet MS","Lucida Grande","Lucida Sans",Verdana,Arial,sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans',Verdana,Arial,sans-serif;
   font-size: 16px;
   padding: 10px 0 0;
   margin: 0;
@@ -189,141 +249,110 @@ span.p-author.h-card {
   text-transform: uppercase;
 }
 
-.body-post .blog-main-container .sidebar {
-  padding: 10px 0 20px;
-}
+// .body-post .blog-main-container .sidebar {
+//   padding: 10px 0 20px;
+// }
 
 .widget_author_grid ul {
   margin: 0;
 }
 
-.thin-sidebar ul {
-  margin: 0;
-  padding: 0;
-}
-
-
-
-
-/* This is redoing the Main Blog page w/ the new bg image and stuff */
-
 a,
 a:visited {
-  color: #772124;
+  color: $maroon;
 }
 
-#title {
-  /* height: 165px; */
-  background: url(https://personalgenomes.files.wordpress.com/2012/01/pgp_header_980x120.png) no-repeat;
-  font-size: 46px;
-  font-weight: 700;
-  height: 180px;
-  line-height: 1.3;
-  margin: 0;
-  overflow: hidden;
-  text-align: center;
-  text-indent: -999em !important;
-  vertical-align: middle;
-  width: 920px;
-  margin: 21px 0 0;
-}
-
-#title a {
-  height: 180px;
-}
-
-#title a,
-#title a:visited {
-  display: block;
-  font-size: 48px;
-  height: 100%;
-  overflow: auto;
-  text-align: center;
-  vertical-align: middle;
-}
-
-#title span {
-  position: relative;
-  top: 25%;
-}
-
-#description {
-  /* margin-top: 15px; */
-  /* border-bottom: 5px solid #333; */
-  float: left;
+.description {
+  // float: left;
   padding-bottom: 4.5px;
-  /* width: 100%; */
-}
+  text-align: center;
+  width: 100%;
 
-#description h2 {
-  color: #666;
-  font-size: 12px;
-  font-weight: 400;
+  h2 {
+    color: $grey-dark-6;
+    font-size: 12px;
+    font-weight: 400;
+  }
 }
 
 .nav2 {
+  display: none;
   float: right;
+  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans',Verdana, Arial, sans-serif;
   font-size: 15px;
-  font-family: "Trebuchet MS","Lucida Grande","Lucida Sans",Verdana,Arial,sans-serif;
   margin: 17px 0 10px;
+  // width: 100%;
+
+  ul {
+    list-style: none;
+    padding: 0 0 0 20px;
+    position: relative;
+
+    li {
+      float: left;
+      margin: 0 0 0 15px;
+      position: relative;
+
+      a {
+        color: #333;
+        padding-top: .1em;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
-.nav2 ul {
-  padding: 0 0 0 20px;
-  position: relative;
-  list-style: none;
-}
 
-.nav2 ul li {
-  position: relative;
-  float: left;
-  margin: 0 0 0 15px;
-}
+.blog-content {
+  h2,
+  article h2 {
+    margin: 20px 0 0;
+  }
 
-.nav2 li a {
-  padding-top: .1em;
-  color: #333;
-  text-decoration: none;
-}
+  .post-header {
+    margin: 0 0 13px;
+  }
 
-.blog-content .post-header {
-  margin: 0 0 13px;
-}
-.blog-content:first-of-type article:first-of-type h2 {
-  padding: 0 0 5px;
-}
+  &:first-of-type article {
+    h2 {
+      padding: 15px 0 5px;
+    }
 
-.blog-content:first-of-type article h2 {
-  padding: 15px 0 5px;
+    &:first-of-type h2 {
+      margin: 50px 0 0;
+      padding: 0 0 5px;
+    }
+  }
 }
 
 .post-header .date {
   padding-top: 5px;
 }
 
-
 .meta {
-  margin: 10px 0 22.5px;
+  color: $grey-dark-6;
   font-size: 12px;
-  color: #666;
+  margin: 10px 0 22.5px;
+
+  a,
+  a:visited {
+    color: $grey-dark-6;
+    font-style: normal;
+    /* font-weight: 400; */
+  }
+
+  a:hover {
+    color: $maroon;
+  }
 }
 
-.blog-content .meta a,
-.blog-content .meta a:active
-.blog-content .meta a:hover
-.blog-content .meta a:visited {
-  font-weight:  400;
-}
-
-.meta a,
-.meta a:visited {
-  color: #666;
-  font-style: normal;
-  /* font-weight: 400; */
-}
-
-.meta a:hover {
-  color: #772124;
+.blog-content .meta {
+  a,
+  a:active
+  a:hover
+  a:visited {
+    font-weight:  400;
+  }
 }
 
 .blog-main-container .nav2 a {
@@ -331,11 +360,189 @@ a:visited {
 }
 
 .seperator-black {
-  width: 100%;
-  height: 5px;
   border-bottom: 5px solid #333;
+  height: 5px;
+  width: 100%;
 }
 
 .blog-main-container .nav2 a:hover {
-  color: #772124;
+  color: $maroon;
+}
+
+.dotted-border-img {
+  background: transparent url("/PGPGlobal/assets/images/archives-dotted-line.gif") repeat-x top left;
+  height: 1px;
+}
+
+@media only screen and (min-width: 425px) {
+  .blog-header-title {
+    margin: 5px auto 0;
+    width: 420px;
+  }
+
+  .description h2 {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .blog-header-title {
+    // margin: 0 auto;
+    margin: 10px auto 0;
+    width: 420px;
+  }
+
+  .description {
+    float: none;
+  }
+
+  .description h2 {
+    margin: 10px 0;
+  }
+
+  .sidebar div {
+    width: 300px;
+  }
+
+  .flickr-wrapper {
+    justify-content: flex-start;
+  }
+
+  .flickr-more {
+    text-align: left;
+  }
+
+  .sidebar-right ul {
+    display: block;
+  }
+
+  .sidebar-right {
+    float: left;
+  }
+
+  .thin-sidebar .social-small {
+    display: inline;
+    /* width: 25%; */
+    width: auto;
+  }
+
+  .flickr-wrapper {
+    display: block;
+    justify-content: flex-start;
+  }
+
+  .flickr-more {
+    text-align: left;
+  }
+
+  .flickr-size-thumbnail .flickr-images {
+    display: block;
+  }
+
+  .sidebar-left {
+    float: left;
+  }
+
+  .flickr-images a,
+  .flickr-images img {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .blog-header-title {
+    // margin: 0;
+    margin: 10px auto 0 10px;
+    text-align: left;
+  }
+
+  .description {
+    // margin: 0 0 0 20px;
+    margin: 0 0 0 3%;
+    text-align: left;
+    width: 100%;
+  }
+
+  .description h2 {
+    font-size: 14px;
+    margin: 20px auto 10px 20px;
+    width: 420px;
+    float: none;
+    text-align: left;
+    margin: 20px 0 10px 20px;
+  }
+
+  .nav2 {
+    display: block;
+    margin: 17px 20px 10px 0;
+    width: 220px;
+  }
+
+  .nav2 ul li {
+    position: static;
+    float: none;
+    margin: 0;
+  }
+
+  .blog-subheader {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row;
+    width: 100%;
+  }
+
+  .blog-content:first-of-type article:first-of-type h2 {
+    margin: 30px 0 0;
+  }
+
+  .sidebar div {
+    /* width: 300px; */
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .blog-header-title {
+    background-size: initial;
+    margin: 0;
+    width: 100%;
+  }
+
+  .description {
+    margin: 0;
+  }
+
+  .description h2 {
+    margin: 20px 0 10px;
+  }
+
+  .nav2 {
+    margin: 17px 0 10px;
+    width: 170px;
+  }
+
+  main.blog-content {
+    padding: 0 20px 20px 0;
+  }
+
+  .blog-content:first-of-type article:first-of-type h2 {
+    // margin: 10px 0 0;
+    margin: 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .blog-header-title {
+    width: 100%;
+    background-size: initial;
+    margin: 0;
+  }
+
+  .description {
+    margin: 0;
+  }
+
+  .description h2 {
+    margin: 20px 0 10px;
+  }
 }

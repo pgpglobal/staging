@@ -67,7 +67,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddw
 ### Related Posts
 
 1. Randomize posts displayed from each tag, if possible
-    * See the `sample filter`
+    * See the `sample` filter
 
 <a id="top-graphic"></a>
 ### Top Graphic

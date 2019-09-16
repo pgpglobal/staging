@@ -11,6 +11,7 @@
   * [Solving Merge Conflicts](#solving-merge-conflicts)
 * [Files and Directories Guide](#files-and-directories-guide)
   * [Directories](#directories)
+  * [Layouts and Pages](#layouts-and-pages)
   * [Files](#files)
 * [Permalinks](#permalinks)
   * [Archives](#archives)
@@ -138,6 +139,11 @@ As of 8/31/19, the directory structure looks like this.
 * `_sass` is where the styles for the site live. Sass ([Syntactically Awesome Style Sheets](https://sass-lang.com/)) is a pre-processor for CSS.  The central file is `minima.scss`, and the actual code is found in the various files in the `partials` directory. See below for more info.
 * `_site` is the compiled version of the site. You can basically ignore this. Always make sure this is listed in your `.gitignore` file. You *do not* want to commit this to the repo.
 * `styles` contains any extra styles that needed to be incorporated, such as [Bootstrap](https://getbootstrap.com/) or other css files that are loaded separately from the main scss files
+
+<a id="layouts-and-pages"></a>
+### Layouts and Pages
+
+* Blog Main Page is controlled by blog.md
 
 <a id="files"></a>
 ### Files

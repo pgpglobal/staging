@@ -74,8 +74,8 @@ plugins:
 exclude:
 #   - Gemfile
 #   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
+  - node_modules
+  - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
@@ -91,6 +91,7 @@ exclude:
   - test.py
   - archives.py
   - "*.py"
+  - .stylelintrc.json
 
 sass:
   style: expanded
@@ -134,6 +135,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      strip_title: true
   - scope:
       path: ""
     values:

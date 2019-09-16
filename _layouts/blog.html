@@ -10,7 +10,7 @@ title: "Personal Genome Project: Global Network | Blog"
 {% if page.title == "Blog" or page.title == "blog" %}
   <body class="body-blog body-{{ page.class }}">
 {% elsif page.post or page.id %}
-  <body class="body-post body-{{ page.class }}">
+  <body class="body-blog body-blog-feed body-post">
 {% elsif page.type == "year" or page.type == "month" or page.type == "day" or page.type == "category" or page.type == "tag" %}
   <body class="body-archive">
 {% elsif page.title == "Categories" or page.title == "Tags" %}
@@ -32,19 +32,17 @@ title: "Personal Genome Project: Global Network | Blog"
     {%- endcomment -%}
 
     <div class="blog-main-container row">
-      <h1 id="title"><a href="https://personalgenomes.wordpress.com"><span>Personal Genome Project Blog</span></a></h1><img src="/PGPGlobal/assets/images/pgp_header_980x120.png" alt="Personal Genome Project Logo" style="width: 980px;display: none;">
-      <div id="description">
-        <h2>News and updates about the Personal Genome Project</h2>
+      <h1 id="title" class="blog-header-title"><a href="{{ blog  | relative_url }}/"><span>Personal Genome Project Blog</span></a></h1>
+      <!-- <img class="blog-header-title-img" src="/PGPGlobal/assets/images/pgp_header_980x120.png" alt="Personal Genome Project Logo"> -->
+      <div class="blog-subheader">
+        <div id="description" class="description">
+          <h2>News and updates about the Personal Genome Project</h2>
+        </div>
+        <div id="" style="" class="nav2"><a href="{{ blog | relative_url }}/">Back to Main Website</a></div>
       </div>
-      <div id="" style="" class="nav2">
-          <ul id="menu-menu-2" class="menu"><li id="menu-item-1622" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1622"><a href="http://www.personalgenomes.org">Back to Main Website</a></li>
-        </ul>
-      </div>
+
       <div class="seperator-black"></div>
       <main class="blog-content" aria-label="Content">
-        {{ page | inspect }}
-        {{ post | inspect }}
-
         {{ content }}
       </main>
 

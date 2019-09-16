@@ -87,9 +87,10 @@ for file in mylist:
     title = "title: Archive for " + months
     year = "year: " + years
     month = "month: " + '"' + m2 + '"'
+    month_str = "month_name: " + '"' + month_name + '"'
     yaml_close = "---"
     content = '<h1 class="archive-title">Archive for ' + month_name + " " + years + "</h1>"
-    lines = '{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n\n{}\n'.format(yaml_open, layout, permalink, redirect, title, year, month, yaml_close, content)
+    lines = '{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n{}\n\n{}\n'.format(yaml_open, layout, permalink, redirect, title, year, month, month_str, yaml_close, content)
 
     mf = open(month_file, 'w+')
     mf.write(lines)

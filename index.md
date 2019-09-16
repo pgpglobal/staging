@@ -4,24 +4,18 @@
 
 layout: home
 title: The Personal Genome Project
+class: home
 ---
 
 <div class="container">
-  <div class="row lead-row">
-    <div class="col-xs-8 col-md-9 lead-div">
+  <div class="row lead-row pgp-row-about">
+    <div class="col-xs-12 col-sm-8 col-md-9 lead-div">
       <a id="about" class="anchor-offset"></a>
       <h1 class="page-title">{{ page.title }}</h1>
-      <p class="lead">
-        The Personal&nbsp;Genome Project, initiated in 2005, is a vision
-        and coalition of projects across the world dedicated to creating
-        public genome, health, and trait data. Sharing data is critical
-        to scientific progress, but has been hampered by traditional
-        research practices. The PGP approach is to invite willing
-        participants to publicly share their personal data
-        for the greater good.
-      </p>
+      <p class="lead pgp-description">
+        The Personal Genome Project, initiated in 2005, is a vision and coalition of projects across the world dedicated to creating public genome, health, and trait data. Sharing data is critical to scientific progress, but has been hampered by traditional research practices. The PGP approach is to invite willing participants to publicly share their personal data for the greater good. </p>
     </div>
-    <div class="col-xs-4 col-md-3 lead-div">
+    <div class="col-xs-8 col-sm-3 col-md-3 lead-div logo-container">
       <img class="logo" src="assets/images/pgp-logo.png" alt="Curii logo - a figure within a circle. A double helix runs through the figure's core. The circle, body, and helix alternate between green and blue on both sides." longdesc="A figure within a circle. A double helix runs from the circle's bottom through the figure's core. The left side of the body is green, while the circle and face are blue. The right side of the body is blue, while the circle and face are green. Each helix maintains its color as it spirals through the figure's body.">
     </div>
   </div>
@@ -36,7 +30,7 @@ title: The Personal Genome Project
           the pilot PGP site, and is based in George Church's laboratory
           at Harvard Medical School.
         </p>
-        <button class="btn btn-default"><a href="https://pgp.med.harvard.edu/">Go to the Harvard PGP website</a></button>
+        <div><button class="btn btn-default"><a href="https://pgp.med.harvard.edu/">Go to the Harvard PGP website</a></button></div>
 
       </div>
     </div>
@@ -62,7 +56,7 @@ title: The Personal Genome Project
           <li>
             <h3>{{ project.title }} ({{ project.locale }})</h3>
             <p>{{ project.description }}</p>
-            <button class="btn btn-default"><a href="{{ project.link }}">Go to the {{ project.title }} website {{ project.language }}</a></button>
+            <div><button class="btn btn-default"><a href="{{ project.link }}">Go to the {{ project.title }} website {{ project.language }}</a></button></div>
           </li>
         {% endfor %}
       </ul>
