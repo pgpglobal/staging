@@ -1,0 +1,60 @@
+#luna-contact .freebirdFormviewerViewEmbedded  {
+  #luna-contact .freebirdFormviewerViewCenteredContent {
+    margin: 0;
+  }
+
+  #luna-contact .freebirdSolidBackground {
+    display: none;
+  }
+
+  #luna-contact .freebirdFormviewerViewFormContent {
+    padding: 0;
+
+    & > #luna-contact .freebirdFormviewerViewItemList {
+      padding: 0;
+    }
+  }
+
+  #luna-contact .freebirdFormviewerViewFormCard:first-of-type {
+    box-shadow: none;
+  }
+}
+
+#luna-contact .freebirdFormviewerViewHeaderTitleRow {
+  display: none;
+}
+
+#luna-contact .freebirdFormviewerViewHeaderTitle {
+  display: none;
+}
+
+// #luna-contact .freebirdFormviewerViewItemList {
+//    background: rebeccapurple;
+// }
+
+// #luna-contact .freebirdFormviewerViewFormContent {
+//    background: rebeccapurple;
+// }
+
+
+input#luna-contact .quantumWizTextinputPaperinputInput#luna-contact .exportInput {
+  background: $white;
+  border: 2px inset $white;
+}
+
+#luna-contact .quantumWizTextinputPaperinputPlaceholder#luna-contact .exportLabel {
+  padding: 2px 10px;
+}
+
+#luna-contact .freebirdFormviewerViewFooterEmbeddedBackground {
+  display: none;
+}
+
+#luna-contact .freebirdFormviewerViewNavigationPasswordWarning {
+  display: none;
+}
+
+#luna-contact .freebirdFormviewerViewHeaderHeader#luna-contact .exportHeader {
+  margin: 0 0 2px;
+}
+
