@@ -9,6 +9,9 @@ permalink: /contact/
 ---
 
 
+<div class="container">
+  <div class="row lead-row">
+    <div class="col-xs-11 col-md-12 col-lg-12 lead-div">
 <!-- <script type="text/javascript">var submitted=false;</script>
 <script type="text/javascript">
 $('#gform').on('submit', function(e) {
@@ -22,13 +25,18 @@ $('#gform').on('submit', function(e) {
 <p>For questions or more information about the {{ site.title }}, please use the form below to contact us.</p>
 
 <!-- ## FORM ATTEMPT CURII CURRENT -->
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddwiYlyM1Z0mQ/viewform?embedded=true" width="640" height="941" frameborder="0" marginheight="0" marginwidth="0" id="curii-contact">Loading…</iframe>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddwiYlyM1Z0mQ/viewform?embedded=true" width="940" height="941" frameborder="0" marginheight="0" marginwidth="0" id="curii-contact">Loading…</iframe>
 
+<h3>Form Restyler</h3>
+<script src="http://googleformrestyler.apixml.net/GoogleFormStyler.js"
+  form="https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddwiYlyM1Z0mQ/viewform?embedded=true">
+</script>
 <!-- ## FORM ATTEMPT LUNA RECENT
 
 <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeAV6TIsbXg3dDpcEKiRfQH6eqqFRoFQl2ulQeerrppCRldRw/viewform?embedded=true" width="640" height="892" frameborder="0" marginheight="0" marginwidth="0" id="luna-contact">Loading…</iframe>
  -->
-## Old Sample Form Look
+
+<h3>Old Sample Form Look</h3>
 <form name="gform" id="gform" enctype="text/plain" method="post" action="https://docs.google.com/forms/d/e/1FAIpQLSeAV6TIsbXg3dDpcEKiRfQH6eqqFRoFQl2ulQeerrppCRldRw/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
   <p>Your name:<br>
     <input class="span4" type="text" name="entry.1444497041" id="entry.1444497041"></p>
@@ -47,3 +55,6 @@ $('#gform').on('submit', function(e) {
 <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
 
 
+    </div>
+  </div>
+</div>
