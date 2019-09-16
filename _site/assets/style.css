@@ -1708,7 +1708,11 @@ form.search-form {
     width: auto;
   }
 }
+<<<<<<< HEAD
 @media only screen and (min-width: 920px) {
+=======
+@media only screen and (min-width: 768px) {
+>>>>>>> d977b857... Improve blog & sidebar styles. Add test version of Contact Form
   .sidebar-right {
     padding: 0;
   }
@@ -2033,6 +2037,7 @@ div.sharedaddy h3.sd-title {
     width: 400px;
   }
 }
+<<<<<<< HEAD
 #luna-contact .freebirdFormviewerViewEmbedded #luna-contact .freebirdFormviewerViewCenteredContent {
   margin: 0;
 }
@@ -2078,6 +2083,8 @@ input#luna-contact .quantumWizTextinputPaperinputInput#luna-contact .exportInput
   margin: 0 0 2px;
 }
 
+=======
+>>>>>>> d977b857... Improve blog & sidebar styles. Add test version of Contact Form
 /**
  * Syntax highlighting styles
  */
