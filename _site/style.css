@@ -907,10 +907,13 @@ img.profile-photo {
   max-width: 100%;
 }
 
+<<<<<<< HEAD
 .body-blog-feed article,
 .body-post article {
   overflow: hidden;
 }
+=======
+>>>>>>> f6e614e4... Add Post Footer Categories on Blog Main page
 .body-blog-feed article img,
 .body-post article img {
   height: auto;
