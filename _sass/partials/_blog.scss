@@ -7,10 +7,15 @@
   max-width: 100%;
 }
 
-.body-blog-feed {
+.body-blog-feed,
+.body-post {
 
-  article img {
-    height: auto;
+  article {
+    overflow: hidden;
+
+    img {
+      height: auto;
+    }
   }
 
   .post-header {
