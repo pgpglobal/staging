@@ -6,6 +6,7 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 
 * [Instructions and Documentation](#instructions-and-documentation)
 * [Contact Form](#contact-form)
+  * [Temporary Form](#temporary-form)
 * [Blog Import](#blog-import)
   * [Categories](#categories)
   * [Related Posts](#related-posts)
@@ -48,10 +49,13 @@ See A current list of documentation files includes:
 <a id="contact-form"></a>
 ## Contact Form
 
-Ok -- I made a tester form -- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddwiYlyM1Z0mQ/viewform?embedded=true" width="640" height="941" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<a id="temporary-form"></a>
+### Temporary Form
 
+```
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddwiYlyM1Z0mQ/viewform?embedded=true" width="640" height="941" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+```
 https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddwiYlyM1Z0mQ/viewform?usp=sf_link
-
 
 <a id="blog-import"></a>
 ## Blog Import
@@ -224,7 +228,6 @@ Make sure Archive generation doesn't mess with staging setup
 1. Cloudflare - is the current site hooked up with Cloudflare? the new site will have to be, due to the fact that it's a custom domain. So being setup with Cloudflare already might save some headache.
 2. What's the story with comments?
 3. Search Form?
-4. Contact Form?
 
 <a id="notes"></a>
 ## Notes

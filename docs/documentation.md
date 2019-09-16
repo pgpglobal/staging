@@ -15,6 +15,7 @@
   * [Files](#files)
 * [Permalinks](#permalinks)
   * [Archives](#archives)
+  * [Catgories](#catgories)
 * [Coding in Jekyll](#coding-in-jekyll)
   * [Liquid](#liquid)
 
@@ -22,7 +23,7 @@
 
 <a id="last-updated"></a>
 ## Last Updated
-This Documentation was last updated on 8/25/2019.
+This Documentation was last updated on 9/16/2019.
 
 <a id="setup"></a>
 ## Setup
@@ -187,12 +188,30 @@ Posts must be named in `yyyy-mm-dd-postname.md` format (otherwise Jekyll will ig
 ### Archives
 
 Archive permalinks work as follows:
-url.com/YYYY
-url.com/YYYY/MM
-url.com/YYYY/MM/DD
-url.com/tag/tag_name
+* url.com/YYYY
+* url.com/YYYY/MM
+* url.com/YYYY/MM/DD
+* url.com/tag/tag_name
+* url.com/category/category_name
+
+<a id="catgories"></a>
+### Catgories
+Archive permalinks work as follows:
+url.com/category - main category page
 url.com/category/category_name
 
+Currently categories must be added manually in the `_categories` directory.
+
+Sample Category file:
+
+```markdown
+---
+tag: uncategorized
+permalink: "/category/uncategorized"
+---
+```
+
+The category pages are a [collection](https://jekyllrb.com/docs/collections/) and are set to auto-generate pages based on the files in the `_categories` dir. This is set via `output: true` in `_config.yml`
 
 <a id="coding-in-jekyll"></a>
 ## Coding in Jekyll
