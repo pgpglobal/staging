@@ -9,10 +9,8 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 * [Blog Import](#blog-import)
   * [Categories](#categories)
   * [Related Posts](#related-posts)
-  * [Top Graphic](#top-graphic)
   * [Sidebar Functionality](#sidebar-functionality)
 * [Styling and Markup adjustments](#styling-and-markup-adjustments)
-* [Responsive](#responsive)
   * [Medium-Large Tasks](#medium-large-tasks)
   * [Small Tasks](#small-tasks)
 * [Content Needed](#content-needed)
@@ -69,11 +67,6 @@ https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddw
 1. Randomize posts displayed from each tag, if possible
     * See the `sample` filter
 
-<a id="top-graphic"></a>
-### Top Graphic
-
-1. Add graphic from original back on top
-
 <a id="sidebar-functionality"></a>
 ### Sidebar Functionality
 
@@ -89,29 +82,23 @@ https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddw
 <a id="styling-and-markup-adjustments"></a>
 ## Styling and Markup adjustments
 
-<a id="responsive"></a>
-## Responsive
-
-A bit of a width issue
-
 <a id="medium-large-tasks"></a>
 ### Medium-Large Tasks
 
-1. Blog articles check typography
-2. Mobile Sidebar
+1. Mobile Sidebar
   * Social Icons should be less to the right
   * Needs styling altogether - check if this just got lost somewhere...
-3. Preference: `_media.css`: convert max-width: 767 into relevant min-width sections, if time-possible (non-essential).
+2. Preference: `_media.css`: convert max-width: 767 into relevant min-width sections, if time-possible (non-essential).
 
 <a id="small-tasks"></a>
 ### Small Tasks
 
 1. Reinstate the /updates.html et al links that go to [sign-up form](https://personalgenomes.us3.list-manage.com/subscribe?u=3980aaa2746fd428de44b2ab4&id=34d31b2d4b) and similar
   * Setup JS redirect via layout or include or something
-2. Replace all fixed line heights w/ relative numbers
+
+Optional:
+1. Replace all fixed line heights w/ relative numbers
 * Using a base SCSS variable wherever possible
-3. Blog/Archive: Increase `min-width: 992px` `.blog-main-container` width to around 960px. Otherwise not enough room between post listing and sidebar2
-  * Actually just add `body-archive` and it should be fine
 
 <a id="content-needed"></a>
 ## Content Needed
@@ -188,8 +175,6 @@ List of files:
 #### Files
 
 * _layouts/archive_month.html
-* _layouts/archive.html ???
-  * Jekyll didn't throw a fit when I accidentally moved it :o
 
 <a id="authors"></a>
 #### Authors

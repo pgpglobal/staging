@@ -96,7 +96,7 @@ for file in mylist:
     mf.write(lines)
     mf.close()
 
-    # # Generate Months Archive Pages
+    # # Generate Days Archive Pages
     # day_file = days + "/index.html"
     # print(day_file)
 

@@ -1,8 +1,12 @@
 .gitignore
 _plugins/generator.rb
-_site
+# _site
 .sass-cache
 .jekyll-metadata
 scratch/
 ref/
 *.bak
+.stylelint.js
+_deletion/
+node_modules/
+package-lock.json
