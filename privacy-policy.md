@@ -1,6 +1,6 @@
 ---
 layout: default
-class: tos privacy
+class: privacy
 title: Privacy Policy
 permalink: /privacy-policy/
 redirect_from: /privacy/

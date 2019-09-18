@@ -1,60 +1,61 @@
-#luna-contact .freebirdFormviewerViewEmbedded  {
-  #luna-contact .freebirdFormviewerViewCenteredContent {
-    margin: 0;
-  }
+// Styles for Google Form on Contact Page
 
-  #luna-contact .freebirdSolidBackground {
-    display: none;
-  }
-
-  #luna-contact .freebirdFormviewerViewFormContent {
-    padding: 0;
-
-    & > #luna-contact .freebirdFormviewerViewItemList {
-      padding: 0;
-    }
-  }
-
-  #luna-contact .freebirdFormviewerViewFormCard:first-of-type {
-    box-shadow: none;
-  }
+.freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
+  margin: 20px auto;
+  max-width: 90vw;
 }
 
-#luna-contact .freebirdFormviewerViewHeaderTitleRow {
+.freebirdFormviewerViewNavigationPasswordWarning,
+.freebirdFormviewerViewFooterEmbeddedBackground {
   display: none;
 }
 
-#luna-contact .freebirdFormviewerViewHeaderTitle {
-  display: none;
+.quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdThemedInput.modeLight,
+.quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdFormviewerViewItemsTextEmail.freebirdThemedInput.modeLight,
+.quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
+  width: 100%;
 }
 
-// #luna-contact .freebirdFormviewerViewItemList {
-//    background: rebeccapurple;
-// }
+@media only screen and (min-width: 768px) {
+  .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
+    // margin: auto;
+    max-width: 90vw;
+/*     width: 90vw; */
+  }
 
-// #luna-contact .freebirdFormviewerViewFormContent {
-//    background: rebeccapurple;
-// }
+  .quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdThemedInput.modeLight,
+  .quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdFormviewerViewItemsTextEmail.freebirdThemedInput.modeLight,
+  .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
+    width: 70%;
+  }
 
-
-input#luna-contact .quantumWizTextinputPaperinputInput#luna-contact .exportInput {
-  background: $white;
-  border: 2px inset $white;
+  .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
+    width: 90%;
+  }
 }
 
-#luna-contact .quantumWizTextinputPaperinputPlaceholder#luna-contact .exportLabel {
-  padding: 2px 10px;
+@media only screen and (min-width: 920px) {
+  .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
+    margin: 20px 0 20px 2px;
+    max-width: 840px;
+    width: 84vw;
+  }
+
+  .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
+    width: 90%;
+  }
 }
 
-#luna-contact .freebirdFormviewerViewFooterEmbeddedBackground {
-  display: none;
+@media only screen and (min-width: 1024px) {
+  .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
+    margin: 20px 0 20px 2px;
+    max-width: 840px;
+    width: 80vw;
+  }
 }
 
-#luna-contact .freebirdFormviewerViewNavigationPasswordWarning {
-  display: none;
+@media only screen and (min-width: 1200px) {
+  .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
+/*     width: 100%; */
+  }
 }
-
-#luna-contact .freebirdFormviewerViewHeaderHeader#luna-contact .exportHeader {
-  margin: 0 0 2px;
-}
-

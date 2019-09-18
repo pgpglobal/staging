@@ -1,7 +1,4 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
 class: contact
 title: Contact
@@ -19,7 +16,3 @@ For questions or more information about the {{ site.title }}, please use the for
   form="https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddwiYlyM1Z0mQ/viewform?embedded=true">
 </script>
 
-<!--     </div>
-  </div>
-</div>
- -->
