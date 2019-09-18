@@ -2038,8 +2038,15 @@ div.sharedaddy h3.sd-title {
     width: 400px;
   }
 }
+body {
+  background-color: #fff !important;
+}
+
+.freebirdFormviewerViewFormContentWrapper {
+  margin: 60px 0 0;
+}
+
 .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent {
-  margin: 20px auto;
   max-width: 90vw;
 }
 
@@ -2055,6 +2062,10 @@ div.sharedaddy h3.sd-title {
 }
 
 @media only screen and (min-width: 768px) {
+  .freebirdFormviewerViewFormContentWrapper {
+    margin: 110px 0 0;
+  }
+
   .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent {
     max-width: 90vw;
     /*     width: 90vw; */
