@@ -32,11 +32,9 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
   * [SSL and CDN](#ssl-and-cdn)
   * [SCSS](#scss)
   * [Favicon](#favicon)
-* [Questions](#questions)
 * [Notes](#notes)
   * [Captions and Shortcodes](#captions-and-shortcodes)
   * [Category and Tag Pages](#category-and-tag-pages)
-* [Deprecated](#deprecated)
 
 <!-- /MarkdownTOC -->
 
@@ -185,6 +183,8 @@ List of files:
 #### Files
 
 * _layouts/archive_month.html
+* _layouts/page.html??
+  * Pages use the `default` layout instead??
 
 <a id="authors"></a>
 #### Authors
@@ -213,9 +213,7 @@ Make sure Archive generation doesn't mess with staging setup
 <a id="ssl-and-cdn"></a>
 ### SSL and CDN
 
-1. Setup Enforce HTTPS [Enforce HTTPS](https://help.github.com/en/articles/securing-your-github-pages-site-with-https) (this means everything that loads on the page has to start with `https://` instead of `http://`)
-    * This is already enforced - so won't be a problem upon switching over
-2. Note that current website seems to prefer `www` over Apex domain. See if there's Jekyll settings
+1. Note that current website seems to prefer `www` over Apex domain. See if there's Jekyll settings
 
 <a id="scss"></a>
 ### SCSS
@@ -227,13 +225,6 @@ Make sure Archive generation doesn't mess with staging setup
 ### Favicon
 
 1. Run [Favicon Checker](https://realfavicongenerator.net/) once the subdomain is set up
-
-<a id="questions"></a>
-## Questions
-
-1. Cloudflare - is the current site hooked up with Cloudflare? the new site will have to be, due to the fact that it's a custom domain. So being setup with Cloudflare already might save some headache.
-2. What's the story with comments?
-3. Search Form?
 
 <a id="notes"></a>
 ## Notes
@@ -251,14 +242,4 @@ Make sure Archive generation doesn't mess with staging setup
 
 1. I only set up Category archives, since none of the posts have Tag info and Jekyll mostly treats them the same
 
-<a id="deprecated"></a>
-## Deprecated
-
-Comments System (see question above)
-~1. Either needs plugin(s) or embedding of Disqus or some other similar thing~
-
-
 [1]: docs/resources.md
-
-
--------------

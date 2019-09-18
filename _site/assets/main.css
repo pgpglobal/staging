@@ -907,6 +907,10 @@ img.profile-photo {
   max-width: 100%;
 }
 
+.body-blog-feed article,
+.body-post article {
+  overflow: hidden;
+}
 .body-blog-feed article img,
 .body-post article img {
   height: auto;
@@ -1638,6 +1642,10 @@ form.search-form {
   width: 100%;
 }
 
+.flickr-title {
+  margin: 0 0 10px;
+}
+
 .flickr-wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -1700,7 +1708,7 @@ form.search-form {
     width: auto;
   }
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 920px) {
   .sidebar-right {
     padding: 0;
   }
@@ -1966,6 +1974,10 @@ div.sharedaddy h3.sd-title {
 }
 .post-footer a {
   font-weight: 400;
+}
+
+.post-footer-blog-feed {
+  margin: 20px 0 30px;
 }
 
 .blog-main-container .post-footer a {
