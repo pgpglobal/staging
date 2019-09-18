@@ -1,72 +1,84 @@
-// Styles for Google Form on Contact Page
+// .contact-form {
+//   label {
+//     display: block;
+//     color: $black;
+//     font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+//     font-size: 20px;
+//     line-height: 135%;
+//     width: 100%;
+//     word-break: break-word;
+//   }
+// }
 
-body {
-  background-color: #fff !important;
-}
+// // Styles for Google Form on Contact Page
 
-.freebirdFormviewerViewFormContentWrapper {
-  margin: 60px 0 0;
-}
+// // body {
+// //   background-color: #fff !important;
+// // }
 
-.freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
-  // margin: 20px auto;
-  max-width: 90vw;
-}
+// // .freebirdFormviewerViewFormContentWrapper {
+// //   margin: 60px 0 0 !important;
+// // }
 
-.freebirdFormviewerViewNavigationPasswordWarning,
-.freebirdFormviewerViewFooterEmbeddedBackground {
-  display: none;
-}
+// // .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
+// //   margin: 20px auto !important;
+// //   max-width: 90vw !important;
+// // }
 
-.quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdThemedInput.modeLight,
-.quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdFormviewerViewItemsTextEmail.freebirdThemedInput.modeLight,
-.quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
-  width: 100%;
-}
+// // .freebirdFormviewerViewNavigationPasswordWarning,
+// // .freebirdFormviewerViewFooterEmbeddedBackground {
+// //   display: none !important;
+// // }
 
-@media only screen and (min-width: 768px) {
-  .freebirdFormviewerViewFormContentWrapper {
-    margin: 110px 0 0;
-  }
-  .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
-    // margin: auto;
-    max-width: 90vw;
-/*     width: 90vw; */
-  }
+// // .quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdThemedInput.modeLight,
+// // .quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdFormviewerViewItemsTextEmail.freebirdThemedInput.modeLight,
+// // .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
+// //   width: 100% !important;
+// // }
 
-  .quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdThemedInput.modeLight,
-  .quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdFormviewerViewItemsTextEmail.freebirdThemedInput.modeLight,
-  .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
-    width: 70%;
-  }
+// // @media only screen and (min-width: 768px) {
+// //   .freebirdFormviewerViewFormContentWrapper {
+// //     margin: 110px 0 0 !important;
+// //   }
+// //   .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
+// //     margin: auto !important;
+// //     max-width: 90vw !important;
+// // /*     width: 90vw !important; */
+// //   }
 
-  .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
-    width: 90%;
-  }
-}
+// //   .quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdThemedInput.modeLight,
+// //   .quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdFormviewerViewItemsTextEmail.freebirdThemedInput.modeLight,
+// //   .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
+// //     width: 70% !important;
+// //   }
 
-@media only screen and (min-width: 920px) {
-  .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
-    margin: 20px 0 20px 2px;
-    max-width: 840px;
-    width: 84vw;
-  }
+// //   .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
+// //     width: 90% !important;
+// //   }
+// // }
 
-  .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
-    width: 90%;
-  }
-}
+// // @media only screen and (min-width: 920px) {
+// //   .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
+// //     margin: 20px 0 20px 2px !important;
+// //     max-width: 840px !important;
+// //     width: 84vw !important;
+// //   }
 
-@media only screen and (min-width: 1024px) {
-  .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
-    margin: 20px 0 20px 2px;
-    max-width: 840px;
-    width: 80vw;
-  }
-}
+// //   .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
+// //     width: 90% !important;
+// //   }
+// // }
 
-@media only screen and (min-width: 1200px) {
-  .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
-/*     width: 100%; */
-  }
-}
+// // @media only screen and (min-width: 1024px) {
+// //   .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
+// //     margin: 20px 0 20px 2px !important;
+// //     max-width: 840px !important;
+// //     width: 80vw !important;
+// //   }
+// // }
+
+// // @media only screen and (min-width: 1200px) {
+// //   .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
+// // /*     width: 100% !important; */
+// //   }
+// // }
