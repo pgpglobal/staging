@@ -8,11 +8,13 @@
 * [Working on the Site Locally with Git](#working-on-the-site-locally-with-git)
   * [Keeping Up-To-Date](#keeping-up-to-date)
   * [Branching](#branching)
+    * [Staging](#staging)
   * [Solving Merge Conflicts](#solving-merge-conflicts)
 * [Files and Directories Guide](#files-and-directories-guide)
   * [Directories](#directories)
   * [Layouts and Pages](#layouts-and-pages)
   * [Files](#files)
+* [Posts](#posts)
 * [Permalinks](#permalinks)
   * [Archives](#archives)
   * [Catgories](#catgories)
@@ -85,6 +87,11 @@ Steps:
 4. If there were no merge conflicts, then you can push to the remote repo via `git push origin master`. Otherwise, see [Solving Merge Conflicts](#merge-conflicts)
 
 If you run into trouble with push to the remote repo, this may involve some not so simple troubleshooting. More to come on that later.
+
+<a id="staging"></a>
+#### Staging
+
+`git push origin local-name:remote-name`
 
 <a id="solving-merge-conflicts"></a>
 ### Solving Merge Conflicts
@@ -180,6 +187,27 @@ The `_includes` directory contains the various building blocks of the site (such
 **Posts**
 
 Posts must be named in `yyyy-mm-dd-postname.md` format (otherwise Jekyll will ignore them). Additionally, there is a variety of metadata that posts can have - which we can make use of via Jekyll's `Liquid` templating language. See the [Liquid](#liquid) section for more info.
+
+<a id="posts"></a>
+## Posts
+
+You can set any of the following variables in the [Front Matter]() for posts. See Jekyll Docs for more info:
+
+* page.content
+* page.title
+* page.excerpt
+* page.url
+* page.date
+* page.id
+* page.categories
+* page.collection
+* page.tags
+* page.dir
+* page.name
+* page.path
+* The path to the raw post or page. Example usage: Linking back to the page or post’s source on GitHub. This can be overridden in the front matter.
+* page.next
+* page.previous
 
 <a id="permalinks"></a>
 ## Permalinks
