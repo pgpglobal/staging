@@ -12,7 +12,7 @@
   {% assign commonTags = '' %}
 
   {% for category in post.categories %}
-      {% if page.categories contains category %}
+      {% if include.categories contains category %}
         {% assign sameTagCount = sameTagCount | plus: 1 %}
         {% capture tagmarkup %} <span class="jp-relatedposts-post-context">In "{{ category }}"</span> {% endcapture %}
         {% assign commonTags = commonTags | append: tagmarkup %}
