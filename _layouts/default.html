@@ -9,7 +9,14 @@
   </header>
     <main class="page-content {{ page.class }}" aria-label="Content">
       <div class="wrapper">
+        <div class="container">
+          <div class="row lead-row {{ page.row_class }}">
+            <div class="{{ page.bootstrap | default: "col-xs-11 col-md-12 col-lg-12 lead-div" }}">
+
           {{ content }}
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
