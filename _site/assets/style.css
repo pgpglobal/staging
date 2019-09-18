@@ -907,11 +907,14 @@ img.profile-photo {
   max-width: 100%;
 }
 
-.body-blog-feed article img {
+.body-blog-feed article img,
+.body-post article img {
   height: auto;
 }
 .body-blog-feed .post-header h1 a:hover,
-.body-blog-feed .post-header h2 a:hover {
+.body-blog-feed .post-header h2 a:hover,
+.body-post .post-header h1 a:hover,
+.body-post .post-header h2 a:hover {
   color: #772124;
   text-decoration: underline;
 }

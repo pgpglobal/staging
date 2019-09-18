@@ -24,9 +24,7 @@ permalink: /blog/
 </div>
 
 <p>{{ post.excerpt }}</p>
-</article>
-
-<div class="post-footer">
+<div class="post-footer post-footer-blog-feed">
   {% assign categories = post.categories %}
   <div class="categories">from → &nbsp;
     {%- for category in categories -%}
@@ -35,6 +33,7 @@ permalink: /blog/
     {%- endfor -%}
   </div>
 </div>
+</article>
 
 {% endfor %}
 

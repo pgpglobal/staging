@@ -11,6 +11,7 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
   * [Categories](#categories)
   * [Related Posts](#related-posts)
   * [Sidebar Functionality](#sidebar-functionality)
+  * [Staging Site - Post Titles](#staging-site---post-titles)
 * [Styling and Markup adjustments](#styling-and-markup-adjustments)
   * [Medium-Large Tasks](#medium-large-tasks)
   * [Small Tasks](#small-tasks)
@@ -63,7 +64,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddw
 <a id="categories"></a>
 ### Categories
 
-1. Assign posts without categories to Uncategorized category
+1. Fix duplicate `uncategorized` and `Uncategorized` categories
 
 <a id="related-posts"></a>
 ### Related Posts
@@ -82,6 +83,11 @@ https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddw
 2. Search form - expand JSON parameters so that searching isn't just limited to title and such
   * Would really love to add in "excerpt" or something here
   * Search form was implemented with this: https://github.com/christian-fei/Simple-Jekyll-Search
+
+<a id="staging-site---post-titles"></a>
+### Staging Site - Post Titles
+
+Post titles don't seem to be working on the staging version? May just need to rebuild
 
 <a id="styling-and-markup-adjustments"></a>
 ## Styling and Markup adjustments
