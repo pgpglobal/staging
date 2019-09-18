@@ -227,6 +227,7 @@ Make sure Archive generation doesn't mess with staging setup
 1. Run [Favicon Checker](https://realfavicongenerator.net/) once the subdomain is set up
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <a id="questions"></a>
 ## Questions
@@ -236,6 +237,8 @@ Make sure Archive generation doesn't mess with staging setup
 3. Search Form?
 
 >>>>>>> 09cdbdca... Fix Post Footer category links structure
+=======
+>>>>>>> abcfb7a0... Add Privacy Policy, ToS. Update Readme, Docs. Delete unused layouts, plugins
 <a id="notes"></a>
 ## Notes
 

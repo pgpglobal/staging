@@ -4,7 +4,7 @@
       "title"    : "Test",
       "category" : "",
       "tags"     : "",
-      "url"      : "/staging/uncategorized/2019/09/15/category-test-post.html",
+      "url"      : "/PGPGlobal/uncategorized/2019/09/15/category-test-post.html",
       "date"     : "2019-09-15 11:27:48 -0400"
     } ,
   
@@ -12,7 +12,7 @@
       "title"    : "Survey about sharing health data online",
       "category" : "",
       "tags"     : "",
-      "url"      : "/staging/2016/09/23/survey-about-sharing-health-data-online/",
+      "url"      : "/PGPGlobal/2016/09/23/survey-about-sharing-health-data-online/",
       "date"     : "2016-09-23 12:35:34 -0400"
     } ,
   
@@ -20,7 +20,7 @@
       "title"    : "Christoph Bock on &#39;Preserve personal freedom in networked societies&#39;",
       "category" : "",
       "tags"     : "",
-      "url"      : "/staging/2016/09/01/christoph-bock-on-preserve-personal-freedom-in-networked-societies/",
+      "url"      : "/PGPGlobal/2016/09/01/christoph-bock-on-preserve-personal-freedom-in-networked-societies/",
       "date"     : "2016-09-01 13:36:11 -0400"
     } ,
   
@@ -28,7 +28,7 @@
       "title"    : "Job opening at PGP-UK (London)",
       "category" : "",
       "tags"     : "",
-      "url"      : "/staging/2016/06/06/job-opening-at-pgp-uk-london/",
+      "url"      : "/PGPGlobal/2016/06/06/job-opening-at-pgp-uk-london/",
       "date"     : "2016-06-06 11:27:48 -0400"
     } ,
   
@@ -36,8 +36,9 @@
       "title"    : "Exploring the Harvard PGP Dataset with Untap",
       "category" : "",
       "tags"     : "",
-      "url"      : "/staging/2015/11/19/exploring-the-harvard-pgp-dataset-with-untap/",
+      "url"      : "/PGPGlobal/2015/11/19/exploring-the-harvard-pgp-dataset-with-untap/",
       "date"     : "2015-11-19 15:02:51 -0500"
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
     } ,
@@ -697,6 +698,8 @@
       "url"      : "/staging/2012/02/07/this-blog-needs-a-name/",
       "date"     : "2012-02-07 14:06:56 -0500"
 >>>>>>> 55e1549c... Add staging config file
+=======
+>>>>>>> abcfb7a0... Add Privacy Policy, ToS. Update Readme, Docs. Delete unused layouts, plugins
     } 
   
 ]

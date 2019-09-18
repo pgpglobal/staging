@@ -908,12 +908,18 @@ img.profile-photo {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> abcfb7a0... Add Privacy Policy, ToS. Update Readme, Docs. Delete unused layouts, plugins
 .body-blog-feed article,
 .body-post article {
   overflow: hidden;
 }
+<<<<<<< HEAD
 =======
 >>>>>>> f6e614e4... Add Post Footer Categories on Blog Main page
+=======
+>>>>>>> abcfb7a0... Add Privacy Policy, ToS. Update Readme, Docs. Delete unused layouts, plugins
 .body-blog-feed article img,
 .body-post article img {
   height: auto;
@@ -1712,10 +1718,14 @@ form.search-form {
   }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media only screen and (min-width: 920px) {
 =======
 @media only screen and (min-width: 768px) {
 >>>>>>> d977b857... Improve blog & sidebar styles. Add test version of Contact Form
+=======
+@media only screen and (min-width: 920px) {
+>>>>>>> abcfb7a0... Add Privacy Policy, ToS. Update Readme, Docs. Delete unused layouts, plugins
   .sidebar-right {
     padding: 0;
   }
