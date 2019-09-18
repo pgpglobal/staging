@@ -3,17 +3,15 @@ layout: default
 class: tos privacy
 title: Privacy Policy
 permalink: /privacy-policy/
-redirect_from: privacy/
+redirect_from: /privacy/
 ---
-
-<div class="container">
-  <div class="row lead-row">
-    <div class="col-xs-11 col-md-12 col-lg-12 lead-div">
 
 ## Website Privacy Policy
 
+{:.last-updated}
 _Last Updated August 11, 2010_
 
+{:.privacy-intro}
 **PersonalGenomes.org ("PG.org") operates several websites (the "Websites") including [http://www.personalgenomes.org](http://www.personalgenomes.org). This privacy policy pertains only to visitors of the Websites and does not pertain in any way to our privacy policies related to individuals who are enrolled or applying for enrollment in the Personal Genome Project ("PGP").**
 
 ### Website Visitors
@@ -48,6 +46,3 @@ PG.org may change this Privacy Policy from time to time, and in PG.org's sole di
 
 This document is based upon the [Automattic Privacy Policy](https://automattic.com/privacy/), and is licensed under [Creative Commons Attribution Share-Alike 2.5](https://creativecommons.org/licenses/by-sa/2.5/). This means that you are free to use and edit it for your own purposes, even commercially, provided you release your new versions under the same license and credit Automattic.
 
-    </div>
-  </div>
-</div>
