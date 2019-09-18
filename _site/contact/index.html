@@ -7,7 +7,7 @@
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script></head>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-y++enYq9sdV7msNmXr08kJdkX4zEI1gMjjkw0l9ttOepH7fMdhb7CePwuRQCfwCr" crossorigin="anonymous"><link rel="shortcut icon" type="image/png" href="/PGPGlobal/favicon-local-dev.jpg"><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><link type="application/atom+xml" rel="alternate" href="/PGPGlobal/feed.xml" title="Personal Genome Project: Global Network" /></head>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/PGPGlobal/feed.xml" title="Personal Genome Project: Global Network" /></head>
 <body>
   <header class="site-header"><nav class="navbar navbar-default navbar-fixed-top">
   <div class="container">
@@ -39,7 +39,25 @@
 
 <p>For questions or more information about the Personal Genome Project: Global Network, please use the form below to contact us.</p>
 
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddwiYlyM1Z0mQ/viewform?embedded=true" width="640" height="1041" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700&amp;subset=latin,vietnamese,latin-ext,cyrillic,greek,cyrillic-ext,greek-ext" rel="stylesheet" type="text/css" />
+
+<link href="https://fonts.googleapis.com/css?family=Product+Sans&amp;subset=latin,vietnamese,latin-ext,cyrillic,greek,cyrillic-ext,greek-ext" rel="stylesheet" type="text/css" />
+
+<form class="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddwiYlyM1Z0mQ/formResponse?embedded=true" target="_self" method="POST" id="mG61Hd">
+
+<label for="contact-name" value="Name">Name</label>
+<input id="contact-name" placeholder="Your Name" type="text" class="contact-label" aria-label="Name" name="entry.2005620554" value="" required="" />
+<label for="contact-email">Email</label>
+<input id="contact-email" placeholder="Your Answer" type="text" class="" aria-label="Email" name="entry.1045781291" />
+<label for="contact-subject">Subject</label>
+<input id="contact-subject" placeholder="Your Answer" type="text" class="" aria-label="Subject" name="entry.1159901265" />
+<label for="contact-message">Message</label>
+<input id="contact-message" placeholder="Your Answer" type="text" class="" aria-label="Message" name="entry.839337160" />
+
+<input type="submit" value="Send" />
+</form>
+
+<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddwiYlyM1Z0mQ/viewform?embedded=true" width="640" height="1041" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
 
 <!-- <form action="https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddwiYlyM1Z0mQ/formResponse?embedded=true" target="_self" method="POST" id="mG61Hd"> -->
 
@@ -52,7 +70,7 @@
 <div class="container">
   <div class="row">
     <div class="col-xs-12">
-      Copyright © 2019 <a href="">Personal Genome Project: Global Network</a>
+      Copyright © 2019 <a href="http://localhost:4000">Personal Genome Project: Global Network</a>
 
 <!--       <h2>Contact Us</h2>
       <p>Contact the Personal Genome Project: Global Network at <a href="your-email@example.com">your-email@example.com</a></p> -->

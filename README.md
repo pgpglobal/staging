@@ -77,10 +77,7 @@ Post titles don't seem to be working on the staging version? May just need to re
 <a id="medium-large-tasks"></a>
 ### Medium-Large Tasks
 
-1. Mobile Sidebar
-  * Social Icons should be less to the right
-  * Needs styling altogether - check if this just got lost somewhere...
-2. Preference: `_media.css`: convert max-width: 767 into relevant min-width sections, if time-possible (non-essential).
+1. Preference: `_media.css`: convert max-width: 767 into relevant min-width sections, if time-possible (non-essential).
 
 <a id="small-tasks"></a>
 ### Small Tasks
@@ -99,8 +96,7 @@ Optional:
 ### Site Footer - Copyright and Privacy Info
 1. Site Footer - what goes in it?
     * Possible options: Licensing, Copyright, and possibly Privacy Policy, if relevant for [EU GDPR](https://eugdpr.org/) compliance.
-2. Contact Form - Captcha
-3. `_config.yml` - the following fields should be filled in or commented out:
+2. `_config.yml` - the following fields should be filled in or commented out:
     * email
     * description (important for SEO)
     * any social media we might link to (currently have twitter and flickr)
