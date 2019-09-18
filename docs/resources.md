@@ -154,4 +154,5 @@ This should work fine, but if you want to do things the jekyll way, reverse thes
 * [jekyl-tidy](https://github.com/apsislabs/jekyll-tidy) - HTMLTidy
 * [Time String Formatter](http://strftime.net/)
 * [Google Forms Restyler](http://googleformrestyler.apixml.net/)
-
+  * Doesn't work due to https issue
+* [Staticman + reCaptcha](https://raw.githubusercontent.com/eduardoboucas/staticman-recaptcha/)

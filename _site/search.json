@@ -16,6 +16,7 @@
       "url"      : "/PGPGlobal/2016/09/01/christoph-bock-on-preserve-personal-freedom-in-networked-societies/",
       "date"     : "2016-09-01 13:36:11 -0400",
       "content"  : ""We do not protect data because the data would take harm; rather, we seek to protect the rights and well-being of individuals who might be harmed by certain uses of their data. This observation could hold the key to protecting personal freedom in a world of evaporating privacy."Christoph Bock is a principal investigator at the CeMM Research Center for Molecular Medicine of the Austrian Academy of Sciences in Vienna. He is also a Project Leader at Genom Austria, a  member of the Global Network of Personal Genome Projects. His thoughtful commentary on data protection sheds light on the true dangers of privacy loss, and offers suggestions for how to deal with its potential impact.Link to article: http://www.nature.com/news/preserve-personal-freedom-in-networked-societies-1.20510&nbsp;"
+<<<<<<< HEAD
     } ,
   
     {
@@ -1393,6 +1394,8 @@
       "date"     : "2012-02-07 14:06:56 -0500",
       "content"  : "Here are a few names we came up with the for the blog.  Which are your favorites?&nbsp;[polldaddy poll=5918787]&nbsp;&nbsp;Have other ideas?  Leave them in the comments."
 >>>>>>> ca54dc1d... Fix sidebar Markup, Contact page Form SSL issue
+=======
+>>>>>>> 083c45fc... Try custom re-coded contact form
     } 
   
 ]
