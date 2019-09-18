@@ -37,10 +37,15 @@ class: blog
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
 
-{% include related-posts.html %}
+{%- assign prev_title = page.previous.title -%}
+{%- assign prev_url = page.previous.url -%}
+{%- assign next_title = page.next.title -%}
+{%- assign next_url = page.next.url -%}
+
+{% include_cached related-posts.html categories=page.categories %}
 {% include_cached share-buttons-jp.html %}
 {% comment %}
 {% endcomment %}
-{% include post-footer.html %}
+{% include_cached post-footer.html prev_title=prev_title prev_url=prev_url next_title=next_title next_url=next_url %}
 
 
