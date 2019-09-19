@@ -10,7 +10,7 @@ redirect_form: /category
 
 <div class="entries">
   <ul class="entry-list">
-    {% assign categories_list = site.categories %}
+    {% assign categories_list = site.categories | sort %}
       {% if categories_list.first[0] == null %}
         {% for category in categories_list %}
           {% unless category contains "admin" or category[0] contains "admin" %}
