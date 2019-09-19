@@ -8,9 +8,19 @@ class: home
   <div class="row lead-row pgp-row-about">
     <div class="col-xs-12 col-sm-8 col-md-9 lead-div">
       <a id="about" class="anchor-offset"></a>
-      <h1 class="page-title">{{ page.title }}</h1>
-      <p class="lead pgp-description">
-        The Personal Genome Project, initiated in 2005, is a vision and coalition of projects across the world dedicated to creating public genome, health, and trait data. Sharing data is critical to scientific progress, but has been hampered by traditional research practices. The PGP approach is to invite willing participants to publicly share their personal data for the greater good. </p>
+{% capture pgp_description %}
+
+{:.page-title}
+# The Personal Genome Project
+
+{:.lead.pgp-description}
+The Personal Genome Project, initiated in 2005, is a vision and coalition of projects across the world dedicated to creating public genome, health, and trait data. Sharing data is critical to scientific progress, but has been hampered by traditional research practices. The PGP approach is to invite willing participants to publicly share their personal data for the greater good.
+
+{% endcapture %}
+
+<a id="about" class="anchor-offset"></a>
+
+{{ pgp_description | markdownify }}
     </div>
     <div class="col-xs-8 col-sm-3 col-md-3 lead-div logo-container">
       <img class="logo" src="assets/images/pgp-logo.png" alt="Curii logo - a figure within a circle. A double helix runs through the figure's core. The circle, body, and helix alternate between green and blue on both sides." longdesc="A figure within a circle. A double helix runs from the circle's bottom through the figure's core. The left side of the body is green, while the circle and face are blue. The right side of the body is blue, while the circle and face are green. Each helix maintains its color as it spirals through the figure's body.">
@@ -38,8 +48,6 @@ class: home
     <a id="overview" class="anchor-offset"></a>
 
     <div class="col-xs-12">
-
-
       <h2>International Projects</h2>
 
       <p>
@@ -57,56 +65,30 @@ class: home
           </li>
         {% endfor %}
       </ul>
-
     </div>
-    <div class="col-xs-12">
-      <a id="guidelines" class="anchor-offset"></a>
 
-      <h3>Global Network Guidelines</h3>
+<div class="col-xs-12">
+  <a id="guidelines" class="anchor-offset"></a>
 
-      <p>
-        Members of the Global Network of Personal Genome Projects adhere to
-        the following guidelines:
-      </p>
+{%- capture global_guidelines -%}
 
-      <ol>
-        <li>
-          <p>
-            <strong>Public Data.</strong> Participants are invited to publicly share
-            their genomic and trait data in an integrated, publicly-accessible
-            format using a CC0 waiver or equivalent public domain license.
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>Non-anonymous.</strong> The risks of participant
-            re-identification are addressed up front, as an integral part of
-            the consent and enrollment process; neither anonymity nor
-            confidentiality of participant identities or their data are
-            promised to research participants.
-          </p>
-        </li>
-        <li>
-          <strong>Equal access.</strong> Participants are provided access to their
-          individual research data in a timely and complete fashion (i.e.,
-          raw data and not just summary results, where feasible).
-        </li>
-        <li>
-          <strong>Oversight.</strong> Each member must at all times maintain
-          current Institutional Review Board (IRB) approval or local
-          equivalent, and will work with PersonalGenomes.org to continue to
-          implement identified best practices for responsible public
-          genomics research.
-        </li>
-        <li>
-          <strong>Not for profit.</strong> The research project is managed or
-          sponsored by a non-profit organization (or local equivalent). In
-          addition, other than purposes of reasonable cost recovery, the
-          member shall not sell or license participant data or tissues.
-        </li>
+### Global Network Guidelines
 
-      </ol></div> <!-- .col-xs-12 -->
+Members of the Global Network of Personal Genome Projects adhere to the following guidelines:
 
-    </div> <!-- /#projects .row -->
+1.  **Public Data.** Participants are invited to publicly share their genomic and trait data in an integrated, publicly-accessible format using a CC0 waiver or equivalent public domain license.
+
+2.  **Non-anonymous.** The risks of participant re-identification are addressed up front, as an integral part of the consent and enrollment process; neither anonymity nor confidentiality of participant identities or their data are promised to research participants.
+
+3.  **Equal access.** Participants are provided access to their individual research data in a timely and complete fashion (i.e., raw data and not just summary results, where feasible).
+4.  **Oversight.** Each member must at all times maintain current Institutional Review Board (IRB) approval or local equivalent, and will work with PersonalGenomes.org to continue to implement identified best practices for responsible public genomics research.
+5.  **Not for profit.** The research project is managed or sponsored by a non-profit organization (or local equivalent). In addition, other than purposes of reasonable cost recovery, the member shall not sell or license participant data or tissues.
+{%- endcapture -%}
+
+{{ global_guidelines | markdownify }}
+
+</div> <!-- .col-xs-12 -->
+
+</div> <!-- /#projects .row -->
 
 </div>

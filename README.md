@@ -6,11 +6,10 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 
 * [Instructions and Documentation](#instructions-and-documentation)
 * [Contact Form](#contact-form)
-  * [Temporary Form](#temporary-form)
+* [Styles](#styles)
 * [Blog Import](#blog-import)
   * [Categories](#categories)
   * [Related Posts](#related-posts)
-  * [Sidebar Functionality](#sidebar-functionality)
   * [Staging Site - Post Titles](#staging-site---post-titles)
 * [Styling and Markup adjustments](#styling-and-markup-adjustments)
   * [Medium-Large Tasks](#medium-large-tasks)
@@ -23,10 +22,8 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
     * [Plugins - Local Dev](#plugins---local-dev)
 * [Accessibility](#accessibility)
 * [Cleanup](#cleanup)
-  * [Scheduled for deletion](#scheduled-for-deletion)
-    * [Files](#files)
-    * [Authors](#authors)
-    * [Git Branches](#git-branches)
+  * [Authors](#authors)
+  * [Git Branches](#git-branches)
 * [Staging and Production](#staging-and-production)
   * [Archives Generation](#archives-generation)
   * [SSL and CDN](#ssl-and-cdn)
@@ -48,13 +45,12 @@ See A current list of documentation files includes:
 <a id="contact-form"></a>
 ## Contact Form
 
-<a id="temporary-form"></a>
-### Temporary Form
+* Styling - Should I make the Message field always be the same width as the others??
 
-```
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddwiYlyM1Z0mQ/viewform?embedded=true" width="640" height="941" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-```
-https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddwiYlyM1Z0mQ/viewform?usp=sf_link
+<a id="styles"></a>
+## Styles
+
+* Move styles out of _media.scss
 
 <a id="blog-import"></a>
 ## Blog Import
@@ -62,25 +58,13 @@ https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddw
 <a id="categories"></a>
 ### Categories
 
-1. Fix duplicate `uncategorized` and `Uncategorized` categories
+1. Alphabetize categories? (why aren't they automatically??)
 
 <a id="related-posts"></a>
 ### Related Posts
 
 1. Randomize posts displayed from each tag, if possible
     * See the `sample` filter
-
-<a id="sidebar-functionality"></a>
-### Sidebar Functionality
-
-1. Flickr needs to be dynamic. Options
-    * Get URLs of last 3 and then follow the normal embed method
-      * Cache these
-    * Parsing RSS Feed seems like the best bet: https://api.flickr.com/services/feeds/photos_public.gne?id=78213110@N06&lang=en-us&format=rss_200
-    * See [resources][1]
-2. Search form - expand JSON parameters so that searching isn't just limited to title and such
-  * Would really love to add in "excerpt" or something here
-  * Search form was implemented with this: https://github.com/christian-fei/Simple-Jekyll-Search
 
 <a id="staging-site---post-titles"></a>
 ### Staging Site - Post Titles
@@ -93,10 +77,7 @@ Post titles don't seem to be working on the staging version? May just need to re
 <a id="medium-large-tasks"></a>
 ### Medium-Large Tasks
 
-1. Mobile Sidebar
-  * Social Icons should be less to the right
-  * Needs styling altogether - check if this just got lost somewhere...
-2. Preference: `_media.css`: convert max-width: 767 into relevant min-width sections, if time-possible (non-essential).
+1. Preference: `_media.css`: convert max-width: 767 into relevant min-width sections, if time-possible (non-essential).
 
 <a id="small-tasks"></a>
 ### Small Tasks
@@ -115,13 +96,7 @@ Optional:
 ### Site Footer - Copyright and Privacy Info
 1. Site Footer - what goes in it?
     * Possible options: Licensing, Copyright, and possibly Privacy Policy, if relevant for [EU GDPR](https://eugdpr.org/) compliance.
-
-2. Contact Page
-    * Contact Form vs. Link
-    * They're going to set up a Google Form - which I can skin/file from there
-    * What if any Spam Protection would this need?
-        * reCaptcha would be a sensible option at that point
-3. `_config.yml` - the following fields should be filled in or commented out:
+2. `_config.yml` - the following fields should be filled in or commented out:
     * email
     * description (important for SEO)
     * any social media we might link to (currently have twitter and flickr)
@@ -130,11 +105,9 @@ Optional:
 ## Plugins and Configuration
 1. SEO setup
     * Need to add email, site description, etc to `_config.yml`
-2. Contact Page
-    * Choose back-end and implement spam protection (either reCaptcha or other). Possible options:
-3. Responsive Images. See [Resources][1] file. Currently attempting to get the [jekyll-picture-tag](https://github.com/robwierzbowski/jekyll-picture-tag) plugin working.
-4. Blog comments system
-5. Generate favicon files using [Real Favicon Generator](https://realfavicongenerator.net/)
+2. Responsive Images. See [Resources][1] file. Currently attempting to get the [jekyll-picture-tag](https://github.com/robwierzbowski/jekyll-picture-tag) plugin working.
+3. Blog comments system
+4. Generate favicon files using [Real Favicon Generator](https://realfavicongenerator.net/)
 
 <a id="archive-generator-and-plugin"></a>
 ### Archive Generator and Plugin
@@ -168,37 +141,15 @@ List of files:
 
 * `scripts/gravatar.js` seems to be generating the gravatars.
     * If so, then delete `_plugins/to_gravatar.rb`
-* Plugins - are these necessary??
-    * archive_month_list.rb
-    * archive_page.rb
-    * to_gravatar.rb
-* Media Queries - chance `@media only screen` to `@media screen`??
-  * See how this will affect Print styles
 * Replace SCSS Media Queries with name variables
 
-<a id="scheduled-for-deletion"></a>
-### Scheduled for deletion
-
-<a id="files"></a>
-#### Files
-
-* _layouts/archive_month.html
-* _layouts/page.html??
-  * Pages use the `default` layout instead??
-
 <a id="authors"></a>
-#### Authors
-
-No posts and not displayed on Sidebar:
-
-* gedankenstuecke
-* szaranek
-* wardv
+### Authors
 
 The `display_name` attribute in the Author files doesn't match anything in the actual posts... either replace with display name from posts, or just delete in all files
 
 <a id="git-branches"></a>
-#### Git Branches
+### Git Branches
 
 * Delete extra Git Branches
 

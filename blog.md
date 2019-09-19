@@ -28,7 +28,7 @@ permalink: /blog/
   {% assign categories = post.categories %}
   <div class="categories">from → &nbsp;
     {%- for category in categories -%}
-    <a href="{{ site.baseurl }}/category/{{ category | slugize }}">{{category}}</a>
+    <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{category}}</a>
     {% unless forloop.last %}, {% endunless %}
     {%- endfor -%}
   </div>

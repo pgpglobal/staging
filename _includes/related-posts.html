@@ -6,13 +6,14 @@
 {% assign minCommonTags =  1 %}
 {% assign maxRelatedCounter = 0 %}
 
-{% for post in site.posts %}
+{% assign posts = site.posts | where_exp:"post", "post.url != page.url" | sample:4 %}
+{% for post in posts %}
 
   {% assign sameTagCount = 0 %}
   {% assign commonTags = '' %}
 
   {% for category in post.categories %}
-      {% if page.categories contains category %}
+      {% if include.categories contains category %}
         {% assign sameTagCount = sameTagCount | plus: 1 %}
         {% capture tagmarkup %} <span class="jp-relatedposts-post-context">In "{{ category }}"</span> {% endcapture %}
         {% assign commonTags = commonTags | append: tagmarkup %}

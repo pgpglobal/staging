@@ -135,7 +135,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      categories: uncategorized
+      # categories: Uncategorized
   - scope:
       path: ""
     values:

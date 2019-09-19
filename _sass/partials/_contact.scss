@@ -1,60 +1,177 @@
-#luna-contact .freebirdFormviewerViewEmbedded  {
-  #luna-contact .freebirdFormviewerViewCenteredContent {
-    margin: 0;
-  }
-
-  #luna-contact .freebirdSolidBackground {
-    display: none;
-  }
-
-  #luna-contact .freebirdFormviewerViewFormContent {
-    padding: 0;
-
-    & > #luna-contact .freebirdFormviewerViewItemList {
-      padding: 0;
-    }
-  }
-
-  #luna-contact .freebirdFormviewerViewFormCard:first-of-type {
-    box-shadow: none;
-  }
+.contact-form {
+  /* border-left: 1px solid #666; */
+  border-radius: 5px;
+  border-top: 5px solid $green;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+  margin: 20px 0 0;
+  padding: 0 16px 20px;
+  width: 70%;
 }
 
-#luna-contact .freebirdFormviewerViewHeaderTitleRow {
-  display: none;
+.contact-form h2 {
+  padding: 0 12px;
 }
 
-#luna-contact .freebirdFormviewerViewHeaderTitle {
-  display: none;
+.required-text {
+  color: #d93025;
+  font-size: 13px;
+  margin: 22px 0 10px 12px;
 }
 
-// #luna-contact .freebirdFormviewerViewItemList {
-//    background: rebeccapurple;
+.contact-form fieldset {
+  padding: 0 16px;
+}
+
+.contact-form label {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 2;
+  margin: 15px 0 14px;
+}
+
+.contact-form input {
+  border: 0;
+  border-bottom: 2px inset $white-1;
+  display: block;
+}
+
+.contact-form .submit {
+  -webkit-border-radius: 3px;
+  background: #1a73e8;
+  border: 0;
+  border-radius: 3px;
+  color: $white;
+  display: block;
+  font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  height: 35px;
+  line-height: 20px;
+  margin: 30px 0;
+  min-width: 88px;
+  text-transform: uppercase;
+  transition: background .2s .1s;
+  width: 88px;
+}
+
+.contact-form input.submit {
+  font-size: 14px;
+}
+
+// .contact-form input:focus {
+//   outline: none;
+//   border-bottom: 1px solid $green;
+//   width: 282px;
 // }
 
-// #luna-contact .freebirdFormviewerViewFormContent {
-//    background: rebeccapurple;
+.contact-form input[type="text"] ,
+.contact-form input[type="email"] {
+  width: 282px;
+}
+
+.contact-form input[type="text"]:focus ,
+.contact-form input[type="email"]:focus {
+  border-bottom: 1px solid $green;
+  outline: none;
+  // width: 282px;
+}
+
+.contact-form input:focus {
+  border-bottom: 1px solid $green;
+  outline: none;
+  // width: 282px;
+}
+
+.contact-form input:required:focus {
+/*   background: blue; */
+  color: $green;
+}
+
+.contact-form input[type="email"]:required:focus {
+  // border:2px solid tomato;
+  color: red;
+}
+
+// .contact-form {
+//   label {
+//     display: block;
+//     color: $black;
+//     font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+//     font-size: 20px;
+//     line-height: 135%;
+//     width: 100%;
+//     word-break: break-word;
+//   }
 // }
 
+// // Styles for Google Form on Contact Page
 
-input#luna-contact .quantumWizTextinputPaperinputInput#luna-contact .exportInput {
-  background: $white;
-  border: 2px inset $white;
-}
+// // body {
+// //   background-color: $white !important;
+// // }
 
-#luna-contact .quantumWizTextinputPaperinputPlaceholder#luna-contact .exportLabel {
-  padding: 2px 10px;
-}
+// // .freebirdFormviewerViewFormContentWrapper {
+// //   margin: 60px 0 0 !important;
+// // }
 
-#luna-contact .freebirdFormviewerViewFooterEmbeddedBackground {
-  display: none;
-}
+// // .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
+// //   margin: 20px auto !important;
+// //   max-width: 90vw !important;
+// // }
 
-#luna-contact .freebirdFormviewerViewNavigationPasswordWarning {
-  display: none;
-}
+// // .freebirdFormviewerViewNavigationPasswordWarning,
+// // .freebirdFormviewerViewFooterEmbeddedBackground {
+// //   display: none !important;
+// // }
 
-#luna-contact .freebirdFormviewerViewHeaderHeader#luna-contact .exportHeader {
-  margin: 0 0 2px;
-}
+// // .quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdThemedInput.modeLight,
+// // .quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdFormviewerViewItemsTextEmail.freebirdThemedInput.modeLight,
+// // .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
+// //   width: 100% !important;
+// // }
 
+// // @media only screen and (min-width: 768px) {
+// //   .freebirdFormviewerViewFormContentWrapper {
+// //     margin: 110px 0 0 !important;
+// //   }
+// //   .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
+// //     margin: auto !important;
+// //     max-width: 90vw !important;
+// // /*     width: 90vw !important; */
+// //   }
+
+// //   .quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdThemedInput.modeLight,
+// //   .quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdFormviewerViewItemsTextEmail.freebirdThemedInput.modeLight,
+// //   .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
+// //     width: 70% !important;
+// //   }
+
+// //   .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
+// //     width: 90% !important;
+// //   }
+// // }
+
+// // @media only screen and (min-width: 920px) {
+// //   .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
+// //     margin: 20px 0 20px 2px !important;
+// //     max-width: 840px !important;
+// //     width: 84vw !important;
+// //   }
+
+// //   .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
+// //     width: 90% !important;
+// //   }
+// // }
+
+// // @media only screen and (min-width: 1024px) {
+// //   .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
+// //     margin: 20px 0 20px 2px !important;
+// //     max-width: 840px !important;
+// //     width: 80vw !important;
+// //   }
+// // }
+
+// // @media only screen and (min-width: 1200px) {
+// //   .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
+// // /*     width: 100% !important; */
+// //   }
+// // }
