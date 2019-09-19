@@ -18,7 +18,8 @@
   margin: 22px 0 10px 12px;
 }
 
-.contact-form fieldset {
+.contact-form fieldset,
+.contact-form .submit-row {
   padding: 0 16px;
 }
 
@@ -57,15 +58,24 @@
   font-size: 14px;
 }
 
-// .contact-form input:focus {
-//   outline: none;
-//   border-bottom: 1px solid $green;
-//   width: 282px;
-// }
-
 .contact-form input[type="text"] ,
 .contact-form input[type="email"] {
   width: 282px;
+}
+
+// .contact-form input[type="text"]:invalid ,
+// .contact-form input[type="email"]:invalid {
+//   background: red;
+// }
+
+// We could just use box-shadow and not bother with the border,
+// and frankly that would look nicer, but then we’d have
+// no indication in browsers that don’t support box-shadows,
+// such as IE8.
+.contact-form input[aria-invalid="true"],
+.contact-form textarea[aria-invalid="true"] {
+  border: 1px solid #f00;
+  box-shadow: 0 0 4px 0 #f00;
 }
 
 .contact-form input[type="text"]:focus ,
@@ -83,7 +93,7 @@
 
 .contact-form input:required:focus {
 /*   background: blue; */
-  color: $green;
+  // color: $green;
 }
 
 .contact-form input[type="email"]:required:focus {
@@ -91,87 +101,6 @@
   color: red;
 }
 
-// .contact-form {
-//   label {
-//     display: block;
-//     color: $black;
-//     font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
-//     font-size: 20px;
-//     line-height: 135%;
-//     width: 100%;
-//     word-break: break-word;
-//   }
-// }
-
-// // Styles for Google Form on Contact Page
-
-// // body {
-// //   background-color: $white !important;
-// // }
-
-// // .freebirdFormviewerViewFormContentWrapper {
-// //   margin: 60px 0 0 !important;
-// // }
-
-// // .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
-// //   margin: 20px auto !important;
-// //   max-width: 90vw !important;
-// // }
-
-// // .freebirdFormviewerViewNavigationPasswordWarning,
-// // .freebirdFormviewerViewFooterEmbeddedBackground {
-// //   display: none !important;
-// // }
-
-// // .quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdThemedInput.modeLight,
-// // .quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdFormviewerViewItemsTextEmail.freebirdThemedInput.modeLight,
-// // .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
-// //   width: 100% !important;
-// // }
-
-// // @media only screen and (min-width: 768px) {
-// //   .freebirdFormviewerViewFormContentWrapper {
-// //     margin: 110px 0 0 !important;
-// //   }
-// //   .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
-// //     margin: auto !important;
-// //     max-width: 90vw !important;
-// // /*     width: 90vw !important; */
-// //   }
-
-// //   .quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdThemedInput.modeLight,
-// //   .quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdFormviewerViewItemsTextEmail.freebirdThemedInput.modeLight,
-// //   .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
-// //     width: 70% !important;
-// //   }
-
-// //   .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
-// //     width: 90% !important;
-// //   }
-// // }
-
-// // @media only screen and (min-width: 920px) {
-// //   .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
-// //     margin: 20px 0 20px 2px !important;
-// //     max-width: 840px !important;
-// //     width: 84vw !important;
-// //   }
-
-// //   .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
-// //     width: 90% !important;
-// //   }
-// // }
-
-// // @media only screen and (min-width: 1024px) {
-// //   .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
-// //     margin: 20px 0 20px 2px !important;
-// //     max-width: 840px !important;
-// //     width: 80vw !important;
-// //   }
-// // }
-
-// // @media only screen and (min-width: 1200px) {
-// //   .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
-// // /*     width: 100% !important; */
-// //   }
-// // }
+.g-recaptcha {
+  margin: 20px 0 0;
+}
