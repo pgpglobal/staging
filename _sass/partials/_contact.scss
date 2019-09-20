@@ -13,7 +13,7 @@
 }
 
 .required-text {
-  color: #d93025;
+  color: $red;
   font-size: 13px;
   margin: 22px 0 10px 12px;
 }
@@ -30,10 +30,21 @@
   margin: 15px 0 14px;
 }
 
+.contact-form abbr {
+  border: 0;
+  color: $red;
+  cursor: normal;
+  text-decoration: none;
+}
+
 .contact-form input {
   border: 0;
   border-bottom: 2px inset $white-1;
   display: block;
+
+  &:not(placeholder-shown) {
+    border: 1px solid blue;
+  }
 }
 
 .contact-form .submit {
