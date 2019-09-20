@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-$baseurl: '/staging';
+$baseurl: '/PGPGlobal';
 // Import partials.
 @import
   'partials/variables',
@@ -17,5 +17,4 @@ $baseurl: '/staging';
   'partials/contact',
   'partials/privacy-tos',
   'partials/syntax-highlighting',
-  'partials/media',
-  'fontawesome/fontawesome';
+  'partials/media';

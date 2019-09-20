@@ -5,15 +5,17 @@
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
   margin: 20px 0 0;
   padding: 0 16px 20px;
-  width: 70%;
+  // width: 70%;
+  width: 100%;
 
   h2 {
-    padding: 0 12px;
+    font-size: 28px;
+    // padding: 0 12px;
+    padding: 0 2px;
   }
 
-  fieldset,
-  .submit-row {
-    padding: 0 16px;
+  fieldset, {
+    padding: 0 8px;
   }
 
   label {
@@ -40,6 +42,10 @@
     }
   }
 
+  .submit-row {
+    padding: 0 4px 0;
+  }
+
   .submit {
     -webkit-border-radius: 3px;
     background: #1a73e8;
@@ -51,8 +57,10 @@
     font-weight: 500;
     height: 35px;
     line-height: 20px;
-    margin: 30px 0;
+    // margin: 30px 0;
+    margin: 0;
     min-width: 88px;
+    padding: 0;
     text-transform: uppercase;
     transition: background .2s .1s;
     width: 88px;
@@ -62,19 +70,20 @@
     font-size: 14px;
   }
 
-  input[type="text"] ,
-  input[type="email"] {
-    width: 282px;
+  input[type='text'] ,
+  input[type='email'] {
+    // width: auto;
+    width: 100%;
   }
 
-  input[aria-invalid="true"],
-  textarea[aria-invalid="true"] {
+  input[aria-invalid='true'],
+  textarea[aria-invalid='true'] {
     border: 1px solid #f00;
     box-shadow: 0 0 4px 0 #f00;
   }
 
-  input[type="text"]:focus ,
-  input[type="email"]:focus {
+  input[type='text']:focus ,
+  input[type='email']:focus {
     border-bottom: 1px solid $green;
     outline: none;
     // width: 282px;
@@ -91,7 +100,7 @@
     // color: $green;
   }
 
-  input[type="email"]:required:focus {
+  input[type='email']:required:focus {
     // border:2px solid tomato;
     color: red;
   }
@@ -100,9 +109,74 @@
 .required-text {
   color: $red;
   font-size: 13px;
-  margin: 22px 0 10px 12px;
+  margin: 22px 0 10px 6px;
 }
 
 .g-recaptcha {
   margin: 20px 0 0;
+  transform: scale(0.77);
+  transform-origin: 0 0;
+}
+
+@media only screen and (min-width: 375px) {
+  .g-recaptcha {
+    margin: 20px 0 10px;
+    transform: scale(0.94);
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .contact-form {
+    input[type='text'] ,
+    input[type='email'] {
+      width: 90%;
+    }
+  }
+
+  .g-recaptcha {
+    margin: 20px 0 16px;
+    transform: initial;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .g-recaptcha {
+    margin: 22px 0 18px;
+  }
+
+  .contact-form input[type='text'],
+  .contact-form input[type='email'] {
+    padding: 2px 0;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .contact-form {
+    width: 70%;
+
+    h2 {
+      padding: 0 12px;
+    }
+
+    .required-text {
+      margin: 22px 0 10px 12px;
+    }
+
+    fieldset, {
+      padding: 0 16px;
+    }
+
+    label {
+      margin: 15px 0 14px;
+    }
+
+    input[type="text"] ,
+    input[type="email"] {
+      width: 282px;
+    }
+
+    .submit {
+      margin: 30px 0;
+    }
+  }
 }

@@ -11,3 +11,5 @@ _deletion/
 node_modules/
 package-lock.json
 _tmp
+_plugins/
+docs/documentation-to-add.md

@@ -9,23 +9,18 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 * [Styles](#styles)
 * [Blog Import](#blog-import)
   * [Related Posts](#related-posts)
-* [Styling and Markup adjustments](#styling-and-markup-adjustments)
-  * [Medium-Large Tasks](#medium-large-tasks)
+* [Styling and Markup adjustments \(non-essential\)](#styling-and-markup-adjustments-non-essential)
   * [Small Tasks](#small-tasks)
 * [Content Needed](#content-needed)
   * [Site Footer - Copyright and Privacy Info](#site-footer---copyright-and-privacy-info)
 * [Plugins and Configuration](#plugins-and-configuration)
-* [Blog Social Share Icons](#blog-social-share-icons)
   * [Archive Generator and Plugin](#archive-generator-and-plugin)
     * [Plugins Staging](#plugins-staging)
     * [Plugins - Local Dev](#plugins---local-dev)
 * [Accessibility](#accessibility)
 * [Cleanup](#cleanup)
-  * [Authors](#authors)
-  * [Git Branches](#git-branches)
 * [Staging and Production](#staging-and-production)
-  * [Archives Generation](#archives-generation)
-  * [SSL](#ssl)
+  * [Domain & Subdomain Setup](#domain--subdomain-setup)
   * [SCSS](#scss)
   * [Favicon](#favicon)
 * [Notes](#notes)
@@ -44,12 +39,13 @@ See A current list of documentation files includes:
 <a id="contact-form"></a>
 ## Contact Form
 
-* Styling - Should I make the Message field always be the same width as the others??
+* Mobile Styles
 
 <a id="styles"></a>
 ## Styles
 
 * Move styles out of _media.scss
+* Setup Autoprefixer
 
 <a id="blog-import"></a>
 ## Blog Import
@@ -60,13 +56,12 @@ See A current list of documentation files includes:
 1. Randomize posts displayed from each tag, if possible
     * Will only work if I write a plugin
 
-<a id="styling-and-markup-adjustments"></a>
-## Styling and Markup adjustments
-
-<a id="medium-large-tasks"></a>
-### Medium-Large Tasks
+<a id="styling-and-markup-adjustments-non-essential"></a>
+## Styling and Markup adjustments (non-essential)
 
 1. Preference: `_media.css`: convert max-width: 767 into relevant min-width sections, if time-possible (non-essential).
+2. 1. Replace all fixed line heights w/ relative numbers
+* Using a base SCSS variable wherever possible
 
 <a id="small-tasks"></a>
 ### Small Tasks
@@ -74,10 +69,6 @@ See A current list of documentation files includes:
 1. Reinstate the /updates.html et al links that go to [sign-up form](https://personalgenomes.us3.list-manage.com/subscribe?u=3980aaa2746fd428de44b2ab4&id=34d31b2d4b) and similar
   * Setup JS redirect via layout or include or something
   * use jekyll-redirect to do this possibly?
-
-Optional:
-1. Replace all fixed line heights w/ relative numbers
-* Using a base SCSS variable wherever possible
 
 <a id="content-needed"></a>
 ## Content Needed
@@ -96,11 +87,6 @@ Optional:
 1. SEO setup
     * Need to add email, site description, etc to `_config.yml`
 2. Responsive Images. See [Resources][1] file. Currently attempting to get the [jekyll-picture-tag](https://github.com/robwierzbowski/jekyll-picture-tag) plugin working.
-
-<a id="blog-social-share-icons"></a>
-## Blog Social Share Icons
-
-1. Make sure all the Share Icons function properly when the site is live
 
 <a id="archive-generator-and-plugin"></a>
 ### Archive Generator and Plugin
@@ -130,32 +116,14 @@ Optional:
 <a id="cleanup"></a>
 ## Cleanup
 
-List of files:
-
-* `scripts/gravatar.js` seems to be generating the gravatars.
-    * If so, then delete `_plugins/to_gravatar.rb`
-* Replace SCSS Media Queries with name variables
-
-<a id="authors"></a>
-### Authors
-
-The `display_name` attribute in the Author files doesn't match anything in the actual posts... either replace with display name from posts, or just delete in all files
-
-<a id="git-branches"></a>
-### Git Branches
-
-* Delete extra Git Branches
+* Replace SCSS Media Queries with name variables?
+* Replace max-width queries w/ min-width queries
 
 <a id="staging-and-production"></a>
 ## Staging and Production
 
-<a id="archives-generation"></a>
-### Archives Generation
-
-Make sure Archive generation doesn't mess with staging setup
-
-<a id="ssl"></a>
-### SSL
+<a id="domain--subdomain-setup"></a>
+### Domain & Subdomain Setup
 
 1. Note that current website seems to prefer `www` over Apex domain.
 
@@ -163,7 +131,7 @@ Make sure Archive generation doesn't mess with staging setup
 ### SCSS
 
 1. Make sure to change `$baseurl` in SCSS for production
-    * There should be a way to do this dynamically
+    * I'm going to need to write either a Python or Ruby plugin in order to do this dynamically, as all the native Jekyll methods are not working.
 
 <a id="favicon"></a>
 ### Favicon

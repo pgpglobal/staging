@@ -14,14 +14,3 @@ class: archive
     {%- endfor -%}
   </ul>
 </div>
-
-
-{%- comment -%}
-<br>
-<ul>
-{%- assign filtered_posts = site.posts | where: 'author', page.short_name -%}
-  {%- for post in filtered_posts -%}
-    <li><a href="{{ post.url }}">{{ post.title }}</a> by {{ post.author }}</li>
-  {%- endfor -%}
-</ul>
-{%- endcomment -%}
