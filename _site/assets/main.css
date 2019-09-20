@@ -1921,6 +1921,11 @@ div.sharedaddy h3.sd-title {
   display: none;
 }
 
+#jp-relatedposts .jp-relatedposts-post-context a {
+  color: #333;
+  font-weight: 400;
+}
+
 /**
  * Post Categories
  */

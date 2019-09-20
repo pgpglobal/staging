@@ -16,6 +16,8 @@
 * [Staging - Simulating GitHub Pages](#staging---simulating-github-pages)
 * [Source Map](#source-map)
 * [Form Validation](#form-validation)
+* [SASS](#sass)
+  * [Output Styles:](#output-styles)
 * [Other Tools](#other-tools)
 
 <!-- /MarkdownTOC -->
@@ -160,6 +162,17 @@ input:not(:placeholder-shown) {
 We're not really using placeholder in our demo, but a value of a single space works:
 
 <input placeholder=" ">
+
+<a id="sass"></a>
+## SASS
+
+<a id="output-styles"></a>
+### Output Styles:
+
+* nested
+* :compact
+* :expanded
+* :compressed
 
 <a id="other-tools"></a>
 ## Other Tools
