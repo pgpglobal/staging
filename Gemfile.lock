@@ -250,6 +250,7 @@ DEPENDENCIES
   github-pages
   jekyll (= 3.8.5)
   jekyll-include-cache
+  jekyll-sass-converter
   jekyll-titles-from-headings
   minima (~> 2.0)
   tzinfo (~> 1.2)

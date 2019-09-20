@@ -28,6 +28,8 @@ group :jekyll_plugins do
   # gem 'jekyll-seo-tag'
   # gem 'jekyll-sitemap'
   gem 'jekyll-titles-from-headings'
+  # gem 'html-proofer'
+  gem 'jekyll-sass-converter'
 end
 
 gem 'github-pages', group: :jekyll_plugins
