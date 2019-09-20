@@ -933,7 +933,7 @@ img.profile-photo {
 }
 
 .blog-header-title {
-  background: url(https://personalgenomes.files.wordpress.com/2012/01/pgp_header_980x120.png) no-repeat;
+  background: url("/PGPGlobal/assets/images/pgp_header_980x120.png") no-repeat;
   background-position: left -5% center;
   background-size: 200%;
   font-size: 46px;
@@ -1694,17 +1694,17 @@ div.sharedaddy,
 }
 
 div.sharedaddy h3.sd-title {
+  margin: 0 0 1em;
   display: inline-block;
+  line-height: 1.2;
   font-size: 9pt;
   font-weight: 700;
-  line-height: 1.2;
-  margin: 0 0 1em;
 }
 
 .sd-content ul {
-  list-style: none !important;
-  margin: 0 0 .7em !important;
   padding: 0 !important;
+  margin: 0 0 .7em !important;
+  list-style: none !important;
 }
 
 .sd-content ul li {
@@ -1719,10 +1719,10 @@ div.sharedaddy h3.sd-title {
 
 .entry ul li,
 .c-body ul li {
-  background: url("/assets/images/list-star.gif") no-repeat 0 0.3em;
   display: block;
   margin: 5px 0 0;
   padding: 0 0 0 17px;
+  background: url("/assets/images/list-star.gif") no-repeat 0 0.3em;
 }
 
 .sd-social-icon .sd-content ul li a.sd-button,
@@ -1735,19 +1735,19 @@ div.sharedaddy h3.sd-title {
 .sd-social-official .sd-content > ul > li > a.sd-button,
 #sharing_email .sharing_send,
 .sd-social-official .sd-content > ul > li .digg_button > a {
-  background: #f8f8f8;
+  text-decoration: none !important;
+  display: inline-block;
+  font-size: 12px;
+  font-family: "Open Sans",sans-serif;
+  font-weight: 400;
   border-radius: 3px;
+  color: #545454 !important;
+  background: #f8f8f8;
   border: 1px solid #ccc;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
-  color: #545454 !important;
-  display: inline-block;
-  font-family: "Open Sans",sans-serif;
-  font-size: 12px;
-  font-weight: 400;
+  text-shadow: none;
   line-height: 23px;
   padding: 1px 8px 0 5px;
-  text-decoration: none !important;
-  text-shadow: none;
 }
 
 .sd-social-text .sd-content ul li a.sd-button span,
@@ -1773,12 +1773,12 @@ div.sharedaddy h3.sd-title {
 }
 
 .sd-content ul li a.sd-button:before {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
   display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font: normal 18px/1 'social-logos';
-  text-align: center;
   vertical-align: top;
+  text-align: center;
 }
 
 .sd-social-icon-text ul li a.sd-button:before {
@@ -1787,12 +1787,12 @@ div.sharedaddy h3.sd-title {
 }
 
 .sd-content ul li a.sd-button:before {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
   display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font: normal 18px/1 'social-logos';
-  text-align: center;
   vertical-align: top;
+  text-align: center;
 }
 
 .sd-content ul li {
@@ -1810,10 +1810,10 @@ div.sharedaddy h3.sd-title {
 
 .entry ul li,
 .c-body ul li {
-  background: url("/assets/images/list-star.gif") no-repeat 0 0.3em;
   display: block;
   margin: 5px 0 0;
   padding: 0 0 0 17px;
+  background: url("/assets/images/list-star.gif") no-repeat 0 0.3em;
 }
 
 /**
@@ -1920,22 +1920,23 @@ div.sharedaddy h3.sd-title {
   display: none;
 }
 
+#jp-relatedposts .jp-relatedposts-post-context a {
+  color: #000;
+  font-weight: 400;
+}
+
 /**
  * Post Categories
  */
 .post-footer {
-  border-bottom: 1px solid #eee;
-  margin: 10px 0 30px;
+  width: 100%;
   overflow: hidden;
   padding-bottom: 2px;
-  width: 100%;
+  margin: 10px 0 30px;
+  border-bottom: 1px solid #eee;
 }
 .post-footer a {
   font-weight: 400;
-}
-
-.post-footer-blog-feed {
-  margin: 20px 0 30px;
 }
 
 .blog-main-container .post-footer a {
@@ -1948,20 +1949,20 @@ div.sharedaddy h3.sd-title {
 
 .categories {
   color: #666;
-  float: none;
+  float: right;
   font-size: 12px;
   font-style: italic;
   line-height: 22px;
-  text-align: left;
-  width: auto;
+  text-align: right;
+  width: 400px;
 }
 
 /**
  * Posts Navigation
  */
 .post-navigation {
-  font-size: 13px;
   padding: 10px 0;
+  font-size: 13px;
 }
 .post-navigation a:first-of-type {
   float: left;
@@ -1975,22 +1976,14 @@ div.sharedaddy h3.sd-title {
   font-weight: 400;
 }
 
-.post-navigation.single .clear::after,
-.post-navigation.single li.comment::after {
-  clear: both;
+.post-navigation.single .clear:after, .post-navigation.single li.comment:after {
   content: ".";
   display: block;
   height: 0;
+  clear: both;
   visibility: hidden;
 }
 
-@media only screen and (min-width: 576px) {
-  .categories {
-    float: right;
-    text-align: right;
-    width: 400px;
-  }
-}
 .contact-form {
   /* border-left: 1px solid #666; */
   border-radius: 5px;
