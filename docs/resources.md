@@ -6,6 +6,7 @@
 * [Author Collections](#author-collections)
 * [Flickr Integration](#flickr-integration)
 * [Plugins](#plugins)
+  * [Other Plugins](#other-plugins)
   * [Jekyll Without Plugins](#jekyll-without-plugins)
 * [Contact Form](#contact-form)
 * [Responsive Images](#responsive-images)
@@ -68,6 +69,11 @@ GitHub Pages Optional Plugins:
 * jemoji
 * jekyll-mentions
 * jekyll-include-cache
+
+<a id="other-plugins"></a>
+### Other Plugins
+
+* https://github.com/PascalW/jekyll_indextank
 
 <a id="jekyll-without-plugins"></a>
 ### Jekyll Without Plugins

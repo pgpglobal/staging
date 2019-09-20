@@ -27,14 +27,14 @@ group :jekyll_plugins do
   # gem 'jekyll-seo-tag'
   # gem 'jekyll-sitemap'
   gem 'jekyll-titles-from-headings'
-  gem 'html-proofer'
+  # gem 'html-proofer'
   # gem 'jekyll-sass-converter'
 
 end
 
 gem 'github-pages', group: :jekyll_plugins
-gem "jekyll-sass-converter", :git =>
-"https://github.com/searls/jekyll-sassc-converter.git"
+# gem "jekyll-sass-converter", :git =>
+# "https://github.com/searls/jekyll-sassc-converter.git"
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 # and associated library.
