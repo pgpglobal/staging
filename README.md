@@ -5,7 +5,7 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 <!-- MarkdownTOC -->
 
 * [Instructions and Documentation](#instructions-and-documentation)
-* [Contact Form](#contact-form)
+* [Footer](#footer)
 * [Styles](#styles)
 * [Blog Import](#blog-import)
   * [Related Posts](#related-posts)
@@ -36,10 +36,10 @@ See A current list of documentation files includes:
 * [Documentation](docs/documentation.md) - general documentation
 * [Resources](docs/resources.md) - a list of various resources related to in-progress tasks
 
-<a id="contact-form"></a>
-## Contact Form
+<a id="footer"></a>
+## Footer
 
-* Mobile Styles
+* Add Privacy Policy and ToS
 
 <a id="styles"></a>
 ## Styles
