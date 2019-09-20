@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" href="/PGPGlobal/styles/bootstrap.min.css">
   <link rel="stylesheet" href="/PGPGlobal/assets/main.css">
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script></head>
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-y++enYq9sdV7msNmXr08kJdkX4zEI1gMjjkw0l9ttOepH7fMdhb7CePwuRQCfwCr" crossorigin="anonymous"><link rel="shortcut icon" type="image/png" href="/PGPGlobal/favicon-local-dev.jpg"><script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/PGPGlobal/feed.xml" title="Personal Genome Project: Global Network" /></head>
 <body>
@@ -43,51 +42,36 @@
 
 <link href="https://fonts.googleapis.com/css?family=Product+Sans&amp;subset=latin,vietnamese,latin-ext,cyrillic,greek,cyrillic-ext,greek-ext" rel="stylesheet" type="text/css" />
 
-<form class="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSeAV6TIsbXg3dDpcEKiRfQH6eqqFRoFQl2ulQeerrppCRldRw/formResponse" target="_self" method="POST" id="mG61Hd">
-<!-- Curii Form Action -->
-<!-- <form class="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddwiYlyM1Z0mQ/formResponse?embedded=true" target="_self" method="POST" id="mG61Hd"> -->
+<form class="contact-form" action="https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddwiYlyM1Z0mQ/formResponse?embedded=true" target="_self" method="POST" id="mG61Hd">
 
 <h2>Contact the Global Personal Genome Project</h2>
 <p class="required-text">* Required</p>
 
-<!-- Luna Test Temporary -->
 <fieldset>
-  <label for="contact-name" value="Name">Name <span>*</span></label>
-  <input id="contact-name" placeholder="Your Name" type="text" class="contact-label" aria-label="Name" name="entry.1444497041" required="" />
-  <label for="contact-email">Email <span>*</span></label>
-  <input id="contact-email" placeholder="Your Email" type="text" class="" aria-label="Email" name="entry.1474335269" required="" />
-  <label for="contact-subject">Subject <span>*</span></label>
-  <input id="contact-subject" placeholder="Your Subject" type="text" class="" aria-label="Subject" name="entry.1141066379" required="" />
-  <label for="contact-message">Message <span>*</span></label>
-  <input id="contact-message" placeholder="Your Message" type="text" class="" aria-label="Message" name="entry.1316810993" required="" />
+  <label for="contact-name" value="Name">Name
+    <abbr title="Required">*</abbr>
+  </label>
+
+  <input id="contact-name" placeholder="Your Name" type="text" class="contact-label" aria-label="Name" name="entry.2005620554" pattern="^([- \w\d\u00c0-\u024f]+)$" required="" aria-required="true" />
+
+  <label for="contact-email">Email <abbr title="Required">*</abbr></label>
+  <input id="contact-email" placeholder="Your Email" type="text" class="" aria-label="Email" name="entry.1045781291" pattern="^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$" required="" aria-required="true" />
+  <label for="contact-subject">Subject <abbr title="Required">*</abbr></label>
+  <input id="contact-subject" placeholder="Your Subject" type="text" class="" aria-label="Subject" name="entry.1159901265" required="" aria-required="true" />
+  <label for="contact-message">Message <abbr title="Required">*</abbr></label>
+  <input id="contact-message" placeholder="Your Message" type="text" class="" aria-label="Message" name="entry.839337160" required="" aria-required="true" spellcheck="true" />
 </fieldset>
 
+<input type="hidden" name="options[reCaptcha][siteKey]" value="6Lc4YbkUAAAAAAPVROzXyzIis561fG3BEx7Qac1G" />
+<input type="hidden" name="options[reCaptcha][secret]" value="MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAINvk9tkdraqblh7tJC4I3xKY29IVsv2K2ZXWjiBSlvhu5HQI/75zDN/EWLQAhmvDLoBUMnBPv6npYD7HB6M3YOkOYlHRHB9n5K607Cm4UygWNXXrvntyQJPuIX/TDR/kq5cmjdD31baUO053puZk1+r3nwCAKWQnsSTtanCWoI3AgMBAAECgYAfu724F55t5eI0bNGgq0SuCovNX2rNXccGs4pt4BFi87JEtzspoYgC2ugIsm3/Y3swIYcu3wBlnXZhGL+mRJ5qhHrEv1WTAvylOz75owRwiPRYoo8QH5MXE1aeGRzCZ4DdJ9sQ2OP4ehfBdphDVDldDw9phv0BMSHcCpV/rq9S+QJBAMCQ1UHZ1CxLzIIrtoyTumW4vOS1oUNPSZLgcBU17f7ZXa6V34rm/r7QkrgVR6cx190xu9Usq1N5Ku35MaGPWVsCQQCuu6ECWnl9zw36EpDkFgUTw/DHOx552qv3LJ0cPoERBRY6yWQqNbBc3FaWA7w6hyyl6Y7Ww3CNs4DSWV5iZjVVAkEAqjwf23xHvvUvkXA1jKdYpG6hxwruyoOAhnEVhRrNEHx2/k2OdsxpLqVS35woYR2GOQyrgfRgbYXztreS8cG5ewJAWido/aPcx3LLjVmC9Iv/9qDEXKc+JDUVQST9sxL02Ok8/Pvn+HdXFbKB4kjvF2ujN793+YtBSXtyXhXKQw7lOQJBAIMfcAA3oEP4Pd6wMKiHBLBD7I46nDDC4gv6h91cbF3y26OSz52hlG00W20SzLvMfZ8QbogOpCtSd2hn1mMPh4w=" />
 
-<!-- Curii Form Fieldset -->
-<!-- <fieldset>
-  <label for="contact-name" value="Name">Name <span>*</span></label>
-  <input id="contact-name" placeholder="Your Name" type="text" class="contact-label" aria-label="Name" name="entry.2005620554" required>
-  <label for="contact-email">Email <span>*</span></label>
-  <input id="contact-email" placeholder="Your Email" type="text" class="" aria-label="Email" name="entry.1045781291" required>
-  <label for="contact-subject">Subject <span>*</span></label>
-  <input id="contact-subject" placeholder="Your Subject" type="text" class="" aria-label="Subject" name="entry.1159901265" required>
-  <label for="contact-message">Message <span>*</span></label>
-  <input id="contact-message" placeholder="Your Message" type="text" class="" aria-label="Message" name="entry.839337160" required>
-</fieldset>
- -->
+<div class="submit-row"><div class="g-recaptcha" data-sitekey="6Lc4YbkUAAAAAAPVROzXyzIis561fG3BEx7Qac1G"></div>
+<script src="https://www.google.com/recaptcha/api.js"></script>
 
- <input type="hidden" name="options[reCaptcha][siteKey]" value="6Lc4YbkUAAAAAAPVROzXyzIis561fG3BEx7Qac1G" />
- <input type="hidden" name="options[reCaptcha][secret]" value="MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAINvk9tkdraqblh7tJC4I3xKY29IVsv2K2ZXWjiBSlvhu5HQI/75zDN/EWLQAhmvDLoBUMnBPv6npYD7HB6M3YOkOYlHRHB9n5K607Cm4UygWNXXrvntyQJPuIX/TDR/kq5cmjdD31baUO053puZk1+r3nwCAKWQnsSTtanCWoI3AgMBAAECgYAfu724F55t5eI0bNGgq0SuCovNX2rNXccGs4pt4BFi87JEtzspoYgC2ugIsm3/Y3swIYcu3wBlnXZhGL+mRJ5qhHrEv1WTAvylOz75owRwiPRYoo8QH5MXE1aeGRzCZ4DdJ9sQ2OP4ehfBdphDVDldDw9phv0BMSHcCpV/rq9S+QJBAMCQ1UHZ1CxLzIIrtoyTumW4vOS1oUNPSZLgcBU17f7ZXa6V34rm/r7QkrgVR6cx190xu9Usq1N5Ku35MaGPWVsCQQCuu6ECWnl9zw36EpDkFgUTw/DHOx552qv3LJ0cPoERBRY6yWQqNbBc3FaWA7w6hyyl6Y7Ww3CNs4DSWV5iZjVVAkEAqjwf23xHvvUvkXA1jKdYpG6hxwruyoOAhnEVhRrNEHx2/k2OdsxpLqVS35woYR2GOQyrgfRgbYXztreS8cG5ewJAWido/aPcx3LLjVmC9Iv/9qDEXKc+JDUVQST9sxL02Ok8/Pvn+HdXFbKB4kjvF2ujN793+YtBSXtyXhXKQw7lOQJBAIMfcAA3oEP4Pd6wMKiHBLBD7I46nDDC4gv6h91cbF3y26OSz52hlG00W20SzLvMfZ8QbogOpCtSd2hn1mMPh4w=" />
-
- <div class="g-recaptcha" data-sitekey="6Lc4YbkUAAAAAAPVROzXyzIis561fG3BEx7Qac1G"></div>
- <script src="https://www.google.com/recaptcha/api.js"></script>
-
-<input type="submit" value="Submit" class="submit" />
+<input type="submit" value="Submit" class="submit" /></div>
 </form>
 
-<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddwiYlyM1Z0mQ/viewform?embedded=true" width="640" height="1041" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
-
-<!-- <form action="https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddwiYlyM1Z0mQ/formResponse?embedded=true" target="_self" method="POST" id="mG61Hd"> -->
+<script defer="" src="/PGPGlobal/scripts/form-validate.js" type="text/javascript"></script>
 
 
             </div>

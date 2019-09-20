@@ -6,172 +6,103 @@
   margin: 20px 0 0;
   padding: 0 16px 20px;
   width: 70%;
-}
 
-.contact-form h2 {
-  padding: 0 12px;
+  h2 {
+    padding: 0 12px;
+  }
+
+  fieldset,
+  .submit-row {
+    padding: 0 16px;
+  }
+
+  label {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 2;
+    margin: 15px 0 14px;
+  }
+
+  abbr {
+    border: 0;
+    color: $red;
+    cursor: normal;
+    text-decoration: none;
+  }
+
+  input {
+    border: 0;
+    border-bottom: 2px inset $white-1;
+    display: block;
+
+    &:not(placeholder-shown) {
+      // border: 1px solid blue;
+    }
+  }
+
+  .submit {
+    -webkit-border-radius: 3px;
+    background: #1a73e8;
+    border: 0;
+    border-radius: 3px;
+    color: $white;
+    display: block;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    height: 35px;
+    line-height: 20px;
+    margin: 30px 0;
+    min-width: 88px;
+    text-transform: uppercase;
+    transition: background .2s .1s;
+    width: 88px;
+  }
+
+  input.submit {
+    font-size: 14px;
+  }
+
+  input[type="text"] ,
+  input[type="email"] {
+    width: 282px;
+  }
+
+  input[aria-invalid="true"],
+  textarea[aria-invalid="true"] {
+    border: 1px solid #f00;
+    box-shadow: 0 0 4px 0 #f00;
+  }
+
+  input[type="text"]:focus ,
+  input[type="email"]:focus {
+    border-bottom: 1px solid $green;
+    outline: none;
+    // width: 282px;
+  }
+
+  input:focus {
+    border-bottom: 1px solid $green;
+    outline: none;
+    // width: 282px;
+  }
+
+  input:required:focus {
+  /*   background: blue; */
+    // color: $green;
+  }
+
+  input[type="email"]:required:focus {
+    // border:2px solid tomato;
+    color: red;
+  }
 }
 
 .required-text {
-  color: #d93025;
+  color: $red;
   font-size: 13px;
   margin: 22px 0 10px 12px;
 }
 
-.contact-form fieldset {
-  padding: 0 16px;
+.g-recaptcha {
+  margin: 20px 0 0;
 }
-
-.contact-form label {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 2;
-  margin: 15px 0 14px;
-}
-
-.contact-form input {
-  border: 0;
-  border-bottom: 2px inset $white-1;
-  display: block;
-}
-
-.contact-form .submit {
-  -webkit-border-radius: 3px;
-  background: #1a73e8;
-  border: 0;
-  border-radius: 3px;
-  color: $white;
-  display: block;
-  font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
-  font-weight: 500;
-  height: 35px;
-  line-height: 20px;
-  margin: 30px 0;
-  min-width: 88px;
-  text-transform: uppercase;
-  transition: background .2s .1s;
-  width: 88px;
-}
-
-.contact-form input.submit {
-  font-size: 14px;
-}
-
-// .contact-form input:focus {
-//   outline: none;
-//   border-bottom: 1px solid $green;
-//   width: 282px;
-// }
-
-.contact-form input[type="text"] ,
-.contact-form input[type="email"] {
-  width: 282px;
-}
-
-.contact-form input[type="text"]:focus ,
-.contact-form input[type="email"]:focus {
-  border-bottom: 1px solid $green;
-  outline: none;
-  // width: 282px;
-}
-
-.contact-form input:focus {
-  border-bottom: 1px solid $green;
-  outline: none;
-  // width: 282px;
-}
-
-.contact-form input:required:focus {
-/*   background: blue; */
-  color: $green;
-}
-
-.contact-form input[type="email"]:required:focus {
-  // border:2px solid tomato;
-  color: red;
-}
-
-// .contact-form {
-//   label {
-//     display: block;
-//     color: $black;
-//     font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
-//     font-size: 20px;
-//     line-height: 135%;
-//     width: 100%;
-//     word-break: break-word;
-//   }
-// }
-
-// // Styles for Google Form on Contact Page
-
-// // body {
-// //   background-color: $white !important;
-// // }
-
-// // .freebirdFormviewerViewFormContentWrapper {
-// //   margin: 60px 0 0 !important;
-// // }
-
-// // .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
-// //   margin: 20px auto !important;
-// //   max-width: 90vw !important;
-// // }
-
-// // .freebirdFormviewerViewNavigationPasswordWarning,
-// // .freebirdFormviewerViewFooterEmbeddedBackground {
-// //   display: none !important;
-// // }
-
-// // .quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdThemedInput.modeLight,
-// // .quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdFormviewerViewItemsTextEmail.freebirdThemedInput.modeLight,
-// // .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
-// //   width: 100% !important;
-// // }
-
-// // @media only screen and (min-width: 768px) {
-// //   .freebirdFormviewerViewFormContentWrapper {
-// //     margin: 110px 0 0 !important;
-// //   }
-// //   .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
-// //     margin: auto !important;
-// //     max-width: 90vw !important;
-// // /*     width: 90vw !important; */
-// //   }
-
-// //   .quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdThemedInput.modeLight,
-// //   .quantumWizTextinputPaperinputEl.freebirdFormviewerViewItemsTextShortText.freebirdFormviewerViewItemsTextEmail.freebirdThemedInput.modeLight,
-// //   .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
-// //     width: 70% !important;
-// //   }
-
-// //   .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
-// //     width: 90% !important;
-// //   }
-// // }
-
-// // @media only screen and (min-width: 920px) {
-// //   .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
-// //     margin: 20px 0 20px 2px !important;
-// //     max-width: 840px !important;
-// //     width: 84vw !important;
-// //   }
-
-// //   .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
-// //     width: 90% !important;
-// //   }
-// // }
-
-// // @media only screen and (min-width: 1024px) {
-// //   .freebirdFormviewerViewFormContentWrapper .freebirdFormviewerViewCenteredContent{
-// //     margin: 20px 0 20px 2px !important;
-// //     max-width: 840px !important;
-// //     width: 80vw !important;
-// //   }
-// // }
-
-// // @media only screen and (min-width: 1200px) {
-// //   .quantumWizTextinputPapertextareaEl.modeLight.freebirdFormviewerViewItemsTextLongText.freebirdThemedInput {
-// // /*     width: 100% !important; */
-// //   }
-// // }

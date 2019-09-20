@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-$baseurl: '/PGPGlobal';
+$baseurl: "{{ site.baseurl }}";
 // Import partials.
 @import
   'partials/variables',

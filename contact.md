@@ -13,8 +13,5 @@ permalink: /contact/
 {% endcomment %}
 {% include_cached contact-form.html %}
 
-
-<!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddwiYlyM1Z0mQ/viewform?embedded=true" width="640" height="1041" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
-
-<!-- <form action="https://docs.google.com/forms/d/e/1FAIpQLSf6a1zAQDq6Rd7znuJG_fgdtdoF-dxltpZiHddwiYlyM1Z0mQ/formResponse?embedded=true" target="_self" method="POST" id="mG61Hd"> -->
+<script defer src="{{ '/scripts/form-validate.js' | relative_url }}" type="text/javascript"></script>
 

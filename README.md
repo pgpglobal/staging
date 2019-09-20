@@ -8,15 +8,14 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 * [Contact Form](#contact-form)
 * [Styles](#styles)
 * [Blog Import](#blog-import)
-  * [Categories](#categories)
   * [Related Posts](#related-posts)
-  * [Staging Site - Post Titles](#staging-site---post-titles)
 * [Styling and Markup adjustments](#styling-and-markup-adjustments)
   * [Medium-Large Tasks](#medium-large-tasks)
   * [Small Tasks](#small-tasks)
 * [Content Needed](#content-needed)
   * [Site Footer - Copyright and Privacy Info](#site-footer---copyright-and-privacy-info)
 * [Plugins and Configuration](#plugins-and-configuration)
+* [Blog Social Share Icons](#blog-social-share-icons)
   * [Archive Generator and Plugin](#archive-generator-and-plugin)
     * [Plugins Staging](#plugins-staging)
     * [Plugins - Local Dev](#plugins---local-dev)
@@ -26,7 +25,7 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
   * [Git Branches](#git-branches)
 * [Staging and Production](#staging-and-production)
   * [Archives Generation](#archives-generation)
-  * [SSL and CDN](#ssl-and-cdn)
+  * [SSL](#ssl)
   * [SCSS](#scss)
   * [Favicon](#favicon)
 * [Notes](#notes)
@@ -55,21 +54,11 @@ See A current list of documentation files includes:
 <a id="blog-import"></a>
 ## Blog Import
 
-<a id="categories"></a>
-### Categories
-
-1. Alphabetize categories? (why aren't they automatically??)
-
 <a id="related-posts"></a>
 ### Related Posts
 
 1. Randomize posts displayed from each tag, if possible
-    * See the `sample` filter
-
-<a id="staging-site---post-titles"></a>
-### Staging Site - Post Titles
-
-Post titles don't seem to be working on the staging version? May just need to rebuild
+    * Will only work if I write a plugin
 
 <a id="styling-and-markup-adjustments"></a>
 ## Styling and Markup adjustments
@@ -84,6 +73,7 @@ Post titles don't seem to be working on the staging version? May just need to re
 
 1. Reinstate the /updates.html et al links that go to [sign-up form](https://personalgenomes.us3.list-manage.com/subscribe?u=3980aaa2746fd428de44b2ab4&id=34d31b2d4b) and similar
   * Setup JS redirect via layout or include or something
+  * use jekyll-redirect to do this possibly?
 
 Optional:
 1. Replace all fixed line heights w/ relative numbers
@@ -106,8 +96,11 @@ Optional:
 1. SEO setup
     * Need to add email, site description, etc to `_config.yml`
 2. Responsive Images. See [Resources][1] file. Currently attempting to get the [jekyll-picture-tag](https://github.com/robwierzbowski/jekyll-picture-tag) plugin working.
-3. Blog comments system
-4. Generate favicon files using [Real Favicon Generator](https://realfavicongenerator.net/)
+
+<a id="blog-social-share-icons"></a>
+## Blog Social Share Icons
+
+1. Make sure all the Share Icons function properly when the site is live
 
 <a id="archive-generator-and-plugin"></a>
 ### Archive Generator and Plugin
@@ -161,10 +154,10 @@ The `display_name` attribute in the Author files doesn't match anything in the a
 
 Make sure Archive generation doesn't mess with staging setup
 
-<a id="ssl-and-cdn"></a>
-### SSL and CDN
+<a id="ssl"></a>
+### SSL
 
-1. Note that current website seems to prefer `www` over Apex domain. See if there's Jekyll settings
+1. Note that current website seems to prefer `www` over Apex domain.
 
 <a id="scss"></a>
 ### SCSS

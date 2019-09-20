@@ -14,7 +14,8 @@
   * [Cloudflare](#cloudflare)
   * [GitHub Pages](#github-pages)
 * [Staging - Simulating GitHub Pages](#staging---simulating-github-pages)
-    * [Source Map](#source-map)
+* [Source Map](#source-map)
+* [Form Validation](#form-validation)
 * [Other Tools](#other-tools)
 
 <!-- /MarkdownTOC -->
@@ -127,7 +128,7 @@ Relevant Tutorials and Resources:
 * [Setting up GitHub Pages locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll#keeping-your-site-up-to-date-with-the-github-pages-gem)
 
 <a id="source-map"></a>
-#### Source Map
+## Source Map
 
 ** Getting a sassmap to show up in code inspector **
 
@@ -145,6 +146,21 @@ You can now use whatever compiler you like and it will generate a sass map that 
 This should work fine, but if you want to do things the jekyll way, reverse these steps for production.
 ```
 
+<a id="form-validation"></a>
+## Form Validation
+
+The trick is to make sure the input has a placeholder value, then:
+
+```scss
+input:not(:placeholder-shown) {
+
+}
+```
+
+We're not really using placeholder in our demo, but a value of a single space works:
+
+<input placeholder=" ">
+
 <a id="other-tools"></a>
 ## Other Tools
 
@@ -156,3 +172,7 @@ This should work fine, but if you want to do things the jekyll way, reverse thes
 * [Google Forms Restyler](http://googleformrestyler.apixml.net/)
   * Doesn't work due to https issue
 * [Staticman + reCaptcha](https://raw.githubusercontent.com/eduardoboucas/staticman-recaptcha/)
+* [Instant Form Validation](https://www.sitepoint.com/instant-validation/)
+* [CSS Tricks - Form Validation UX in HTML and CSS](https://css-tricks.com/form-validation-ux-html-css/)
+* [RSA Encryption/Decryption](https://www.devglan.com/online-tools/rsa-encryption-decryption)
+  * Can generate Key Pairs as well
