@@ -7,6 +7,9 @@
 * [Flickr Integration](#flickr-integration)
 * [Plugins](#plugins)
   * [Other Plugins](#other-plugins)
+  * [Plugin Dev](#plugin-dev)
+    * [Docs](#docs)
+    * [Tutorials](#tutorials)
   * [Jekyll Without Plugins](#jekyll-without-plugins)
 * [Contact Form](#contact-form)
 * [Responsive Images](#responsive-images)
@@ -74,6 +77,32 @@ GitHub Pages Optional Plugins:
 ### Other Plugins
 
 * https://github.com/PascalW/jekyll_indextank
+* https://github.com/gemfarmer/jekyll-debug
+* https://github.com/gjtorikian/html-proofer (having trouble getting this to work - but would be *perfect* otherwise)
+* https://github.com/merlos/jekyll-auto-image
+  * Useful for sharing on Social sites - esp Pinterest and Instagram and stuff
+* https://github.com/nquinlan/jekyll-pageless-redirects
+  * https://github.com/nquinlan/jekyll-pageless-redirects - don't think it's GitHub Pages compatible tho
+  *
+
+<a id="plugin-dev"></a>
+### Plugin Dev
+
+<a id="docs"></a>
+#### Docs
+
+* https://devdocs.io/jekyll/plugins/index
+* https://jekyllrb.com/docs/plugins/hooks/
+* https://jekyllrb.com/docs/plugins/filters/
+* https://jekyllrb.com/docs/plugins/converters/
+* https://jekyllrb.com/docs/plugins/generators/
+* https://jekyllrb.com/docs/plugins/tags/
+
+<a id="tutorials"></a>
+#### Tutorials
+
+* https://cobwwweb.com/access-site-object-within-jekyll-filter
+*
 
 <a id="jekyll-without-plugins"></a>
 ### Jekyll Without Plugins
@@ -182,3 +211,4 @@ We're not really using placeholder in our demo, but a value of a single space wo
 * [CSS Tricks - Form Validation UX in HTML and CSS](https://css-tricks.com/form-validation-ux-html-css/)
 * [RSA Encryption/Decryption](https://www.devglan.com/online-tools/rsa-encryption-decryption)
   * Can generate Key Pairs as well
+* https://github.com/lawmurray/indii-jekyll-flickr

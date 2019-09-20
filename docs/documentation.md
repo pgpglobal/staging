@@ -218,24 +218,26 @@ You can set any of the following variables in the [Front Matter]() for posts. Se
 Archive permalinks work as follows:
 * url.com/YYYY
 * url.com/YYYY/MM
-* url.com/YYYY/MM/DD
+<!-- * url.com/YYYY/MM/DD -->
 * url.com/tag/tag_name
 * url.com/category/category_name
 
+
+To generate the archives, run `py archives.py` prior to site build. This will generate all the yearly and monthly archive pages. *Note:* you only need to do this if/when you've made new posts or if you need to rebuild the entire site for some reason.
+
 <a id="catgories"></a>
 ### Catgories
-Archive permalinks work as follows:
-url.com/category - main category page
-url.com/category/category_name
 
-Currently categories must be added manually in the `_categories` directory.
+Category permalinks work as follows:
+* url.com/category - main categories page
+* url.com/category/category_name - specific category pages
 
-Sample Category file:
+Currently categories must be added manually in the `_category` directory. The filenames should be all lowercase, no spaces or special characters, and have dashes between words (ex `get-conference` or `genom-austria`). The actual content of each file looks like this:
 
-```markdown
+```yaml
 ---
-tag: uncategorized
-permalink: "/category/uncategorized"
+tag: get-conference
+permalink: "/category/get-conference"
 ---
 ```
 
