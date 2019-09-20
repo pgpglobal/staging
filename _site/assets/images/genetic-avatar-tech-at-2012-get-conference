@@ -1,0 +1,461 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Genetic Avatar Technology at 2012 GET Conference | Personal Genome Project Blog</title>
+<!--[if lt IE 8]><link rel="stylesheet" type="text/css" media="screen" href="https://s2.wp.com/wp-content/themes/pub/vigilance/stylesheets/ie.css" /><![endif]-->
+<!--[if lte IE 6]><link rel="stylesheet" type="text/css" media="screen" href="https://s2.wp.com/wp-content/themes/pub/vigilance/stylesheets/ie6.css" /><![endif]-->
+<link rel="pingback" href="https://personalgenomes.wordpress.com/xmlrpc.php" />
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel="alternate" type="application/rss+xml" title="Personal Genome Project Blog &raquo; Feed" href="https://personalgenomes.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Personal Genome Project Blog &raquo; Comments Feed" href="https://personalgenomes.wordpress.com/comments/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s2.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1556893897h&ver=5.2.2"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='all-css-0-1' href='https://s2.wp.com/_static/??-eJyNk+tugzAMhV9owe3WdtuPac8SwKQuuSkx63j7GWh36SWahJBP8GcnxwGOUTXBM3oGN6hoB0M+wzE2wansyOJ4oaom5we4jSW0mrFVMWS+UCXMUo8ZDshRN72aVSmdfEeeeATeoxMwDjV8kCGrfYNX4Jkyg8gak5EvCWFXPVYrqAeyLdQ2zH3rpNMImUf7nzIzlYHJ95jOailYLtGEU/K6WssDLWVe9pCrhZyr3OW7wVqViVFhS9LenJyBVbWD2Ww5S+ZlS0v1y9WSvZM9su6i5inDSRONVpz2XMKO1BqUqUvKKVaMn0XExd250RTu9eRAqcV8D+s6JsxZydvR4NRyC664W5fjzmBunKKz1PTpdz6BD0yC5O+gVMhgUOK0Zgr+j1Cd1ZTKf5HMyEhoZjN/5AS9u7f1drd9fnndbJ4OXwl/Z+E=?cssminify=yes' type='text/css' media='all' />
+<link rel='stylesheet' id='print-css-1-1' href='https://s2.wp.com/wp-content/mu-plugins/global-print/global-print.css?m=1465851035h&cssminify=yes' type='text/css' media='print' />
+<link rel='stylesheet' id='all-css-2-1' href='https://s1.wp.com/_static/??-eJx9i9EKwjAMRX/IGgfbYA/it2SlayNpUpoMf198EBmKT/dcOAceLUQVT+JQ99B4zyQGGJ1UVuwfOkezE/zWm5qHjZE6WMFOkt/7rzKNhBxYsx7PV+Ql1WRQRsisK/JLuNXrMM2XcV6GZbo/AcVpSbo=?cssminify=yes' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var related_posts_js_options = {"post_heading":"h4"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s1.wp.com/_static/??-eJyFj+EKAiEQhF8oT+Lw6E/0LOZtsqarudpRT59C/eg4ChaWYT9mZuWSBJLxdQaWrs2tQn681+B4J38BIqDNusAQkD6wiVSASmdT5BKAWVvYuIZ4Rg+iMuQGUGkxl7jmQhXJV4vEMoNvUbPoriu14f79CNIdYfmLOShJm6vIwPjsnU/huFfqMKppUqN7ATNIcHo='></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://personalgenomes.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='GET-Evidence Guides' href='https://personalgenomes.wordpress.com/2012/04/02/get-evidence-guides/' />
+<link rel='next' title='PGP Kit Nicknames from Boston Public Street&nbsp;Data' href='https://personalgenomes.wordpress.com/2012/04/22/pgp-kit-nicknames-from-boston-public-street-data/' />
+<meta name="generator" content="WordPress.com" />
+<link rel="canonical" href="https://personalgenomes.wordpress.com/2012/04/17/genetic-avatar-tech-at-2012-get-conference/" />
+<link rel='shortlink' href='https://wp.me/ptSjX-5N' />
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/?format=json&amp;url=https%3A%2F%2Fpersonalgenomes.wordpress.com%2F2012%2F04%2F17%2Fgenetic-avatar-tech-at-2012-get-conference%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/?format=xml&amp;url=https%3A%2F%2Fpersonalgenomes.wordpress.com%2F2012%2F04%2F17%2Fgenetic-avatar-tech-at-2012-get-conference%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Genetic Avatar Technology at 2012 GET Conference" />
+<meta property="og:url" content="https://personalgenomes.wordpress.com/2012/04/17/genetic-avatar-tech-at-2012-get-conference/" />
+<meta property="og:description" content="This is a guest post from Andrew Evans, CEO of Genomic Arts and Senior Information Architect at 5AM Solutions. His company is sponsoring the 2012 GET Conference, where he&#8217;ll be showing off &amp;#…" />
+<meta property="article:published_time" content="2012-04-17T20:19:33+00:00" />
+<meta property="article:modified_time" content="2012-11-09T15:38:55+00:00" />
+<meta property="og:site_name" content="Personal Genome Project Blog" />
+<meta property="og:image" content="https://personalgenomes.files.wordpress.com/2012/04/badge_genomicarts.jpg?w=235" />
+<meta property="og:image:width" content="235" />
+<meta property="og:image:height" content="300" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:site" content="@wordpressdotcom" />
+<meta name="twitter:text:title" content="Genetic Avatar Technology at 2012 GET&nbsp;Conference" />
+<meta name="twitter:card" content="summary" />
+<meta property="fb:app_id" content="249643311490" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+
+<!-- End Jetpack Open Graph Tags -->
+<link rel="shortcut icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/5bb13baf2da74ffaad68ceeda95c5da2?s=32" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="https://secure.gravatar.com/blavatar/5bb13baf2da74ffaad68ceeda95c5da2?s=32" sizes="16x16" />
+<link rel="apple-touch-icon-precomposed" href="https://secure.gravatar.com/blavatar/5bb13baf2da74ffaad68ceeda95c5da2?s=114" />
+<link rel='openid.server' href='https://personalgenomes.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='https://personalgenomes.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://personalgenomes.wordpress.com/osd.xml" title="Personal Genome Project Blog" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+		<style id="wpcom-hotfix-masterbar-style">
+			@media screen and (min-width: 783px) {
+				#wpadminbar .quicklinks li#wp-admin-bar-my-account.with-avatar > a img {
+					margin-top: 5px;
+				}
+			}
+		</style>
+		
+	<style type="text/css">
+.widget_twitter li {
+	word-wrap: break-word;
+}
+</style>
+<meta name="application-name" content="Personal Genome Project Blog" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="News and updates about the Personal Genome Project" /><meta name="msapplication-task" content="name=Subscribe;action-uri=https://personalgenomes.wordpress.com/feed/;icon-uri=https://secure.gravatar.com/blavatar/5bb13baf2da74ffaad68ceeda95c5da2?s=16" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s1.wp.com/i/favicon.ico" /><meta name="description" content="This is a guest post from Andrew Evans, CEO of Genomic Arts and Senior Information Architect at 5AM Solutions. His company is sponsoring the 2012 GET Conference, where he&#039;ll be showing off &quot;genetic avatar technology&quot; for attendees. Here is a mini press release with more details. &nbsp; Putting the &quot;Fun&quot; Back Into Functional Genomics Rockville,&hellip;" />
+	<style type="text/css">
+			#title {
+			background: url(https://personalgenomes.files.wordpress.com/2012/01/pgp_header_980x120.png) no-repeat;
+			height: 180px;
+		}
+				#title { text-indent: -999em !important; }
+		#title a { height: 180px; }
+		</style>
+<link rel="amphtml" href="https://personalgenomes.wordpress.com/2012/04/17/genetic-avatar-tech-at-2012-get-conference/amp/"></head>
+<body class="post-template-default single single-post postid-359 single-format-standard mp6 customizer-styles-applied vigilance-light highlander-enabled highlander-light">
+	<div class="skip-content"><a href="#content">Skip to content</a></div>
+	<div id="wrapper">
+				<div id="header" class="clear">
+			<div id="title"><a href="https://personalgenomes.wordpress.com"><span>Personal Genome Project Blog</span></a></div>			<div id="description">
+				<h2>News and updates about the Personal Genome Project</h2>
+			</div><!--end description-->
+			<div id="nav">
+				<ul id="menu-menu-2" class="menu"><li id="menu-item-1622" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1622"><a href="http://www.personalgenomes.org">Back to Main Website</a></li>
+</ul>			</div><!--end nav-->
+		</div><!--end header-->
+		<div id="content" class="pad">
+									<div id="post-359" class="post-359 post type-post status-publish format-standard hentry category-get-conference">
+			<div class="post-header">
+				<h1>Genetic Avatar Technology at 2012 GET&nbsp;Conference</h1>
+				<div id="single-date" class="date">April 17, 2012</div>
+			</div><!--end post header-->
+			<div class="meta clear">
+				<div class="tags"></div>
+				<div class="author">
+					<span class="by-author"><span class="sep">by</span> <span class="author vcard"><a class="url fn n" href="https://personalgenomes.wordpress.com/author/openhumansfoundation/" title="View all posts by openhumansfoundation" rel="author">openhumansfoundation</a></span> </span>				</div>
+			</div><!--end meta-->
+			<div class="entry clear">
+								<p><em>This is a guest post from Andrew Evans, CEO of Genomic Arts and Senior Information Architect at 5AM Solutions. His company is sponsoring the 2012 GET Conference, where he&#8217;ll be showing off &#8220;genetic avatar technology&#8221; for attendees. Here is a mini press release with more details.</em></p>
+<p>&nbsp;<br />
+<strong>Putting the &#8220;Fun&#8221; Back Into Functional Genomics</strong><br />
+Rockville, MD-based <a href="http://beta.genomicarts.com/">Genomic Arts</a> aims to put a friendlier face on personal genomics &#8211; literally. &#8220;Engaging the public in genetics research is critical to the advancement of precision medicine,&#8221; said Genomic Arts CEO Andrew Evans. &#8220;While many people grasp the importance of it, they are often reluctant to participate &#8211; Genomic Arts seeks to make genomics fun and accessible to everyone.&#8221;</p>
+<p>As a hint of things to come, Genomic Arts is debuting its patent-pending genetic avatar technology at the 2012 <a href="http://www.getconference.org/">Genomes Environments Traits (GET) Conference</a> to be held at Harvard Medical School on April 25.</p>
+<p>&#8220;Basically, we create a video game avatar character by reading your genetic code,&#8221; Evans said. The technology demo, dubbed &#8220;23andMii&#8221; by Genomic Arts, currently reads single-nucleotide polymorphism (SNP) data created by the 23andMe personal genomics service, and g enerates an avatar in the style of a Nintendo Wii Mii character. &#8220;While this demo uses 23andMe and Nintendo platforms, the core technology is not limited to either one,&#8221; Evans said.</p>
+<p><img data-attachment-id="806" data-permalink="https://personalgenomes.wordpress.com/2012/04/17/genetic-avatar-tech-at-2012-get-conference/badge_genomicarts/" data-orig-file="https://personalgenomes.files.wordpress.com/2012/04/badge_genomicarts.jpg" data-orig-size="550,700" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="Genomic Arts Badge at 2012 GET Conference" data-image-description="" data-medium-file="https://personalgenomes.files.wordpress.com/2012/04/badge_genomicarts.jpg?w=236" data-large-file="https://personalgenomes.files.wordpress.com/2012/04/badge_genomicarts.jpg?w=550" class="size-medium wp-image-806 alignleft" style="border:0;margin-left:3px;margin-right:20px;" title="Genomic Arts Badge at 2012 GET Conference" alt="" src="https://personalgenomes.files.wordpress.com/2012/04/badge_genomicarts.jpg?w=235&#038;h=300" height="300" width="235" srcset="https://personalgenomes.files.wordpress.com/2012/04/badge_genomicarts.jpg?w=235&amp;h=300 235w, https://personalgenomes.files.wordpress.com/2012/04/badge_genomicarts.jpg?w=470&amp;h=598 470w, https://personalgenomes.files.wordpress.com/2012/04/badge_genomicarts.jpg?w=118&amp;h=150 118w" sizes="(max-width: 235px) 100vw, 235px" /><br />
+<strong>Special Invitation</strong></p>
+<p>Genomic Arts is offering all GET attendees who have their own 23andMe genetic data the opportunity to have their avatar printed on their conference badges. &#8220;We know we won&#8217;t get everyone&#8217;s avatars right on the first try &#8211; this year&#8217;s GET focus is on traits, and we hope this will spark attendees to discuss the strengths and weaknesses of calling phenotype directly from genotype. We will also ask for feedback from attendees about what they feel our software got right &#8211; and wrong &#8211; when generating their avatars,&#8221; Evans said.</p>
+<p>In addition, Genomic Arts will have a large display in the conference center featuring the avatars of all participating conference attendees.</p>
+<p>GET attendees wishing to have genetic avatars printed on their badges will need to provide their 23andMe data to Genomic Arts by no later than April 20. To participate, please contact Andrew Evans at andrew@genomicarts.com</p>
+<p>PGP participants &#8211; if you have already uploaded your 23andMe data file to your PGP profile, you may simply send along a link to your profile, or your profile ID.</p>
+<p>#####</p>
+<p><strong>Genomic Arts</strong>. Genomic Arts, LLC is advancing genetics research by engaging the public in innovative ways. Genomic Arts was founded by bioinformaticians Andrew Evans and Will FitzHugh with the backing of Maryland-based life sciences software powerhouse 5AM Solutions.  Contact: Andrew Evans &#8211; andrew@genomicarts.com</p>
+<p><strong>GET Conference</strong>. The GET Conference is the event for people working at the frontiers of human biology. We invite leading thinkers to discuss the important ways in which new genomic technologies will affect all of our lives in the coming years and to debate their technical, commercial, and societal impacts. We bring together scientists, industry leaders, entrepreneurs, practitioners, investors, researchers, and others to discuss advances in our ability to measure and understand human biology. The <a href="http://www.getconference.org/">GET Conference</a> is organized by the nonprofit charity PersonalGenomes.org. (Twitter: #GET2012)</p>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-email"><a rel="nofollow noopener noreferrer" data-shared="" class="share-email sd-button share-icon" href="https://personalgenomes.wordpress.com/2012/04/17/genetic-avatar-tech-at-2012-get-conference/?share=email" target="_blank" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-facebook"><a rel="nofollow noopener noreferrer" data-shared="sharing-facebook-359" class="share-facebook sd-button share-icon" href="https://personalgenomes.wordpress.com/2012/04/17/genetic-avatar-tech-at-2012-get-conference/?share=facebook" target="_blank" title="Click to share on Facebook"><span>Facebook</span></a></li><li class="share-reddit"><a rel="nofollow noopener noreferrer" data-shared="" class="share-reddit sd-button share-icon" href="https://personalgenomes.wordpress.com/2012/04/17/genetic-avatar-tech-at-2012-get-conference/?share=reddit" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-twitter"><a rel="nofollow noopener noreferrer" data-shared="sharing-twitter-359" class="share-twitter sd-button share-icon" href="https://personalgenomes.wordpress.com/2012/04/17/genetic-avatar-tech-at-2012-get-conference/?share=twitter" target="_blank" title="Click to share on Twitter"><span>Twitter</span></a></li><li class="share-pinterest"><a rel="nofollow noopener noreferrer" data-shared="sharing-pinterest-359" class="share-pinterest sd-button share-icon" href="https://personalgenomes.wordpress.com/2012/04/17/genetic-avatar-tech-at-2012-get-conference/?share=pinterest" target="_blank" title="Click to share on Pinterest"><span>Pinterest</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-7120325-359-5d55510125b01' data-src='//widgets.wp.com/likes/index.html?ver=20190321#blog_id=7120325&amp;post_id=359&amp;origin=personalgenomes.wordpress.com&amp;obj_id=7120325-359-5d55510125b01' data-name='like-post-frame-7120325-359-5d55510125b01'><h3 class='sd-title'>Like this:</h3><div class='likes-widget-placeholder post-likes-widget-placeholder' style='height: 55px;'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div>
+<div id='jp-relatedposts' class='jp-relatedposts' >
+	<h3 class="jp-relatedposts-headline"><em>Related</em></h3>
+</div></div>											</div><!--end entry-->
+			<div class="post-footer">
+				<div class="categories">from &rarr; <a href="https://personalgenomes.wordpress.com/category/get-conference/" rel="category tag">GET Conference</a></div>
+			</div><!--end post footer-->
+		</div><!--end post-->
+				<div class="navigation post single clear">
+			<div class="alignleft"><a href="https://personalgenomes.wordpress.com/2012/04/02/get-evidence-guides/" rel="prev">&larr; GET-Evidence Guides</a></div>
+			<div class="alignright" ><a href="https://personalgenomes.wordpress.com/2012/04/22/pgp-kit-nicknames-from-boston-public-street-data/" rel="next">PGP Kit Nicknames from Boston Public Street&nbsp;Data &rarr;</a></div>
+		</div><!--end pagination-->
+		<!-- You can start editing here. -->
+<div id="comments">
+			<!-- If comments are closed. -->
+					<p class="note">Comments are closed.</p>
+			</div><!--end comments-->
+
+			</div><!--end content-->
+	<div id="sidebar">
+				<ul>			<li id="author_grid-2" class="widget widget_author_grid"><h2 class="widgettitle">Contributors</h2><ul><li><a href="https://personalgenomes.wordpress.com/author/abramconnelly/"> <img alt='' src='https://1.gravatar.com/avatar/174f0f386c04ca813cfea467bf37cab8?s=48&#038;d=https%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&#038;r=G' class='avatar avatar-48' height='48' width='48' /></a></li><li><a href="https://personalgenomes.wordpress.com/author/awaitz/"> <img alt='' src='https://2.gravatar.com/avatar/533170dc5a4c5db991c4f63db3dd30cd?s=48&#038;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&#038;r=G' class='avatar avatar-48' height='48' width='48' /></a></li><li><a href="https://personalgenomes.wordpress.com/author/bioneering/"> <img alt='' src='https://0.gravatar.com/avatar/68d5ad0737688f830645e689a033d8e7?s=48&#038;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&#038;r=G' class='avatar avatar-48' height='48' width='48' /></a></li><li><a href="https://personalgenomes.wordpress.com/author/dvorhaus/"> <img alt='' src='https://0.gravatar.com/avatar/6a1236e96a652bddd0d061768be65d0f?s=48&#038;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&#038;r=G' class='avatar avatar-48' height='48' width='48' /></a></li><li><a href="https://personalgenomes.wordpress.com/author/gedankenstuecke/"> <img alt='' src='https://0.gravatar.com/avatar/383fe45aca4dec367d997410fb904b3b?s=48&#038;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&#038;r=G' class='avatar avatar-48' height='48' width='48' /></a></li><li><a href="https://personalgenomes.wordpress.com/author/lunalunacodesdesign-com/"> <img alt='' src='https://2.gravatar.com/avatar/88ab3b7b2d057753f1f65cbb7027b5e4?s=48&#038;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&#038;r=G' class='avatar avatar-48' height='48' width='48' /></a></li><li><a href="https://personalgenomes.wordpress.com/author/mpball/"> <img alt='' src='https://0.gravatar.com/avatar/9e729aedad1fd225c9442bce0ec21a75?s=48&#038;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&#038;r=G' class='avatar avatar-48' height='48' width='48' /></a></li><li><a href="https://personalgenomes.wordpress.com/author/nouyangcuroverse/"> <img alt='' src='https://0.gravatar.com/avatar/318052cd9dd57e97984fda7e4179ac28?s=48&#038;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&#038;r=G' class='avatar avatar-48' height='48' width='48' /></a></li><li><a href="https://personalgenomes.wordpress.com/author/openhumansfoundation/"> <img alt='' src='https://0.gravatar.com/avatar/6a60687a579069c1e3e994214c918c29?s=48&#038;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&#038;r=G' class='avatar avatar-48' height='48' width='48' /></a></li><li><a href="https://personalgenomes.wordpress.com/author/pwestep/"> <img alt='' src='https://0.gravatar.com/avatar/6844eb3accf77a0e74e28e856da08085?s=48&#038;d=https%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&#038;r=G' class='avatar avatar-48' height='48' width='48' /></a></li><li><a href="https://personalgenomes.wordpress.com/author/szaranek/"> <img alt='' src='https://2.gravatar.com/avatar/e48cbdfd383b1ceb8ba15d22a8b1986b?s=48&#038;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&#038;r=G' class='avatar avatar-48' height='48' width='48' /></a></li><li><a href="https://personalgenomes.wordpress.com/author/tomclegg/"> <img alt='' src='https://2.gravatar.com/avatar/b392814afdb37ef8496569c63be44bee?s=48&#038;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&#038;r=G' class='avatar avatar-48' height='48' width='48' /></a></li><li><a href="https://personalgenomes.wordpress.com/author/wardv/"> <img alt='' src='https://2.gravatar.com/avatar/e8ab1efb4674f9004f57e0a1d024f3f1?s=48&#038;d=https%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D48&#038;r=G' class='avatar avatar-48' height='48' width='48' /></a></li></ul></li><li id="search-3" class="widget widget_search"><h2 class="widgettitle">Search</h2><form method="get" id="search_form" action="https://personalgenomes.wordpress.com/">
+	<div>
+		<input type="text" value="type and press enter" name="s" id="s" onfocus="if (this.value == 'type and press enter') {this.value = '';}" onblur="if (this.value == '') {this.value = 'type and press enter';}" />
+		<input type="hidden" value="Search" />
+	</div>
+</form></li><li id="text-2" class="widget widget_text"><h2 class="widgettitle">Subscribe via Email</h2>			<div class="textwidget"><a href="http://feedburner.google.com/fb/a/mailverify?uri=PersonalGenomeProjectBlog&amp;loc=en_US">Subscribe to Personal Genome Project Blog by Email</a></div>
+		</li>		<li id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widgettitle">Recent Posts</h2>		<ul>
+											<li>
+					<a href="https://personalgenomes.wordpress.com/2016/09/23/survey-about-sharing-health-data-online/">Survey about sharing health data&nbsp;online</a>
+									</li>
+											<li>
+					<a href="https://personalgenomes.wordpress.com/2016/09/01/christoph-bock-on-preserve-personal-freedom-in-networked-societies/">Christoph Bock on &#8216;Preserve personal freedom in networked societies&#8217;</a>
+									</li>
+											<li>
+					<a href="https://personalgenomes.wordpress.com/2016/06/06/job-opening-at-pgp-uk-london/">Job opening at PGP-UK&nbsp;(London)</a>
+									</li>
+											<li>
+					<a href="https://personalgenomes.wordpress.com/2015/11/19/exploring-the-harvard-pgp-dataset-with-untap/">Exploring the Harvard PGP Dataset with&nbsp;Untap</a>
+									</li>
+											<li>
+					<a href="https://personalgenomes.wordpress.com/2015/11/03/joining-as-a-pgp-volunteer/">Joining as a PGP&nbsp;Volunteer</a>
+									</li>
+					</ul>
+		</li><li id="twitter-2" class="widget widget_twitter"><h2 class="widgettitle"><a href='http://twitter.com/PGorg'>Twitter Updates</a></h2><ul class='tweets'>
+			<li>
+				Wholeheartedly agreed! <a href="https://twitter.com/wait_sasha/status/1161654446209851392"> twitter.com/wait_sasha/sta…</a> 				<a href="http://twitter.com/PGorg/statuses/1161839244345794560" class="timesince">9&nbsp;hours&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				RT @<a href='http://twitter.com/wait_sasha'>wait_sasha</a>: Need a foundation of well consented individuals that are representative of human diversity and willing to make their data a… 				<a href="http://twitter.com/PGorg/statuses/1118328948646141953" class="timesince">4&nbsp;months&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				Great to see how PGP participant genomes are enabling research and development! Thank you @<a href='http://twitter.com/GenomeInABottle'>GenomeInABottle</a> for an e… <a href="https://twitter.com/i/web/status/1113888615405379590"> twitter.com/i/web/status/1…</a> 				<a href="http://twitter.com/PGorg/statuses/1113888615405379590" class="timesince">4&nbsp;months&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				RT @<a href='http://twitter.com/gedankenstuecke'>gedankenstuecke</a>: I’ll join @<a href='http://twitter.com/criparis'>criparis</a> to study how peer-production methods can enable participant engagement throughout the research cyc… 				<a href="http://twitter.com/PGorg/statuses/1111699782123163648" class="timesince">4&nbsp;months&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				Pleased that Harvard PGP is part of this year&#039;s Genome in a Bottle Workshop! @<a href='http://twitter.com/GenomeInABottle'>GenomeInABottle</a> <a href="https://t.co/NnsdhzewyF" rel="nofollow">https://t.co/NnsdhzewyF</a> 				<a href="http://twitter.com/PGorg/statuses/1111305447045095424" class="timesince">4&nbsp;months&nbsp;ago</a>
+			</li>
+
+			</ul><a href="http://twitter.com/PGorg"  class='twitter-follow-button' data-show-count='false' data-link-color='#772124' data-text-color='#333333'>Follow @PGorg</a></li>		</ul>		<ul class="thin-sidebar spad">			<li id="archives-3" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>		<ul>
+				<li><a href='https://personalgenomes.wordpress.com/2016/09/'>September 2016</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2016/06/'>June 2016</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2015/11/'>November 2015</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2015/09/'>September 2015</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2015/08/'>August 2015</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2015/05/'>May 2015</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2015/04/'>April 2015</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2015/03/'>March 2015</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2015/02/'>February 2015</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2014/12/'>December 2014</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2014/11/'>November 2014</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2014/08/'>August 2014</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2014/06/'>June 2014</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2014/05/'>May 2014</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2014/04/'>April 2014</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2014/03/'>March 2014</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2014/02/'>February 2014</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2014/01/'>January 2014</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2013/12/'>December 2013</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2013/11/'>November 2013</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2013/09/'>September 2013</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2013/08/'>August 2013</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2013/05/'>May 2013</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2013/04/'>April 2013</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2013/03/'>March 2013</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2013/02/'>February 2013</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2013/01/'>January 2013</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2012/12/'>December 2012</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2012/11/'>November 2012</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2012/10/'>October 2012</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2012/09/'>September 2012</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2012/08/'>August 2012</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2012/07/'>July 2012</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2012/06/'>June 2012</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2012/05/'>May 2012</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2012/04/'>April 2012</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2012/03/'>March 2012</a></li>
+	<li><a href='https://personalgenomes.wordpress.com/2012/02/'>February 2012</a></li>
+		</ul>
+			</li><li id="flickr-2" class="widget widget_flickr"><h2 class="widgettitle">Flickr Photos</h2><!-- Start of Flickr Widget -->
+<div class="flickr-wrapper flickr-size-thumbnail">
+	<div class="flickr-images">
+		<a href="https://www.flickr.com/photos/personalgenomes/27124123062/"><img src="https://live.staticflickr.com/7041/27124123062_f64b8ca1da_s.jpg" alt="P1060817" title="P1060817"  /></a><a href="https://www.flickr.com/photos/personalgenomes/27221066625/"><img src="https://live.staticflickr.com/7736/27221066625_e0326de4bc_s.jpg" alt="P1060815" title="P1060815"  /></a><a href="https://www.flickr.com/photos/personalgenomes/27221066715/"><img src="https://live.staticflickr.com/7377/27221066715_5c63b9ccca_s.jpg" alt="P1060813" title="P1060813"  /></a>	</div>
+
+			<a class="flickr-more" href="https://www.flickr.com/photos/personalgenomes/">
+			More Photos		</a>
+	</div>
+<!-- End of Flickr Widget -->
+</li><li id="meta-3" class="widget widget_meta"><h2 class="widgettitle">Meta</h2>			<ul>
+			<li><a href="https://wordpress.com/start?ref=wplogin">Register</a></li>			<li><a href="https://personalgenomes.wordpress.com/wp-login.php">Log in</a></li>
+			<li><a href="https://personalgenomes.wordpress.com/feed/">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://personalgenomes.wordpress.com/comments/feed/">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.com/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.com</a></li>			</ul>
+			</li>		</ul>		<ul class="thin-sidebar">			<li id="media_image-5" class="widget widget_media_image"><style>.widget.widget_media_image { overflow: hidden; }.widget.widget_media_image img { height: auto; max-width: 100%; }</style><a href="http://blog.personalgenomes.org/about/"><img width="135" height="135" src="https://personalgenomes.files.wordpress.com/2012/02/pgorg_thumb_135px.jpg" class="image wp-image-53 alignnone attachment-full size-full" alt="About PersonalGenomes.org" style="max-width: 100%; height: auto;" data-attachment-id="53" data-permalink="https://personalgenomes.wordpress.com/pgorg_thumb_135px/" data-orig-file="https://personalgenomes.files.wordpress.com/2012/02/pgorg_thumb_135px.jpg" data-orig-size="135,135" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="PGorg_Thumb_135px" data-image-description="" data-medium-file="https://personalgenomes.files.wordpress.com/2012/02/pgorg_thumb_135px.jpg?w=135" data-large-file="https://personalgenomes.files.wordpress.com/2012/02/pgorg_thumb_135px.jpg?w=135" /></a></li><li id="media_image-4" class="widget widget_media_image"><style>.widget.widget_media_image { overflow: hidden; }.widget.widget_media_image img { height: auto; max-width: 100%; }</style><a href="http://www.personalgenomes.org/"><img width="135" height="61" src="https://personalgenomes.files.wordpress.com/2012/02/pgp_logo_135px.jpg" class="image wp-image-47 alignnone attachment-full size-full" alt="" style="max-width: 100%; height: auto;" data-attachment-id="47" data-permalink="https://personalgenomes.wordpress.com/pgp_logo_135px/" data-orig-file="https://personalgenomes.files.wordpress.com/2012/02/pgp_logo_135px.jpg" data-orig-size="135,61" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="PGP_logo_135px" data-image-description="" data-medium-file="https://personalgenomes.files.wordpress.com/2012/02/pgp_logo_135px.jpg?w=135" data-large-file="https://personalgenomes.files.wordpress.com/2012/02/pgp_logo_135px.jpg?w=135" /></a></li><li id="media_image-3" class="widget widget_media_image"><style>.widget.widget_media_image { overflow: hidden; }.widget.widget_media_image img { height: auto; max-width: 100%; }</style><a href="http://www.getconference.org"><img width="135" height="59" src="https://personalgenomes.files.wordpress.com/2012/02/get_logo_135px.jpg" class="image wp-image-46 alignnone attachment-full size-full" alt="GET Conference 2012" style="max-width: 100%; height: auto;" data-attachment-id="46" data-permalink="https://personalgenomes.wordpress.com/get_logo_135px/" data-orig-file="https://personalgenomes.files.wordpress.com/2012/02/get_logo_135px.jpg" data-orig-size="135,59" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="GET_logo_135px" data-image-description="" data-medium-file="https://personalgenomes.files.wordpress.com/2012/02/get_logo_135px.jpg?w=135" data-large-file="https://personalgenomes.files.wordpress.com/2012/02/get_logo_135px.jpg?w=135" /></a></li><li id="media_image-6" class="widget widget_media_image"><style>.widget.widget_media_image { overflow: hidden; }.widget.widget_media_image img { height: auto; max-width: 100%; }</style><a href="http://bioweathermap.org/"><img width="135" height="47" src="https://personalgenomes.files.wordpress.com/2012/02/bioweathermap_logo_135.jpg" class="image wp-image-54 alignnone attachment-full size-full" alt="BioWeatherMap" style="max-width: 100%; height: auto;" data-attachment-id="54" data-permalink="https://personalgenomes.wordpress.com/bioweathermap_logo_135/" data-orig-file="https://personalgenomes.files.wordpress.com/2012/02/bioweathermap_logo_135.jpg" data-orig-size="135,47" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="bioweathermap_logo_135" data-image-description="" data-medium-file="https://personalgenomes.files.wordpress.com/2012/02/bioweathermap_logo_135.jpg?w=135" data-large-file="https://personalgenomes.files.wordpress.com/2012/02/bioweathermap_logo_135.jpg?w=135" /></a></li><li id="media_image-8" class="widget widget_media_image"><style>.widget.widget_media_image { overflow: hidden; }.widget.widget_media_image img { height: auto; max-width: 100%; }</style><a href="https://twitter.com/pgorg"><img width="25" height="25" src="https://personalgenomes.files.wordpress.com/2012/12/twitter.png" class="image wp-image-984 alignnone attachment-full size-full" alt="" style="max-width: 100%; height: auto;" data-attachment-id="984" data-permalink="https://personalgenomes.wordpress.com/twitter/" data-orig-file="https://personalgenomes.files.wordpress.com/2012/12/twitter.png" data-orig-size="25,25" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="twitter" data-image-description="" data-medium-file="https://personalgenomes.files.wordpress.com/2012/12/twitter.png?w=25" data-large-file="https://personalgenomes.files.wordpress.com/2012/12/twitter.png?w=25" /></a></li><li id="media_image-9" class="widget widget_media_image"><style>.widget.widget_media_image { overflow: hidden; }.widget.widget_media_image img { height: auto; max-width: 100%; }</style><a href="http://www.youtube.com/user/PersonalGenomesOrg"><img width="26" height="25" src="https://personalgenomes.files.wordpress.com/2012/12/pgp_youtube.png" class="image wp-image-983 alignnone attachment-full size-full" alt="" style="max-width: 100%; height: auto;" data-attachment-id="983" data-permalink="https://personalgenomes.wordpress.com/pgp_youtube/" data-orig-file="https://personalgenomes.files.wordpress.com/2012/12/pgp_youtube.png" data-orig-size="26,25" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="pgp_youtube" data-image-description="" data-medium-file="https://personalgenomes.files.wordpress.com/2012/12/pgp_youtube.png?w=26" data-large-file="https://personalgenomes.files.wordpress.com/2012/12/pgp_youtube.png?w=26" /></a></li><li id="media_image-10" class="widget widget_media_image"><style>.widget.widget_media_image { overflow: hidden; }.widget.widget_media_image img { height: auto; max-width: 100%; }</style><a href="https://www.facebook.com/PersonalGenomesOrg"><img width="26" height="25" src="https://personalgenomes.files.wordpress.com/2012/12/facebook.png" class="image wp-image-980 alignnone attachment-full size-full" alt="" style="max-width: 100%; height: auto;" data-attachment-id="980" data-permalink="https://personalgenomes.wordpress.com/facebook/" data-orig-file="https://personalgenomes.files.wordpress.com/2012/12/facebook.png" data-orig-size="26,25" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="facebook" data-image-description="" data-medium-file="https://personalgenomes.files.wordpress.com/2012/12/facebook.png?w=26" data-large-file="https://personalgenomes.files.wordpress.com/2012/12/facebook.png?w=26" /></a></li><li id="media_image-11" class="widget widget_media_image"><style>.widget.widget_media_image { overflow: hidden; }.widget.widget_media_image img { height: auto; max-width: 100%; }</style><a href="https://www.linkedin.com/company/personalgenomes-org"><img width="25" height="25" src="https://personalgenomes.files.wordpress.com/2012/12/linkedin.png" class="image wp-image-982 alignnone attachment-full size-full" alt="" style="max-width: 100%; height: auto;" data-attachment-id="982" data-permalink="https://personalgenomes.wordpress.com/linkedin/" data-orig-file="https://personalgenomes.files.wordpress.com/2012/12/linkedin.png" data-orig-size="25,25" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;}" data-image-title="linkedin" data-image-description="" data-medium-file="https://personalgenomes.files.wordpress.com/2012/12/linkedin.png?w=25" data-large-file="https://personalgenomes.files.wordpress.com/2012/12/linkedin.png?w=25" /></a></li>		</ul>	</div><!--end sidebar-->	<div id="footer">
+		<div class="footer-liner">
+			<p class="right"><a href="https://wordpress.com/?ref=footer_blog">Blog at WordPress.com.</a></p>
+			<p></p>
+		</div><!-- .footer-liner -->
+	</div><!--end footer-->
+</div><!--end wrapper-->
+<!--  -->
+<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201933y'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s1.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781h'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	</div>
+
+	<div id="carousel-reblog-box">
+		<form action="#" name="carousel-reblog">
+			<textarea id="carousel-reblog-content" name="carousel-reblog-content" placeholder="Add your thoughts here... (optional)"></textarea>
+			<label for="carousel-reblog-to-blog-id" id="carousel-reblog-lblogid">Post to</label>
+			<select name="carousel-reblog-to-blog-id" id="carousel-reblog-to-blog-id">
+						</select>
+
+			<div class="submit">
+				<span class="canceltext"><a href="#" class="cancel">Cancel</a></span>
+				<input type="submit" name="carousel-reblog-submit" class="button" id="carousel-reblog-submit" value="Reblog Post" />
+				<input type="hidden" id="carousel-reblog-blog-id" value="7120325" />
+				<input type="hidden" id="carousel-reblog-blog-url" value="https://personalgenomes.wordpress.com" />
+				<input type="hidden" id="carousel-reblog-blog-title" value="Personal Genome Project Blog" />
+				<input type="hidden" id="carousel-reblog-post-url" value="" />
+				<input type="hidden" id="carousel-reblog-post-title" value="" />
+			</div>
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="7bc1b13e80" /><input type="hidden" name="_wp_http_referer" value="/2012/04/17/genetic-avatar-tech-at-2012-get-conference/" />		</form>
+
+		<div class="arrow"></div>
+	</div>
+
+	<script type="text/javascript">
+		window.WPCOM_sharing_counts = {"https:\/\/personalgenomes.wordpress.com\/2012\/04\/17\/genetic-avatar-tech-at-2012-get-conference\/":359};
+	</script>
+					<div id="sharing_email" style="display: none;">
+		<form action="/2012/04/17/genetic-avatar-tech-at-2012-get-conference/" method="post">
+			<label for="target_email">Send to Email Address</label>
+			<input type="email" name="target_email" id="target_email" value="" />
+
+			
+				<label for="source_name">Your Name</label>
+				<input type="text" name="source_name" id="source_name" value="" />
+
+				<label for="source_email">Your Email Address</label>
+				<input type="email" name="source_email" id="source_email" value="" />
+
+						<input type="text" id="jetpack-source_f_name" name="source_f_name" class="input" value="" size="25" autocomplete="off" title="This field is for validation and should not be changed" />
+			
+			<div
+				class="g-recaptcha"
+				data-sitekey="6LcmyE0UAAAAALID28yVNg7pFCodGaArJzHitez_"
+				data-theme="light"
+				data-type="image"
+				data-tabindex="0"></div>
+			<script type="text/javascript" src="https://www.google.com/recaptcha/api.js?hl=en" async></script>
+			
+			<img style="float: right; display: none" class="loading" src="https://s2.wp.com/wp-content/mu-plugins/post-flair/sharing/images/loading.gif" alt="loading" width="16" height="16" />
+			<input type="submit" value="Send Email" class="sharing_send" />
+			<a rel="nofollow" href="#cancel" class="sharing_cancel" role="button">Cancel</a>
+
+			<div class="errors errors-1" style="display: none;">
+				Post was not sent - check your email addresses!			</div>
+
+			<div class="errors errors-2" style="display: none;">
+				Email check failed, please try again			</div>
+
+			<div class="errors errors-3" style="display: none;">
+				Sorry, your blog cannot share posts by email.			</div>
+		</form>
+	</div>
+		<script type='text/javascript' src='https://platform.twitter.com/widgets.js?ver=20111117'></script>
+<link rel='stylesheet' id='all-css-0-2' href='https://s0.wp.com/_static/??/wp-content/mu-plugins/widgets/author-grid/author-grid.css,/wp-content/mu-plugins/carousel/jetpack-carousel.css?m=1563361695j&cssminify=yes' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var actionbardata = {"siteID":"7120325","siteName":"Personal Genome Project Blog","siteURL":"http:\/\/personalgenomes.wordpress.com","icon":"<img alt='' src='https:\/\/secure.gravatar.com\/blavatar\/5bb13baf2da74ffaad68ceeda95c5da2?s=50&d=https%3A%2F%2Fs2.wp.com%2Fi%2Flogo%2Fwpcom-gray-white.png' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"pub\/vigilance","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fpersonalgenomes.wordpress.com%2F2012%2F04%2F17%2Fgenetic-avatar-tech-at-2012-get-conference%2F&signup_flow=account","themeURL":"","xhrURL":"https:\/\/personalgenomes.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"30cdaaeec2","isSingular":"1","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"9cf5767365\" \/>","referer":"https:\/\/personalgenomes.wordpress.com\/2012\/04\/17\/genetic-avatar-tech-at-2012-get-conference\/","canFollow":"1","feedID":"80810724","statusMessage":"","customizeLink":"https:\/\/personalgenomes.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fpersonalgenomes.wordpress.com%2F2012%2F04%2F17%2Fgenetic-avatar-tech-at-2012-get-conference%2F","postID":"359","shortlink":"https:\/\/wp.me\/ptSjX-5N","canEditPost":"","editLink":"https:\/\/wordpress.com\/post\/personalgenomes.wordpress.com\/359","statsLink":"https:\/\/wordpress.com\/stats\/post\/359\/personalgenomes.wordpress.com","i18n":{"view":"View site","follow":"Follow","following":"Following","edit":"Edit","login":"Log in","signup":"Sign up","customize":"Customize","report":"Report this content","themeInfo":"Get theme: Vigilance","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editSubs":"Manage subscriptions","viewReader":"View site in Reader","viewReadPost":"View post in Reader","subscribe":"Sign me up","enterEmail":"Enter your email address","followers":"Join 125 other followers","alreadyUser":"Already have a WordPress.com account? <a href=\"https:\/\/wordpress.com\/log-in?redirect_to=https%3A%2F%2Fpersonalgenomes.wordpress.com%2F2012%2F04%2F17%2Fgenetic-avatar-tech-at-2012-get-conference%2F&signup_flow=account\">Log in now.<\/a>","stats":"Stats"}};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var jetpackCarouselStrings = {"widths":[370,700,1000,1200,1400,2000],"is_logged_in":"","lang":"en","ajaxurl":"https:\/\/personalgenomes.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"cc30cae54f","display_exif":"1","display_geo":"1","single_image_gallery":"1","single_image_gallery_media_file":"","background_color":"black","comment":"Comment","post_comment":"Post Comment","write_comment":"Write a Comment...","loading_comments":"Loading Comments...","download_original":"View full size <span class=\"photo-size\">{0}<span class=\"photo-size-times\">\u00d7<\/span>{1}<\/span>","no_comment_text":"Please be sure to submit some text with your comment.","no_comment_email":"Please provide an email address to comment.","no_comment_author":"Please provide your name to comment.","comment_post_error":"Sorry, but there was an error posting your comment. Please try again later.","comment_approved":"Your comment was approved.","comment_unapproved":"Your comment is in moderation.","camera":"Camera","aperture":"Aperture","shutter_speed":"Shutter Speed","focal_length":"Focal Length","copyright":"Copyright","comment_registration":"1","require_name_email":"1","login_url":"https:\/\/personalgenomes.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fpersonalgenomes.wordpress.com%2F2012%2F04%2F17%2Fgenetic-avatar-tech-at-2012-get-conference%2F","blog_id":"7120325","meta_data":["camera","aperture","shutter_speed","focal_length","copyright"],"local_comments_commenting_as":"<p id=\"jp-carousel-commenting-as\">You must be <a href=\"#\" class=\"jp-carousel-comment-login\">logged in<\/a> to post a comment.<\/p>","reblog":"Reblog","reblogged":"Reblogged","reblog_add_thoughts":"Add your thoughts here... (optional)","reblogging":"Reblogging...","post_reblog":"Post Reblog","stats_query_args":"blog=7120325&v=wpcom&tz=-4&user_id=0&subd=personalgenomes","is_public":"1","reblog_enabled":""};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var sharing_js_options = {"lang":"en","counts":"1","is_stats_active":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s1.wp.com/_static/??-eJyVT0kOwjAM/BDBQqLQC+ItITXUIXWCnbD8niDRqgdUiZNH41lseCTjImfkDF6hwzs5TM+11xXMVkMxKZQLsUKgKyrcChbsLXcBZUFsu4HYnKzAYDWjVGTiHUWoqyET92dCFuuuumRymSJ/TBMa1cQulE95/VYT8S/e1+/k9R3ruepHl7MSi2IAjznVu8xILHhS1GzOwZKA9laIL+OspuNw2DS7bdPs23br39X6nDE='></script>
+<script type='text/javascript'>
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-facebook', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-twitter', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+</script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>		<iframe src='https://widgets.wp.com/likes/master.html?ver=20190321#ver=20190321' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+		<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+<script src="//stats.wp.com/w.js?60" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'7120325','blog_tz':'-4','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'7120325','v':'wpcom','tz':'-4','user_id':'0','post':'359','subd':'personalgenomes'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1TaVhzUzFMbjdWNHpwZGhTayxPSUFCMGRVYVNrSFguN3FwSmQ5RGtNX3VQcj1yVzhiflM1THQtLGFdQ2toOXYlNCVaeklqTUlaNm1kY3ZwbnZlLFpPP2pvM0ZDJnddMFdiNndIMGE0Z0xkRSxyNWx6a1VIMXw1Smd5fi5nOUIlMmtFdFlSTV0vWDFBektrQS9xb1N1Nz9UX2lRWmt8XXZRUDJrMTEuQTR5b190eVZvclZVUFp6cnFBbFZsTnRPN1ZPYSVlNEFkZHlhSmozXzFZa05vM3gyekdmdjU1c01bLkVsfnNOSU5OSUJRNE8vJVZIaDBVZ3pXW0xFMT9YXWk0dVssXzM/OGsuS2FsJnF3THxvNSxraWp3QlN4Xw=='}]);
+_stq.push([ 'clickTrackerInit', '7120325', '359' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script></body>
+</html>

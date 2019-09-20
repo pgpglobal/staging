@@ -10,3 +10,4 @@ ref/
 _deletion/
 node_modules/
 package-lock.json
+_tmp
