@@ -2,7 +2,7 @@
 title: pgp-linkedin
 alt: Personal Genome Project LinkedIn
 link: https://www.linkedin.com/company/personalgenomes-org
-src: https://personalgenomes.files.wordpress.com/2012/12/linkedin.png
+src: linkedin.png
 width: 25px
 height: 25px
 order: 7

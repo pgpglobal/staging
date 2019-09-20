@@ -9,6 +9,7 @@ $heading-font-weight: 400;
 $blog-font-family: Georgia, 'Times New Roman', Times, Serif;
 $blog--base-font-size: 13px !default;
 $small-font-size:  $base-font-size * 0.875 !default;
+$blog-alt-font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
 // $base-line-height: 1.5 !default;
 $base-line-height: 1.42857143 !default;
 
@@ -58,6 +59,13 @@ $widget--border-color: $white-1;
 $input--border-color: $grey-mid-1;
 $input--border-color-2: $grey-mid-2;
 $input--text-color: $grey-mid-3;
+
+$blockquote_img: 'images/blockquote.gif';
+$blog-img:   'images/pgp_header_980x120.png';
+$dottedline: 'images/archives-dotted-line.gif';
+$list-star:  'images/list-star.gif';
+$sidebar-arrow: 'images/list-item.gif';
+
 // Width of the content area
 $content-width:    1200px !default;
 
