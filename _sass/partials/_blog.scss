@@ -381,46 +381,6 @@ a:visited {
   .description h2 {
     margin: 10px 0;
   }
-
-  .sidebar div {
-    width: 300px;
-  }
-
-  .flickr-wrapper {
-    display: block;
-    // justify-content: flex-start;
-  }
-
-  .flickr-more {
-    text-align: left;
-  }
-
-  .flickr-size-thumbnail .flickr-images {
-    display: block;
-  }
-
-  .flickr-images a,
-  .flickr-images img {
-    width: auto;
-  }
-
-  .sidebar-right {
-    float: left;
-
-    ul {
-      display: block;
-    }
-  }
-
-  .thin-sidebar .social-small {
-    display: inline;
-    /* width: 25%; */
-    width: auto;
-  }
-
-  .sidebar-left {
-    float: left;
-  }
 }
 
 @media only screen and (min-width: 768px) {
