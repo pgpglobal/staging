@@ -15,6 +15,7 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 * [Content Needed](#content-needed)
   * [Site Footer - Copyright and Privacy Info](#site-footer---copyright-and-privacy-info)
 * [Plugins and Configuration](#plugins-and-configuration)
+* [Blog Social Share Icons](#blog-social-share-icons)
   * [Archive Generator and Plugin](#archive-generator-and-plugin)
     * [Plugins Staging](#plugins-staging)
     * [Plugins - Local Dev](#plugins---local-dev)
@@ -96,6 +97,11 @@ Optional:
     * Need to add email, site description, etc to `_config.yml`
 2. Responsive Images. See [Resources][1] file. Currently attempting to get the [jekyll-picture-tag](https://github.com/robwierzbowski/jekyll-picture-tag) plugin working.
 
+<a id="blog-social-share-icons"></a>
+## Blog Social Share Icons
+
+1. Make sure all the Share Icons function properly when the site is live
+
 <a id="archive-generator-and-plugin"></a>
 ### Archive Generator and Plugin
 
@@ -164,19 +170,6 @@ Make sure Archive generation doesn't mess with staging setup
 
 1. Run [Favicon Checker](https://realfavicongenerator.net/) once the subdomain is set up
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-<a id="questions"></a>
-## Questions
-
-1. Cloudflare - is the current site hooked up with Cloudflare? the new site will have to be, due to the fact that it's a custom domain. So being setup with Cloudflare already might save some headache.
-2. What's the story with comments?
-3. Search Form?
-
->>>>>>> 09cdbdca... Fix Post Footer category links structure
-=======
->>>>>>> abcfb7a0... Add Privacy Policy, ToS. Update Readme, Docs. Delete unused layouts, plugins
 <a id="notes"></a>
 ## Notes
 
