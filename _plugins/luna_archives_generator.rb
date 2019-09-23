@@ -12,7 +12,7 @@ end
 def generate_year_files year
   yaml_open = "---"
   layout = "layout: year"
-  permalink = 'permalink: "' + year + '"'
+  permalink = 'permalink: /' + year
   # redirect = "redirect_from: " +  '"/' + year + '"'
   redirect = ""
   title = 'title: ' + year
@@ -27,10 +27,10 @@ end
 def generate_month_files month
   yaml_open = "---"
   layout = "layout: month"
-  permalink = 'permalink: ' + month
+  permalink = 'permalink: /' + month
   # redirect = "redirect_from: " + '"' + month + '"'
   redirect = ""
-  title = 'Archive For: ' + month
+  title = 'title: Archive For ' + month
   year_str = "year: " + month.slice(0..3)
   month_num = month.slice(-2..)
   month_str = "month: " + month_num
@@ -51,15 +51,13 @@ if Dir.exist?('../_posts/') || Dir.exist?('_posts')
 
     y = str.slice(0..3)
     m = str.slice(4..5)
-    d = str.slice(6..8)
+    # d = str.slice(6..8)
 
     year = y.to_str
     y_file = year + ".html"
     y_index = year + "/index.html"
-    month = y + "/" + m
-    m_index = month + "/index.html"
-    day = y + "/" + m + "/"
-    d_index = day + "/index.html"
+    # month = y + "/" + m
+    # m_index = month + "/index.html"
 
     FileUtils.mkdir_p year
     lines = generate_year_files(year)
