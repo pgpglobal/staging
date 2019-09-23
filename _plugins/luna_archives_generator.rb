@@ -37,7 +37,7 @@ def generate_month_files month
   month_name = Date::MONTHNAMES[month_num.to_i]
   month_name_str = "month_name: " +  month_name.to_s
   yaml_close = "---"
-  content = "\n" + '<h1 class="archive-title">Archive for ' + month + "</h1>"
+  content = "\n" + '<h1 class="archive-title">Archive for ' + month_name + year + "</h1>"
 
   lines = [yaml_open, layout, permalink, redirect, title, year_str, month_str, month_name_str, yaml_close, content]
   return lines
@@ -56,8 +56,8 @@ if Dir.exist?('../_posts/') || Dir.exist?('_posts')
     year = y.to_str
     y_file = year + ".html"
     y_index = year + "/index.html"
-    # month = y + "/" + m
-    # m_index = month + "/index.html"
+    month = y + "/" + m
+    m_index = month + "/index.html"
 
     FileUtils.mkdir_p year
     lines = generate_year_files(year)
