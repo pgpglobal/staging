@@ -24,7 +24,6 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
   * [Favicon](#favicon)
 * [Notes](#notes)
   * [Captions and Shortcodes](#captions-and-shortcodes)
-  * [Category and Tag Pages](#category-and-tag-pages)
 
 <!-- /MarkdownTOC -->
 
@@ -113,6 +112,7 @@ See A current list of documentation files includes:
 * Replace SCSS Media Queries with name variables?
 * Replace max-width queries w/ min-width queries
 * Why is get2016 folder present in PGP Site?
+* Remove `archives.py` when it's 100% clear it's unnecessary
 
 <a id="staging-and-production"></a>
 ## Staging and Production
@@ -143,10 +143,5 @@ See A current list of documentation files includes:
     * `[caption]` covers 21 posts. I can't say for other shortcodes without manually looking through posts.
     * `[youtube]` covers 8 posts
     * `[polldaddy]`covers 1 posts
-
-<a id="category-and-tag-pages"></a>
-### Category and Tag Pages
-
-1. I only set up Category archives, since none of the posts have Tag info and Jekyll mostly treats them the same
 
 [1]: docs/resources.md

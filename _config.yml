@@ -1,10 +1,3 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
@@ -103,8 +96,7 @@ sass:
 # Post Variables to enable conditional checks such as {% if page.id %} or
 # {% if page.title == "title" %}, etc
 defaults:
-  -
-    scope:
+  - scope:
       path: ""      # empty string for all files
       type: posts   # limit to posts
       type: tags
@@ -113,20 +105,17 @@ defaults:
       type: category
     values:
       is_post: true # automatically set is_post=true for all posts
-  -
-    scope:
+  - scope:
       path: ""
       type: archive
     values:
       is_archive: true
-  -
-    scope:
+  - scope:
       path: ""
       type: category
     values:
       layout: category
       class: category body-archive
-
   - scope:
       path: ""
       type: "authors"
@@ -143,7 +132,6 @@ defaults:
       path: ""
     values:
       layout: "default"
-
 
 collections:
   authors:
