@@ -1,6 +1,6 @@
 # .gitignore
 _plugins/generator.rb
-_site
+# _site
 .sass-cache
 .jekyll-metadata
 scratch/
@@ -13,6 +13,7 @@ package-lock.json
 _tmp
 _plugins/
 docs/documentation-to-add.md
+# _config_lunadev.yml
 # =======
 # .gitignore
 # _plugins/generator.rb
