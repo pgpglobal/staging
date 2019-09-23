@@ -206,9 +206,14 @@ We're not really using placeholder in our demo, but a value of a single space wo
 * [Time String Formatter](http://strftime.net/)
 * [Google Forms Restyler](http://googleformrestyler.apixml.net/)
   * Doesn't work due to https issue
-* [Staticman + reCaptcha](https://raw.githubusercontent.com/eduardoboucas/staticman-recaptcha/)
+* reCaptcha
+  * [Staticman + reCaptcha](https://raw.githubusercontent.com/eduardoboucas/staticman-recaptcha/)
+  * https://codepen.io/dloewen/pen/jbgeZj/
+  * https://geekgoddess.com/how-to-resize-the-google-nocaptcha-recaptcha/ - insanely useful
 * [Instant Form Validation](https://www.sitepoint.com/instant-validation/)
 * [CSS Tricks - Form Validation UX in HTML and CSS](https://css-tricks.com/form-validation-ux-html-css/)
 * [RSA Encryption/Decryption](https://www.devglan.com/online-tools/rsa-encryption-decryption)
   * Can generate Key Pairs as well
 * https://github.com/lawmurray/indii-jekyll-flickr
+* [Simple CSS Media Query Generator](https://simplecss.eu/)
+  * Mobile First or Desktop First - very diverse set of devices, OS, etc

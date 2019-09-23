@@ -13,7 +13,7 @@ def generate_year_files year
   yaml_open = "---"
   layout = "layout: year"
   permalink = 'permalink: "' + year + '"'
-  redirect = "redirect_from: " + year
+  redirect = "redirect_from: " +  '"' + year + '"'
   title = 'title: ' + year
   year_str = "year: " + year
   yaml_close = "---"
@@ -27,7 +27,7 @@ def generate_month_files month
   yaml_open = "---"
   layout = "layout: month"
   permalink = 'permalink: ' + month
-  redirect = "redirect_from: " + month
+  redirect = "redirect_from: " + '"' + month + '"'
   title = 'Archive For: ' + month
   year_str = "year: " + month.slice(0..3)
   month_num = month.slice(-2..)

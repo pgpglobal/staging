@@ -118,6 +118,7 @@ See A current list of documentation files includes:
 
 * Replace SCSS Media Queries with name variables?
 * Replace max-width queries w/ min-width queries
+* Why is get2016 folder present in PGP Site?
 
 <a id="staging-and-production"></a>
 ## Staging and Production

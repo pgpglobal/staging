@@ -65,6 +65,7 @@ plugins:
   - github-pages
   # - jekyll-picture-tag
   # - jekyll-seo-tag
+  - jekyll-redirect-from
   # - jekyll-sitemap
   - jekyll-titles-from-headings
   # - html-proofer
