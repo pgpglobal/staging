@@ -2,7 +2,7 @@
 title: pgp-youtube
 alt: Personal Genome Project YouTube
 link: http://www.youtube.com/user/PersonalGenomesOrg
-src: https://personalgenomes.files.wordpress.com/2012/12/pgp_youtube.png
+src: pgp_youtube.png
 width: 26px
 height: 25px
 order: 6

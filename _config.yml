@@ -29,6 +29,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Sharing data is critical to scientific progress, but has been hampered by
   traditional research practices. The PGP approach is to invite
   willing participants to publicly share their personal data for the greater good.
+
 baseurl: "/PGPGlobal" # the subpath of your site, e.g. /blog
 url: "https://pgpglobal.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: PGorg
@@ -64,6 +65,7 @@ plugins:
   - github-pages
   # - jekyll-picture-tag
   # - jekyll-seo-tag
+  - jekyll-redirect-from
   # - jekyll-sitemap
   - jekyll-titles-from-headings
   # - html-proofer

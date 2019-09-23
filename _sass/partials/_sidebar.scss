@@ -25,7 +25,7 @@
 }
 
 .widget {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: $blog-font-family;
 
   ul li {
     border-bottom: 1px solid $widget--border-color;
@@ -37,7 +37,7 @@
 
 h2.widget-title {
   border-bottom: 1px solid $widget--border-color;
-  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
+  font-family: $blog-alt-font-family;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 1.05pt;

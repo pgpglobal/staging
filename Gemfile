@@ -24,6 +24,7 @@ group :jekyll_plugins do
   gem 'jekyll-include-cache'
   # gem "jekyll-feed", "~> 0.6"
   # gem 'jekyll-picture-tag'
+  gem 'jekyll-redirect-from'
   # gem 'jekyll-seo-tag'
   # gem 'jekyll-sitemap'
   gem 'jekyll-titles-from-headings'

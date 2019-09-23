@@ -87,7 +87,7 @@
       {% assign sorted = site.social-links | sort: 'order' %}
       {% for item in sorted %}
       <li class="widget widget_media_image {{ item.class }}">
-        <a href="{{ item.link }}"><img src="{{ item.src }}" alt="{{ item.alt }}" width="{{ item.width }}" height="{{ item.height }}"></a>
+        <a href="{{ item.link }}"><img src="{{ item.src | prepend: "/assets/images/" | relative_url }}" alt="{{ item.alt }}" width="{{ item.width }}" height="{{ item.height }}"></a>
         {% endfor %}
       </li>
     </ul>

@@ -509,7 +509,7 @@ table td {
  * Posts
  */
 .post-header {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, Serif;
   margin-bottom: 15px;
 }
 
@@ -1083,7 +1083,7 @@ img.profile-photo {
 .post-header time.dt-published,
 .post-header .date {
   color: #757575;
-  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -1094,7 +1094,7 @@ img.profile-photo {
 time.dt-published,
 span.p-author.h-card,
 .blog-content .post-header .post-meta {
-  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -1108,11 +1108,6 @@ span.p-author.h-card,
 
 .widget_author_grid ul {
   margin: 0;
-}
-
-a,
-a:visited {
-  color: #772124;
 }
 
 .description {
@@ -1129,7 +1124,7 @@ a:visited {
 .nav2 {
   display: none;
   float: right;
-  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans',Verdana, Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
   font-size: 15px;
   margin: 17px 0 10px;
 }
@@ -1318,7 +1313,7 @@ img.archive-comment {
 
 h1.archive-title,
 h2.archive-title {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, Serif;
   font-size: 28px;
   font-weight: 700;
   line-height: 28.6px;
@@ -1328,13 +1323,13 @@ h2.archive-title {
 
 .entries {
   clear: both;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, Serif;
   font-size: 13px;
   line-height: 22px;
 }
 .entries ul {
   background: transparent url("/PGPGlobal/assets/images/archives-dotted-line.gif") repeat-x top left;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, Serif;
   font-size: 13px;
   line-height: 22px;
   list-style-image: none;
@@ -1371,13 +1366,13 @@ h2.archive-title {
 
 .entries {
   clear: both;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, Serif;
   font-size: 13px;
   line-height: 22px;
 }
 .entries ul {
   background: transparent url("/PGPGlobal/assets/images/archives-dotted-line.gif") repeat-x top left;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, Serif;
   font-size: 13px;
   line-height: 22px;
   list-style-image: none;
@@ -1485,7 +1480,7 @@ h2.archive-title {
 }
 
 .widget {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, Serif;
 }
 .widget ul li {
   border-bottom: 1px solid #eee;
@@ -1496,7 +1491,7 @@ h2.archive-title {
 
 h2.widget-title {
   border-bottom: 1px solid #eee;
-  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 1.05pt;
@@ -2096,19 +2091,21 @@ div.sharedaddy h3.sd-title {
   }
 }
 @media only screen and (min-width: 576px) {
-  .g-recaptcha {
-    margin: 22px 0 18px;
+  .contact-form {
+    margin: 20px 0 20px 20px;
+    width: 90%;
   }
 
   .contact-form input[type='text'],
   .contact-form input[type='email'] {
     padding: 2px 0;
   }
+
+  .g-recaptcha {
+    margin: 22px 0 18px;
+  }
 }
 @media only screen and (min-width: 768px) {
-  .contact-form {
-    width: 70%;
-  }
   .contact-form h2 {
     padding: 0 12px;
   }
@@ -2125,17 +2122,46 @@ div.sharedaddy h3.sd-title {
   .contact-form input[type="email"] {
     width: 282px;
   }
+  .contact-form #contact-message {
+    width: 88%;
+  }
   .contact-form .submit {
     margin: 30px 0;
   }
 }
+@media only screen and (min-width: 920px) {
+  .contact-form {
+    margin: 20px 0 20px 40px;
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 991px) {
+  .contact-form {
+    margin: 20px 0 20px 40px;
+    width: 86%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .contact-form {
+    margin: 20px 0 20px 40px;
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contact-form {
+    margin: 20px 0 20px 40px;
+    width: 80%;
+  }
+}
 .privacy h2,
 .tos h2 {
+  color: #772124;
   font-size: 28px;
 }
 
 .privacy h3,
 .tos h3 {
+  color: #772124;
   margin: 30px 0 10px;
 }
 

@@ -2,7 +2,7 @@
 title: pgp-facebook
 alt: Personal Genome Project Facebook
 link: https://www.facebook.com/PersonalGenomesOrg
-src: https://personalgenomes.files.wordpress.com/2012/12/facebook.png
+src: facebook.png
 width: 26px
 height: 25px
 order: 6
