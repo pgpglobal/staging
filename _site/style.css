@@ -933,7 +933,7 @@ img.profile-photo {
 }
 
 .blog-header-title {
-  background: url(https://personalgenomes.files.wordpress.com/2012/01/pgp_header_980x120.png) no-repeat;
+  background: url("/PGPGlobal/assets/images/pgp_header_980x120.png") no-repeat;
   background-position: left -5% center;
   background-size: 200%;
   font-size: 46px;

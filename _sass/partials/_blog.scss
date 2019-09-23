@@ -28,7 +28,7 @@
 }
 
 .blog-header-title {
-  background: url(https://personalgenomes.files.wordpress.com/2012/01/pgp_header_980x120.png) no-repeat;
+  background: url('#{$baseurl}/assets/images/pgp_header_980x120.png') no-repeat;
   // background-position: 0 center;
   background-position: left -5% center;
   // background-size: 220%;
