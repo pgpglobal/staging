@@ -1,7 +1,7 @@
 ---
 title: pgp-about
 link: http://blog.personalgenomes.org/about/
-src: https://personalgenomes.files.wordpress.com/2012/02/pgorg_thumb_135px.jpg
+src: pgorg_thumb_135px.jpg
 width: 135px
 height: 135px
 order: 1

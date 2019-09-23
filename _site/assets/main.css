@@ -509,7 +509,7 @@ table td {
  * Posts
  */
 .post-header {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, Serif;
   margin-bottom: 15px;
 }
 
@@ -1083,7 +1083,7 @@ img.profile-photo {
 .post-header time.dt-published,
 .post-header .date {
   color: #757575;
-  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
@@ -1094,7 +1094,7 @@ img.profile-photo {
 time.dt-published,
 span.p-author.h-card,
 .blog-content .post-header .post-meta {
-  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
   text-transform: uppercase;
 }
 
@@ -1108,11 +1108,6 @@ span.p-author.h-card,
 
 .widget_author_grid ul {
   margin: 0;
-}
-
-a,
-a:visited {
-  color: #772124;
 }
 
 .description {
@@ -1129,7 +1124,7 @@ a:visited {
 .nav2 {
   display: none;
   float: right;
-  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans',Verdana, Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
   font-size: 15px;
   margin: 17px 0 10px;
 }
@@ -1318,7 +1313,7 @@ img.archive-comment {
 
 h1.archive-title,
 h2.archive-title {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, Serif;
   font-size: 28px;
   font-weight: 700;
   line-height: 28.6px;
@@ -1328,13 +1323,13 @@ h2.archive-title {
 
 .entries {
   clear: both;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, Serif;
   font-size: 13px;
   line-height: 22px;
 }
 .entries ul {
   background: transparent url("/PGPGlobal/assets/images/archives-dotted-line.gif") repeat-x top left;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, Serif;
   font-size: 13px;
   line-height: 22px;
   list-style-image: none;
@@ -1371,13 +1366,13 @@ h2.archive-title {
 
 .entries {
   clear: both;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, Serif;
   font-size: 13px;
   line-height: 22px;
 }
 .entries ul {
   background: transparent url("/PGPGlobal/assets/images/archives-dotted-line.gif") repeat-x top left;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: Georgia, "Times New Roman", Times, Serif;
   font-size: 13px;
   line-height: 22px;
   list-style-image: none;
@@ -1485,7 +1480,7 @@ h2.archive-title {
 }
 
 .widget {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, Serif;
 }
 .widget ul li {
   border-bottom: 1px solid #eee;
@@ -1496,7 +1491,7 @@ h2.archive-title {
 
 h2.widget-title {
   border-bottom: 1px solid #eee;
-  font-family: 'Trebuchet MS', 'Lucida Grande', 'Lucida Sans', Verdana, Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans", Verdana, Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   letter-spacing: 1.05pt;

@@ -1,7 +1,7 @@
 ---
 title: pgp-home
 link: http://personalgenomes.org/
-src: https://personalgenomes.files.wordpress.com/2012/02/pgp_logo_135px.jpg
+src: pgp_logo_135px.jpg
 width: 135px
 height: 61px
 order: 2
