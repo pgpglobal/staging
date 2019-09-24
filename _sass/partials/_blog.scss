@@ -74,16 +74,6 @@
   width: 980px;
 }
 
-.blog-subheader {
-  .blog-subheader {
-    display: flex;
-    flex-flow: column wrap;
-    float: none;
-    justify-content: space-between;
-    width: 100%;
-  }
-}
-
 .description h2 {
   margin: 0 0 10px;
 }
@@ -423,6 +413,11 @@ span.p-author.h-card,
     justify-content: space-between;
     flex-flow: row;
     width: 100%;
+
+    a,
+    a:visited {
+      color: $black;
+    }
   }
 
   .blog-content:first-of-type article:first-of-type h2 {
