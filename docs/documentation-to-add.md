@@ -1,5 +1,16 @@
 # Documentation to Add
 
+<!-- MarkdownTOC -->
+
+* [Tools to Add](#tools-to-add)
+* [Workflow Plan](#workflow-plan)
+  * [Config Files](#config-files)
+  * [Thorough Version](#thorough-version)
+* [Troubleshooting - Specific Errors](#troubleshooting---specific-errors)
+* [Category and Tag Pages](#category-and-tag-pages)
+
+<!-- /MarkdownTOC -->
+
 * Multiple Config Files
 * Stuff about Liquid?
 * What files correspond to what templates?
@@ -7,16 +18,31 @@
   * Would still love to set up a Gulp thing... though that might unnecessarily complicate things for them?
   * Ruby Plugin is the best way to go there
 
+<a id="tools-to-add"></a>
 ## Tools to Add
 
 * Admin plugin?
 * Jekyll Simple Search
 *
 
+<a id="workflow-plan"></a>
 ## Workflow Plan
 
 Branch for features
 
+<a id="config-files"></a>
+### Config Files
+
+* `_config.yml` - https://pgpglobal.github.io/PGPGlobal
+* `_config_dev.yml` - http://localhost:4000/PGPGlobal
+* `_config_lunadev.yml` - https://pgp.lunacodesdesign.com
+* `_config_lunadev_local.yml` - http://localhost:4000
+* `_config_staging.yml` - https://pgpglobal.github.io/staging
+* `_config_staging_local.yml` - http://localhost:4000/staging
+* `_config_staging_remote.yml` - https://pgpglobal.github.io/staging
+* `_staging_lunacodes.yml` - https://pgp.lunacodesdesign.com
+
+<a id="thorough-version"></a>
 ### Thorough Version
 
 One Local Repo
@@ -39,11 +65,13 @@ Branches:
   A. Create a Pull Request on GitHub and then accept it on there
   B. git checkout gh-pages. git merge master. git push origin gh-pages
 
+<a id="troubleshooting---specific-errors"></a>
 ## Troubleshooting - Specific Errors
 
 1. If `jekyll 3.8.5 | Error:  undefined method empty?' for 2012:Integer` comes up after building or serving the site, run `ruby _plugins/luna_archives_generator.rb`
 
 
+<a id="category-and-tag-pages"></a>
 ## Category and Tag Pages
 
 1. I only set up Category archives, since none of the posts have Tag info and Jekyll mostly treats them the same
