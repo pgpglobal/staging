@@ -1,6 +1,6 @@
 @charset 'utf-8';
 
-$baseurl: '/PGPGlobal';
+$baseurl: '/';
 // Import partials.
 @import
   'partials/variables',
@@ -17,5 +17,4 @@ $baseurl: '/PGPGlobal';
   'partials/contact',
   'partials/privacy-tos',
   'partials/syntax-highlighting',
-  'partials/media',
-  'fontawesome/fontawesome';
+  'partials/media';

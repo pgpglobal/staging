@@ -2,7 +2,7 @@
 title: pgp-twitter
 alt: Personal Genome Project Twiter
 link: https://twitter.com/pgorg
-src: https://personalgenomes.files.wordpress.com/2012/12/twitter.png
+src: twitter.png
 width: 25px
 height: 25px
 order: 5
