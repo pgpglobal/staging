@@ -5,9 +5,6 @@ title: Blog
 permalink: /blog/
 ---
 
-<p>{{ site.url }}</p>
-<p>{{ site.baseurl }}</p>
-
 {% for post in site.posts %}
 <article>
   <div class="post-header">
