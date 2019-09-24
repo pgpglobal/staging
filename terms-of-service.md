@@ -22,7 +22,7 @@ Also note that PersonalGenomes.org is charitable organization based in the Unite
 
 ### Terms of Service summary
 
-1.  We have a [Privacy Policy](/pages/privacy_policy); please read it.
+1.  We have a {{ "[Privacy Policy](/privacy-policy)" | relative_url }}; please read it.
 
 2.  You may need to register in order to use some features of personalgenomes.org. Please use the site responsibly by protecting your account information, furthering the mission of PersonalGenomes.org and not using PersonalGenomes.org to do anything illegal. You must be at least 13 years of age or older to use PersonalGenomes.org
 

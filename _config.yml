@@ -22,14 +22,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   Sharing data is critical to scientific progress, but has been hampered by
   traditional research practices. The PGP approach is to invite
   willing participants to publicly share their personal data for the greater good.
-<<<<<<< HEAD
-baseurl: "/PGPGlobal" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-=======
 
-# baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "/staging" # the subpath of your site, e.g. /blog
 url: "https://pgp.lunacodesdesign.com" # the base hostname & protocol for your site, e.g. http://example.com
->>>>>>> 5084fd4e... Rebuild from Scratch
 twitter_username: PGorg
 flickr_username: personalgenomes
 # github_username:  jekyll
@@ -57,10 +52,6 @@ markdown: kramdown
 theme: minima
 plugins:
   # - jekyll-admin
-<<<<<<< HEAD
-  # - jekyll-archives
-=======
->>>>>>> 5084fd4e... Rebuild from Scratch
   # - jekyll-autoprefixer
   - jekyll-include-cache
   # - jekyll-feed
@@ -77,13 +68,8 @@ plugins:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
-<<<<<<< HEAD
-#   - Gemfile
-#   - Gemfile.lock
-=======
   - Gemfile
   - Gemfile.lock
->>>>>>> 5084fd4e... Rebuild from Scratch
   - node_modules
   - vendor/bundle/
 #   - vendor/cache/
@@ -104,12 +90,9 @@ exclude:
   - .stylelintrc.json
 
 sass:
-  style: expanded
-<<<<<<< HEAD
-  sourcemap: true
-=======
+  # style: expanded
+  style: compressed
   sourcemap: always
->>>>>>> 5084fd4e... Rebuild from Scratch
 
 # Post Variables to enable conditional checks such as {% if page.id %} or
 # {% if page.title == "title" %}, etc
@@ -128,21 +111,12 @@ defaults:
       type: archive
     values:
       is_archive: true
-<<<<<<< HEAD
-  -
-    scope:
-=======
   - scope:
->>>>>>> 5084fd4e... Rebuild from Scratch
       path: ""
       type: category
     values:
       layout: category
       class: category body-archive
-<<<<<<< HEAD
-
-=======
->>>>>>> 5084fd4e... Rebuild from Scratch
   - scope:
       path: ""
       type: "authors"

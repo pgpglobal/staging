@@ -7,7 +7,7 @@
       {% for author in site.authors %}
       {% if author.email %}
         <script>
-          document.write('<li><a id="{{ author.display_name }}" href="{{ site.baseurl }}{{ author.url }}">')
+          document.write('<li><a id="{{ author.gravatar_name }}" href="{{ site.baseurl }}{{ author.url }}">')
           document.write('<img src="' + get_gravatar('{{ author.email }}', 48) + '" alt="Author thumbnail for {{ author.name }}" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="{{ src_original }}" /></a></li>');
         </script>
 
@@ -22,7 +22,7 @@
     <h2 class="widget-title">Search</h2>
 
     <form class="search-form"><input type="text" id="search-input" placeholder="Search blog posts.."></form>
-    <ul id="results-container"></ul>
+    <ul class="search-results" id="results-container"></ul>
 
     <!-- script pointing to jekyll-search.js -->
     <script src="{{ site.baseurl }}/scripts/search-script.min.js"></script>
@@ -32,7 +32,7 @@
     SimpleJekyllSearch({
       searchInput: document.getElementById('search-input'),
       resultsContainer: document.getElementById('results-container'),
-      json: '/PGPGlobal/search.json'
+      json: '{{ site.baseurl }}/search.json'
     })
     </script>
   </div>
@@ -87,7 +87,7 @@
       {% assign sorted = site.social-links | sort: 'order' %}
       {% for item in sorted %}
       <li class="widget widget_media_image {{ item.class }}">
-        <a href="{{ item.link }}"><img src="{{ item.src }}" alt="{{ item.alt }}" width="{{ item.width }}" height="{{ item.height }}"></a>
+        <a href="{{ item.link }}"><img src="{{ item.src | prepend: "/assets/images/" | relative_url }}" alt="{{ item.alt }}" width="{{ item.width }}" height="{{ item.height }}"></a>
         {% endfor %}
       </li>
     </ul>

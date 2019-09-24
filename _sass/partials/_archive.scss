@@ -16,7 +16,7 @@ img.archive-comment {
 h1.archive-title,
 h2.archive-title {
   // border-bottom: 4px double $white-1;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: $blog-font-family;
   font-size: 28px;
   font-weight: 700;
   line-height: 28.6px;
@@ -27,13 +27,13 @@ h2.archive-title {
 
 .entries {
   clear: both;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: $blog-font-family;
   font-size: 13px;
   line-height: 22px;
 
   ul {
-    background: transparent url('#{$baseurl}/assets/images/archives-dotted-line.gif') repeat-x top left;
-    font-family: Georgia, "Times New Roman", Times, serif;
+    background: url($dottedline) repeat-x top left;
+    font-family: $blog-font-family;
     font-size: 13px;
     line-height: 22px;
     list-style-image: none;
@@ -43,55 +43,7 @@ h2.archive-title {
     padding: 0 0 1px;
 
     li {
-      background: transparent url('#{$baseurl}/assets/images/archives-dotted-line.gif') repeat-x top left;
-      font-size: 13px;
-      line-height: 22px;
-      margin: 0;
-      padding: 1px 0 0;
-    }
-
-    li a {
-      display: block;
-      font-size: 13px;
-      line-height: 22px;
-      margin: 0;
-      padding: 7px 0;
-    }
-
-    li a.post-link {
-      display: flex;
-      font-weight: 400;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      text-align: left;
-
-      &:hover {
-        background-color: #f8f8f7;
-        text-decoration: none;
-      }
-    }
-  }
-}
-
-.entries {
-  clear: both;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  font-size: 13px;
-  line-height: 22px;
-
-  ul {
-    background: transparent url('#{$baseurl}/assets/images/archives-dotted-line.gif') repeat-x top left;
-    font-family: Georgia, "Times New Roman", Times, serif;
-    font-size: 13px;
-    line-height: 22px;
-    list-style-image: none;
-    list-style-position: outside;
-    list-style-type: none;
-    margin: 0;
-    padding: 0 0 1px;
-
-    li {
-      background: transparent url('#{$baseurl}/assets/images/archives-dotted-line.gif') repeat-x top left;
+      background: url($dottedline) repeat-x top left;
       font-size: 13px;
       line-height: 22px;
       margin: 0;
