@@ -28,7 +28,7 @@
 }
 
 .blog-header-title {
-  background: url('#{$baseurl}/assets/images/pgp_header_980x120.png') no-repeat;
+  background: url($blog-img) no-repeat;
   // background-position: 0 center;
   background-position: left -5% center;
   // background-size: 220%;
@@ -351,7 +351,7 @@ span.p-author.h-card,
 }
 
 .dotted-border-img {
-  background: transparent url("/PGPGlobal/assets/images/archives-dotted-line.gif") repeat-x top left;
+  background: transparent url($dottedline) repeat-x top left;
   height: 1px;
 }
 

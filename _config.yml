@@ -23,7 +23,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   traditional research practices. The PGP approach is to invite
   willing participants to publicly share their personal data for the greater good.
 
-# baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "/staging" # the subpath of your site, e.g. /blog
 url: "https://pgp.lunacodesdesign.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: PGorg
 flickr_username: personalgenomes
@@ -90,7 +90,8 @@ exclude:
   - .stylelintrc.json
 
 sass:
-  style: expanded
+  # style: expanded
+  style: compressed
   sourcemap: always
 
 # Post Variables to enable conditional checks such as {% if page.id %} or

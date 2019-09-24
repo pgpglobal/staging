@@ -933,7 +933,7 @@ img.profile-photo {
 }
 
 .blog-header-title {
-  background: url("//assets/images/pgp_header_980x120.png") no-repeat;
+  background: url("images/pgp_header_980x120.png") no-repeat;
   background-position: left -5% center;
   background-size: 200%;
   font-size: 46px;
@@ -1200,7 +1200,7 @@ a:visited {
 }
 
 .dotted-border-img {
-  background: transparent url("/PGPGlobal/assets/images/archives-dotted-line.gif") repeat-x top left;
+  background: transparent url("images/archives-dotted-line.gif") repeat-x top left;
   height: 1px;
 }
 
@@ -1328,7 +1328,7 @@ h2.archive-title {
   line-height: 22px;
 }
 .entries ul {
-  background: transparent url("//assets/images/archives-dotted-line.gif") repeat-x top left;
+  background: url("images/archives-dotted-line.gif") repeat-x top left;
   font-family: Georgia, "Times New Roman", Times, Serif;
   font-size: 13px;
   line-height: 22px;
@@ -1339,50 +1339,7 @@ h2.archive-title {
   padding: 0 0 1px;
 }
 .entries ul li {
-  background: transparent url("//assets/images/archives-dotted-line.gif") repeat-x top left;
-  font-size: 13px;
-  line-height: 22px;
-  margin: 0;
-  padding: 1px 0 0;
-}
-.entries ul li a {
-  display: block;
-  font-size: 13px;
-  line-height: 22px;
-  margin: 0;
-  padding: 7px 0;
-}
-.entries ul li a.post-link {
-  display: flex;
-  font-weight: 400;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  text-align: left;
-}
-.entries ul li a.post-link:hover {
-  background-color: #f8f8f7;
-  text-decoration: none;
-}
-
-.entries {
-  clear: both;
-  font-family: Georgia, "Times New Roman", Times, Serif;
-  font-size: 13px;
-  line-height: 22px;
-}
-.entries ul {
-  background: transparent url("//assets/images/archives-dotted-line.gif") repeat-x top left;
-  font-family: Georgia, "Times New Roman", Times, Serif;
-  font-size: 13px;
-  line-height: 22px;
-  list-style-image: none;
-  list-style-position: outside;
-  list-style-type: none;
-  margin: 0;
-  padding: 0 0 1px;
-}
-.entries ul li {
-  background: transparent url("//assets/images/archives-dotted-line.gif") repeat-x top left;
+  background: url("images/archives-dotted-line.gif") repeat-x top left;
   font-size: 13px;
   line-height: 22px;
   margin: 0;
@@ -1717,7 +1674,7 @@ div.sharedaddy h3.sd-title {
   display: block;
   margin: 5px 0 0;
   padding: 0 0 0 17px;
-  background: url("/assets/images/list-star.gif") no-repeat 0 0.3em;
+  background: url("images/list-star.gif") no-repeat 0 0.3em;
 }
 
 .sd-social-icon .sd-content ul li a.sd-button,
@@ -1808,7 +1765,7 @@ div.sharedaddy h3.sd-title {
   display: block;
   margin: 5px 0 0;
   padding: 0 0 0 17px;
-  background: url("/assets/images/list-star.gif") no-repeat 0 0.3em;
+  background: url("images/list-star.gif") no-repeat 0 0.3em;
 }
 
 /**

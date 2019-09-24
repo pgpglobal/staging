@@ -1,1 +1,1 @@
-{"/categories":"https://pgp.lunacodesdesign.com/category/","/2015/01":"https://pgp.lunacodesdesign.com/2015/01","/2012/01":"https://pgp.lunacodesdesign.com/2012/01","/privacy/":"https://pgp.lunacodesdesign.com/privacy-policy/","/tos/":"https://pgp.lunacodesdesign.com/terms-of-service/"}
+{"/categories":"http://localhost:4000/staging/category/","/2015/01":"http://localhost:4000/staging/2015/01","/2012/01":"http://localhost:4000/staging/2012/01","/privacy/":"http://localhost:4000/staging/privacy-policy/","/tos/":"http://localhost:4000/staging/terms-of-service/"}
