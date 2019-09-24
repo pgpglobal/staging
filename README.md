@@ -45,6 +45,9 @@ See A current list of documentation files includes:
 
 * Move styles out of _media.scss
 * Setup Autoprefixer
+  * Doesn't look possible
+* Check Padding btwn end of content and Site Footer.
+  * For non-blog pages, it may be useful to simply extract the styles for `.lead-div` from `_contact.scss`
 
 <a id="blog-import"></a>
 ## Blog Import
@@ -53,6 +56,7 @@ See A current list of documentation files includes:
 ### Logo Distorting
 
 1. Sarah mentioned the Logo looked distorted... likely something to do w/ height or width: auto, or max-height/width
+    * Actually seems to be a result of the weird `margin-left: -15px; margin-right: -15px;` setting on rows
 
 <a id="related-posts"></a>
 ### Related Posts

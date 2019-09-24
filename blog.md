@@ -14,10 +14,16 @@ permalink: /blog/
 
 <div class="meta clear">
   {%- if post.author -%}
+    {%- assign post_author = post.author | downcase -%}
+      {%- for author in site.authors -%}
+        {%- if author.name == post.author or author.name contains post.author -%}
+          {%- assign author_url = author.url -%}
+        {%- endif -%}
+      {%- endfor -%}
   <div class="author">
     <span class="by-author">
       <span class="sep">by</span>
-      <a class="url fn n" title="View all posts by {{ post.author | escape }}" rel="author" href="{{ post.author.url }}">{{ post.author | escape }}</a>
+      <a class="url fn n" title="View all posts by {{ post.author | escape }}" rel="author" href="{{ site.url }}{{ author_url | relative_url }}">{{ post.author | escape }}</a>
     </span>
   </div>
   {%- endif-%}

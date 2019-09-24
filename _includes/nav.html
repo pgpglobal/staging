@@ -11,7 +11,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="{{ site.baseurl }}/">Personal Genome Project: Global Network</a>
+      <a class="navbar-brand" href="{{ site.url }}{{ site.baseurl }}/">Personal Genome Project: Global Network</a>
     </div>
     <div id="navbar" class="collapse navbar-collapse pull-right">
       <ul class="nav navbar-nav">
@@ -29,13 +29,13 @@
                       {%- elsif entry.url contains "http" or "http" contains entry.url -%}
                         <li><a href="{{ entry.url }}">{{ entry.page }}</a>
                       {%- else -%}
-                        <li><a href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
+                        <li><a href="{{ site.url }}{{ entry.url | relative_url }}">{{ entry.page }}</a>
                       {%- endif -%}
 
                           {%- if entry.subfolderitems[0] -%}
                             <ul>
                             {%- for subentry in entry.subfolderitems %}
-                                <li><a href="{{ subentry.url }}">{{ subentry.page }}</a></li>
+                                <li><a href="{{ site.url }}{{ subentry.url }}">{{ subentry.page }}</a></li>
                             {%- endfor -%}
                             </ul>
                           {%- endif -%}
@@ -47,7 +47,7 @@
                 {%- elsif entry.url contains "http" or "http" contains entry.url -%}
                 <li><a href="{{ item.url }}">{{ item.title }}</a>
                 {%- else -%}
-              <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+              <li><a href="{{ site.url }}{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
             {%- endif -%}
           {%- endfor -%}
         {%- endif -%}
