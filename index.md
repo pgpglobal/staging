@@ -42,7 +42,7 @@ The Personal Genome Project, initiated in 2005, is a vision and coalition of pro
   </div>
   <hr>
 
-  <div class="row">
+  <div class="row international-projects">
     <a id="overview" class="anchor-offset"></a>
 
     <div class="col-xs-12">
