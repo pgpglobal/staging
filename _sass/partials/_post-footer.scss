@@ -305,18 +305,18 @@
   }
 }
 
-.blog-main-container .post-footer a {
-  color: #333;
+.body-post .blog-main-container .post-footer a {
+  color: $grey-dark-1;
 
-  & a:hover {
-    color: #772124;
+  &:hover {
+    color: $blog--link-color;
     font-weight: 400;
   }
 
 }
 
 .categories {
-  color: #666;
+  color: $grey-dark-6;
   float: right;
   font-size: 12px;
   font-style: italic;
@@ -325,14 +325,13 @@
   width: 400px;
 }
 
-
 /**
  * Posts Navigation
  */
 
 .post-navigation {
-  padding: 10px 0;
   font-size: 13px;
+  padding: 10px 0;
 
   a:first-of-type {
     float: left;

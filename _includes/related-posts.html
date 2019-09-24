@@ -15,7 +15,7 @@
   {% for category in post.categories %}
       {% if include.categories contains category %}
         {% assign sameTagCount = sameTagCount | plus: 1 %}
-        {% capture tagmarkup %} <span class="jp-relatedposts-post-context">In <a href="{{ category.url }}">"{{ category }}"</a></span>{% endcapture %}
+        {% capture tagmarkup %} <span class="jp-relatedposts-post-context">In <a href="{{ site.baseurl }}/category/{{ category | slugify }}">"{{ category }}"</a></span>{% endcapture %}
         {% assign commonTags = commonTags | append: tagmarkup %}
       {% endif %}
   {% endfor %}

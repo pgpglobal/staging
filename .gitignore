@@ -12,3 +12,4 @@ _deletion
 .stylelint.js
 _staging*
 *_lunadev*
+package-lock.json

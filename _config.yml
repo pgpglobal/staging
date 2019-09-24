@@ -90,8 +90,8 @@ exclude:
   - .stylelintrc.json
 
 sass:
-  # style: expanded
-  style: compressed
+  style: expanded
+  # style: compressed
   sourcemap: always
 
 # Post Variables to enable conditional checks such as {% if page.id %} or
