@@ -9,6 +9,7 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 * [Styles](#styles)
 * [Blog Import](#blog-import)
   * [Related Posts](#related-posts)
+  * [Categories](#categories)
 * [Styling and Markup adjustments \(non-essential\)](#styling-and-markup-adjustments-non-essential)
   * [Small Tasks](#small-tasks)
 * [Content Needed](#content-needed)
@@ -20,7 +21,6 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 * [Cleanup](#cleanup)
 * [Staging and Production](#staging-and-production)
   * [Domain & Subdomain Setup](#domain--subdomain-setup)
-  * [SCSS](#scss)
   * [Favicon](#favicon)
 * [Notes](#notes)
   * [Captions and Shortcodes](#captions-and-shortcodes)
@@ -53,6 +53,11 @@ See A current list of documentation files includes:
 
 1. Randomize posts displayed from each tag, if possible
     * Will only work if I write a plugin
+
+<a id="categories"></a>
+### Categories
+
+1. Sidebar and Top Nav spacing are slightly off - why??
 
 <a id="styling-and-markup-adjustments-non-essential"></a>
 ## Styling and Markup adjustments (non-essential)
@@ -113,6 +118,7 @@ See A current list of documentation files includes:
 * Replace max-width queries w/ min-width queries
 * Why is get2016 folder present in PGP Site?
 * Remove `archives.py` when it's 100% clear it's unnecessary
+* `_archive.scss` - `.entries` duplicates
 
 <a id="staging-and-production"></a>
 ## Staging and Production
@@ -121,12 +127,6 @@ See A current list of documentation files includes:
 ### Domain & Subdomain Setup
 
 1. Note that current website seems to prefer `www` over Apex domain.
-
-<a id="scss"></a>
-### SCSS
-
-1. Make sure to change `$baseurl` in SCSS for production
-    * I'm going to need to write either a Python or Ruby plugin in order to do this dynamically, as all the native Jekyll methods are not working.
 
 <a id="favicon"></a>
 ### Favicon
