@@ -1,5 +1,14 @@
+.contact {
+  padding: 0;
+
+  .row {
+    margin: 0;
+    overflow: hidden;
+  }
+}
+
 .contact-form {
-  /* border-left: 1px solid #666; */
+  // border-left: 1px solid #666;
   border-radius: 5px;
   border-top: 5px solid $green;
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
@@ -140,6 +149,12 @@
 }
 
 @media only screen and (min-width: 576px) {
+  .contact {
+    .lead-div {
+      // margin-top: 30px;
+      padding: 19px 20px 20px;
+    }
+  }
   .contact-form {
     margin: 20px 0 20px 20px;
     width: 90%;
@@ -156,6 +171,13 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .contact {
+    .lead-div {
+      // padding: 19px 0 20px;
+      padding: 19px 13px 20px;
+    }
+  }
+
   .contact-form {
     // width: 70%;
     // width: 94%;
@@ -192,6 +214,12 @@
 }
 
 @media only screen and (min-width: 920px) {
+  .contact {
+    .lead-div {
+      padding: 19px 19px 20px;
+    }
+  }
+
   .contact-form {
     margin: 20px 0 20px 40px;
     width: 90%;
@@ -206,6 +234,12 @@
 }
 
 @media only screen and (min-width: 1024px) {
+  .contact {
+    .lead-div {
+      padding: 19px 0 20px;
+    }
+  }
+
   .contact-form {
     margin: 20px 0 20px 40px;
     width: 90%;
@@ -213,6 +247,12 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  .contact {
+    .lead-div {
+      padding: 19px 5px 20px;
+    }
+  }
+
   .contact-form {
     margin: 20px 0 20px 40px;
     width: 80%;
