@@ -9,9 +9,8 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 * [Styles](#styles)
 * [Blog Import](#blog-import)
   * [Related Posts](#related-posts)
-  * [Categories](#categories)
+  * [Archive pages](#archive-pages)
 * [Styling and Markup adjustments \(non-essential\)](#styling-and-markup-adjustments-non-essential)
-  * [Small Tasks](#small-tasks)
 * [Content Needed](#content-needed)
   * [Site Footer - Copyright and Privacy Info](#site-footer---copyright-and-privacy-info)
 * [Plugins and Configuration](#plugins-and-configuration)
@@ -55,10 +54,10 @@ See A current list of documentation files includes:
 1. Randomize posts displayed from each tag, if possible
     * Will only work if I write a plugin
 
-<a id="categories"></a>
-### Categories
+<a id="archive-pages"></a>
+### Archive pages
 
-1. Sidebar and Top Nav spacing are slightly off - why??
+1. 768px - how to deal w/ overflow title text
 
 <a id="styling-and-markup-adjustments-non-essential"></a>
 ## Styling and Markup adjustments (non-essential)
@@ -66,9 +65,6 @@ See A current list of documentation files includes:
 1. Preference: `_media.css`: convert max-width: 767 into relevant min-width sections, if time-possible (non-essential).
 2. 1. Replace all fixed line heights w/ relative numbers
 * Using a base SCSS variable wherever possible
-
-<a id="small-tasks"></a>
-### Small Tasks
 
 <a id="content-needed"></a>
 ## Content Needed
@@ -113,7 +109,6 @@ See A current list of documentation files includes:
 
 * Replace SCSS Media Queries with name variables?
 * Replace max-width queries w/ min-width queries
-* Why is get2016 folder present in PGP Site?
 * Remove `archives.py` when it's 100% clear it's unnecessary
 * `_archive.scss` - `.entries` duplicates
 
@@ -128,7 +123,7 @@ See A current list of documentation files includes:
 <a id="favicon"></a>
 ### Favicon
 
-1. Run [Favicon Checker](https://realfavicongenerator.net/) once the subdomain is set up
+Should be all set - but can run [Favicon Checker](https://realfavicongenerator.net/) another time, once the subdomain is set up
 
 <a id="notes"></a>
 ## Notes

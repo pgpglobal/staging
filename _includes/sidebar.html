@@ -60,11 +60,11 @@
   </div>
 
   {%- comment -%}
-  {% if site.environment == "development" %}
+  {% if jekyll.environment == "development" %}
     <div id="twitter-2" class="widget widget_twitter"></div>
   {% endif %}
   {%- endcomment -%}
-  {% if site.environment =="production" %}
+  {% if jekyll.environment =="production" %}
     <div id="twitter-2" class="widget widget_twitter">
       <h2 class="widget-title">
         <a class="twitter-timeline" data-width="300" data-dnt="true" data-theme="light" data-tweet-limit="3" href="https://twitter.com/PGorg?ref_src=twsrc%5Etfw">Twitter Updates</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

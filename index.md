@@ -18,8 +18,6 @@ The Personal Genome Project, initiated in 2005, is a vision and coalition of pro
 
 {% endcapture %}
 
-<a id="about" class="anchor-offset"></a>
-
 {{ pgp_description | markdownify }}
     </div>
     <div class="col-xs-8 col-sm-3 col-md-3 lead-div logo-container">
