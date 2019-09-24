@@ -2,19 +2,31 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% comment %}
-  {%- seo -%}
-  {% endcomment %}
-  <link rel="stylesheet" href="{{ "/styles/bootstrap.min.css" | relative_url }}">
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script></head>
-  <!-- <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-y++enYq9sdV7msNmXr08kJdkX4zEI1gMjjkw0l9ttOepH7fMdhb7CePwuRQCfwCr" crossorigin="anonymous"> -->
   {%- if jekyll.environment == 'production' -%}
-    <link rel="shortcut icon" type="image/png" href="{{ "/favicon.png" | relative_url}}">
-  {%- elsif jekyll.environment == 'development' -%}
-    <link rel="shortcut icon" type="image/png" href="{{ "/favicon-local-dev.jpg" | relative_url}}">
+  {%- seo -%}
   {%- endif -%}
+  <link rel="stylesheet" href="{{ "/styles/bootstrap.min.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ site.url }}{{ "/assets/main.css" | relative_url }}">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+  {%- if jekyll.environment == 'production' -%}
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.11.1/css/all.css" integrity="sha384-sr3GDThhNP8BxHFoTK4zKFgOjcrT8vzaiLwnwU+yB31BCaNj3QMX6YVXcv8AeBAy" crossorigin="anonymous">
+  {%- else -%}
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-y++enYq9sdV7msNmXr08kJdkX4zEI1gMjjkw0l9ttOepH7fMdhb7CePwuRQCfwCr" crossorigin="anonymous">
+  {%- endif -%}
+  {%- if jekyll.environment == 'production' -%}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ "favicon/apple-touch-icon.png" | relative_url }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon/favicon-32x32.png" | relative_url }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ "favicon/favicon-16x16.png" | relative_url }}">
+    <link rel="manifest" href="{{ "favicon/site.webmanifest" | relative_url }}">
+    <link rel="mask-icon" href="{{ "favicon/safari-pinned-tab.svg" | relative_url }}" color="#5bbad5">
+    <link rel="shortcut icon" href="{{ "favicon.ico" | relative_url }}">
+    <meta name="msapplication-TileColor" content="#2d89ef">
+    <meta name="msapplication-config" content="{{ "favicon/browserconfig.xml" | relative_url }}">
+    <meta name="theme-color" content="#ffffff">
+  {%- elsif jekyll.environment == 'development' -%}
+    <link rel="shortcut icon" type="image/png" href="{{ "/favicon-local-dev.jpg" | relative_url }}">
+  {%- endif -%}
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   {%- feed_meta -%}

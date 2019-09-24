@@ -1,6 +1,6 @@
 ---
 layout: blog
-class: blog
+class: blog-feed
 title: Blog
 permalink: /blog/
 ---
@@ -11,7 +11,29 @@ permalink: /blog/
     <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
     <div class="date">{{ post.date | date: "%B %-d, %Y" }}</div>
   </div>
-  <p>{{ post.excerpt }}</p>
+
+<div class="meta clear">
+  {%- if post.author -%}
+  <div class="author">
+    <span class="by-author">
+      <span class="sep">by</span>
+      <a class="url fn n" title="View all posts by {{ post.author | escape }}" rel="author" href="{{ post.author.url }}">{{ post.author | escape }}</a>
+    </span>
+  </div>
+  {%- endif-%}
+</div>
+
+<p>{{ post.excerpt }}</p>
+<div class="post-footer post-footer-blog-feed">
+  {% assign categories = post.categories %}
+  <div class="categories">from → &nbsp;
+    {%- for category in categories -%}
+    <a href="{{ site.baseurl }}/category/{{ category | slugify }}">{{category}}</a>
+    {% unless forloop.last %}, {% endunless %}
+    {%- endfor -%}
+  </div>
+</div>
 </article>
+
 {% endfor %}
 

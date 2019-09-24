@@ -96,7 +96,9 @@ figcaption {
 ul, ol {
   // margin-left: $spacing-unit;
   margin: 0 0 10px;
-  padding: 0 0 0 40px;
+  // padding: 0 0 0 40px;
+  padding: 0 10px 0 20px;
+
 }
 
 li {
@@ -134,6 +136,8 @@ li {
 a {
   color: $brand-color;
   text-decoration: none;
+  white-space: normal;
+  word-break: break-word;
 
   &:visited {
     // color: darken($brand-color, 15%);
@@ -231,6 +235,7 @@ pre {
 
 .site-header {
   height: 51px;
+  max-width: 90%;
 
   .wrapper {
     padding-right: $spacing-unit / 2;
@@ -313,8 +318,11 @@ table {
   background-image: none;
   border-color: $blue-2;
   color: $blue-2;
+  text-align: left;
+  white-space: normal;
 
-  &:hover {
+  &:hover,
+  a:hover {
     background-color: $blue-light;
     border-color: $blue;
     color: $blue;

@@ -2,3 +2,10 @@
 .sass-cache
 .jekyll-metadata
 scratch/
+node_modules
+ref
+_tmp
+foo
+scratch
+_2016.bak
+_deletion

@@ -15,22 +15,6 @@ hr {
   margin-top: 20px;
 }
 
-.lead-div {
-  margin-top: 30px;
-}
-
-.local-projects {
-  border-color: $base-border;
-  border-radius: 6px;
-  border-style: solid;
-  padding: 15px;
-}
-
-.local-projects-header {
-  color: $base-border;
-  font-variant: small-caps;
-}
-
 li {
   margin-bottom: 20px;
 }
@@ -53,6 +37,10 @@ img.profile-photo {
   a {
     color: $grey-dark-1;
   }
+
+}
+
+@media only screen and (min-width: 425px) {
 
 }
 

@@ -8,12 +8,16 @@
 * [Working on the Site Locally with Git](#working-on-the-site-locally-with-git)
   * [Keeping Up-To-Date](#keeping-up-to-date)
   * [Branching](#branching)
+    * [Staging](#staging)
   * [Solving Merge Conflicts](#solving-merge-conflicts)
 * [Files and Directories Guide](#files-and-directories-guide)
   * [Directories](#directories)
+  * [Layouts and Pages](#layouts-and-pages)
   * [Files](#files)
+* [Posts](#posts)
 * [Permalinks](#permalinks)
   * [Archives](#archives)
+  * [Catgories](#catgories)
 * [Coding in Jekyll](#coding-in-jekyll)
   * [Liquid](#liquid)
 
@@ -21,7 +25,7 @@
 
 <a id="last-updated"></a>
 ## Last Updated
-This Documentation was last updated on 8/25/2019.
+This Documentation was last updated on 9/16/2019.
 
 <a id="setup"></a>
 ## Setup
@@ -42,6 +46,8 @@ In order to run this site locally, follow the following steps:
 
 <a id="jekyll-admin-graphical-editor"></a>
 ## Jekyll Admin Graphical Editor
+
+Only works locally
 
 A visual interface powered by [Jekyll Admin](https://github.com/jekyll/jekyll-admin) is available for editing the site. Access it by appending `/admin` to the site url, ex: `localhost:4000/admin`
 
@@ -81,6 +87,11 @@ Steps:
 4. If there were no merge conflicts, then you can push to the remote repo via `git push origin master`. Otherwise, see [Solving Merge Conflicts](#merge-conflicts)
 
 If you run into trouble with push to the remote repo, this may involve some not so simple troubleshooting. More to come on that later.
+
+<a id="staging"></a>
+#### Staging
+
+`git push origin local-name:remote-name`
 
 <a id="solving-merge-conflicts"></a>
 ### Solving Merge Conflicts
@@ -137,6 +148,11 @@ As of 8/31/19, the directory structure looks like this.
 * `_site` is the compiled version of the site. You can basically ignore this. Always make sure this is listed in your `.gitignore` file. You *do not* want to commit this to the repo.
 * `styles` contains any extra styles that needed to be incorporated, such as [Bootstrap](https://getbootstrap.com/) or other css files that are loaded separately from the main scss files
 
+<a id="layouts-and-pages"></a>
+### Layouts and Pages
+
+* Blog Main Page is controlled by blog.md
+
 <a id="files"></a>
 ### Files
 
@@ -172,6 +188,27 @@ The `_includes` directory contains the various building blocks of the site (such
 
 Posts must be named in `yyyy-mm-dd-postname.md` format (otherwise Jekyll will ignore them). Additionally, there is a variety of metadata that posts can have - which we can make use of via Jekyll's `Liquid` templating language. See the [Liquid](#liquid) section for more info.
 
+<a id="posts"></a>
+## Posts
+
+You can set any of the following variables in the [Front Matter]() for posts. See Jekyll Docs for more info:
+
+* page.content
+* page.title
+* page.excerpt
+* page.url
+* page.date
+* page.id
+* page.categories
+* page.collection
+* page.tags
+* page.dir
+* page.name
+* page.path
+* The path to the raw post or page. Example usage: Linking back to the page or post’s source on GitHub. This can be overridden in the front matter.
+* page.next
+* page.previous
+
 <a id="permalinks"></a>
 ## Permalinks
 
@@ -179,12 +216,32 @@ Posts must be named in `yyyy-mm-dd-postname.md` format (otherwise Jekyll will ig
 ### Archives
 
 Archive permalinks work as follows:
-url.com/YYYY
-url.com/YYYY/MM
-url.com/YYYY/MM/DD
-url.com/tag/tag_name
-url.com/category/category_name
+* url.com/YYYY
+* url.com/YYYY/MM
+<!-- * url.com/YYYY/MM/DD -->
+* url.com/tag/tag_name
+* url.com/category/category_name
 
+
+To generate the archives, run `py archives.py` prior to site build. This will generate all the yearly and monthly archive pages. *Note:* you only need to do this if/when you've made new posts or if you need to rebuild the entire site for some reason.
+
+<a id="catgories"></a>
+### Catgories
+
+Category permalinks work as follows:
+* url.com/category - main categories page
+* url.com/category/category_name - specific category pages
+
+Currently categories must be added manually in the `_category` directory. The filenames should be all lowercase, no spaces or special characters, and have dashes between words (ex `get-conference` or `genom-austria`). The actual content of each file looks like this:
+
+```yaml
+---
+tag: get-conference
+permalink: "/category/get-conference"
+---
+```
+
+The category pages are a [collection](https://jekyllrb.com/docs/collections/) and are set to auto-generate pages based on the files in the `_categories` dir. This is set via `output: true` in `_config.yml`
 
 <a id="coding-in-jekyll"></a>
 ## Coding in Jekyll

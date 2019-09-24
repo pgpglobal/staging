@@ -3,19 +3,18 @@ layout: blog
 permalink: /categories/
 title: Categories
 class: archive
+redirect_form: /category
 ---
 
 <h1 class="categories-title">Categories</h1>
-<img class="archive-comment" src="{{ "/assets/images/comments-bubble-archive.gif" | relative_url }}" width="17" height="14" alt="comment" scale="0">
 
 <div class="entries">
   <ul class="entry-list">
-    {% assign categories_list = site.categories %}
+    {% assign categories_list = site.categories | sort %}
       {% if categories_list.first[0] == null %}
         {% for category in categories_list %}
           {% unless category contains "admin" or category[0] contains "admin" %}
           <li><a class="category-link" href="{{ category | downcase | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category | camelcase }} ({{ site.tags[category].size }})
-            <!-- <span class="comments_number">0</span> -->
           </a></li>
           {% endunless %}
         {% endfor %}
@@ -23,7 +22,6 @@ class: archive
         {% for category in categories_list %}
           {% unless category contains "admin" or category[0] contains "admin" %}
           <li><a class="category-link" href="{{ category[0] | downcase | url_escape | strip | replace: ' ', '-' }}">{{ category[0] | camelcase }} ({{ category[1].size }})
-            <!-- <span class="comments_number">0</span> -->
           </a></li>
           {% endunless %}
         {% endfor %}

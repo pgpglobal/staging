@@ -1,10 +1,3 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'bundle exec jekyll serve'. If you change this file, please restart the server process.
 
@@ -16,17 +9,29 @@
 title: "Personal Genome Project: Global Network"
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "/PGPGlobal" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+  The Personal Genome Project, initiated in 2005, is a vision and coalition
+  of projects across the world dedicated to creating
+  public genome, health, and trait data.
+  Sharing data is critical to scientific progress, but has been hampered by
+  traditional research practices. The PGP approach is to invite
+  willing participants to publicly share their personal data for the greater good.
+
+  The Personal Genome Project, initiated in 2005, is a vision and coalition
+  of projects across the world dedicated to creating
+  public genome, health, and trait data.
+  Sharing data is critical to scientific progress, but has been hampered by
+  traditional research practices. The PGP approach is to invite
+  willing participants to publicly share their personal data for the greater good.
+
+# baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://pgp.lunacodesdesign.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: PGorg
 flickr_username: personalgenomes
 # github_username:  jekyll
 author: "Personal Genome Project: Global Network"
 google_analytics: UA-145673922-1
 
+show_excerpts: true
 # environment: development
 
 minima:
@@ -36,44 +41,37 @@ minima:
   social_links:
     twitter: pgorg
     # github:  jekyll
-    # rss: rss
-    # dribbble: jekyll
     facebook: PersonalGenomesOrg
-    # flickr:   jekyll
-    # instagram: jekyll
     linkedin: personalgenomes-org
-    # pinterest: jekyll
     youtube: PersonalGenomesOrg
-    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
-    # youtube_channel_name: CloudCannon
-    # telegram: jekyll
-    # googleplus: +jekyll
-    # microdotblog: jekyll
-
+    # Other options include: rss dribbble flickr instagram pinterest
+    # youtube_channel youtube_channel_name telegram googleplus microdotblog
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
-  - jekyll-admin
-  # - jekyll-archives
+  # - jekyll-admin
   # - jekyll-autoprefixer
   - jekyll-include-cache
-  - jekyll-feed
-  # - github-pages
-  - jekyll-picture-tag
+  # - jekyll-feed
+  - github-pages
+  # - jekyll-picture-tag
   # - jekyll-seo-tag
+  - jekyll-redirect-from
   # - jekyll-sitemap
   - jekyll-titles-from-headings
+  # - html-proofer
+  # - jekyll-sass-converter
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
@@ -86,33 +84,19 @@ exclude:
   - "*.bak"
   - TASKS.md
   - ["docs", "ref", "scratch", "*TASKS", "*.bak", "*keys*"]
+  - test.py
+  - archives.py
+  - "*.py"
+  - .stylelintrc.json
 
 sass:
   style: expanded
-  sourcemap: true
-
-# jekyll-archives:
-#   enabled: all
-#   layout: archive
-#   permalinks:
-#     year: '/:year/'
-#     month: '/:year/:month/'
-#     day: '/:year/:month/:day/'
-#     tag: '/tag/:name/'
-#     category: '/category/:name/'
-#   layout: archive
-  # layouts:
-    # year: year-archive
-  #   month: month-archive
-  #   day: day-archive
-  #   category: category-archive
-  #   tag: tag-archive
+  sourcemap: always
 
 # Post Variables to enable conditional checks such as {% if page.id %} or
 # {% if page.title == "title" %}, etc
 defaults:
-  -
-    scope:
+  - scope:
       path: ""      # empty string for all files
       type: posts   # limit to posts
       type: tags
@@ -121,13 +105,17 @@ defaults:
       type: category
     values:
       is_post: true # automatically set is_post=true for all posts
-  -
-    scope:
+  - scope:
       path: ""
       type: archive
     values:
       is_archive: true
-
+  - scope:
+      path: ""
+      type: category
+    values:
+      layout: category
+      class: category body-archive
   - scope:
       path: ""
       type: "authors"
@@ -139,14 +127,16 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+      # categories: Uncategorized
   - scope:
       path: ""
     values:
       layout: "default"
 
-
 collections:
   authors:
+    output: true
+  category:
     output: true
   news:
     output: false

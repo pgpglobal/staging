@@ -7,8 +7,8 @@
       {% for author in site.authors %}
       {% if author.email %}
         <script>
-          document.write('<li><a id="{{ author.display_name }}" href="{{ site.baseurl }}{{ author.url }}">')
-          document.write('<img src="' + get_gravatar('{{ author.email }}', 48) + '" alt="Author thumbnail for {{ author.name }}" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="{{ src_original }}" /><a></li>');
+          document.write('<li><a id="{{ author.gravatar_name }}" href="{{ site.baseurl }}{{ author.url }}">')
+          document.write('<img src="' + get_gravatar('{{ author.email }}', 48) + '" alt="Author thumbnail for {{ author.name }}" class="avatar avatar-48 grav-hased" height="48" width="48" src-orig="{{ src_original }}" /></a></li>');
         </script>
 
       {% endif %}
@@ -18,18 +18,28 @@
   </div>
 
   <div id="search-3" class="widget widget_search">
+    <!-- HTML elements for search -->
     <h2 class="widget-title">Search</h2>
-    <form method="get" id="search_form" action="https://personalgenomes.wordpress.com/">
-      <div>
-        <input type="text" value="type and press enter" name="s" id="s" onfocus="if (this.value == 'type and press enter') {this.value = '';}" onblur="if (this.value == '') {this.value = 'type and press enter';}">
-        <input type="hidden" value="Search">
-      </div>
-    </form>
+
+    <form class="search-form"><input type="text" id="search-input" placeholder="Search blog posts.."></form>
+    <ul class="search-results" id="results-container"></ul>
+
+    <!-- script pointing to jekyll-search.js -->
+    <script src="{{ site.baseurl }}/scripts/search-script.min.js"></script>
+
+    <!-- Configuration -->
+    <script>
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '{{ site.baseurl }}/search.json'
+    })
+    </script>
   </div>
 
   <div id="text-2" class="widget widget_text">
     <h2 class="widget-title">Subscribe via Email</h2>
-    <div class="textwidget"><a href="http://feedburner.google.com/fb/a/mailverify?uri=PersonalGenomeProjectBlog&amp;loc=en_US">Subscribe to Personal Genome Project Blog by Email</a></div>
+    <div class="textwidget"><a href="https://feedburner.google.com/fb/a/mailverify?uri=PersonalGenomeProjectBlog&amp;loc=en_US">Subscribe to Personal Genome Project Blog by Email</a></div>
   </div>
 
   <div id="recent-posts-2" class="widget widget_recent_entries">
@@ -49,52 +59,37 @@
     </ul>
   </div>
 
+  {%- comment -%}
   {% if site.environment == "development" %}
     <div id="twitter-2" class="widget widget_twitter"></div>
-  {% elsif site.environment =="production" %}
+  {% endif %}
+  {%- endcomment -%}
+  {% if site.environment =="production" %}
     <div id="twitter-2" class="widget widget_twitter">
       <h2 class="widget-title">
-        <a class="twitter-timeline" data-width="300" data-dnt="true" data-theme="light" data-tweet-limit="3" href="https://twitter.com/PGorg?ref_src=twsrc%5Etfw">Twitter Updates</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+        <a class="twitter-timeline" data-width="300" data-dnt="true" data-theme="light" data-tweet-limit="3" href="https://twitter.com/PGorg?ref_src=twsrc%5Etfw">Twitter Updates</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </h2>
       <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
-    {% endif%}
+  {% endif%}
 
   <div class="thin-sidebar sidebar-left spad">
     <div id="archives-3" class="widget widget_archive">
       <h2 class="widget-title">Archives</h2>
-
-        <ul>
-          {% include_cached sidebar-archives.html %}
-        </ul>
-      </div>
+      <ul>
+        {% include_cached sidebar-archives.html %}
+      </ul>
     </div>
-    <div id="flickr-2" class="widget widget_flickr">
-      <h2 class="widget-title">Flickr Photos</h2><!-- Start of Flickr Widget -->
-      <div class="flickr-wrapper flickr-size-thumbnail">
-        <div class="flickr-images">
-          <a href="https://www.flickr.com/photos/personalgenomes/27124123062/"><img src="https://live.staticflickr.com/7041/27124123062_f64b8ca1da_s.jpg" alt="P1060817" title="P1060817" scale="0"></a><a href="https://www.flickr.com/photos/personalgenomes/27221066625/"><img src="https://live.staticflickr.com/7736/27221066625_e0326de4bc_s.jpg" alt="P1060815" title="P1060815" scale="0"></a><a href="https://www.flickr.com/photos/personalgenomes/27221066715/"><img src="https://live.staticflickr.com/7377/27221066715_5c63b9ccca_s.jpg" alt="P1060813" title="P1060813" scale="0"></a> </div>
-          <a class="flickr-more" href="https://www.flickr.com/photos/personalgenomes/">
-          More Photos </a>
-        </div>
-        <!-- End of Flickr Widget -->
-      </div>
-    </div>
+  </div>
 
   <div class="thin-sidebar sidebar-right">
     <ul>
       {% assign sorted = site.social-links | sort: 'order' %}
       {% for item in sorted %}
-      <li class="widget widget_media_image">
-        <a href="{{ item.link }}"><img src="{{ item.src }}" alt="{{ item.alt }}" width="{{ item.width }}" height="{{ item.height }}"></a>
+      <li class="widget widget_media_image {{ item.class }}">
+        <a href="{{ item.link }}"><img src="{{ item.src | prepend: "/assets/images/" | relative_url }}" alt="{{ item.alt }}" width="{{ item.width }}" height="{{ item.height }}"></a>
         {% endfor %}
       </li>
     </ul>
   </div>
-</div>
-
-<script>
-  // jQuery(document).ready(function($) {
-    // pull_gravatar();
-  // });
-</script>
+</div> <!-- End Sidebar -->
