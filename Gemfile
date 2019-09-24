@@ -19,14 +19,14 @@ gem "minima", "~> 2.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  # gem 'jekyll-admin'
+  gem 'jekyll-admin'
   # gem 'jekyll-autoprefixer'
   gem 'jekyll-include-cache'
-  # gem "jekyll-feed", "~> 0.6"
+  gem "jekyll-feed", "~> 0.6"
   # gem 'jekyll-picture-tag'
   gem 'jekyll-redirect-from'
-  # gem 'jekyll-seo-tag'
-  # gem 'jekyll-sitemap'
+  gem 'jekyll-seo-tag'
+  gem 'jekyll-sitemap'
   gem 'jekyll-titles-from-headings'
   # gem 'html-proofer'
   # gem 'jekyll-sass-converter'

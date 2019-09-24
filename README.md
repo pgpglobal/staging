@@ -23,6 +23,7 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
   * [Domain & Subdomain Setup](#domain--subdomain-setup)
   * [Favicon](#favicon)
 * [Notes](#notes)
+  * [Deprecated](#deprecated)
   * [Captions and Shortcodes](#captions-and-shortcodes)
 
 <!-- /MarkdownTOC -->
@@ -68,10 +69,6 @@ See A current list of documentation files includes:
 
 <a id="small-tasks"></a>
 ### Small Tasks
-
-1. Reinstate the /updates.html et al links that go to [sign-up form](https://personalgenomes.us3.list-manage.com/subscribe?u=3980aaa2746fd428de44b2ab4&id=34d31b2d4b) and similar
-  * Setup JS redirect via layout or include or something
-  * use jekyll-redirect to do this possibly?
 
 <a id="content-needed"></a>
 ## Content Needed
@@ -135,6 +132,14 @@ See A current list of documentation files includes:
 
 <a id="notes"></a>
 ## Notes
+
+<a id="deprecated"></a>
+### Deprecated
+
+~~1. Reinstate the /updates.html et al links that go to [sign-up form](https://personalgenomes.us3.list-manage.com/subscribe?u=3980aaa2746fd428de44b2ab4&id=34d31b2d4b) and similar~~
+    * ~~Setup JS redirect via layout or include or something~~
+    * ~~use jekyll-redirect to do this possibly?~~
+    * Not finding the where/what of this. Not terribly significant in the first place
 
 <a id="captions-and-shortcodes"></a>
 ### Captions and Shortcodes
