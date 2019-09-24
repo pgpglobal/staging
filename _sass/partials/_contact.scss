@@ -5,6 +5,10 @@
     margin: 0;
     overflow: hidden;
   }
+
+  .lead-div {
+    margin: 30px 0 40px;
+  }
 }
 
 .contact-form {
@@ -151,7 +155,7 @@
 @media only screen and (min-width: 576px) {
   .contact {
     .lead-div {
-      // margin-top: 30px;
+      margin: 30px 0 0;
       padding: 19px 20px 20px;
     }
   }
@@ -173,7 +177,7 @@
 @media only screen and (min-width: 768px) {
   .contact {
     .lead-div {
-      // padding: 19px 0 20px;
+      margin: 30px 0 10px;
       padding: 19px 13px 20px;
     }
   }
@@ -216,6 +220,7 @@
 @media only screen and (min-width: 920px) {
   .contact {
     .lead-div {
+      margin: 30px 0 20px;
       padding: 19px 19px 20px;
     }
   }
@@ -226,7 +231,7 @@
   }
 }
 
-@media only screen and (min-width: 991px) {
+@media only screen and (min-width: 992px) {
   .contact-form {
     margin: 20px 0 20px 40px;
     width: 86%;

@@ -133,13 +133,21 @@
   padding: 0;
 }
 
-@media only screen and (min-width: 475px) {
+@media only screen and (min-width: 425px) {
   .navbar-default,
   .navbar-default .navbar-brand,
   .site-header {
     height: 51px;
   }
 }
+
+// @media only screen and (min-width: 475px) {
+//   .navbar-default,
+//   .navbar-default .navbar-brand,
+//   .site-header {
+//     height: 51px;
+//   }
+// }
 
 @media only screen and (min-width: 768px) {
   .nav {

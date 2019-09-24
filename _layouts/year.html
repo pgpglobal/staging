@@ -16,7 +16,7 @@ class: archive
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
 <!--         <span class="comments_number">0</span> -->
         <time class="archdate">{{ post.date | date: "%b %-d, %Y" }}</time>
-        <span>{{ post.title | escape}}</span>
+        <div class="category-entry-title">{{ post.title | escape}}</div>
       </a>
     </li>
     {%- endif -%}

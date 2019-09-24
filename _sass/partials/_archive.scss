@@ -109,6 +109,20 @@ h2.archive-title {
     .archive-entry-title {
       text-align: right;
     }
+
+    time.archdate,
+    a:hover time.archdate {
+      margin: 0 20px 0 0;
+      width: 130px;
+    }
+  }
+
+  .category-entry-title {
+    // width: 380px;
+    // max-width: 360px;
+    max-width: initial;
+    min-width: 240px;
+    width: 100%;
   }
 }
 
@@ -119,16 +133,57 @@ h2.archive-title {
       padding: 0 0 0 6.5px;
     }
   }
+
+  .category-entry-title {
+    // max-width: 520px;
+    // min-width: 350px;
+    // width: 90%;
+    max-width: initial;
+    min-width: 350px;
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .entries {
-    ul li a.post-link {
-      display: block;
-    }
-
     .archive-entry-title {
       text-align: left;
     }
+
+    time.archdate,
+    a:hover time.archdate {
+      width: 90px;
+    }
+  }
+
+  .category-entry-title {
+    // max-width: 350px;
+    // min-width: 280px;
+    // width: 80%;
+    max-width: 350px;
+    min-width: 280px;
+    width: 80%;
   }
 }
+
+@media only screen and (min-width: 920px) {
+  .category-entry-title {
+    // max-width: initial;
+    // min-width: 360px;
+    // width: 75%;
+    max-width: 490px;
+    min-width: initial;
+    padding: 0 5px 0 0;
+    width: 82%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .category-entry-title {
+    max-width: 490px;
+    min-width: initial;
+    padding: 0 5px 0 0;
+    width: 82%;
+  }
+}
+

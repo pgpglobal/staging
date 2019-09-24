@@ -4,6 +4,7 @@
 
 .blog-wrapper {
   font-family: $blog-font-family;
+  margin: 0;
   max-width: 100%;
 }
 
@@ -327,7 +328,7 @@ span.p-author.h-card,
 }
 
 .blog-main-container {
-  margin: 0;
+  margin: 0 0 20px;
 
   .nav2 a {
     color: $black;
@@ -369,6 +370,17 @@ span.p-author.h-card,
 }
 
 @media only screen and (min-width: 576px) {
+  .body-blog .page-title {
+    margin: 70px auto 0;
+    padding: 0 20px;
+    width: 90%;
+  }
+
+  .blog-main-container {
+    display: block;
+    // margin: 0 auto;
+  }
+
   .blog-header-title {
     // margin: 0 auto;
     margin: 10px auto 0;
@@ -382,9 +394,31 @@ span.p-author.h-card,
   .description h2 {
     margin: 10px 0;
   }
+
+  main.blog-content {
+    /* margin: 0 auto; */
+    padding: 0 20px;
+  }
+
 }
 
 @media only screen and (min-width: 768px) {
+  .blog-wrapper {
+    margin: 0 auto;
+  }
+
+  .body-archive .blog-main-container,
+  .blog-main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .blog-main-container {
+    margin: 0;
+  }
+
   .blog-header-title {
     // margin: 0;
     margin: 10px auto 0 10px;
@@ -424,6 +458,12 @@ span.p-author.h-card,
     justify-content: space-between;
     flex-flow: row;
     width: 100%;
+  }
+
+  main.blog-content {
+    float: none;
+    padding: 0 20px;
+    width: 56%;
   }
 
   .blog-content:first-of-type article:first-of-type h2 {
