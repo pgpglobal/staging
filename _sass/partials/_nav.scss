@@ -62,6 +62,7 @@
 
   .navbar-nav {
     margin: 0 0 7.5px;
+    padding: 0 10px;
 
     > li {
       > a {
@@ -132,7 +133,7 @@
   padding: 0;
 }
 
-@media only screen and (min-width: 425px) {
+@media only screen and (min-width: 475px) {
   .navbar-default,
   .navbar-default .navbar-brand,
   .site-header {

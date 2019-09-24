@@ -8,6 +8,7 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 * [Footer](#footer)
 * [Styles](#styles)
 * [Blog Import](#blog-import)
+  * [Logo Distorting](#logo-distorting)
   * [Related Posts](#related-posts)
   * [Archive pages](#archive-pages)
 * [Styling and Markup adjustments \(non-essential\)](#styling-and-markup-adjustments-non-essential)
@@ -47,6 +48,11 @@ See A current list of documentation files includes:
 
 <a id="blog-import"></a>
 ## Blog Import
+
+<a id="logo-distorting"></a>
+### Logo Distorting
+
+1. Sarah mentioned the Logo looked distorted... likely something to do w/ height or width: auto, or max-height/width
 
 <a id="related-posts"></a>
 ### Related Posts
