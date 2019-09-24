@@ -68,26 +68,25 @@ plugins:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
+  - "*.bak"
+  - "*.py"
+  - .stylelintrc.json
+  - accessibility
+  - archives.py
+  - docs
   - Gemfile
   - Gemfile.lock
+  - keys
   - node_modules
+  - README.md
+  - ref
+  - scratch
+  - TASKS.md
+  - test.py
   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-  - accessibility
-  - docs
-  - README.md
-  - ref
-  - scratch
-  - keys
-  - "*.bak"
-  - TASKS.md
-  - ["docs", "ref", "scratch", "*TASKS", "*.bak", "*keys*"]
-  - test.py
-  - archives.py
-  - "*.py"
-  - .stylelintrc.json
 
 sass:
   style: expanded
