@@ -27,15 +27,15 @@
                         <li role="separator" class="divider"></li>
                         <li class="dropdown-header">{{ entry.page }}</li>
                       {%- elsif entry.url contains "http" or "http" contains entry.url -%}
-                        <li><a href="{{ entry.url }}">{{ entry.page }}</a>
+                        <li><a href="{{ entry.url }}">1 {{ entry.page }}</a>
                       {%- else -%}
-                        <li><a href="{{ site.baseurl }}{{ entry.url }}">{{ entry.page }}</a>
+                        <li><a href="{{ site.baseurl }}{{ entry.url }}">2 {{ entry.page }}</a>
                       {%- endif -%}
 
                           {%- if entry.subfolderitems[0] -%}
                             <ul>
                             {%- for subentry in entry.subfolderitems %}
-                                <li><a href="{{ subentry.url }}">{{ subentry.page }}</a></li>
+                                <li><a href="3 {{ subentry.url }}">{{ subentry.page }}</a></li>
                             {%- endfor -%}
                             </ul>
                           {%- endif -%}
@@ -45,9 +45,9 @@
               </li>
                 {%- endif -%}
                 {%- elsif entry.url contains "http" or "http" contains entry.url -%}
-                <li><a href="{{ item.url }}">{{ item.title }}</a>
+                <li><a href="{{ item.url }}">5 {{ item.title }}</a>
                 {%- else -%}
-              <li><a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+              <li><a href="{{ site.baseurl }}{{ item.url }}">6 {{ item.title }}</a>
             {%- endif -%}
           {%- endfor -%}
         {%- endif -%}
