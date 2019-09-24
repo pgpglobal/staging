@@ -1,4 +1,4 @@
-# _site
+_site
 .sass-cache
 .jekyll-metadata
 scratch/
@@ -10,3 +10,5 @@ scratch
 _2016.bak
 _deletion
 .stylelint.js
+_staging*
+*_lunadev*
