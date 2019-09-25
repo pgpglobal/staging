@@ -49,7 +49,7 @@
       {% assign counter = 0 %}
       {% for post in site.posts | sort:"date" | reverse %}
       <li>
-        <a href="{{ site.baseurl }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
       </li>
       {% assign counter = counter | plus: 1 %}
       {% if counter == maxPost %}
