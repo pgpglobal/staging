@@ -164,6 +164,18 @@ Mechanical Files:
   * There is an accompanying `Gemfile.lock`. Ignore this file, unless you know that you know for sure that you need to edit it.
 *
 
+```yaml
+# _config.yml
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+```
+
 Site Files:
 
 Most of these should be pretty self explanatory. You'll notice that many of the files are in Markdown. Jekyll magically builds these files into the html files in the `_site` directory. If you want to exclude a file (say for example the readme or docs files), go to the `exclude` section of `_config.yml`.
