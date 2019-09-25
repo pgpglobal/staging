@@ -31,9 +31,11 @@
 .blog-header-title {
   background: url($blog-img) no-repeat;
   // background-position: 0 center;
-  background-position: left -5% center;
+  // background-position: left -5% center;
   // background-size: 220%;
-  background-size: 200%;
+  // background-size: 200%;
+  background-position: center;
+  background-size: 91%;
   font-size: 46px;
   font-weight: 700;
   height: 180px;
@@ -489,6 +491,7 @@ span.p-author.h-card,
   }
 
   .blog-header-title {
+    background-position: left center;
     background-size: initial;
     // margin: 0;
     width: 100%;
@@ -522,16 +525,7 @@ span.p-author.h-card,
 
 // @media only screen and (min-width: 1024px) {
 //   .blog-header-title {
-//     // background-size: initial;
-//     // margin: 0;
-//     // width: 100%;
-//   }
-
-//   .description {
-//     margin: 0;
-
-//     h2 {
-//       margin: 20px 0 10px;
-//     }
+//     background-position: left;
+//     background-size: initial;
 //   }
 // }
