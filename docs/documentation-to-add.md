@@ -8,6 +8,8 @@
   * [Thorough Version](#thorough-version)
 * [Troubleshooting - Specific Errors](#troubleshooting---specific-errors)
 * [Category and Tag Pages](#category-and-tag-pages)
+* [Plugins](#plugins)
+  * [jekyll-seo-tag](#jekyll-seo-tag)
 
 <!-- /MarkdownTOC -->
 
@@ -75,3 +77,21 @@ Branches:
 ## Category and Tag Pages
 
 1. I only set up Category archives, since none of the posts have Tag info and Jekyll mostly treats them the same
+
+<a id="plugins"></a>
+## Plugins
+
+<a id="jekyll-seo-tag"></a>
+### jekyll-seo-tag
+
+See [jekyll-seo-tag - Basic Usage ](https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md), as well as [jekyll-seo-tag - Advanced Usage](https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/advanced-usage.md) for more info
+
+The SEO tag will respect the following YAML front matter if included in a post, page, or document:
+
+* `title` - The title of the post, page, or document
+* `description` - A short description of the page's content
+* `image` - URL to an image associated with the post, page, or document (e.g., /assets/page-pic.jpg)
+* `author` - Page-, post-, or document-specific author information (see Advanced usage)
+* `lang` - Page-, post-, or document-specific language information
+
+Note: Front matter defaults can be used for any of the above values as described in advanced usage with an image example.
