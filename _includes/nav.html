@@ -29,7 +29,7 @@
                       {%- elsif entry.url contains "http" or "http" contains entry.url -%}
                         <li><a href="{{ entry.url }}">{{ entry.page }}</a>
                       {%- else -%}
-                        <li><a href="{{ site.url }}{{ entry.url | relative_url }}">{{ entry.page }}</a>
+                        <li><a href="{{ entry.url | absolute_url }}">{{ entry.page }}</a>
                       {%- endif -%}
 
                           {%- if entry.subfolderitems[0] -%}
@@ -47,7 +47,7 @@
                 {%- elsif entry.url contains "http" or "http" contains entry.url -%}
                 <li><a href="{{ item.url }}">{{ item.title }}</a>
                 {%- else -%}
-              <li><a href="{{ site.url }}{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+              <li><a href="{{ item.url | absolute_url }}">{{ item.title }}</a>
             {%- endif -%}
           {%- endfor -%}
         {%- endif -%}
