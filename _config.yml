@@ -67,11 +67,11 @@ theme: minima
 plugins:
   # - jekyll-admin
   - jekyll-include-cache
-  # - jekyll-feed
+  - jekyll-feed
   - github-pages
   - jekyll-redirect-from
-  # - jekyll-seo-tag
-  # - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-sitemap
   - jekyll-titles-from-headings
 
 # Exclude from processing.
