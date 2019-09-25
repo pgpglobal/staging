@@ -42,7 +42,7 @@ class: blog
 {%- assign next_title = page.next.title -%}
 {%- assign next_url = page.next.url -%}
 
-{% include_cached related-posts.html categories=page.categories %}
+{% include related-posts.html categories=page.categories %}
 {% include_cached share-buttons-jp.html %}
 {% comment %}
 {% endcomment %}
