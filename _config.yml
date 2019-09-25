@@ -16,7 +16,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   willing participants to publicly share their personal data for the greater good.
 
 # baseurl: "/PGPGlobal" # the subpath of your site, e.g. /blog
-url: "https://pgp.lunacodesdesign.com" # the base hostname & protocol for your site, e.g. http://example.com
+# url: "https://pgp.lunacodesdesign.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 twitter_username: PGorg
 flickr_username: personalgenomes
@@ -58,7 +58,7 @@ minima:
 markdown: kramdown
 theme: minima
 plugins:
-  # - jekyll-admin
+  - jekyll-admin
   - jekyll-include-cache
   - jekyll-feed
   - github-pages
