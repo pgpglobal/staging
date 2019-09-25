@@ -44,8 +44,8 @@ twitter:
   username: pgorg
   card: summary
 
-
 show_excerpts: true
+excerpt_seperator: "<!--more-->"
 # environment: development
 
 minima:
@@ -69,12 +69,10 @@ plugins:
   - jekyll-include-cache
   # - jekyll-feed
   - github-pages
-  # - jekyll-picture-tag
-  # - jekyll-seo-tag
   - jekyll-redirect-from
+  # - jekyll-seo-tag
   # - jekyll-sitemap
   - jekyll-titles-from-headings
-  # - jekyll-sass-converter
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -102,8 +100,8 @@ exclude:
 #   - vendor/ruby/
 
 sass:
-  style: expanded
-  # style: compressed
+  # style: expanded
+  style: compressed
   sourcemap: always
 
 # Post Variables to enable conditional checks such as {% if page.id %} or
