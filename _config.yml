@@ -7,7 +7,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: "Personal Genome Project: Global Network"
-email: your-email@example.com
+# email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   The Personal Genome Project, initiated in 2005, is a vision and coalition
   of projects across the world dedicated to creating
@@ -28,8 +28,22 @@ url: "https://pgpglobal.github.io" # the base hostname & protocol for your site,
 twitter_username: PGorg
 flickr_username: personalgenomes
 # github_username:  jekyll
-author: "Personal Genome Project: Global Network"
 google_analytics: UA-145673922-1
+
+
+# Jekyll SEO Tag Settings
+author: "Personal Genome Project: Global Network"
+logo: /assets/images/pgp-logo.png
+social:
+  - https://twitter.com/pgorg
+  # - https://facebook.com/PersonalGenomesOrg
+  - https://www.linkedin.com/company/personalgenomes-org
+  - https://www.youtube.com/user/PersonalGenomesOrg
+
+twitter:
+  username: pgorg
+  card: summary
+
 
 show_excerpts: true
 # environment: development
@@ -131,6 +145,8 @@ defaults:
       path: ""
     values:
       layout: "default"
+      # image: assets/images/pgp-logo.png
+      image: assets/images/pgp_header_420x180.png # specified for jekyll-seo-tag purposes
 
 collections:
   authors:
