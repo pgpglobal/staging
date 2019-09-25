@@ -9,20 +9,20 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
   * [SEO - Webmaster Verifications](#seo---webmaster-verifications)
 * [Absolute vs Relative URLs](#absolute-vs-relative-urls)
   * [Nav Alignment & Logo Distorting](#nav-alignment--logo-distorting)
-* [Blog Import](#blog-import)
-  * [Header Image](#header-image)
-* [Styling, Markup, and Image adjustments \(non-essential\)](#styling-markup-and-image-adjustments-non-essential)
-* [Plugins and Configuration](#plugins-and-configuration)
-    * [Plugins Staging](#plugins-staging)
+    * [Plugins Staging & Production](#plugins-staging--production)
     * [Plugins - Local Dev](#plugins---local-dev)
 * [Accessibility](#accessibility)
 * [Cleanup](#cleanup)
+  * [SCSS \(extra/non-essential\)](#scss-extranon-essential)
 * [Staging and Production](#staging-and-production)
+  * [Optimization](#optimization)
+    * [Images](#images)
+    * [CDN - Cloudflare](#cdn---cloudflare)
   * [SEO & Webmaster Tools](#seo--webmaster-tools)
   * [Domain & Subdomain Setup](#domain--subdomain-setup)
   * [Favicon](#favicon)
+  * [Contact Form](#contact-form)
 * [Notes](#notes)
-  * [Styles & Vendor Prefixes](#styles--vendor-prefixes)
   * [Captions and Shortcodes](#captions-and-shortcodes)
   * [Deprecated](#deprecated)
 
@@ -30,6 +30,8 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 
 <a id="instructions-and-documentation"></a>
 ## Instructions and Documentation
+
+Currently in progress - writing documentation for workflow, snippets, notes about site structure, editing, etc.
 
 See A current list of documentation files includes:
 * [Documentation](docs/documentation.md) - general documentation
@@ -56,13 +58,13 @@ webmaster_verifications:
   baidu: 1234
 ```
 
-2. What's the correct Facebook link?
-
+2. What's the correct Facebook link? `https://facebook.com/PersonalGenomesOrg` results in a 404/Page Not Found.
 
 <a id="absolute-vs-relative-urls"></a>
 ## Absolute vs Relative URLs
 
-* Convert relative urls to absolute urls wherever relevant
+* Finishing replacing relative URLs where relevant
+  * See [CDN - Cloudflare](#cdn---cloudflare) regarding performance
 
 <a id="nav-alignment--logo-distorting"></a>
 ### Nav Alignment & Logo Distorting
@@ -72,41 +74,25 @@ webmaster_verifications:
 2. Sarah mentioned the Logo looked distorted
     * Seems to be a result of the weird `margin-left: -15px; margin-right: -15px;` setting on `.row` classes
 
-<a id="blog-import"></a>
-## Blog Import
+<a id="plugins-staging--production"></a>
+#### Plugins Staging & Production
 
-<a id="header-image"></a>
-### Header Image
-
-1. Crop Header Image (non-essential)
-
-<a id="styling-markup-and-image-adjustments-non-essential"></a>
-## Styling, Markup, and Image adjustments (non-essential)
-
-1. Preference: `_media.css`: convert max-width: 767 into relevant min-width sections, if time-possible (non-essential).
-2. Replace all fixed line heights w/ relative numbers
-    * Using a base SCSS variable wherever possible
-3. Month Archives: 425px, 768px - would be nice to tweak the styles a bit, so the Archive Title doesn't split into the next line
-
-<a id="plugins-and-configuration"></a>
-## Plugins and Configuration
-1. SEO setup
-    * Need to add email, site description, etc to `_config.yml`
-2. Responsive Images. See [Resources][1] file. Currently attempting to get the [jekyll-picture-tag](https://github.com/robwierzbowski/jekyll-picture-tag) plugin working.
-
-<a id="plugins-staging"></a>
-#### Plugins Staging
-
-* "jekyll-feed", "~> 0.6" (why is this versioned?)
+* jekyll-include-cache
+* jekyll-feed
+* github-pages
 * jekyll-seo-tag
+* jekyll-redirect-from
 * jekyll-sitemap
 * jekyll-titles-from-headings
 
 <a id="plugins---local-dev"></a>
 #### Plugins - Local Dev
 
-* jekyll-admin
-* jekyll-autoprefixer
+* jekyll-admin - useful for editing posts. Won't run on GH Pages
+* jekyll-include-cache
+* github-pages
+* jekyll-redirect-from
+* jekyll-titles-from-headings
 
 <a id="accessibility"></a>
 ## Accessibility
@@ -117,17 +103,40 @@ webmaster_verifications:
 <a id="cleanup"></a>
 ## Cleanup
 
-* Replace SCSS Media Queries with name variables?
-* Replace max-width queries w/ min-width queries
 * Remove `archives.py` when it's 100% clear it's unnecessary
   * Doublecheck that running `_plugins/luna_archives_generator.rb` manually is sufficient
-  * A Rakefile might be a good way to du this
-* `_archive.scss` - `.entries` duplicates
-* Verify if `prefixfree.js` is actually doing anything? (It's not breaking anything)
-* Figure out what's necessary/relevant of the `defaults` values in `_config.yml`
+  * A Rakefile might be a good way to save the trouble of running it manually
+* Figure out what's necessary/relevant from the `defaults` settings in `_config.yml`
+
+<a id="scss-extranon-essential"></a>
+### SCSS (extra/non-essential)
+
+1. Replace all fixed line heights w/ relative numbers
+    * Using a base SCSS variable wherever possible
+2. Month Archives: 425px, 768px - would be nice to tweak the styles a bit, so the Archive Title doesn't split into the next line
+
 
 <a id="staging-and-production"></a>
 ## Staging and Production
+
+<a id="optimization"></a>
+### Optimization
+
+<a id="images"></a>
+#### Images
+
+1. Figure out how to Lazy Load images for blog posts
+2. Compress images
+3. Find a way to generate and serve device-appropriate source-sets
+
+<a id="cdn---cloudflare"></a>
+#### CDN - Cloudflare
+
+* For performance reasons, I'd advise setting up the website with Cloudflare.
+    * This will allow for the use of absolute urls (helpful for SEO and general nav, imo) without a substantial performance hit.
+    * Currently when using absolute urls instead of relative urls, the difference is very noticeable
+* The main issue is the main page of the Blog.
+    * Other (not mutually exclusive) solutions may involve Lazy Loading images or adding post excerpts.
 
 <a id="seo--webmaster-tools"></a>
 ### SEO & Webmaster Tools
@@ -144,15 +153,15 @@ webmaster_verifications:
 <a id="favicon"></a>
 ### Favicon
 
-Should be all set - but can run [Favicon Checker](https://realfavicongenerator.net/) another time, once the subdomain is set up
+* Should be all set - but can run [Favicon Checker](https://realfavicongenerator.net/) another time, once the subdomain is set up
+
+<a id="contact-form"></a>
+### Contact Form
+
+* Double-check Contact Form just to be on the safe side
 
 <a id="notes"></a>
 ## Notes
-
-<a id="styles--vendor-prefixes"></a>
-### Styles & Vendor Prefixes
-
-* If there are any issues with `prefixfree.js`, then it may be worth looking into `modernizr.js` - this would be more appropriate for the next iteration of the site
 
 <a id="captions-and-shortcodes"></a>
 ### Captions and Shortcodes
@@ -166,9 +175,10 @@ Should be all set - but can run [Favicon Checker](https://realfavicongenerator.n
 ### Deprecated
 
 ~~1. Reinstate the /updates.html et al links that go to [sign-up form](https://personalgenomes.us3.list-manage.com/subscribe?u=3980aaa2746fd428de44b2ab4&id=34d31b2d4b) and similar~~
-    * ~~Setup JS redirect via layout or include or something~~
-    * ~~use jekyll-redirect to do this possibly?~~
-    * Not finding the where/what of this. Not terribly significant in the first place
+
+* ~~Setup JS redirect via layout or include or something~~
+* ~~use jekyll-redirect to do this possibly?~~
+* Not finding the where/what of this. It was a minor concern in the first place.
 
 
 [1]: docs/resources.md
