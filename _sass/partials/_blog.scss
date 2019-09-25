@@ -472,6 +472,22 @@ span.p-author.h-card,
 }
 
 @media only screen and (min-width: 992px) {
+  .body-archive .blog-main-container,
+  .blog-main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 970px;
+  }
+
+  .blog-main-container {
+    width: 920px;
+  }
+
+  .blog-title-wrap {
+    border-bottom: 5px solid $grey-dark-1;
+  }
+
   .blog-header-title {
     background-size: initial;
     // margin: 0;
@@ -492,7 +508,11 @@ span.p-author.h-card,
   }
 
   main.blog-content {
-    padding: 0 20px 20px 0;
+    box-sizing: content-box;
+    float: left;
+    margin: 0;
+    padding: 20px 20px 20px 0;
+    width: 600px;
   }
 
   .blog-content:first-of-type article:first-of-type h2 {
