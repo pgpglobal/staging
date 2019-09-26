@@ -4,7 +4,7 @@ title: The Personal Genome Project
 class: home
 ---
 
-<div class="container">
+<div class="container container-main">
   <div class="row lead-row pgp-row-about">
     <div class="col-xs-12 col-sm-8 col-md-9 lead-div">
       <a id="about" class="anchor-offset"></a>
