@@ -15,6 +15,7 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 * [Cleanup](#cleanup)
   * [SCSS \(extra/non-essential\)](#scss-extranon-essential)
 * [Staging and Production](#staging-and-production)
+  * [Google Analytics](#google-analytics)
   * [Optimization](#optimization)
     * [Images](#images)
     * [CDN - Cloudflare](#cdn---cloudflare)
@@ -64,7 +65,7 @@ webmaster_verifications:
 ## Absolute vs Relative URLs
 
 * Finishing replacing relative URLs where relevant
-  * See [CDN - Cloudflare](#cdn---cloudflare) regarding performance
+  * See [CDN - Cloudflare](#cdn---cloudflare) section regarding performance
 
 <a id="nav-alignment--logo-distorting"></a>
 ### Nav Alignment & Logo Distorting
@@ -77,6 +78,9 @@ webmaster_verifications:
 <a id="plugins-staging--production"></a>
 #### Plugins Staging & Production
 
+These are a list of the plugins enabled in `_config.yml` that will run on production
+
+* jekyll-admin (only runs locally - not on GH Pages)
 * jekyll-include-cache
 * jekyll-feed
 * github-pages
@@ -87,6 +91,8 @@ webmaster_verifications:
 
 <a id="plugins---local-dev"></a>
 #### Plugins - Local Dev
+
+This is a paired down list, since the others eat up unnecessary build resource and slow down editing and working on the site.
 
 * jekyll-admin - useful for editing posts. Won't run on GH Pages
 * jekyll-include-cache
@@ -118,6 +124,21 @@ webmaster_verifications:
 
 <a id="staging-and-production"></a>
 ## Staging and Production
+
+* Run staging site through a broken links checker
+
+<a id="google-analytics"></a>
+### Google Analytics
+
+Change Google Analytics code in `head.html` to read:
+
+```html
+{%- if jekyll.environment == 'production' and site.google_analytics -%}
+  {%- if site.url contains "personalgenomes" -%}
+  {%- include google-analytics.html -%}
+  {%- endif -%}
+{%- endif -%}
+```
 
 <a id="optimization"></a>
 ### Optimization

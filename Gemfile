@@ -19,7 +19,7 @@ gem "minima", "~> 2.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  # gem 'jekyll-admin'
+  gem 'jekyll-admin'
   gem 'jekyll-include-cache'
   # gem 'jekyll-feed'
   # gem 'jekyll-picture-tag'
