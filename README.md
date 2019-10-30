@@ -11,6 +11,9 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
   * [Nav Alignment & Logo Distorting](#nav-alignment--logo-distorting)
     * [Plugins Staging & Production](#plugins-staging--production)
     * [Plugins - Local Dev](#plugins---local-dev)
+* [Blog](#blog)
+  * [Excerpts](#excerpts)
+  * [Post Footer](#post-footer)
 * [Accessibility](#accessibility)
 * [Cleanup](#cleanup)
   * [SCSS \(extra/non-essential\)](#scss-extranon-essential)
@@ -99,6 +102,42 @@ This is a paired down list, since the others eat up unnecessary build resource a
 * github-pages
 * jekyll-redirect-from
 * jekyll-titles-from-headings
+
+<a id="blog"></a>
+## Blog
+
+<a id="excerpts"></a>
+### Excerpts
+The following posts would benefit from `<!--more-->` tags
+
+* 2015/11/03/joining-as-a-pgp-volunteer/
+* 2015/08/31/the-2015-harvard-pgp-conference/
+* 2015/05/05/oppenheimer-foundation-survey-results/
+* 2015/03/06/video-sporty-genomes-are-elite-athletes-born-or-made/
+* 2015/02/19/what-are-you-looking-for-in-your-genome-and-how-can-we-help-you-find-it/
+* 2014/12/18/pgp-harvard-updates-including-a-new-real-name-option/
+* **2014/08/18/pgp-harvard-blood-collection-event-boston-sept-20-saturday/**
+* 2014/01/14/open-humans-network-wins-knight-news-challenge-health-award/
+* 2013/11/21/pgp-comments-on-genomic-data-sharing-policy/
+* 2013/02/25/trait-survey-data-download-and-analysis/
+* 2012/12/14/pgp-forum-and-wiki/
+* 2012/12/09/personal-genome-project-canada-launches/
+* 2012/12/06/presentation-on-pgp-to-the-duke-university-school-of-medicine-class-of-1972/
+* 2012/11/30/american-gut-qa-with-jeff-leach/
+* 2012/11/29/seeking-diversity/
+* 2012/10/01/vistas-and-hazards-of-the-foggy-omic-road/
+* 2012/08/01/the-predominant-variant-of-the-app-gene-greatly-increases-risk-for-alzheimers-disease-and-cognitive-decline/
+* 2012/07/14/a-public-resource-facilitating-clinical-use-of-genomes/
+* 2012/05/14/improved-enrollment-exam-pgp-study-guide/
+* 2012/05/03/pgp18-a-23andme-exome/
+* 2012/02/29/invulnerability-to-stomach-flu-is-my-secret-superpower/
+* **2012/02/08/its-a-boy-or-how-i-learned-to-stop-worrying-and-love-direct-to-consumer-genomics/**
+*
+
+<a id="post-footer"></a>
+### Post Footer
+
+Prev and Next links have `/category/` attached to them for no reason...
 
 <a id="accessibility"></a>
 ## Accessibility

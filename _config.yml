@@ -29,7 +29,7 @@ author: "Personal Genome Project: Global Network"
 logo: /assets/images/pgp-logo.png
 social:
   - https://twitter.com/pgorg
-  # - https://facebook.com/PersonalGenomesOrg
+  - https://www.facebook.com/groups/personalgenomes
   - https://www.linkedin.com/company/personalgenomes-org
   - https://www.youtube.com/user/PersonalGenomesOrg
 
@@ -58,10 +58,10 @@ minima:
 markdown: kramdown
 theme: minima
 plugins:
+  - github-pages
   - jekyll-admin
   - jekyll-include-cache
   - jekyll-feed
-  - github-pages
   - jekyll-redirect-from
   - jekyll-seo-tag
   - jekyll-sitemap
