@@ -2,6 +2,7 @@
 layout: home
 title: The Personal Genome Project
 class: home
+redirect_from: /us
 ---
 
 <div class="container container-main">
