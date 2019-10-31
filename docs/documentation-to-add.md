@@ -10,6 +10,7 @@
 * [Category and Tag Pages](#category-and-tag-pages)
 * [Plugins](#plugins)
   * [jekyll-seo-tag](#jekyll-seo-tag)
+* [Git Techniques](#git-techniques)
 
 <!-- /MarkdownTOC -->
 
@@ -95,3 +96,9 @@ The SEO tag will respect the following YAML front matter if included in a post, 
 * `lang` - Page-, post-, or document-specific language information
 
 Note: Front matter defaults can be used for any of the above values as described in advanced usage with an image example.
+
+
+<a id="git-techniques"></a>
+## Git Techniques
+
+* Track a branch via `git branch -u branchname`

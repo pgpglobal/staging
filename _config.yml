@@ -61,10 +61,10 @@ plugins:
   - github-pages
   - jekyll-admin
   - jekyll-include-cache
-  - jekyll-feed
+  # - jekyll-feed
   - jekyll-redirect-from
-  - jekyll-seo-tag
-  - jekyll-sitemap
+  # - jekyll-seo-tag
+  # - jekyll-sitemap
   - jekyll-titles-from-headings
 
 # Exclude from processing.
@@ -139,6 +139,7 @@ defaults:
       # image: assets/images/pgp-logo.png
       image: assets/images/pgp_header_420x180.png # specified for jekyll-seo-tag purposes
 
+collections_dir: _collections
 collections:
   authors:
     output: true
