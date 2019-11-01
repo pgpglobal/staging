@@ -13,5 +13,5 @@ permalink: /contact/
 {% endcomment %}
 {% include_cached contact-form.html %}
 
-<script defer src="{{ '/scripts/form-validate.js' | relative_url }}" type="text/javascript"></script>
+<script defer src="{{ '/scripts/form-validate.min.js' | relative_url }}" type="text/javascript"></script>
 
