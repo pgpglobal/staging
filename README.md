@@ -35,6 +35,8 @@ This is the repo for the rewrite of the [PGP Global](https://www.personalgenomes
 <a id="instructions-and-documentation"></a>
 ## Instructions and Documentation
 
+Instructions and documentation can be found at the [PGP Global WIki](https://github.com/pgpglobal/PGPGlobal/wiki)
+
 Currently in progress - writing documentation for workflow, snippets, notes about site structure, editing, etc.
 
 See A current list of documentation files includes:
