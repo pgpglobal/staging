@@ -315,14 +315,31 @@
 
 }
 
-.categories {
-  color: $grey-dark-6;
-  float: right;
-  font-size: 12px;
-  font-style: italic;
-  line-height: 22px;
-  text-align: right;
-  width: 400px;
+.blog-content .post-footer a,
+.blog-content .post-footer a:hover,
+.blog-content .post-footer a:active {
+  font-weight: 400;
+}
+
+
+.body-blog {
+  .categories {
+    color: $grey-dark-6;
+    float: right;
+    font-size: 12px;
+    font-style: italic;
+    line-height: 22px;
+    text-align: right;
+    width: 400px;
+  }
+
+  .post-footer .categories a {
+    &,
+    &:hover,
+    &:active {
+      font-weight: 400;
+    }
+  }
 }
 
 /**

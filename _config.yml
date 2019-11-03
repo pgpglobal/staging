@@ -16,7 +16,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   willing participants to publicly share their personal data for the greater good.
 
 # baseurl: "/PGPGlobal" # the subpath of your site, e.g. /blog
-# url: "https://pgpglobal.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+# url: "https://pgp.lunacodesdesign.com" # the base hostname & protocol for your site, e.g. http://example.com
 
 twitter_username: PGorg
 flickr_username: personalgenomes
@@ -29,7 +29,7 @@ author: "Personal Genome Project: Global Network"
 logo: /assets/images/pgp-logo.png
 social:
   - https://twitter.com/pgorg
-  # - https://facebook.com/PersonalGenomesOrg
+  - https://www.facebook.com/groups/personalgenomes
   - https://www.linkedin.com/company/personalgenomes-org
   - https://www.youtube.com/user/PersonalGenomesOrg
 
@@ -58,13 +58,13 @@ minima:
 markdown: kramdown
 theme: minima
 plugins:
-  # - jekyll-admin
-  - jekyll-include-cache
-  - jekyll-feed
   - github-pages
+  - jekyll-admin
+  - jekyll-include-cache
+  # - jekyll-feed
   - jekyll-redirect-from
-  - jekyll-seo-tag
-  - jekyll-sitemap
+  # - jekyll-seo-tag
+  # - jekyll-sitemap
   - jekyll-titles-from-headings
 
 # Exclude from processing.
@@ -139,6 +139,7 @@ defaults:
       # image: assets/images/pgp-logo.png
       image: assets/images/pgp_header_420x180.png # specified for jekyll-seo-tag purposes
 
+collections_dir: collections
 collections:
   authors:
     output: true

@@ -13,6 +13,6 @@
 </div>
 
 <div class="post-navigation post single clear">
-    <a href="{{ include.prev_url | relative_url }}" rel="prev">← {{ include.prev_title }}</a>
-    <a href="{{ include.next_url | relative_url }}" rel="next">{{ include.next_title }} →</a>
+    <a href="{{ site.url }}{{ site.baseurl }}/category/{{ include.prev_url }}" rel="prev">← {{ include.prev_title }}</a>
+    <a href="{{ site.url }}{{ site.baseurl }}/category/{{ include.next_url }}" rel="next">{{ include.next_title }} →</a>
 </div>
