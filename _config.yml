@@ -139,7 +139,7 @@ defaults:
       # image: assets/images/pgp-logo.png
       image: assets/images/pgp_header_420x180.png # specified for jekyll-seo-tag purposes
 
-collections_dir: _collections
+collections_dir: collections
 collections:
   authors:
     output: true
