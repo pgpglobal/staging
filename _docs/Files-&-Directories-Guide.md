@@ -7,6 +7,7 @@
   * [Directories Explanation](#directories-explanation)
   * [Files](#files)
     * [Scripts](#scripts)
+  * [SASS \(Styling the Site\)](#sass-styling-the-site)
 
 <!-- /MarkdownTOC -->
 
@@ -41,12 +42,6 @@ Posts must be named in `yyyy-mm-dd-postname.md` format (otherwise Jekyll will ig
 As of 10/31/19 the directory structure is as follows:
 
 ```bash
-├── _collections
-│   ├── _authors
-│   ├── _category
-│   ├── _news
-│   ├── _projects
-│   └── _social-links
 ├── _data
 ├── _drafts
 ├── _includes
@@ -64,6 +59,12 @@ As of 10/31/19 the directory structure is as follows:
 ├── assets
 │   ├── fonts
 │   └── images
+├── collections
+│   ├── _authors
+│   ├── _category
+│   ├── _news
+│   ├── _projects
+│   └── _social-links
 ├── docs
 ├── favicon
 ├── scripts
@@ -80,18 +81,24 @@ As of 10/31/19 the directory structure is as follows:
 ### Directories Explanation
 
 * `assets` is where media files such as images, videos, etc live
-* `_authors` contains the files for the Contributors sidebar
-* `_category` contains the files with the metadata for the main Category page
+* `collections` contains the various collections directories
+  * `_authors` contains the files for the Contributors sidebar
+  * `_category` contains the files with the metadata for the main Category page
+  * `_news` contains the files for the `News` page. Each year has been seperated into its own markdown file.
+  * `_projects` contains the project listings used on the Homepage
+  * `_social-links` contains the social media images and links for the blog sidebar
+  * `_posts` and `_drafts` have also been moved to here
 * `_data` contains `navigation.yml`. This is where you edit the nav menu
 * `_docs` contains all the documentation for the repo
+  * Note: this is managed in the Wiki Repo
 * `_drafts` is for any incomplete blog posts
+  * Moved to `_collections`
 * `favicon` contains relevant files for the favicon
 * `_includes` contains template files for things like the header, footer, nav menu, etc. These can be mixed in with differen layouts.
 * `_layouts`
-* `_news` contains the files for the `News` page. Each year has been seperated into its own markdown file.
 * `_plugins` contains the archives generator. Not terribly useful otherwise
-* `_posts` contains all the blog posts from. These have not been included in the site just yet, due to an importation glitch I'm working out.
-* `_projects` contains the project listings used on the Homepage
+* `_posts` contains all the blog posts from.
+  * Moved to `collections`
 * `_sass` is where the styles for the site live. Sass ([Syntactically Awesome Style Sheets](https://sass-lang.com/)) is a pre-processor for CSS.  The central file is `minima.scss`, and the actual code is found in the various files in the `partials` directory. See below for more info.
 * `_site` is the compiled version of the site. You can basically ignore this. Always make sure this is listed in your `.gitignore` file. You *do not* want to commit this to the repo.
 * `scripts` contains javascript files essential for different site features
@@ -117,3 +124,8 @@ Mechanical Files:
 * `gravatar.js` - fetches the Gravatar images for the Contributors sidebar
 * `prefixtree.js` or `prefixtree.min.js` - auto-prefixes the rendered CSS code, for compatibility with older browsers
 * `search-script.min.js - powers the search bar`
+
+<a id="sass-styling-the-site"></a>
+### SASS (Styling the Site)
+
+Under Construction

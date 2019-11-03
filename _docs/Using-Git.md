@@ -10,22 +10,7 @@
 
 <!-- /MarkdownTOC -->
 
-Example local config file:
-
-```yaml
-url: "http://localhost:4000"
-baseurl: /PGPGlobal
-
-plugins:
-  - github-pages
-  - jekyll-admin
-  - jekyll-include-cache
-  # - jekyll-feed
-  - jekyll-redirect-from
-  # - jekyll-seo-tag
-  # - jekyll-sitemap
-  - jekyll-titles-from-headings
-```
+Note: This doc needs to be double-checked, but should serve as good general info. See also the [Installation-&-Setup](Installation-&-Setup) doc.
 
 <a id="working-on-the-site-locally-with-git"></a>
 ## Working on the Site Locally with Git

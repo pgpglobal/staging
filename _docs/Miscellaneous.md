@@ -1,5 +1,7 @@
 <!-- # Miscellaneous -->
 
+This is a scratch list of things that are in-progress, will get incorporated into other sections of the docs, or that otherwise don't fit elsewhere.
+
 ## Favicon
 
 Generate and test Favicons using [Real Favicon Generator](https://realfavicongenerator.net/).
@@ -8,18 +10,9 @@ Generate and test Favicons using [Real Favicon Generator](https://realfavicongen
 
 * compress.html layout
 
-## Contact Form
-C:\Users\lunac\jekyll-again\staticman.yml:
-
 ## Other
 
-## Doublecheck
-
-* if Jekyll-Builtins.md will be used for site and page/post variables
-* Gravatars - Note: may of the author files contain the `image` and `src_original` fields. These are unnecessary
-
-## Nav Menu - Mobile Friendly??
-
+* Add docs for mobile-friendly Nav Menu
 
 ## SCSS - Main File & Source Maps & Overrides and Stuff
 
@@ -48,6 +41,7 @@ assets/
 
 ## Jekyll Environments
 
+Add about Production vs Dev vs Other environments
 
 ## Cool Wiki Markup
 
@@ -55,3 +49,31 @@ assets/
 
 ## Include Relative
 https://jekyllrb.com/docs/includes/#including-files-relative-to-another-file
+
+
+<a id="jekyll-seo-tag"></a>
+### jekyll-seo-tag
+
+See [jekyll-seo-tag - Basic Usage ](https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md), as well as [jekyll-seo-tag - Advanced Usage](https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/advanced-usage.md) for more info
+
+The SEO tag will respect the following YAML front matter if included in a post, page, or document:
+
+* `title` - The title of the post, page, or document
+* `description` - A short description of the page's content
+* `image` - URL to an image associated with the post, page, or document (e.g., /assets/page-pic.jpg)
+* `author` - Page-, post-, or document-specific author information (see Advanced usage)
+* `lang` - Page-, post-, or document-specific language information
+
+Note: Front matter defaults can be used for any of the above values as described in advanced usage with an image example.
+
+
+<a id="git-techniques"></a>
+## Git Techniques
+
+* Track a branch via `git branch -u branchname`
+
+
+## Other
+
+* What files correspond to what templates?
+* Archive Generation instructions

@@ -107,7 +107,7 @@ Stuff about accessing Site Data https://jekyllrb.com/docs/step-by-step/06-data-f
 <a id="collections"></a>
 ## Collections
 
-Similar to Data are collections. These allow you to group similarly related items in their own `_collection` subdirectories. You can also specify a main `collections_dir`, in order to keep things neat and tidy. The PGP Global site collections can be found in `_collections` and are currently:
+Similar to Data are collections. These allow you to group similarly related items in their own `_collection` subdirectories. You can also specify a main `collections_dir`, in order to keep things neat and tidy. The PGP Global site collections can be found in `collections` and are currently:
 
 * `_authors` - Author pages
 * `_category` - Post Category pages
@@ -116,7 +116,7 @@ Similar to Data are collections. These allow you to group similarly related item
 * `_social-links` - the image and link attributes for the blog's sidebar links.
 
 Collections must be defined in `_config.yml`. In addition to their names, Collections have an `output` variable.
-When set to `true`, there will be a separate page generated for each file in the collection. This is how the inidividual Author and Category pages are created.
+When set to `true`, there will be a separate page generated for each file in the collection. This is how the individual Author and Category pages are created.
 
 The `collections` section in `_config.yml` currently looks like this:
 

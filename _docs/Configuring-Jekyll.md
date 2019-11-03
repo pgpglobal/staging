@@ -1,11 +1,20 @@
 <!-- # Configuring-Jekyll -->
 
-_config.yml layout and options
+<!-- MarkdownTOC -->
 
+* [General Site Info](#general-site-info)
+* [Minima Theme - Social Media and SEO:](#minima-theme---social-media-and-seo)
+* [Jekyll SEO Tag Settings](#jekyll-seo-tag-settings)
+* [Build settings](#build-settings)
+* [Exclude from processing.](#exclude-from-processing)
+* [Collections](#collections)
+
+<!-- /MarkdownTOC -->
+
+This is an explanation of the various settings found in _config.yml.
+
+<a id="general-site-info"></a>
 ## General Site Info
-
-Note: the description has a line break every 73 characters or so.
-This is for readability on small screens, so that you don't have to sidescroll.
 
 ```yaml
 title: "Personal Genome Project: Global Network"
@@ -19,6 +28,7 @@ description: > # this means to ignore newlines until "baseurl:"
 # url: "https://pgp.lunacodesdesign.com" # the base hostname & protocol for your site, e.g. http://example.com
 ```
 
+<a id="minima-theme---social-media-and-seo"></a>
 ## Minima Theme - Social Media and SEO:
 
 This site is built off of Jekyll's default theme [Minima](https://github.com/jekyll/minima). Here are some relevant options:
@@ -47,6 +57,7 @@ minima:
 ```
 
 
+<a id="jekyll-seo-tag-settings"></a>
 ## Jekyll SEO Tag Settings
 
 [Jekyll SEO Tag](https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md) is a very awesome plugin that auto-generates SEO info for all the site's pages
@@ -70,9 +81,10 @@ excerpt_seperator: "<!--more-->"
 ```
 
 
+<a id="build-settings"></a>
 ## Build settings
 
-You'll only really need to adjust the [Plugins](Plugins.md) in this section
+Ignore the other build settings. You'll only really need to adjust the [Plugins](Plugins.md). In the excerpt below, I have `jekyll-feed`, jekyll-seo-tag, and jekyll-sitemap disabled for local development. A good way to do this is to use a secondary config file. See [Building-&-Serving-the-Site - Secondary Config File](Building-&-Serving-the-Site#secondary-config-file.md)
 
 ```yaml
 markdown: kramdown
@@ -89,6 +101,7 @@ plugins:
 ```
 
 
+<a id="exclude-from-processing"></a>
 ## Exclude from processing.
 ```yaml
 # The following items will not be processed, by default. Create a custom list
@@ -152,7 +165,8 @@ defaults:
 ```
 
 
-# Collections
+<a id="collections"></a>
+## Collections
 
 See [Jekyll Docs - Collections]. `output: true` means that the site will generate pages for each item in the collections - perfect for Author or Category pages!!
 

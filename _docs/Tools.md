@@ -12,11 +12,14 @@ The following tools may prove useful when working on the site.
   * Can generate Key Pairs as well
 * [Simple CSS Media Query Generator](https://simplecss.eu/)
   * Mobile First or Desktop First - very diverse set of devices, OS, etc
+* Generate and test Favicons using [Real Favicon Generator](https://realfavicongenerator.net/).
 
-## Cheat Sheets
+
+## Cheat Sheets & Snippets
 
 * [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 * [Jekyll & Liquid Cheatsheet](https://gist.github.com/ryerh/b2fa73829f1b7b1c39988f09a65eb227)
+* [GitHub - mdo/jekyll-snippets](https://github.com/mdo/jekyll-snippets)
 
 ## Text Editors
 
