@@ -38,7 +38,7 @@ twitter:
   card: summary
 
 show_excerpts: true
-excerpt_seperator: "<!--more-->"
+excerpt_seperator: <!--more-->
 # environment: development
 
 minima:
