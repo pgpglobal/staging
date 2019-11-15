@@ -1,3 +1,7 @@
+# Remind the user to install Ruby, if they haven't already
+echo "Note: if you haven't already, please go install Jekyll via the instructions at https://jekyllrb.com/docs/installation/#guides"
+echo ""
+
 # Don't mess with the CNAME File!!!!
 git update-index --skip-worktree CNAME
 
