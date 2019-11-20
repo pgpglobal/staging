@@ -22,11 +22,11 @@ gem "rubyzip", ">= 1.3.0"
 group :jekyll_plugins do
   gem 'jekyll-admin'
   gem 'jekyll-include-cache'
-  # gem 'jekyll-feed'
+  gem 'jekyll-feed'
   # gem 'jekyll-picture-tag'
   gem 'jekyll-redirect-from'
-  # gem 'jekyll-seo-tag'
-  # gem 'jekyll-sitemap'
+  gem 'jekyll-seo-tag'
+  gem 'jekyll-sitemap'
   gem 'jekyll-titles-from-headings'
   # gem 'jekyll-sass-converter'
 
