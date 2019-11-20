@@ -7,7 +7,18 @@
 
   .dropdown-toggle {
       padding: 17.5px 20px 10px 15px;
-    }
+  }
+
+  li.dropdown-header {
+    padding: 10px 0 10px 40px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  .dropdown-menu .divider {
+    height: 2px;
+    padding: 0 20px;
+  }
 }
 
 .navbar,
@@ -80,7 +91,8 @@
         border-radius: 4px;
         box-shadow: none;
         min-width: 160px;
-        position: static;
+        // position: static;
+        position: relative;
 
         a {
           color: $grey-dark-3;
@@ -187,6 +199,14 @@
 
     a {
       color: $grey-dark-1;
+    }
+
+    .divider {
+      height: 2px;
+      margin: 9px 0;
+      overflow: hidden;
+      background-color: #e5e5e5;
+      padding: 0 20px 0 15px;
     }
   }
 
