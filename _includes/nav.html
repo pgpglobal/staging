@@ -19,23 +19,23 @@
           {%- for item in site.data.navigation.header -%}
             {%- if item.type contains "dropdown" -%}
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ item.title}}<span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">1: {{ item.title}}<span class="caret"></span></a>
                 {%- if item.subfolderitems[0] -%}
                   <ul class="dropdown-menu">
                     {%- for entry in item.subfolderitems -%}
                       {%- if entry.type contains "separator" -%}
                         <li role="separator" class="divider"></li>
-                        <li class="dropdown-header" id="{{ entry.page | downcase | slugify }}">{{ entry.page }}</li>
+                        <li class="dropdown-header" id="{{ entry.page | downcase | slugify }}">2: {{ entry.page }}</li>
                       {%- elsif entry.url contains "http" or "http" contains entry.url -%}
-                        <li><a href="{{ entry.url }}" class="{{ entry.page | downcase }}" id="{{ entry.page | downcase | slugify }}">{{ entry.page }}</a>
+                        <li><a href="{{ entry.url }}" class="{{ entry.page | downcase }}" id="{{ entry.page | downcase | slugify }}">3: {{ entry.page }}</a>
                       {%- else -%}
-                        <li><a href="{{ entry.url | absolute_url }}" id="{{ entry.page | downcase | slugify }}">{{ entry.page }}</a>
+                        <li><a href="{{ entry.url | absolute_url }}" id="nav-{{ entry.page | downcase | slugify }}">4: {{ entry.page }}</a>
                       {%- endif -%}
 
                           {%- if entry.subfolderitems[0] -%}
                             <ul>
                             {%- for subentry in entry.subfolderitems %}
-                                <li><a href="{{ site.url }}{{ subentry.url }}" id="{{ entry.page | downcase | slugify }}">{{ subentry.page }}</a></li>
+                                <li><a href="{{ site.url }}{{ subentry.url }}" id="{{ entry.page | downcase | slugify }}">5: {{ subentry.page }}</a></li>
                             {%- endfor -%}
                             </ul>
                           {%- endif -%}
@@ -45,9 +45,9 @@
               </li>
                 {%- endif -%}
                 {%- elsif entry.url contains "http" or "http" contains entry.url -%}
-                <li><a href="{{ item.url }}" id="{{ item.title | downcase | slugify }}">{{ item.title }}</a>
+                <li><a href="{{ item.url }}" id="{{ item.title | downcase | slugify }}">6: {{ item.title }}</a>
                 {%- else -%}
-              <li><a href="{{ item.url | absolute_url }}" id="{{ item.title | downcase | slugify }}">{{ item.title }}</a>
+              <li><a href="{{ item.url | absolute_url }}" id="{{ item.title | downcase | slugify }}">7: {{ item.title }}</a>
             {%- endif -%}
           {%- endfor -%}
         {%- endif -%}
