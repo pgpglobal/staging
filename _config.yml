@@ -58,13 +58,13 @@ minima:
 markdown: kramdown
 theme: minima
 plugins:
-  # - github-pages
-  # - jekyll-include-cache
-  # - jekyll-feed
-  # - jekyll-redirect-from
-  # - jekyll-seo-tag
-  # - jekyll-sitemap
-  # - jekyll-titles-from-headings
+  - github-pages
+  - jekyll-include-cache
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-titles-from-headings
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
