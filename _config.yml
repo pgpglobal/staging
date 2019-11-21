@@ -59,12 +59,11 @@ markdown: kramdown
 theme: minima
 plugins:
   - github-pages
-  - jekyll-admin
   - jekyll-include-cache
-  # - jekyll-feed
+  - jekyll-feed
   - jekyll-redirect-from
-  # - jekyll-seo-tag
-  # - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-sitemap
   - jekyll-titles-from-headings
 
 # Exclude from processing.

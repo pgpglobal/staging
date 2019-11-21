@@ -4,13 +4,13 @@ header:
     type: dropdown
     subfolderitems:
       - page: About
-        url: "/#about"
+        url: "#about"
       - page: Overview
-        url: "/#overview"
+        url: "#overview"
       - page: Guidelines
-        url: "/#guidelines"
+        url: "#guidelines"
       - page: Project Websites
-        type: "seperator"
+        type: "separator"
         url: "sep"
       - page: Harvard PGP
         url: "https://pgp.med.harvard.edu/"
