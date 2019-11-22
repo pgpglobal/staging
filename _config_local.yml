@@ -9,4 +9,4 @@ plugins:
   # - jekyll-sitemap
   - jekyll-titles-from-headings
 
-port: 6060
+# port: 6060

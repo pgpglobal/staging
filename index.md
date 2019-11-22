@@ -15,8 +15,6 @@ redirect_from: /us
 # The Personal Genome Project
 
 {:.lead.pgp-description}
-This is a test.
-
 The Personal Genome Project, initiated in 2005, is a vision and coalition of projects across the world dedicated to creating public genome, health, and trait data. Sharing data is critical to scientific progress, but has been hampered by traditional research practices. The PGP approach is to invite willing participants to publicly share their personal data for the greater good.
 
 {% endcapture %}
